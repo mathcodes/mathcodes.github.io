@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <!-- <script>
+    function getOS() {
+      var userAgent = window.navigator.userAgent
+      var platform = window.navigator.platform
+      var macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K']
+      var windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE']
+      var iosPlatforms = ['iPhone', 'iPad', 'iPod']
+      var os = null
+      if (macosPlatforms.indexOf(platform) !== -1) {
+        os = 'Welcome, Mac User!';
+      } else if (iosPlatforms.indexOf(platform) !== -1) {
+        os = 'iOS';
+      } else if (windowsPlatforms.indexOf(platform) !== -1) {
+        os = 'Windows';
+      }
+      return os;
+}
+alert(getOS());
+    </script> -->
+    <script>
+var platform = window.navigator.platform.slice(0, 3)
+var platformName = {
+  Mac: "Mac",
+  Win: "Windows"
+}[platform]
+alert("Welcome, " + platformName + " user!")
+
+
+<button onclick="getLocation()">Try It</button>
+<p id="demo"></p>
+<script>
+var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+function showPosition(position) {
+    x.innerHTML="Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+</body>
+</html>

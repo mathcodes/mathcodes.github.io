@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Car Adventures!</title>
+  </head>
+  <body>
+
+    <script>
+
+      // VARIABLES
+      // ==========================================================================
+      var letter;
+
+      var car = {
+        make: "Honda",
+        model: "Fit",
+        color: "Blue Raspberry",
+        mileage: 3000,
+        isWorking: true,
+
+        driveToWork: function() {
+          alert("Old Mileage: " + this.mileage);
+
+          this.mileage = this.mileage + 8;
+
+          alert("New mileage: " + this.mileage);
+        },
+
+        driveAroundWorld: function() {
+          alert("Old Mileage: " + this.mileage);
+
+          this.mileage = this.mileage + 24000;
+
+          alert("New Mileage: " + this.mileage);
+          alert("Car needs a tuneup!");
+
+          this.isWorking = false;
+        },
+
+        getTuneUp: function() {
+          alert("Car is ready to go!");
+          this.isWorking = true;
+        },
+
+        honk: function() {
+          alert("Honk! Honk!");
+        }
+      };
+
+      // FUNCTIONS
+      // ==============================================================================
+
+      // TO DO: Log all of our car's current stats to the console.
+     
+console.log{"Make" + }
+      // MAIN PROCESS
+      // ==============================================================================
+
+      // A while loop makes more sense here than a for loop, because we don't know how long the user will want to play the game
+      // This loop will end when the user presses Cancel, thus setting the letter variable to "null"
+      // while (letter !== null) {
+        // Prompt user to input a letter
+  letter = prompt("Type 'h' to honk, 'd' to drive to work, 'w' to drive around the world, or 't' to get a tuneup.");
+  if (letter === "h") {alert("HONK HONK")};
+  
+  
+  else if(d) {
+    function.driveToWork()
+  }    
+  else if(w) {
+    function.driveAroundTheWorld()
+  }    
+  else if(t) {
+    function.driveToWork()
+  }    
+  else{
+    System.out.println("Not eligible")
+  }
+        
+        // TO DO: Call the different car metho
+      
+
+
+//     </script>
+
+//   </body>
+// </html>
+// <!-- 
+
+// ### File
+
+// * [`car-game-unsolved`](Unsolved/car-game-unsolved.html)
+
+// ### Instructions
+
+// * Using the unsolved code as a starting point, create a complete application that meets the following specifications:
+
+//   * Users can enter keyboard input (letters).
+
+//   * Each of the car's methods are assigned to a key.
+
+//   * When the user presses a key, it calls the appropriate function.
+
+//   * These letters also trigger a global function called `reWriteStats()` that logs the car's make, model, color, mileage, and `isWorking` status to the console.
+
+// * **HINT:** A "while loop" is already set up for you that will continue to ask the user for input as long as they don't press Cancel. Your logic will go inside this loop.
+
+// * **BONUS:** Prevent the user from being able to drive the car if it needs a tune-up. -->

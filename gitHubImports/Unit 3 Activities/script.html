@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    function getOS() {
+      var userAgent = window.navigator.userAgent,
+          platform = window.navigator.platform,
+          macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'];
+          windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'];
+          iosPlatforms = ['iPhone', 'iPad', 'iPod'];
+          os = null;
+      if (macosPlatforms.indexOf(platform) !== -1) {
+        os = 'Welcome, Mac User!';
+      } else if (iosPlatforms.indexOf(platform) !== -1) {
+        os = 'iOS';
+      } else if (windowsPlatforms.indexOf(platform) !== -1) {
+        os = 'Windows';
+      }
+      document.write('Your OS: '+ os);
+    }
+ </script>
+<button onclick="getLocation()">Try It</button>
+<p id="demo"></p>
+<script>
+var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.watchPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+function showPosition(position) {
+    x.innerHTML="Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+
+</body>
+</html>
+
+
