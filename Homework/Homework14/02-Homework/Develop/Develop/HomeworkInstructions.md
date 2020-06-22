@@ -4,7 +4,7 @@
  - [Setup](#Setup)
  - [server.js](#server.js)
  - [package.json](#package.json)
- - [config.json](##config.json)
+ - [!config.json](##config.json)
  - [api.js](#api-routes.js)
  - [html-routes.js](#html-routes.js)
  - [passport.js](#passport.js)
