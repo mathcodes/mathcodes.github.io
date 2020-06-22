@@ -230,7 +230,7 @@ Contains the signup form.
 ## ```style.css```
 Keeps the form at a uniform distance of 50 pixels from the top of the page on both the signup and login pages.
 
-```# POSSIBLE ALTERATIONS THAT MAY IMPROVE THE CODE:```
+# ``` POSSIBLE ALTERATIONS THAT MAY IMPROVE THE CODE:```
 
 ### Line 39: in the api-routes.js file, including an alert letting the user know they are now logged in if always betterthan sending back blank response. Something like : "The user entered is not logged in yet. Please use the login optins or click HERE to login! Thanks."
 
