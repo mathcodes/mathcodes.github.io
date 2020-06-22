@@ -1,21 +1,21 @@
 # Unit 14 Sequelize Homework: Reverse Engineering Code
 
 ## Table of Contents
- - [Setup](#Setup)
- - [server.js](#server.js)
- - [package.json]("package-json")
- - [config.json]("config-json")
- - [api-.js](#api-routes.js)
+ - [Setup](Setup)
+ - [server.js](#server.js")
+ - [package.json]("package.json")
+ - [config.json]("config.json")
+ - [api.js](#api-routes.js")
  - [html-routes.js](#html-routes.js)
  - [passport.js](#passport.js)
- - [login.js](#login.js)
+ - [login.js](#login.js")
  - [members.js](#members.js)
  - [signup.js](#signup.js)
- - [index.js](#index.js) model
- - [user.js](#user.js) model
+ - [index.js](#index.js) 
+ - [user.js](#user.js)
  - [login.html](#login.html)
  - [members.html](#members.html)
- - [signup.html](#signup.html)
+ - [signup.html](#signup.html")
  - [style.css](#style.css)
 
 ## Setup
