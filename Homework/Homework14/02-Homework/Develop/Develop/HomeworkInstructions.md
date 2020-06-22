@@ -234,4 +234,4 @@ Keeps the form at a uniform distance of 50 pixels from the top of the page on bo
 
 ### Line 39: in the api-routes.js file, including an alert letting the user know they are now logged in if always betterthan sending back blank response. Something like : "The user entered is not logged in yet. Please use the login optins or click HERE to login! Thanks."
 
-### login and signup page, increase email validation to increase requirements. Currently, only a @ is required in between characters which clearly does not ensure well enough that we are receiving valid emails. 
+### Incorporate deeper levels of email validation in the `signup` and `login` pages to enhance privacy and safety for users. Currently, only a @ is required in between characters in the email and anything can be the passwod, which clearly does meet requirements of safety we are capabale of.
