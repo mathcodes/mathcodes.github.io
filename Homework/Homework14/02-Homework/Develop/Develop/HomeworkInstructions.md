@@ -65,7 +65,7 @@ So we have a table named users created with 5 columns specified in 'single quote
  - [ ] 6. Next make sure your credentials in the config.json file match up with the ones you have setup in MySQL. Check that you have all dependencies inss Also be sure to make sure you receive the "Listening on port 8000" message in the console when you start the app.
  - [ ] 7. ```'port 8000'``` is specified in the server.js file llcated in the root directory ```/Develop```.
 
-## server.js
+## Server.js
 
  - [ ] 8. The server.js code is really what initiates the application. Here is how: 
    - [ ] Requiring necessary npm packages
