@@ -40,7 +40,7 @@ Make sure to install your dependencies. found in `package.json`.
 ``` 
 npm init
  ```
-- [ ] Install the dependencies using the command line shown or by right-clicking 
+- [ ] Install the dependencies using the command line shown
 ```
 npm install mysql2 body-parser express express-session mysql2 sequelize sequelize-cli sequelizer eslint passport
 ```
