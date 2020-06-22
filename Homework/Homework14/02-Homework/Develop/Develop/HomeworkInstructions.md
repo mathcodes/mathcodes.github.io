@@ -1,6 +1,36 @@
 # Unit 14 Sequelize Homework: Reverse Engineering Code
 
 ## Table of Contents
+/Develop
+ - /config
+   - /middleware
+     - isAuthenticated.js
+   - config.json
+   - passport.js
+ - /models
+   - index.js
+   - user.js
+ - /node_modules
+ - /public
+   - /js
+     - login.js
+     - members.js
+     - signup.js
+   - /stylesheets
+     - style.css
+   - login.html
+   - members.html
+   - passport_demo.sql
+   - signup.html
+   - todolist.sql
+ - routes
+   - api-routes.html
+   - grml-routes.html
+ - package json
+ - package-lock.json
+ - server.js
+ - READ.me
+ 
  - [Setup](#Setup)
  - [server.js](#server.js)
  - [middleware](#middleware)
