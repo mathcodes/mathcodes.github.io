@@ -96,7 +96,7 @@ var PORT = process.env.PORT || 8000;
 var db = require("./models");
 ```
 ### middleware in server.js
- - [ ] Creating express app and configuring middleware needed for authentication. This is our normal express configuration for handling the data parsing followed by the last line which is our static serving assets to the public. ONE THING I WOULD CHANGE HERE AS A COMMON PRACTICE IS TO BRING THE "var app = express();" LINE JUST BEFORE THE PORT ASSIGNMENT ABOVE.
+ - [ ] Creating express app and configuring middleware needed for authentication. This is our normal express configuration for handling the data parsing followed by the last line which is our static serving assets to the public. 
 ```
 var app = express();
 app.use(express.urlencoded({ extended: true }));
@@ -236,3 +236,8 @@ Keeps the form at a uniform distance of 50 pixels from the top of the page on bo
 ### Line 39: in the api-routes.js file, including an alert letting the user know they are now logged in if always betterthan sending back blank response. Something like : "The user entered is not logged in yet. Please use the login optins or click HERE to login! Thanks."
 
 ### Incorporate deeper levels of email validation in the `signup` and `login` pages to enhance privacy and safety for users. Currently, only a @ is required in between characters in the email and anything can be the passwod, which clearly does meet requirements of safety we are capabale of.
+
+### In the API-ROUTES.JS explanation, I would add console.logs throughout the route requests so we can verify everything is running correctly and connected.
+
+### Lastly, its good practice, or at least more consistent with other applications we've built, to place the "var app = express();" just before we declare the PORT.
+
