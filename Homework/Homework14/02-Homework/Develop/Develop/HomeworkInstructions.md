@@ -1,6 +1,6 @@
 # Unit 14 Sequelize Homework: Reverse Engineering Code
 
-Outline showing the whcih directories each file is most suited to fun the application efficiently:
+Outline showing the which directories each file is most suited to run the application efficiently:
 
 /Develop
  - /config
@@ -76,7 +76,7 @@ SHOW INDEX FROM `Users` FROM `blogger`
 ```
 So we have a table named users created with 5 columns specified in 'single quotes'. The id is generated automatically by the default
 
- - [ ] Next make sure your credentials in the config.json file match up with the ones you have setup in MySQL. Check that you have all dependencies inss Also be sure to make sure you receive the "Listening on port 8000" message in the console when you start the app.
+ - [ ] Next make sure your credentials in the config.json file match up with the ones you have setup in MySQL. Check that you have all dependencies installed. Also be sure to make sure you receive the "Listening on port 8000" message in the console when you start the app, since you have the console.log setup for that.
  - [ ] ```'port 8000'``` is specified in the server.js file llcated in the root directory ```/Develop```.
 
 ## ```server.js```
@@ -89,14 +89,14 @@ var express = require("express");
 var session = require("express-session");
 var passport = require("./config/passport");
 ```
- - [ ]Furthermore, the server.js file allows us to setup the port and require models for syncing
+ - [ ] Furthermore, the server.js file allows us to setup the port, using the PORT setup, if not we will be using port 8000. The next line is where we are creating our models and storing them in a variable called db. This is basically our ORM, providing one objecy that interacts with all of the information in the database. It also has all our models and sequelize.
 
 ```
 var PORT = process.env.PORT || 8000;
 var db = require("./models");
 ```
 ### middleware in server.js
- - [ ] Creating express app and configuring middleware needed for authentication
+ - [ ] Creating express app and configuring middleware needed for authentication. This is our normal express configuration for handling the data parsing followed by the last line which is our static serving assets to the public. ONE THING I WOULD CHANGE HERE AS A COMMON PRACTICE IS TO BRING THE "var app = express();" LINE JUST BEFORE THE PORT ASSIGNMENT ABOVE.
 ```
 var app = express();
 app.use(express.urlencoded({ extended: true }));
@@ -111,7 +111,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 ```
 ### Requiring our routes:
- - [ ] The code below sets up the html and api routes before we sync using sequelize.
+ - [ ] The code below requires the  html and api routes before we sync using sequelize. the API routes is the function and we are possing our express app into it.
 ```
 require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
@@ -145,8 +145,9 @@ includes the username, password, database, and dialect for development, test, an
 
 ## ```api-routes.js```
 ### *requires /models and /config/passport
-
-Provides routes sending data back and forth between the HTML pages and the database.
+ONE THING I WOULD ADD HERE ARE CONSOLE.LOGS (more specifically console.log(req.body) SO WE CAN VERIFY EVERYTHING IS RUNNING CORRECTLY AND CONNECTED. CHECK THE TERMINAL FOR THE EXPECTED DATA FOR EACH REQUEST.
+Provides routes sending data back (GET) and forth (POST) between the HTML pages and the database. We also have passport installed and required, so passport.authenticate to verify the users credentials and if valid, we can send them to the members page.
+When signing up the user, we are automatically hashing and storing the password securely based on how the user model is setup.
 
 
 ## ```html-routes.js```
