@@ -8,6 +8,6 @@ export const headerData = {
     href1:"<a href=",
     url:"https://www.instructure.com/",
     href2:"\" alt='jon christie headshot portfolio fullstack11235'\"><a>",
-    image: 'https://raw.githubusercontent.com/mathcodes/JonChristie2022/feat-backup/src/assets/img/hs_large.svg',
+    image: '../../assets/img/hs.svg',
     resumePdf: resume
 }

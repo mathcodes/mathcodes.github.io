@@ -286,7 +286,7 @@ function Contacts() {
                                 <FiAtSign />
                             </div>
                             <p style={{ color: theme.tertiary }}>
-                                {contactsData.email}
+                                <a href={`tomail:${contactsData.email}`}>{contactsData.email}</a>
                             </p>
                         </a>
                         <a
@@ -297,7 +297,7 @@ function Contacts() {
                                 <FiPhone />
                             </div>
                             <p style={{ color: theme.tertiary }}>
-                                {contactsData.phone}
+                            <a href={`tel:${contactsData.phone}`}>{contactsData.phone}</a>
                             </p>
                         </a>
                         <div className='personal-details'>
@@ -305,7 +305,7 @@ function Contacts() {
                                 <HiOutlineLocationMarker />
                             </div>
                             <p style={{ color: theme.tertiary }}>
-                                {contactsData.address}
+                                <a href={`https://www.google.com/maps/place/${contactsData.address}`}>Carrboro, NC</a>
                             </p>
                         </div>
 
