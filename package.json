@@ -1,7 +1,7 @@
 {
   "name": "jonsportfolio",
   "version": "0.1.0",
-  "homepage": "https://mathcodes.github.io/JonChristie2022/",
+  "homepage": "https://mathcodes.github.io/jc22/",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.2",
