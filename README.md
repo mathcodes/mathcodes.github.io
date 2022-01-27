@@ -1,2 +1,3 @@
-# jc22
-portfolio
+# Jon's Portfolio
+
+## coming soon
