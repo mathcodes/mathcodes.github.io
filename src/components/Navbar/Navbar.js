@@ -9,7 +9,8 @@ import { FaUser } from 'react-icons/fa';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CloseIcon from '@material-ui/icons/Close';
-
+import BG from "../../assets/img/JCircle.png";
+import BG2 from "../../assets/svg/BG2.svg";
 import './Navbar.css';
 import { headerData } from '../../data/headerData';
 import { ThemeContext } from '../../contexts/ThemeContext';
@@ -61,6 +62,13 @@ function Navbar() {
                 width: '12em',
             },
         },
+        bgStyle: {
+            height:'10em',
+            padding: '1%',
+  
+           
+        },
+         
         closebtnIcon: {
             fontSize: '2rem',
             fontWeight: 'bold',
@@ -133,9 +141,7 @@ function Navbar() {
     return (
         <div className='navbar'>
             <div className='navbar--container'>
-                <h1 style={{ color: theme.secondary }}>
-                    {shortname(headerData.name)}
-                </h1>
+                <img src={BG} className={classes.bgStyle}/>
 
                 <IoMenuSharp
                     className={classes.navMenu}

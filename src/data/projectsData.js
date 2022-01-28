@@ -3,6 +3,7 @@ import tech from '../assets/svg/projects/pythonlog.svg'
 import three from '../assets/svg/projects/mars.svg'
 import scb from '../assets/svg/projects/scb.svg'
 import p2h from '../assets/svg/projects/p2h.svg'
+import keys from '../assets/svg/projects/keys.png'
 
 
 export const projectsData = [
@@ -51,4 +52,32 @@ export const projectsData = [
         demo: 'https://mathcodes.github.io/pick2hand/',
         image: p2h
     },
+    {
+        id: 6,
+        projectName: 'Pro Typer',
+        projectDesc: 'A quick project to review event handlers and do something useful and practical. Use this app to improve your keyboarding skills. FUTURE DEVELOPMENT: Scoring, typing words, difficulty levels, and wpm calculation. Coming soon!',
+        tags: ['HTML', 'CSS', 'JS', 'express'],
+        code: 'https://github.com/mathcodes/monitor',
+        demo: 'https://mathcodes.github.io/pick2hand/',
+        image: keys
+    },
+    // {
+    //     id: 7,
+    //     projectName: 'Pro Typer',
+    //     projectDesc: 'A quick project to review event handlers and do something useful and practical. Use this app to improve your keyboarding skills. FUTURE DEVELOPMENT: Scoring, typing words, difficulty levels, and wpm calculation. Coming soon!',
+    //     tags: ['HTML', 'CSS', 'JS', 'express'],
+    //     code: 'https://github.com/mathcodes/monitor',
+    //     demo: 'https://mathcodes.github.io/pick2hand/',
+    //     image: keys
+    // },
+    // {
+    //     id: 8,
+    //     projectName: 'Pro Typer',
+    //     projectDesc: 'A quick project to review event handlers and do something useful and practical. Use this app to improve your keyboarding skills. FUTURE DEVELOPMENT: Scoring, typing words, difficulty levels, and wpm calculation. Coming soon!',
+    //     tags: ['HTML', 'CSS', 'JS', 'express'],
+    //     code: 'https://github.com/mathcodes/monitor',
+    //     demo: 'https://mathcodes.github.io/pick2hand/',
+    //     image: keys
+    // },
+
 ]
