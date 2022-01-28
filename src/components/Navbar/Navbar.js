@@ -64,7 +64,7 @@ function Navbar() {
         },
         bgStyle: {
             height:'10em',
-            padding: '1%',
+            paddingTop: '5%',
   
            
         },
@@ -141,6 +141,7 @@ function Navbar() {
     return (
         <div className='navbar'>
             <div className='navbar--container'>
+             
                 <img src={BG} className={classes.bgStyle}/>
 
                 <IoMenuSharp
