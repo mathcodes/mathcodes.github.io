@@ -65,8 +65,9 @@ function Navbar() {
 		bgStyle: {
 			height: '10em',
 			paddingTop: '5%',
-
-
+			[t.breakpoints.down('sm')]: {
+				paddingTop: '13%',
+			}
 		},
 
 		closebtnIcon: {
