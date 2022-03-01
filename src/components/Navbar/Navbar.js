@@ -9,7 +9,7 @@ import { FaUser } from 'react-icons/fa';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CloseIcon from '@material-ui/icons/Close';
-import BG from "../../assets/img/JCircle.png";
+import BG from "../../assets/img/JCircle_dark_gray.png";
 import BG2 from "../../assets/svg/BG2.svg";
 import './Navbar.css';
 import { headerData } from '../../data/headerData';

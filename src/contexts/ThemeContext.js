@@ -1,5 +1,4 @@
 import React, { createContext, useState } from 'react'
-
 import { themeData } from '../data/themeData'
 
 export const ThemeContext = createContext()
@@ -13,8 +12,6 @@ function ThemeContextProvider(props) {
 		setDrawerOpen(!drawerOpen)
 	}
 
-
-
 	const value = { theme, drawerOpen, setHandleDrawer }
 	return (
 		<ThemeContext.Provider value={value}>
@@ -22,6 +19,5 @@ function ThemeContextProvider(props) {
 		</ThemeContext.Provider>
 	)
 }
-
 
 export default ThemeContextProvider
