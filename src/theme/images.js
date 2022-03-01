@@ -7,7 +7,7 @@ import purpleMan from '../assets/svg/about/avatarPurpleMan.svg'
 import redMan from '../assets/svg/about/avatarRedMan.svg'
 import yellowMan from '../assets/svg/about/avatarYellowMan.svg'
 
- 
+
 
 import contactsBlue from '../assets/svg/contacts/contactsBlue.svg'
 import contactsGreen from '../assets/svg/contacts/contactsGreen.svg'
@@ -19,7 +19,7 @@ import contactsRed from '../assets/svg/contacts/contactsRed.svg'
 import contactsYellow from '../assets/svg/contacts/contactsYellow.svg'
 
 
-export { 
-    blueMan, bwMan, greenMan, techMan, pinkMan, purpleMan, redMan,yellowMan,contactsBlue,contactsBlack,
-    contactsGreen,contactsOrange,contactsPink,contactsPurple,contactsRed,contactsYellow
+export {
+	blueMan, bwMan, greenMan, techMan, pinkMan, purpleMan, redMan, yellowMan, contactsBlue, contactsBlack,
+	contactsGreen, contactsOrange, contactsPink, contactsPurple, contactsRed, contactsYellow
 }

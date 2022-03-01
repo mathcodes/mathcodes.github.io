@@ -24,7 +24,6 @@ a {
 
 
 /* scrollBar */
-
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -48,15 +47,14 @@ img{
 
 }
 
-
+/*  ------------------------------------ MEDIA QUERIES ------------------------------------ */
 @media screen and (max-width: 400px) {
   body {
     overflow-x: hidden;
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 
-  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
     body {
       overflow-x: hidden;
     }
@@ -78,9 +76,4 @@ p a:hover{
   background-color: rgb(79, 224, 229);
   color: #212121;
   font-weight: 800;
-  
-}
-
-div a{
-  
 }
