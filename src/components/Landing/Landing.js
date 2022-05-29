@@ -160,10 +160,10 @@ function Landing() {
 						style={{ color: theme.tertiary }}
 					>
 						<h6>{headerData.title}</h6>
+						<br/>
 						<h1>{headerData.name}</h1>
-						<p>As an educator for 10+ years during which time I founded a tutoring company, built, and maintained the website and finances, and headed the merging of two companies which is now<a href="https://www.instructure.com/" alt='jon christie headshot portfolio'>Instructure, Inc.</a>, who in the process were transitioning from paper and pencil to a digital platform</p>
-						<p>I currently tutor students learning web development for Varsity Tutors and pickup freelance gigs on a regular basis. If you know of anyone looking for a solid mid-level developer, please pass along my information!</p>
-						<p>Thanks for visiting!</p>
+						<br/>
+						<p>{headerData.description}</p>
 
 						<div className='lcr-buttonContainer'>
 							{headerData.resumePdf && (
