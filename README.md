@@ -1,6 +1,6 @@
 # Jon's Portfolio
 
-[LIVE](https://mathcodes.github.io/) 
+[LIVE](https://www.jonchristie.net/) 
 
 <img src="https://raw.githubusercontent.com/mathcodes/mathcodes.github.io/main/src/assets/img/portfolio_ss_0.png" width="45%"/>
 <br/>
