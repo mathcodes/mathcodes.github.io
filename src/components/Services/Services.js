@@ -1,9 +1,6 @@
 import React, { useContext } from 'react';
-
 import { ThemeContext } from '../../contexts/ThemeContext';
-
 import { servicesData } from '../../data/servicesData';
-
 import './Services.css'
 import SingleService from './SingleService/SingleService';
 
@@ -18,7 +15,6 @@ function Services() {
 						<h1 style={{ color: theme.primary }}>Services</h1>
 					</div>
 					<div className="services-body">
-
 						<div className="services-bodycontainer">
 							{servicesData.map(services => (
 								<SingleService

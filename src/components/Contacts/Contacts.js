@@ -167,84 +167,84 @@ function Contacts() {
 				<h1 style={{ color: theme.primary }}>Contacts</h1>
 				<div className='contacts-body'>
 					<div className='contacts-form'>
-						{/* <form onSubmit={handleContactForm}>
-                            <div className='input-container'>
-                                <label htmlFor='Name' className={classes.label}>
-                                    Name
-                                </label>
-                                <input
-                                    placeholder='Jon Christie'
-                                    value={name}
-                                    onChange={(e) => setName(e.target.value)}
-                                    type='text'
-                                    name='Name'
-                                    className={`form-input ${classes.input}`}
-                                />
-                            </div>
-                            <div className='input-container'>
-                                <label
-                                    htmlFor='Email'
-                                    className={classes.label}
-                                >
-                                    Email
-                                </label>
-                                <input
-                                    placeholder='jon@jonchristie.io'
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    type='email'
-                                    name='Email'
-                                    className={`form-input ${classes.input}`}
-                                />
-                            </div>
-                            <div className='input-container'>
-                                <label
-                                    htmlFor='Message'
-                                    className={classes.label}
-                                >
-                                    Message
-                                </label>
-                                <textarea
-                                    placeholder='Type your message....'
-                                    value={message}
-                                    onChange={(e) => setMessage(e.target.value)}
-                                    type='text'
-                                    name='Message'
-                                    className={`form-message ${classes.message}`}
-                                />
-                            </div>
+						<form onSubmit={handleContactForm}>
+							<div className='input-container'>
+								<label htmlFor='Name' className={classes.label}>
+									Name
+								</label>
+								<input
+									placeholder='Jon Christie'
+									value={name}
+									onChange={(e) => setName(e.target.value)}
+									type='text'
+									name='Name'
+									className={`form-input ${classes.input}`}
+								/>
+							</div>
+							<div className='input-container'>
+								<label
+									htmlFor='Email'
+									className={classes.label}
+								>
+									Email
+								</label>
+								<input
+									placeholder='jon@jonchristie.io'
+									value={email}
+									onChange={(e) => setEmail(e.target.value)}
+									type='email'
+									name='Email'
+									className={`form-input ${classes.input}`}
+								/>
+							</div>
+							<div className='input-container'>
+								<label
+									htmlFor='Message'
+									className={classes.label}
+								>
+									Message
+								</label>
+								<textarea
+									placeholder='Type your message....'
+									value={message}
+									onChange={(e) => setMessage(e.target.value)}
+									type='text'
+									name='Message'
+									className={`form-message ${classes.message}`}
+								/>
+							</div>
 
-                            <div className='submit-btn'>
-                                <button
-                                    type='submit'
-                                    className={classes.submitBtn}
-                                >
-                                    <p>{!success ? 'Send' : 'Sent'}</p>
-                                    <div className='submit-icon'>
-                                        <AiOutlineSend
-                                            className='send-icon'
-                                            style={{
-                                                animation: !success
-                                                    ? 'initial'
-                                                    : 'fly 0.8s linear both',
-                                                position: success
-                                                    ? 'absolute'
-                                                    : 'initial',
-                                            }}
-                                        />
-                                        <AiOutlineCheckCircle
-                                            className='success-icon'
-                                            style={{
-                                                display: !success
-                                                    ? 'none'
-                                                    : 'inline-flex',
-                                                opacity: !success ? '0' : '1',
-                                            }}
-                                        />
-                                    </div>
-                                </button>
-                            </div>
-                        </form> */}
+							<div className='submit-btn'>
+								<button
+									type='submit'
+									className={classes.submitBtn}
+								>
+									<p>{!success ? 'Send' : 'Sent'}</p>
+									<div className='submit-icon'>
+										<AiOutlineSend
+											className='send-icon'
+											style={{
+												animation: !success
+													? 'initial'
+													: 'fly 0.8s linear both',
+												position: success
+													? 'absolute'
+													: 'initial',
+											}}
+										/>
+										<AiOutlineCheckCircle
+											className='success-icon'
+											style={{
+												display: !success
+													? 'none'
+													: 'inline-flex',
+												opacity: !success ? '0' : '1',
+											}}
+										/>
+									</div>
+								</button>
+							</div>
+						</form>
 						<Snackbar
 							anchorOrigin={{
 								vertical: 'top',
