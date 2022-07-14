@@ -8,6 +8,13 @@ import boy3 from '../assets/svg/testimonials/boy3.svg'
 
 export const testimonialsData = [
 	{
+		id: 1,
+		name: 'K. Suwanarat, 2019',
+		title: 'Client',
+		text: "Jonathan Christie is hands down the best sales person I’ve ever dealt with! Professional, knowledgeable with a great personality. Just an all around good guy!",
+		image: boy2
+	},
+	{
 		id: 2,
 		name: "Thomas Erickson",
 		title: 'Teaching Assistant at 2U',
@@ -44,9 +51,10 @@ export const testimonialsData = [
 	},
 	{
 		id: 1,
-		name: 'K. Suwanarat, 2019',
-		title: 'Client',
-		text: "Jonathan Christie is hands down the best sales person I’ve ever dealt with! Professional, knowledgeable with a great personality. Just an all around good guy!",
+		name: 'Luke Gladis, 2022',
+		title: 'Client / CEO of Gladis and Co',
+		text: "Jon > GoDaddy",
 		image: boy2
 	}
+	
 ]

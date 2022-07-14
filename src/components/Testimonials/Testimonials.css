@@ -133,7 +133,7 @@
 .review--content {
   margin: 0 auto;
   width: 90%;
-  height: 250px;
+  height: fit-content;
   border-radius: 200px;
   box-sizing: border-box;
   padding: 30px 40px;

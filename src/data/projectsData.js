@@ -6,15 +6,15 @@ import p2h from '../assets/svg/projects/p2h.svg'
 import keys from '../assets/svg/projects/keys.png'
 
 export const projectsData = [
-	{
-		id: 1,
-		projectName: 'Gladis & Co',
-		projectDesc: 'One of several projects I was hired as a solo developer to upgrade websites for clients. A unique situation where my client bought out his companyand needed his website (WordpPress) completely remade. Used advanced Javascript methods and CSS selectors that could find a needle in a haystack to override the entire site. Certain tasks, such as changing the order of images and their links, required server-side rendering that helped make the end product exceed my client\'s expectations.',
-		tags: ['WordPress', 'GoDaddy', 'JS', 'Jest', 'Bulma'],
-		code: '',
-		demo: 'www.gladisandco.com',
-		image: zero
-	},
+	// {
+	// 	id: 1,
+	// 	projectName: 'Gladis & Co',
+	// 	projectDesc: 'One of several projects I was hired as a solo developer to upgrade websites for clients. A unique situation where my client bought out his companyand needed his website (WordpPress) completely remade. Used advanced Javascript methods and CSS selectors that could find a needle in a haystack to override the entire site. Certain tasks, such as changing the order of images and their links, required server-side rendering that helped make the end product exceed my client\'s expectations.',
+	// 	tags: ['WordPress', 'GoDaddy', 'JS', 'Jest', 'Bulma'],
+	// 	code: '',
+	// 	demo: 'www.gladisandco.com',
+	// 	image: zero
+	// },
 	{
 		id: 1,
 		projectName: 'Super Pantry Buddy',
