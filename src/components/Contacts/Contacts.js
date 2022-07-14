@@ -126,36 +126,36 @@ function Contacts() {
 
 	const classes = useStyles();
 
-	const handleContactForm = (e) => {
-		e.preventDefault();
+	// const handleContactForm = (e) => {
+	// 	e.preventDefault();
 
-		if (name && email && message) {
-			if (isEmail(email)) {
-				const responseData = {
-					name: name,
-					email: email,
-					message: message,
-				};
+	// 	if (name && email && message) {
+	// 		if (isEmail(email)) {
+	// 			const responseData = {
+	// 				name: name,
+	// 				email: email,
+	// 				message: message,
+	// 			};
 
-				axios.post(contactsData.sheetAPI, responseData).then((res) => {
-					console.log('success');
-					setSuccess(true);
-					setErrMsg('');
+	// 			axios.post(contactsData.sheetAPI, responseData).then((res) => {
+	// 				console.log('success');
+	// 				setSuccess(true);
+	// 				setErrMsg('');
 
-					setName('');
-					setEmail('');
-					setMessage('');
-					setOpen(false);
-				});
-			} else {
-				setErrMsg('Invalid email');
-				setOpen(true);
-			}
-		} else {
-			setErrMsg('Enter all the fields');
-			setOpen(true);
-		}
-	};
+	// 				setName('');
+	// 				setEmail('');
+	// 				setMessage('');
+	// 				setOpen(false);
+	// 			});
+	// 		} else {
+	// 			setErrMsg('Invalid email');
+	// 			setOpen(true);
+	// 		}
+	// 	} else {
+	// 		setErrMsg('Enter all the fields');
+	// 		setOpen(true);
+	// 	}
+	// };
 
 	return (
 		<div
@@ -166,7 +166,7 @@ function Contacts() {
 			<div className='contacts--container'>
 				<h1 style={{ color: theme.primary }}>Contacts</h1>
 				<div className='contacts-body'>
-					<div className='contacts-form'>
+					{/* <div className='contacts-form'>
 						<form onSubmit={handleContactForm}>
 							<div className='input-container'>
 								<label htmlFor='Name' className={classes.label}>
@@ -275,7 +275,7 @@ function Contacts() {
 								message={errMsg}
 							/>
 						</Snackbar>
-					</div>
+					</div> */}
 
 					<div className='contacts-details'>
 						<a

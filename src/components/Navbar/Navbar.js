@@ -113,6 +113,7 @@ function Navbar() {
 			},
 		},
 		drawerLinks: {
+			marginRight: '1.5rem',
 			fontFamily: 'var(--primaryFont)',
 			width: '50%',
 			fontSize: '1.3rem',
