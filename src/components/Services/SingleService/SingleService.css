@@ -58,17 +58,18 @@
 
 .service-content>h4 {
   position: absolute;
-  top: 60%;
+  top: 65%;
   height: 60px;
+  width: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--primaryFont);
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: .75rem;
   text-align: center;
-  line-height: 110%;
+  line-height: 90%;
   color: #000000;
 }
 

@@ -4,17 +4,10 @@ import three from '../assets/svg/projects/mars.svg'
 import scb from '../assets/svg/projects/scb.svg'
 import p2h from '../assets/svg/projects/p2h.svg'
 import keys from '../assets/svg/projects/keys.png'
+import gnco from '../assets/img/gnco.png'
 
 export const projectsData = [
-	// {
-	// 	id: 1,
-	// 	projectName: 'Gladis & Co',
-	// 	projectDesc: 'One of several projects I was hired as a solo developer to upgrade websites for clients. A unique situation where my client bought out his companyand needed his website (WordpPress) completely remade. Used advanced Javascript methods and CSS selectors that could find a needle in a haystack to override the entire site. Certain tasks, such as changing the order of images and their links, required server-side rendering that helped make the end product exceed my client\'s expectations.',
-	// 	tags: ['WordPress', 'GoDaddy', 'JS', 'Jest', 'Bulma'],
-	// 	code: '',
-	// 	demo: 'www.gladisandco.com',
-	// 	image: zero
-	// },
+
 	{
 		id: 1,
 		projectName: 'Super Pantry Buddy',
@@ -69,4 +62,13 @@ export const projectsData = [
 		demo: 'https://mathcodes.github.io/pick2hand/',
 		image: keys
 	},
+		{
+		id: 1,
+		projectName: 'Gladis & Co',
+		projectDesc: 'Freelance gig to fix issues with website in wordpress. Used advanced Javascript methods and CSS selectors that could find a needle in a haystack to override the entire site.',
+		tags: ['WordPress', 'GoDaddy', 'JS', 'CSS', 'HTML', 'server-side rendering', 'css selectors'],
+		code: '',
+		demo: 'www.gladisandco.com',
+		image: gnco
+	}
 ]
