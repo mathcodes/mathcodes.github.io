@@ -10,6 +10,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
 	const useStyles = makeStyles((t) => ({
 		iconBtn: {
 			display: 'flex',
+			margin: '0.5rem',
 			alignItems: 'center',
 			justifyContent: 'center',
 			width: 40,

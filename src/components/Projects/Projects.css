@@ -72,6 +72,8 @@
 .project--desc:hover,
 .project--lang:hover {
   z-index: 100;
+  background-color: #417f88;
+
 }
 
 /*  ------------------------------------ MEDIA QUERIES ------------------------------------ */

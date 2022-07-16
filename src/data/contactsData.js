@@ -1,6 +1,6 @@
 export const contactsData = {
-	email: 'jon@jonchristie.net',
+	email: 'jonpchristie@gmail.com',
 	phone: '(919) 368-3369',
-	address: 'Carrboro,+NC/',
+	address: 'Raleigh, NC',
 	sheetAPI: ''
 }
