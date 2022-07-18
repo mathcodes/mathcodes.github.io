@@ -251,6 +251,6 @@
   }
 
   .review--content {
-    min-height: 350px;
+    /* min-height: 350px; */
   }
 }

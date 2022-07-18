@@ -8,7 +8,6 @@ export const socialsData = {
 	twitter: 'https://https://twitter.com/jonpchristie/',
 	reddit: 'https://www.reddit.com/user/fullstack11235813',
 	stackOverflow: 'https://stackoverflow.com/users/11303840/jon-christie',
-	leetcode: '',
-	codewars: '',
+	replit: 'https://replit.com/@fullstack11235',
 }
  

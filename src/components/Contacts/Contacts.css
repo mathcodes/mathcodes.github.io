@@ -10,6 +10,7 @@
 }
 
 
+
 .contacts--img {
   position: absolute;
   right: 0;
@@ -290,8 +291,11 @@
   .submit-btn {
     align-self: center;
   }
-}
 
+  #contacts > div > div > div > a:nth-child(1) > p > a{
+    display: none;
+}
+}
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
   .contacts-details {
     padding-left: 0rem;

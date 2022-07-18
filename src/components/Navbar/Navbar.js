@@ -16,10 +16,11 @@ import { headerData } from '../../data/headerData';
 import { ThemeContext } from '../../contexts/ThemeContext';
 
 function Navbar() {
-	const { theme, setHandleDrawer } = useContext(ThemeContext);
+	const { theme, setHandleDrawer } = useContext(ThemeContext); //useContext accepts ThemeContext and set to  destructured the theme and setHandleDrawer
 
 	const [open, setOpen] = useState(false);
 
+	// handler function for drawer that sets the state of the drawer to Open and calls 	the setHandleDrawer function in the ThemeContext
 	const handleDrawerOpen = () => {
 		setOpen(true);
 		setHandleDrawer();
@@ -84,7 +85,7 @@ function Navbar() {
 			},
 			[t.breakpoints.down('sm')]: {
 				right: 20,
-				top: 20,
+				top: 20, 
 			},
 		},
 		drawerItem: {
@@ -158,7 +159,7 @@ function Navbar() {
 					if (reason !== 'backdropClick') {
 						handleDrawerClose();
 					} else if (reason !== 'escapeKeyDown') {
-						handleDrawerClose();
+						handleDrawerClose();	
 					}
 				}}
 				anchor='left'
@@ -211,16 +212,16 @@ function Navbar() {
 								spy='true'
 								duration={2000}
 							>
-								<div className={classes.drawerItem}>
+								<div className={classes.drawerItem}> 
 									<FaUser className={classes.drawerIcon} />
 									<span className={classes.drawerLinks}>
 										About
 									</span>
 								</div>
-							</NavLink>
+							</NavLink> 
 						</Fade>
 
-						<Fade left>
+						<Fade left> 
 							<NavLink
 								to='/esume'
 								smooth={true}

@@ -13,8 +13,9 @@ import {
 	FaGithub,
 	FaYoutube,
 	FaBlogger,
+	FaCodepen
 } from 'react-icons/fa';
-
+import {SiReplit} from 'react-icons/si';
 function Landing() {
 	const { theme, drawerOpen } = useContext(ThemeContext);
 
@@ -37,7 +38,9 @@ function Landing() {
 				border: `3px inset #121212`,
 			},
 			[t.breakpoints.down('sm')]: {
-				width: '180px',
+				width: '120px',
+				height: '40px',
+				fontSize: '0.6rem',
 			},
 		},
 
@@ -60,7 +63,10 @@ function Landing() {
 				border: `3px solid ${theme.tertiary}`,
 			},
 			[t.breakpoints.down('sm')]: {
-				display: 'none',
+				width: '120px',
+				height: '40px',
+				fontSize: '0.6rem',
+				marginTop: '1rem',
 			},
 		},
 	}));
@@ -137,6 +143,32 @@ function Landing() {
 									className='landing--social'
 									style={{ color: theme.secondary }}
 									aria-label='Blogger'
+								/>
+							</a>
+						)}
+						{socialsData.codepen && (
+							<a
+								href={socialsData.replit}
+								target='_blank'
+								rel='noreferrer'
+							>
+								<FaCodepen
+									className='landing--social'
+									style={{ color: theme.secondary }}
+									aria-label='CodePen'
+								/>
+							</a>
+						)}
+						{socialsData.replit && (
+							<a
+								href={socialsData.replit}
+								target='_blank'
+								rel='noreferrer'
+							>
+								<SiReplit
+									className='landing--social'
+									style={{ color: theme.secondary }}
+									aria-label='Replit'
 								/>
 							</a>
 						)}
