@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.8fc0bd56.chunk.css",
-    "main.js": "/static/js/main.939ec0dd.chunk.js",
-    "main.js.map": "/static/js/main.939ec0dd.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.0223c448.js",
-    "runtime-main.js.map": "/static/js/runtime-main.0223c448.js.map",
+    "main.css": "/static/css/main.c44016f3.chunk.css",
+    "main.js": "/static/js/main.525c97f0.chunk.js",
+    "main.js.map": "/static/js/main.525c97f0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a63464ca.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a63464ca.js.map",
     "static/css/2.65f8c46c.chunk.css": "/static/css/2.65f8c46c.chunk.css",
-    "static/js/2.a8f11719.chunk.js": "/static/js/2.a8f11719.chunk.js",
-    "static/js/2.a8f11719.chunk.js.map": "/static/js/2.a8f11719.chunk.js.map",
-    "static/js/3.bdf7992e.chunk.js": "/static/js/3.bdf7992e.chunk.js",
-    "static/js/3.bdf7992e.chunk.js.map": "/static/js/3.bdf7992e.chunk.js.map",
+    "static/js/2.988bcd0a.chunk.js": "/static/js/2.988bcd0a.chunk.js",
+    "static/js/2.988bcd0a.chunk.js.map": "/static/js/2.988bcd0a.chunk.js.map",
+    "static/js/3.2689536e.chunk.js": "/static/js/3.2689536e.chunk.js",
+    "static/js/3.2689536e.chunk.js.map": "/static/js/3.2689536e.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.65f8c46c.chunk.css.map": "/static/css/2.65f8c46c.chunk.css.map",
-    "static/css/main.8fc0bd56.chunk.css.map": "/static/css/main.8fc0bd56.chunk.css.map",
-    "static/js/2.a8f11719.chunk.js.LICENSE.txt": "/static/js/2.a8f11719.chunk.js.LICENSE.txt",
+    "static/css/main.c44016f3.chunk.css.map": "/static/css/main.c44016f3.chunk.css.map",
+    "static/js/2.988bcd0a.chunk.js.LICENSE.txt": "/static/js/2.988bcd0a.chunk.js.LICENSE.txt",
     "static/media/BG2.feda7dfc.svg": "/static/media/BG2.feda7dfc.svg",
     "static/media/index.css": "/static/media/BestermindRegular.e58a1922.ttf",
     "static/media/JCircle_dark_gray.77dc7436.png": "/static/media/JCircle_dark_gray.77dc7436.png",
@@ -99,6 +99,7 @@
     "static/media/placeholder.3fcbbdcd.png": "/static/media/placeholder.3fcbbdcd.png",
     "static/media/postgresql.c0d71b7c.svg": "/static/media/postgresql.c0d71b7c.svg",
     "static/media/premierepro.ee38e1aa.svg": "/static/media/premierepro.ee38e1aa.svg",
+    "static/media/python.c5bb2f7e.png": "/static/media/python.c5bb2f7e.png",
     "static/media/python.cf32ad96.svg": "/static/media/python.cf32ad96.svg",
     "static/media/pythonlog.1cd4f634.svg": "/static/media/pythonlog.1cd4f634.svg",
     "static/media/pytorch.1862724d.svg": "/static/media/pytorch.1862724d.svg",
@@ -125,10 +126,10 @@
     "static/media/wordpress.1c0bf6df.svg": "/static/media/wordpress.1c0bf6df.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0223c448.js",
+    "static/js/runtime-main.a63464ca.js",
     "static/css/2.65f8c46c.chunk.css",
-    "static/js/2.a8f11719.chunk.js",
-    "static/css/main.8fc0bd56.chunk.css",
-    "static/js/main.939ec0dd.chunk.js"
+    "static/js/2.988bcd0a.chunk.js",
+    "static/css/main.c44016f3.chunk.css",
+    "static/js/main.525c97f0.chunk.js"
   ]
 }

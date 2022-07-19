@@ -57,7 +57,7 @@ export const projectsData = [
 	{
 		id: 6,
 		projectName: 'Sweet Clover Barn',
-		projectDesc: ' Met clients at Farmer’s Market, now their site is modern, responsive, and handling online payments in a beautiful eCommerce site that doubles as a community-based, event-scheduling platform and blog.',
+		projectDesc: ' Met clients at Farmer’s Market, and now their site is modern, responsive, and handling online payments in a beautiful eCommerce site that doubles as a community-based, event-scheduling platform and blog.',
 		tags: ['CSS', 'HTML', 'JS', 'Squarespace', 'Adobe Illustrator'],
 		code: 'www.sweetcloverbarn.com',
 		demo: 'www.sweetcloverbarn.com',
