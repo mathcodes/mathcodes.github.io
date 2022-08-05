@@ -1,0 +1,13 @@
+.toolbar{
+  background-color: linear-gradient(0deg, rgba(0,212,255,0) 0%, rgba(33,33,33,1) 63%) !important;
+}
+
+.titleTypography{
+    color: rgb(79, 174, 186);
+    font: var(--primaryFont);
+    font-family: var(--primaryFont);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.5rem;
+    text-align: center;
+}

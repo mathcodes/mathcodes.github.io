@@ -30,7 +30,6 @@
 .about-body {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-around;
     padding-top: 8rem;
     height: fit-content;
@@ -64,7 +63,7 @@
 }
 
 .about-img > img {
-    width: 380px;
+    width: 600px;
     flex: 0.5;
 }
 
@@ -79,7 +78,7 @@
     }
 
     .about-img>img {
-        width: 300px;
+        width: 500px;
     } 
 }
 

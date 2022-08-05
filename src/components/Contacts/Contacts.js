@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React, { useContext, useState } from 'react';
 import { Snackbar, IconButton, SnackbarContent } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
@@ -9,11 +10,11 @@ import {
 	FaLinkedinIn,
 	FaGithub,
 	FaYoutube,
-	FaRedditAlien,
 	FaStackOverflow,
 	FaCodepen,
 	FaInstagram,
 } from 'react-icons/fa';
+import { SiReplit } from 'react-icons/si';
 import { AiOutlineSend, AiOutlineCheckCircle } from 'react-icons/ai';
 import { FiPhone, FiAtSign } from 'react-icons/fi';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
@@ -23,6 +24,22 @@ import { ThemeContext } from '../../contexts/ThemeContext';
 import { socialsData } from '../../data/socialsData';
 import { contactsData } from '../../data/contactsData';
 import './Contacts.css';
+import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
+
+
+function Copyright() {
+	return (
+		<Typography variant="body2" color="text.secondary" align="center">
+			{'Copyright © '}
+			<Link color="inherit" href="https://jonchristie.net/">
+				jonchristie.net
+			</Link>{' '}
+			{new Date().getFullYear()}
+			{'.'}
+		</Typography>
+	);
+}
 
 function Contacts() {
 	const [open, setOpen] = useState(false);
@@ -35,6 +52,8 @@ function Contacts() {
 	const [errMsg, setErrMsg] = useState('');
 
 	const { theme } = useContext(ThemeContext);
+
+
 
 	const handleClose = (event, reason) => {
 		if (reason === 'clickaway') {
@@ -111,51 +130,14 @@ function Contacts() {
 				color: theme.secondary,
 				backgroundColor: theme.tertiary,
 			},
-		},
-		submitBtn: {
-			backgroundColor: theme.primary,
-			color: theme.secondary,
-			transition: '250ms ease-in-out',
-			'&:hover': {
-				transform: 'scale(1.08)',
+			typoImpo: {
 				color: theme.secondary,
-				backgroundColor: theme.tertiary,
-			},
+			}
 		},
+
 	}));
 
 	const classes = useStyles();
-
-	// const handleContactForm = (e) => {
-	// 	e.preventDefault();
-
-	// 	if (name && email && message) {
-	// 		if (isEmail(email)) {
-	// 			const responseData = {
-	// 				name: name,
-	// 				email: email,
-	// 				message: message,
-	// 			};
-
-	// 			axios.post(contactsData.sheetAPI, responseData).then((res) => {
-	// 				console.log('success');
-	// 				setSuccess(true);
-	// 				setErrMsg('');
-
-	// 				setName('');
-	// 				setEmail('');
-	// 				setMessage('');
-	// 				setOpen(false);
-	// 			});
-	// 		} else {
-	// 			setErrMsg('Invalid email');
-	// 			setOpen(true);
-	// 		}
-	// 	} else {
-	// 		setErrMsg('Enter all the fields');
-	// 		setOpen(true);
-	// 	}
-	// };
 
 	return (
 		<div
@@ -166,116 +148,6 @@ function Contacts() {
 			<div className='contacts--container'>
 				<h1 style={{ color: theme.primary }}>Contacts</h1>
 				<div className='contacts-body'>
-					{/* <div className='contacts-form'>
-						<form onSubmit={handleContactForm}>
-							<div className='input-container'>
-								<label htmlFor='Name' className={classes.label}>
-									Name
-								</label>
-								<input
-									placeholder='Jon Christie'
-									value={name}
-									onChange={(e) => setName(e.target.value)}
-									type='text'
-									name='Name'
-									className={`form-input ${classes.input}`}
-								/>
-							</div>
-							<div className='input-container'>
-								<label
-									htmlFor='Email'
-									className={classes.label}
-								>
-									Email
-								</label>
-								<input
-									placeholder='jonpchristie@gmail.com'
-									value={email}
-									onChange={(e) => setEmail(e.target.value)}
-									type='email'
-									name='Email'
-									className={`form-input ${classes.input}`}
-								/>
-							</div>
-							<div className='input-container'>
-								<label
-									htmlFor='Message'
-									className={classes.label}
-								>
-									Message
-								</label>
-								<textarea
-									placeholder='Type your message....'
-									value={message}
-									onChange={(e) => setMessage(e.target.value)}
-									type='text'
-									name='Message'
-									className={`form-message ${classes.message}`}
-								/>
-							</div>
-
-							<div className='submit-btn'>
-								<button
-									type='submit'
-									className={classes.submitBtn}
-								>
-									<p>{!success ? 'Send' : 'Sent'}</p>
-									<div className='submit-icon'>
-										<AiOutlineSend
-											className='send-icon'
-											style={{
-												animation: !success
-													? 'initial'
-													: 'fly 0.8s linear both',
-												position: success
-													? 'absolute'
-													: 'initial',
-											}}
-										/>
-										<AiOutlineCheckCircle
-											className='success-icon'
-											style={{
-												display: !success
-													? 'none'
-													: 'inline-flex',
-												opacity: !success ? '0' : '1',
-											}}
-										/>
-									</div>
-								</button>
-							</div>
-						</form>
-						<Snackbar
-							anchorOrigin={{
-								vertical: 'top',
-								horizontal: 'center',
-							}}
-							open={open}
-							autoHideDuration={4000}
-							onClose={handleClose}
-						>
-							<SnackbarContent
-								action={
-									<React.Fragment>
-										<IconButton
-											size='small'
-											aria-label='close'
-											color='inherit'
-											onClick={handleClose}
-										>
-											<CloseIcon fontSize='small' />
-										</IconButton>
-									</React.Fragment>
-								}
-								style={{
-									backgroundColor: theme.primary,
-									color: theme.secondary,
-									fontFamily: 'var(--primaryFont)',
-								}}
-								message={errMsg}
-							/>
-						</Snackbar>
-					</div> */}
 
 					<div className='contacts-details'>
 						<a
@@ -310,16 +182,6 @@ function Contacts() {
 						</div>
 
 						<div className='socialmedia-icons'>
-							{socialsData.twitter && (
-								<a
-									href={socialsData.twitter}
-									target='_blank'
-									rel='noreferrer'
-									className={classes.socialIcon}
-								>
-									<FaTwitter aria-label='Twitter' />
-								</a>
-							)}
 							{socialsData.github && (
 								<a
 									href={socialsData.github}
@@ -330,6 +192,17 @@ function Contacts() {
 									<FaGithub aria-label='GitHub' />
 								</a>
 							)}
+							{socialsData.twitter && (
+								<a
+									href={socialsData.twitter}
+									target='_blank'
+									rel='noreferrer'
+									className={classes.socialIcon}
+								>
+									<FaTwitter aria-label='Twitter' />
+								</a>
+							)}
+
 							{socialsData.linkedIn && (
 								<a
 									href={socialsData.linkedIn}
@@ -340,16 +213,7 @@ function Contacts() {
 									<FaLinkedinIn aria-label='LinkedIn' />
 								</a>
 							)}
-							{socialsData.instagram && (
-								<a
-									href={socialsData.instagram}
-									target='_blank'
-									rel='noreferrer'
-									className={classes.socialIcon}
-								>
-									<FaInstagram aria-label='Instagram' />
-								</a>
-							)}
+
 							{socialsData.youtube && (
 								<a
 									href={socialsData.youtube}
@@ -358,16 +222,6 @@ function Contacts() {
 									className={classes.socialIcon}
 								>
 									<FaYoutube aria-label='YouTube' />
-								</a>
-							)}
-							{socialsData.reddit && (
-								<a
-									href={socialsData.reddit}
-									target='_blank'
-									rel='noreferrer'
-									className={classes.socialIcon}
-								>
-									<FaRedditAlien aria-label='Reddit' />
 								</a>
 							)}
 							{socialsData.stackOverflow && (
@@ -390,8 +244,25 @@ function Contacts() {
 									<FaCodepen aria-label='CodePen' />
 								</a>
 							)}
+							{socialsData.replit && (
+								<a
+									href={socialsData.replit}
+									target='_blank'
+									rel='noreferrer'
+									className={classes.socialIcon}
+								>
+									<SiReplit aria-label='replit' />
+								</a>
+							)}
 						</div>
 					</div>
+				</div>
+				<div style={{color: theme.primary}} variant="body2" align="center">
+					
+					<a style={{color: theme.primary}} href="https://jonchristie.net/">
+						jonchristie.net
+					</a>{' ©'}{new Date().getFullYear()}
+					
 				</div>
 			</div>
 

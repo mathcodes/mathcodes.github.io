@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.c44016f3.chunk.css",
-    "main.js": "/static/js/main.525c97f0.chunk.js",
-    "main.js.map": "/static/js/main.525c97f0.chunk.js.map",
+    "main.js": "/static/js/main.997b9f3f.chunk.js",
+    "main.js.map": "/static/js/main.997b9f3f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a63464ca.js",
     "runtime-main.js.map": "/static/js/runtime-main.a63464ca.js.map",
     "static/css/2.65f8c46c.chunk.css": "/static/css/2.65f8c46c.chunk.css",
@@ -56,6 +56,7 @@
     "static/media/deno.96d4a63d.svg": "/static/media/deno.96d4a63d.svg",
     "static/media/django.d51a8aa4.svg": "/static/media/django.d51a8aa4.svg",
     "static/media/docker.a6221ab3.svg": "/static/media/docker.a6221ab3.svg",
+    "static/media/expensetracker.8b8b7990.png": "/static/media/expensetracker.8b8b7990.png",
     "static/media/fastify.1b930a41.svg": "/static/media/fastify.1b930a41.svg",
     "static/media/figma.1cd44608.svg": "/static/media/figma.1cd44608.svg",
     "static/media/firebase.99786447.svg": "/static/media/firebase.99786447.svg",
@@ -92,7 +93,6 @@
     "static/media/numpy.5bdfa40b.svg": "/static/media/numpy.5bdfa40b.svg",
     "static/media/nuxtJS.81cb52af.svg": "/static/media/nuxtJS.81cb52af.svg",
     "static/media/opencv.0f128460.svg": "/static/media/opencv.0f128460.svg",
-    "static/media/p2h.e6574c30.svg": "/static/media/p2h.e6574c30.svg",
     "static/media/photoshop.1114b31f.svg": "/static/media/photoshop.1114b31f.svg",
     "static/media/php.8132ef91.svg": "/static/media/php.8132ef91.svg",
     "static/media/picsart.f869489b.svg": "/static/media/picsart.f869489b.svg",
@@ -130,6 +130,6 @@
     "static/css/2.65f8c46c.chunk.css",
     "static/js/2.988bcd0a.chunk.js",
     "static/css/main.c44016f3.chunk.css",
-    "static/js/main.525c97f0.chunk.js"
+    "static/js/main.997b9f3f.chunk.js"
   ]
 }

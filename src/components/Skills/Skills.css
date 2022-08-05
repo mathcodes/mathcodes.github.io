@@ -73,6 +73,16 @@
   padding: 3rem 0;
 }
 
+.overlay{
+  --gradient-color: rgb(71, 89, 96), rgba(255, 255, 255, 0)!important;
+  --gradient-width: 200px;
+  border-radius: 10px;
+}
+
+.overlay::after, .overlay::before{
+  border-radius: 10%;
+}
+
 /*  ------------------------------------ MEDIA QUERIES ------------------------------------ */
 @media (min-width: 992px) and (max-width: 1380px) {
   .skills {

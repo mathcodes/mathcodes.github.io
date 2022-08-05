@@ -6,6 +6,8 @@ import pinkMan from '../assets/svg/about/avatarPinkMan.svg'
 import purpleMan from '../assets/svg/about/avatarPurpleMan.svg'
 import redMan from '../assets/svg/about/avatarRedMan.svg'
 import yellowMan from '../assets/svg/about/avatarYellowMan.svg'
+import sittingBlueMan3 from '../assets/png/jonavatarBLUE.svg'
+import sittingBlueMan2 from '../assets/png/jonavatarBLUEHOVER.svg'
 
 
 
@@ -21,5 +23,5 @@ import contactsYellow from '../assets/svg/contacts/contactsYellow.svg'
 
 export {
 	blueMan, bwMan, greenMan, techMan, pinkMan, purpleMan, redMan, yellowMan, contactsBlue, contactsBlack,
-	contactsGreen, contactsOrange, contactsPink, contactsPurple, contactsRed, contactsYellow
+	contactsGreen, contactsOrange, contactsPink, contactsPurple, contactsRed, contactsYellow, sittingBlueMan2, sittingBlueMan3
 }

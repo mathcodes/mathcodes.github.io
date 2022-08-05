@@ -24,10 +24,10 @@ function Skills() {
 			<div className="skillsContainer">
 				<div className="skill--scroll">
 					<Marquee
-						gradient={false}
-						speed={80}
+						gradient={true}
+						speed={30}
 						pauseOnHover={true}
-						pauseOnClick={true}
+						pauseOnClick={true} 
 						delay={0}
 						play={true}
 						direction="left"

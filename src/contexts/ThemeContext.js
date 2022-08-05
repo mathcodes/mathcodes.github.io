@@ -8,7 +8,8 @@ function ThemeContextProvider(props) {
 	const [drawerOpen, setDrawerOpen] = useState(false)
 
 	const setHandleDrawer = () => {
-		setDrawerOpen(!drawerOpen)
+		setDrawerOpen(!drawerOpen);
+		setTheme(themeData.theme)
 	}
 
 	const value = { theme, drawerOpen, setHandleDrawer }

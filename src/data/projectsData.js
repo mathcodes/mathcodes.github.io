@@ -8,6 +8,7 @@ import gnco from '../assets/img/gnco.png'
 import pytho from '../assets/svg/projects/python.png'
 
 export const projectsData = [
+ 
 	{
 		id: 1,
 		projectName: 'Expense Tracker',

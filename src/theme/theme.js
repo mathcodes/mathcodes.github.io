@@ -2,7 +2,7 @@
 import {
 	blueMan, bwMan, greenMan, techMan, pinkMan, purpleMan, redMan, yellowMan, eduBlue, eduBlack, eduGreen, eduOrange, eduPink, eduPurple, eduRed, eduYellow,
 	expBlue, expBlack, expGreen, expOrange, expPink, expPurple, expRed, expYellow, contactsBlue, contactsBlack,
-	contactsGreen, contactsOrange, contactsPink, contactsPurple, contactsRed, contactsYellow
+	contactsGreen, contactsOrange, contactsPink, contactsPurple, contactsRed, contactsYellow, sittingBlueMan2, sittingBlueMan3
 } from './images'
 
 
@@ -192,8 +192,8 @@ export const orangeThemeDark = {
 	tertiary80: '#eaeaeacc',
 	tertiary70: '#eaeaeab3',
 	tertiary50: '#eaeaea80',
-	aboutimg1: techMan,
-	aboutimg2: techMan,
+	aboutimg1: sittingBlueMan2,
+	aboutimg2: sittingBlueMan2,
 	contactsimg: contactsOrange
 }
 export const purpleThemeLight = {
