@@ -8,7 +8,7 @@ import redMan from '../assets/svg/about/avatarRedMan.svg'
 import yellowMan from '../assets/svg/about/avatarYellowMan.svg'
 import sittingBlueMan3 from '../assets/png/jonavatarBLUE.svg'
 import sittingBlueMan2 from '../assets/png/jonavatarBLUEHOVER.svg'
-
+import floatingMan from '../assets/img/FLOATING.gif';
 
 
 import contactsBlue from '../assets/svg/contacts/contactsBlue.svg'
@@ -23,5 +23,5 @@ import contactsYellow from '../assets/svg/contacts/contactsYellow.svg'
 
 export {
 	blueMan, bwMan, greenMan, techMan, pinkMan, purpleMan, redMan, yellowMan, contactsBlue, contactsBlack,
-	contactsGreen, contactsOrange, contactsPink, contactsPurple, contactsRed, contactsYellow, sittingBlueMan2, sittingBlueMan3
+	contactsGreen, contactsOrange, contactsPink, contactsPurple, contactsRed, contactsYellow, sittingBlueMan2, sittingBlueMan3, floatingMan
 }
