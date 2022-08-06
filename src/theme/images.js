@@ -8,7 +8,7 @@ import redMan from '../assets/svg/about/avatarRedMan.svg'
 import yellowMan from '../assets/svg/about/avatarYellowMan.svg'
 import sittingBlueMan3 from '../assets/png/jonavatarBLUE.svg'
 import sittingBlueMan2 from '../assets/png/jonavatarBLUEHOVER.svg'
-import floatingMan from '../assets/img/FLOATING.gif';
+import floatingMan from '../assets/img/floatWindow.gif'
 
 
 import contactsBlue from '../assets/svg/contacts/contactsBlue.svg'
