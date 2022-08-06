@@ -257,13 +257,13 @@ function Contacts() {
 						</div>
 					</div>
 				</div>
-				<div style={{color: theme.primary}} variant="body2" align="center">
+				{/* <div style={{color: theme.primary}} variant="body2" align="center">
 					
 					<a style={{color: theme.primary}} href="https://jonchristie.net/">
 						jonchristie.net
 					</a>{' ©'}{new Date().getFullYear()}
 					
-				</div>
+				</div> */}
 			</div>
 
 		</div>

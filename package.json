@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "homepage": "https://mathcodes.github.io/",
   "private": true,
+  "license": "MIT",
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
