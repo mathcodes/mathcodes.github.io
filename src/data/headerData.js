@@ -1,4 +1,4 @@
-import resume from '../assets/pdf/JCHRISTIERESUME.pdf';
+import resume from '../assets/pdf/Jon_Christie_Web_Developer_Resume.pdf';
 
 export const headerData = {
 	name: 'Jon Christie',
