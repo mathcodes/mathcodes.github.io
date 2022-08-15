@@ -16,7 +16,6 @@ function Main() {
 			
 			<Skills />
 			<Projects />
-			{/* <CardGallery /> */}
 			<Services />
 			<Testimonials />
 			<Contacts />
