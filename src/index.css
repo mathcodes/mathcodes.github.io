@@ -60,20 +60,3 @@ img{
     }
 }
 
-p a{
-  color: rgb(79, 224, 229);
-  text-decoration:wavy;
-  font-weight: 400;
-  background-color: #d3540000;
-  border-radius: 10px;
-  padding: 5px;
-  transition: all .5s;
-}
-
-p a:hover{
-  color: #ffffff;
-  text-decoration:wavy;
-  background-color: rgb(79, 224, 229);
-  color: #212121;
-  font-weight: 800;
-}

@@ -44,88 +44,46 @@
   width: 100%;
 }
 
-.contacts-form {
-  display: flex;
-  flex: 0.4;
-  width: 100%;
-}
-
-.contacts-form form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  width: 100%;
-}
-
-.input-container {
-  width: 100%;
-}
-
-
-.form-input {
-  height: 50px;
-  box-sizing: border-box;
-  border-radius: 50px;
-  outline: none;
-  margin-bottom: 2rem;
-  padding: 0.7rem 0.7rem;
-  border-radius: 20px;
-  width: 100%;
-  resize: none;
-}
-
-
-
-.form-message {
-  height: 150px;
-  box-sizing: border-box;
-  border-radius: 50px;
-  outline: none;
-  margin-bottom: 2rem;
-  padding: 0.7rem 0.7rem;
-  border-radius: 20px;
-  width: 100%;
-  resize: none;
-}
-
-
-
-.submit-btn button {
-  border: none;
-  outline: none;
-  width: 140px;
-  height: 50px;
-  border-radius: 50px;
-  font-weight: 500;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  cursor: pointer;
-}
-
-.submit-btn button p {
-  font-size: 16px;
-  font-family: var(--primaryFont);
-}
-
-.submit-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.personal-details{
+  color: rgb(79, 224, 229);
+  text-decoration:wavy;
+  font-weight: 400;
+  background-color: #d3540000;
+  border-radius: 10px;
   padding: 5px;
+  transition: all .5s;
 }
 
-.send-icon {
-  font-size: 25px;
-  transform-origin: center;
-  transform: translate(5px, -3px) rotate(-30deg);
+.personal-details:hover{ 
+  text-decoration:wavy;
+  background-color: rgb(79, 224, 229);
+  color: #212121;
+  font-weight: 800;
 }
 
-.success-icon {
-  font-size: 28px;
-  transition: all 0.3s 0.8s ease-in-out;
+a:-webkit-any-link {
+  color: rgb(79, 224, 229);
+  cursor: pointer;
+  text-decoration: none;
+}
+a:-webkit-any-link:hover {
+  text-decoration:wavy;
+  background-color: rgb(79, 224, 229);
+  color: #212121;
+  font-weight: 800;
+}
+
+.makeStyles-socialIcon-31 {
+  color: #212121;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  font-size: 21px;
+  transition: 250ms ease-in-out;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: none;
 }
 
 .contacts-details {
@@ -291,9 +249,7 @@
     align-self: center;
   }
 
-  #contacts > div > div > div > a:nth-child(1) > p > a{
-    display: none;
-}
+ 
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
   .contacts-details {

@@ -99,7 +99,7 @@ function Contacts() {
 			alignItems: 'center',
 			justifyContent: 'center',
 			fontSize: '21px',
-			backgroundColor: theme.primary,
+			backgroundColor: 'none',
 			color: theme.secondary,
 			transition: '250ms ease-in-out',
 			'&:hover': {
@@ -152,8 +152,8 @@ function Contacts() {
 							<div className={classes.detailsIcon}>
 								<FiAtSign />
 							</div>
-							<p style={{ color: theme.tertiary }}>
-								<a href={`tomail:${contactsData.email}`}>{contactsData.email}</a>
+							<p>
+								 {contactsData.email} 
 							</p>
 						</a>
 						<a
@@ -163,7 +163,7 @@ function Contacts() {
 							<div className={classes.detailsIcon}>
 								<FiPhone />
 							</div>
-							<p style={{ color: theme.tertiary }}>
+							<p>
 								<a href={`tel:${contactsData.phone}`}>{contactsData.phone}</a>
 							</p>
 						</a>
@@ -171,7 +171,7 @@ function Contacts() {
 							<div className={classes.detailsIcon}>
 								<HiOutlineLocationMarker />
 							</div>
-							<p style={{ color: theme.tertiary }}>
+							<p>
 								<a href={`https://www.google.com/maps/place/${contactsData.address}`}>Carrboro, NC</a>
 							</p>
 						</div>
