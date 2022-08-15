@@ -140,7 +140,7 @@
     border-radius: 50%;
   }
   .about .line-styling .style-line{
-    width: 93%;
+    /* width: 93%; */
     height: 3px;
     border-radius: 10px;
   }
@@ -154,6 +154,6 @@
     }
 
     .about-img > img {
-        width: 200px;
+        /* width: 200px; */
     }
 }

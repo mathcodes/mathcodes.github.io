@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet'
 import { Navbar, Landing, About, Skills, Testimonials, Contacts, Services, Projects } from '../../components'
 import { headerData } from '../../data/headerData'
 
+
 function Main() {
 	return (
 		<div>
@@ -11,9 +12,7 @@ function Main() {
 			</Helmet>
 			<Navbar />
 			<Landing />
-			<About />
-			{/* <RecipeReviewCard /> */}
-			
+			<About />			
 			<Skills />
 			<Projects />
 			<Services />

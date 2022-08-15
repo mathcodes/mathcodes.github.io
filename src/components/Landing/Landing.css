@@ -187,7 +187,7 @@
     flex: initial;
     height: 70%;
     width: 100%;
-    background-color: #eaeaea;
+    background-color: rgb(33, 33, 33);
     align-items: center;
     justify-content: center;
     padding: 0 2rem;

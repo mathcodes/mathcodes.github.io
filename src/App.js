@@ -11,7 +11,7 @@ function App() {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div className="app">
+    <div className={theme}>
       <Router>
         <ScrollToTop />
         <Switch>

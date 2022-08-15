@@ -80,7 +80,7 @@
 }
 
 .singleProject:hover .project--desc {
-  transform: translate(40rem, 5rem);
+  transform: translate(2px, 5rem);
  
 }
 

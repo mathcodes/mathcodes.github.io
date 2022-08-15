@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { FaPlay, FaCode } from 'react-icons/fa';
+import { FaCode } from 'react-icons/fa';
+import { HiLink} from 'react-icons/hi';
 import { MdOpenInNew } from 'react-icons/md';
 import Fade from 'react-reveal/Fade';
 
@@ -63,13 +64,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
 									.replace(' ', '-')
 									.toLowerCase()}-demo`}
 						>
-							<MdOpenInNew
-								id={`${name
-									.replace(' ', '-')
-									.toLowerCase()}-demo`}
-								className={classes.icon}
-								aria-label='Demo'
-							/>
+							<HiLink />
 						</a>
 						<a
 							href={code}
@@ -82,13 +77,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
 									.replace(' ', '-')
 									.toLowerCase()}-code`}
 						>
-							<MdOpenInNew
-								id={`${name
-									.replace(' ', '-')
-									.toLowerCase()}-code`}
-								className={classes.icon}
-								aria-label='Code'
-							/> 
+							<FaCode />
 						</a>
 					</div>
 				</div>
