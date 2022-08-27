@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.fce8b617.chunk.css",
-    "main.js": "/static/js/main.e6cf817d.chunk.js",
-    "main.js.map": "/static/js/main.e6cf817d.chunk.js.map",
+    "main.css": "/static/css/main.dca2c018.chunk.css",
+    "main.js": "/static/js/main.52d9720e.chunk.js",
+    "main.js.map": "/static/js/main.52d9720e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7bf4185d.js",
     "runtime-main.js.map": "/static/js/runtime-main.7bf4185d.js.map",
     "static/css/2.65f8c46c.chunk.css": "/static/css/2.65f8c46c.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.a431897a.chunk.js.map": "/static/js/3.a431897a.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.65f8c46c.chunk.css.map": "/static/css/2.65f8c46c.chunk.css.map",
-    "static/css/main.fce8b617.chunk.css.map": "/static/css/main.fce8b617.chunk.css.map",
+    "static/css/main.dca2c018.chunk.css.map": "/static/css/main.dca2c018.chunk.css.map",
     "static/js/2.e6bc8f28.chunk.js.LICENSE.txt": "/static/js/2.e6bc8f28.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/BestermindRegular.e58a1922.ttf",
     "static/media/JCircle_dark_gray.77dc7436.png": "/static/media/JCircle_dark_gray.77dc7436.png",
@@ -131,7 +131,7 @@
     "static/js/runtime-main.7bf4185d.js",
     "static/css/2.65f8c46c.chunk.css",
     "static/js/2.e6bc8f28.chunk.js",
-    "static/css/main.fce8b617.chunk.css",
-    "static/js/main.e6cf817d.chunk.js"
+    "static/css/main.dca2c018.chunk.css",
+    "static/js/main.52d9720e.chunk.js"
   ]
 }
