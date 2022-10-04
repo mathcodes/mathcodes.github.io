@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import './About.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { aboutData } from '../../data/aboutData'
-
+import Background from '../Background/Background';
 
 
 function About() {
@@ -28,6 +28,7 @@ function About() {
                     />
                 </div>
             </div>
+            <Background />
         </div>
 
     )

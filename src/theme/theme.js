@@ -2,7 +2,7 @@
 import {
 	blueMan, bwMan, greenMan, techMan, pinkMan, purpleMan, redMan, yellowMan, eduBlue, eduBlack, eduGreen, eduOrange, eduPink, eduPurple, eduRed, eduYellow,
 	expBlue, expBlack, expGreen, expOrange, expPink, expPurple, expRed, expYellow, contactsBlue, contactsBlack,
-	contactsGreen, contactsOrange, contactsPink, contactsPurple, contactsRed, contactsYellow
+	contactsGreen, contactsOrange, contactsPink, contactsPurple, contactsRed, contactsYellow, floater
 } from './images'
 
 
@@ -173,17 +173,20 @@ export const orangeThemeLight = {
 	tertiary80: '#212121cc',
 	tertiary70: '#212121b3',
 	tertiary50: '#21212180',
-	aboutimg1: techMan,
-	aboutimg2: techMan,
+	aboutimg1: floater,
+	aboutimg2: floater,
 	contactsimg: contactsOrange
 }
 export const orangeThemeDark = {
 	type: 'dark',
-	primary: '#4faeba',
-	primary400: '#115D66',
-	primary600: '#fa5624',
-	primary80: '#4faebacc',
+	primary: '#222',
+	primary400: '#646464',
+	primary600: '#646464',
+	// primary80: '#4faebacc',
+	primary80: '#1A2F31CC',
+	// primary50: '#4faeba80',
 	primary50: '#4faeba80',
+	// primary30: '#4faeba4d',
 	primary30: '#4faeba4d',
 	secondary: '#212121',
 	secondary70: '#212121b3',
@@ -192,8 +195,8 @@ export const orangeThemeDark = {
 	tertiary80: '#eaeaeacc',
 	tertiary70: '#eaeaeab3',
 	tertiary50: '#eaeaea80',
-	aboutimg1: techMan,
-	aboutimg2: techMan,
+	aboutimg1: floater,
+	aboutimg2: floater,
 	contactsimg: contactsOrange
 }
 export const purpleThemeLight = {

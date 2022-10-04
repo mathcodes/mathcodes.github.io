@@ -58,7 +58,7 @@
 
 @media (max-width:600px) {
   .nav-menu {
-    color: var(--primary-2);
+    color: #4faeba;
   }
 
   .navbar--container>h1 {
