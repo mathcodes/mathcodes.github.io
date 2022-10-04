@@ -11,6 +11,7 @@ import sittingBlueMan2 from '../assets/png/jonavatarBLUEHOVER.svg'
 import floatingMan from '../assets/img/floatWindow.gif'
 
 
+
 import contactsBlue from '../assets/svg/contacts/contactsBlue.svg'
 import contactsGreen from '../assets/svg/contacts/contactsGreen.svg'
 import contactsBlack from '../assets/svg/contacts/contactsBlack.svg'

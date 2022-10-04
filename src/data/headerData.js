@@ -7,5 +7,7 @@ export const headerData = {
 	description2: " ",
 	href2: "\" alt='jon christie headshot portfolio fullstack11235'\"><a>",
 	image: 'https://raw.githubusercontent.com/mathcodes/mathcodes.github.io/main/src/assets/png/HEADSHOT_CIRCLE.png',
+	BG: 'https://raw.githubusercontent.com/mathcodes/mathcodes.github.io/main/src/assets/img/JCircle.png',
+	BG2: 'https://raw.githubusercontent.com/mathcodes/mathcodes.github.io/main/src/assets/img/JCircle_dark_gray.png',
 	resumePdf: resume
 }

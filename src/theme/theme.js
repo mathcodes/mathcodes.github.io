@@ -179,11 +179,14 @@ export const orangeThemeLight = {
 }
 export const orangeThemeDark = {
 	type: 'dark',
-	primary: '#4faeba',
-	primary400: '#115D66',
-	primary600: '#fa5624',
-	primary80: '#4faebacc',
+	primary: '#222',
+	primary400: '#646464',
+	primary600: '#646464',
+	// primary80: '#4faebacc',
+	primary80: '#1A2F31CC',
+	// primary50: '#4faeba80',
 	primary50: '#4faeba80',
+	// primary30: '#4faeba4d',
 	primary30: '#4faeba4d',
 	secondary: '#212121',
 	secondary70: '#212121b3',

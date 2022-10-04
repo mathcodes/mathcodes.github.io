@@ -66,7 +66,12 @@ function Navbar() {
 			paddingTop: '5%',
 			[t.breakpoints.down('sm')]: {
 				paddingTop: '13%',
-			}
+			},
+			background: `url(${BG})`,
+			'&:hover': {
+				background: `url(${BG2})`,
+			},
+			
 		},
 
 		closebtnIcon: {
@@ -143,7 +148,7 @@ function Navbar() {
 		<div className='navbar'>
 			<div className='navbar--container'>
 
-				<img src={BG} className={classes.bgStyle} />
+				<img alt="jon christie web developer resume job portfolio" src={headerData.BG}className={classes.bgStyle} />
 
 				<IoMenuSharp
 					className={classes.navMenu}

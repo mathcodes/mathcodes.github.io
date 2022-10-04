@@ -4,7 +4,8 @@ import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { testimonialsData } from '../../data/testimonialsData';
 import './Testimonials.css';
-
+import Background from '../Background/Background';
+ 
 function Testimonials() {
 	const { theme } = useContext(ThemeContext);
 	const sliderRef = useRef();
@@ -106,6 +107,7 @@ function Testimonials() {
 							</button>
 						</div>
 					</div>
+					<Background className="backgroundStyle"/>
 				</div>
 			)}
 		</>
