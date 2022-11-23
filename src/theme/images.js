@@ -6,9 +6,13 @@ import pinkMan from '../assets/svg/about/avatarPinkMan.svg'
 import purpleMan from '../assets/svg/about/avatarPurpleMan.svg'
 import redMan from '../assets/svg/about/avatarRedMan.svg'
 import yellowMan from '../assets/svg/about/avatarYellowMan.svg'
+<<<<<<< HEAD
 import sittingBlueMan3 from '../assets/png/jonavatarBLUE.svg'
 import sittingBlueMan2 from '../assets/png/jonavatarBLUEHOVER.svg'
 import floatingMan from '../assets/img/floatWindow.gif'
+=======
+import floater from '../assets/svg/about/floatWindow.gif'
+>>>>>>> main
 
 
 import contactsBlue from '../assets/svg/contacts/contactsBlue.svg'
@@ -23,5 +27,9 @@ import contactsYellow from '../assets/svg/contacts/contactsYellow.svg'
 
 export {
 	blueMan, bwMan, greenMan, techMan, pinkMan, purpleMan, redMan, yellowMan, contactsBlue, contactsBlack,
+<<<<<<< HEAD
 	contactsGreen, contactsOrange, contactsPink, contactsPurple, contactsRed, contactsYellow, sittingBlueMan2, sittingBlueMan3, floatingMan
+=======
+	contactsGreen, contactsOrange, contactsPink, contactsPurple, contactsRed, contactsYellow, floater
+>>>>>>> main
 }

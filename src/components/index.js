@@ -9,5 +9,10 @@ export { default as Services } from './Services/Services'
 export { default as SingleProject } from './Projects/SingleProject/SingleProject'
 export { default as SingleService } from './Services/SingleService/SingleService'
 export { default as BackToTop } from './BackToTop/BackToTop'
+<<<<<<< HEAD
 // export { default as RecipeReviewCard } from './Card/RecipeReviewCard'
 // export { default as CardGallery } from './CardGallery/CardGallery'
+=======
+export { default as Background } from './Background/Background'
+export { default as HorizontalRule } from './HorizontalRule/HorizontalRule'  
+>>>>>>> main

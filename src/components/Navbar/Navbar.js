@@ -9,7 +9,12 @@ import { FaUser } from 'react-icons/fa';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CloseIcon from '@material-ui/icons/Close';
+<<<<<<< HEAD
 import BG from "../../assets/img/JCircle_dark_gray.png";
+=======
+import BG from "../../assets/img/JCircle.png";
+import BG2 from "../../assets/img/JCircle_dark_gray.png";
+>>>>>>> main
 import './Navbar.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
 
@@ -66,7 +71,12 @@ function Navbar() {
 			paddingTop: '5%',
 			[t.breakpoints.down('sm')]: {
 				paddingTop: '13%',
-			}
+			},
+			background: `url(${BG})`,
+			'&:hover': {
+				background: `url(${BG2})`,
+			},
+			
 		},
 
 		closebtnIcon: {
@@ -143,7 +153,7 @@ function Navbar() {
 		<div className='navbar'>
 			<div className='navbar--container'>
 
-				<img src={BG} className={classes.bgStyle} />
+				<img alt="jon christie web developer resume job portfolio" src={headerData.BG}className={classes.bgStyle} />
 
 				<IoMenuSharp
 					className={classes.navMenu}

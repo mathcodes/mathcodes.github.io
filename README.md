@@ -69,7 +69,7 @@
 ![badge](https://img.shields.io/badge/•-web_vitals.1.0.1-blue)
 
 ## Description
-Welcome to my portfolio, updated as of February 2022! I've added some more projects, certifications to the downloadable resume, and implemented some more advanced features to the page! Enjoy and please contact me if you have an job opening for a full stack web developer! 
+Welcome to my site, updated as of August 2022! I've added some more projects and implemented some more advanced features to the page! Enjoy and please contact me if you have a job opening for a full stack web developer! 
 
 ## Contact
 <img src="https://avatars0.githubusercontent.com/u/17928947?v=4" alt="Github profile image" width="80px" height="80px" />
