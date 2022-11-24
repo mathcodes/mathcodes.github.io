@@ -157,65 +157,9 @@ function Contacts() {
 			style={{ backgroundColor: theme.secondary }}
 		>
 			<CssBaseline />
+
 			<Container maxWidth="sm">
-				<Box sx={{ bgcolor: 'none', height: 'fitContent' }} />
-				<div className='contacts--container'>
-					<h1>Contact</h1>
-
-					<div className='contacts-body'>
-
-						<div className='contacts-details'>
-							<a
-								href={`mailto:${contactsData.email}`}
-								className='personal-details'
-							>
-								<div className={classes.detailsIcon}>
-									<FiAtSign />
-								</div>
-								<p>
-									{contactsData.email}
-								</p>
-							</a>
-
-							<a
-								href={`tel:${contactsData.phone}`}
-								className='personal-details'
-							>
-								<div className={classes.detailsIcon}>
-									<FiPhone />
-								</div>
-								<p>
-									{contactsData.phone}
-								</p>
-							</a>
-
-							<a
-								href={`https://www.google.com/maps/place/${contactsData.address}`}
-								className='personal-details'
-							>
-								<div className={classes.detailsIcon}>
-									<HiOutlineLocationMarker />
-								</div>
-								<p>
-									{contactsData.address}
-
-								</p>
-							</a>
-
-
-						</div>
-					</div>
-				</div>
-			</ Container>
-			<Container maxWidth="sm">
-				<Box sx={{
-					bgcolor: 'none',
-					border: '2px solid #4faeba',
-					height: 'fitContent',
-					borderRadius: '20px',
-					m: theme2.spacing()
-				}}
-				>
+				<Box >
 
 					<div className='socialmedia-icons'>
 						{socialsData.github && (
@@ -293,21 +237,10 @@ function Contacts() {
 					</div>
 				</Box>
 			</Container>
-			{/*  */}
+		 
 
 
-
-
-			{/* NEXT SECTION */}
-			{/* */}
-			{/* <footer style={{color: theme.primary}} variant="body2" align="center">
-					
-					<a style={{color: theme.primary}} href="https://jonchristie.net/">
-						jonchristie.net
-					</a>{' ©'}{new Date().getFullYear()}
-					
-				</footer> */}
-			{/* </div>  */}
+ 
 
 		</div>
 	);

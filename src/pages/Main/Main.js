@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { Navbar, Landing, About, Skills, Testimonials, Contacts, ContactForm, Services, Projects, HorizontalRule } from '../../components'
+import { Navbar, Landing, About, Skills, Testimonials, ContactForm, Services, Projects, HorizontalRule } from '../../components'
 import { headerData } from '../../data/headerData'
 // import {Form} from '../../components'
 import {MyForm} from '../../components/'
@@ -28,7 +28,7 @@ function Main() {
 			<Projects />
 			<Services />
 			<Testimonials />
-			<Contacts />
+		 
 			<ContactForm />
 			{/* <Footer /> */}
 			
