@@ -9,10 +9,13 @@ import {
 	FaYoutube,
 	FaCodepen,
 	FaInstagram,
-} from 'react-icons/fa';
+	FaBootstrap,
+	FaCss3Alt,
+	FaReact,
+} from 'react-icons/fa'; 
+import { DiJavascript1 } from "react-icons/di";
 import { makeStyles } from '@material-ui/core/styles';
-import { GH } from '../../assets/svg/GH.svg';
-
+ 
 function Background() {
 	const { theme } = useContext(ThemeContext);
 
@@ -23,9 +26,11 @@ function Background() {
 			color: `${theme.tertiary}`,
 			fontFamily: 'var(--primaryFont)',
 			fontWeight: 500,
-			transition: 'border 0.2s ease-in-out',
+			fontSize: '1.5rem',
+				
+			transition: 'border 0.01s ease-in-out',
 			'&:focus': {
-				border: `4px solid ${theme.primary600}`,
+				color: `#a92ca2`,
 			},
 		},
 		item: {
@@ -34,9 +39,9 @@ function Background() {
 			color: `${theme.tertiary}`,
 			fontFamily: 'var(--primaryFont)',
 			fontWeight: 500,
-			transition: 'border 0.2s ease-in-out',
+			transition: 'border 1s ease-in-out',
 			'&:focus': {
-				border: `4px solid ${theme.primary600}`,
+				color: `#a92ca2`,
 			},
 		}}))
 
@@ -44,32 +49,33 @@ function Background() {
 	return (
 		<>
 			<div className="area" >
-				<ul className="circles ul">
-					<li className={classes.label}><FaLinkedinIn aria-label='LinkedIn' /></li>
+				<ul className="circles ul item">
+					<li><FaLinkedinIn aria-label='LinkedIn' /></li>
 					<li><FaInstagram aria-label='Instagram' /></li>
 					<li><FaGithub aria-label='GitHub' /></li>
 					<li><FaTwitter aria-label='Twitter' /></li>
 					<li><FaCodepen aria-label='CodePen' /></li>
-					<li><FaYoutube aria-label='YouTube' className={classes.item}/></li>
-					<li><img alt="jon portfolio" sr="../../assets/svg/GH.svg" /></li>
-					<li></li>
-					<li></li>
-					<li></li>
+					<li><FaYoutube aria-label='YouTube' /></li> 
+					<li><FaBootstrap aria-label='Bootstrap' /></li> 
+					<li><FaCss3Alt aria-label='CSS' /></li>
+					<li><FaReact aria-label='React' /></li>
+					<li><DiJavascript1 aria-label='React' /></li>
+
 				</ul>
 
 			</div >
 			<div className="area" >
-				<ul className="circles2">
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
+				<ul className="circles2 ul item">
+					<li><FaLinkedinIn aria-label='LinkedIn' /></li>
+					<li><FaInstagram aria-label='Instagram' /></li>
+					<li><FaGithub aria-label='GitHub' /></li>
+					<li><FaTwitter aria-label='Twitter' /></li>
+					<li><FaCodepen aria-label='CodePen' /></li>
+					<li><FaYoutube aria-label='YouTube' /></li> 
+					<li><FaBootstrap aria-label='Bootstrap' /></li> 
+					<li><FaCss3Alt aria-label='CSS' /></li>
+					<li><FaReact aria-label='React' /></li>
+					<li><DiJavascript1 aria-label='React' /></li>
 				</ul>
 			</div >
 		</>

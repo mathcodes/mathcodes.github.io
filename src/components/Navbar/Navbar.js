@@ -96,8 +96,8 @@ function Navbar() {
 		drawerItem: {
 			margin: '2rem auto',
 			borderRadius: '78.8418px',
-			background: theme.secondary,
-			color: theme.primary,
+			background: '#333',
+			color: '#a92ca2',
 			width: '85%',
 			height: '60px',
 			display: 'flex',
@@ -110,7 +110,8 @@ function Navbar() {
 			transition: 'background-color 0.2s, color 0.2s',
 			'&:hover': {
 				background: theme.primary,
-				color: theme.secondary,
+				color: '#4faeba',
+				border: '1px solid #4faeba',
 			},
 			[t.breakpoints.down('sm')]: {
 				width: '100%',
@@ -186,7 +187,7 @@ function Navbar() {
 						role='button'
 						tabIndex='0'
 						aria-label='Close'
-					/>
+					/>{shortname}
 				</div>
 				<br />
 
