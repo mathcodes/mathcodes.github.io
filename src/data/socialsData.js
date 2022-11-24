@@ -1,7 +1,7 @@
 export const socialsData = {
 	github: 'https://github.com/mathcodes/',
 	facebook: 'https://www.facebook.com/fullstack11235',
-	linkedIn: 'https://www.linkedin.com/in/jonpchristie/',
+	linkedIn: 'https://www.linkedin.com/in/thejonpchristie/',
 	youtube: 'https://www.youtube.com/channel/UC5GFnN-lv8Yuqc9O3b79k6g',
 	instagram: 'https://www.instagram.com/fullstack11235/',
 	codepen: 'https://codepen.io/mathcodes',

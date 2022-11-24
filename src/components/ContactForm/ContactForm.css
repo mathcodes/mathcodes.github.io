@@ -1,0 +1,7 @@
+.submitBtn{
+  background: #4faeba;
+}
+
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate{
+  color:#4faeba;
+}

@@ -84,7 +84,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
 				<p
 					className='project--desc'
 					style={{
-						background: theme.secondary,
+						background: '#222',
 						color: theme.tertiary,
 					}}
 				>

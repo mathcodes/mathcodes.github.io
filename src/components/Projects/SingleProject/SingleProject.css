@@ -107,8 +107,7 @@
 }
 
 .singleProject:hover .project--lang {
-  transform: translateX(0);
-  color: yellow;
+  transform: translateX(0); 
 }
 
 .project--lang>span {
