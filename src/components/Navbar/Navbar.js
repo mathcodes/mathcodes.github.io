@@ -9,14 +9,11 @@ import { FaUser } from 'react-icons/fa';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CloseIcon from '@material-ui/icons/Close';
-<<<<<<< HEAD
-import BG from "../../assets/img/JCircle_dark_gray.png";
-=======
 import BG from "../../assets/img/JCircle.png";
 import BG2 from "../../assets/img/JCircle_dark_gray.png";
->>>>>>> main
 import './Navbar.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
+import { headerData } from '../../data/headerData'
 
 function Navbar() {
 	const { theme, setHandleDrawer } = useContext(ThemeContext); //useContext accepts ThemeContext and set to  destructured the theme and setHandleDrawer

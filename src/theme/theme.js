@@ -2,11 +2,7 @@
 import {
 	floatingMan, blueMan, bwMan, greenMan, techMan, pinkMan, purpleMan, redMan, yellowMan, eduBlue, eduBlack, eduGreen, eduOrange, eduPink, eduPurple, eduRed, eduYellow,
 	expBlue, expBlack, expGreen, expOrange, expPink, expPurple, expRed, expYellow, contactsBlue, contactsBlack,
-<<<<<<< HEAD
 	contactsGreen, contactsOrange, contactsPink, contactsPurple, contactsRed, contactsYellow, sittingBlueMan2, sittingBlueMan3
-=======
-	contactsGreen, contactsOrange, contactsPink, contactsPurple, contactsRed, contactsYellow, floater
->>>>>>> main
 } from './images'
 
 
@@ -177,13 +173,8 @@ export const orangeThemeLight = {
 	tertiary80: '#212121cc',
 	tertiary70: '#212121b3',
 	tertiary50: '#21212180',
-<<<<<<< HEAD
 	aboutimg1: floatingMan,
 	aboutimg2: floatingMan,
-=======
-	aboutimg1: floater,
-	aboutimg2: floater,
->>>>>>> main
 	contactsimg: contactsOrange
 }
 export const orangeThemeDark = {
@@ -204,13 +195,8 @@ export const orangeThemeDark = {
 	tertiary80: '#eaeaeacc',
 	tertiary70: '#eaeaeab3',
 	tertiary50: '#eaeaea80',
-<<<<<<< HEAD
 	aboutimg1: floatingMan,
 	aboutimg2: floatingMan,
-=======
-	aboutimg1: floater,
-	aboutimg2: floater,
->>>>>>> main
 	contactsimg: contactsOrange
 }
 export const purpleThemeLight = {
