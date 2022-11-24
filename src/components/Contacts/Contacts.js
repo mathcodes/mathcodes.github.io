@@ -62,25 +62,26 @@ function Contacts() {
 		input: {
 			border: `4px solid ${theme.primary80}`,
 			backgroundColor: `${theme.secondary}`,
-			color: `${theme.tertiary}`,
+			color: `purple`,
 			fontFamily: 'var(--primaryFont)',
 			fontWeight: 500,
 			transition: 'border 0.2s ease-in-out',
 			'&:focus': {
 				border: `4px solid ${theme.primary600}`,
+				color: 'black',
 			},
 		},
-		message: {
-			border: `4px solid ${theme.primary80}`,
-			backgroundColor: `${theme.secondary}`,
-			color: `${theme.tertiary}`,
-			fontFamily: 'var(--primaryFont)',
-			fontWeight: 500,
-			transition: 'border 0.2s ease-in-out',
-			'&:focus': {
-				border: `4px solid ${theme.primary600}`,
-			},
-		},
+		// message: {
+		// 	border: `4px solid ${theme.primary80}`,
+		// 	backgroundColor: `${theme.secondary}`,
+		// 	color: `${theme.tertiary}`,
+		// 	fontFamily: 'var(--primaryFont)',
+		// 	fontWeight: 500,
+		// 	transition: 'border 0.2s ease-in-out',
+		// 	'&:focus': {
+		// 		border: `4px solid ${theme.primary600}`,
+		// 	},
+		// },
 		label: {
 			backgroundColor: `${theme.secondary}`,
 			color: `${theme.primary}`,
@@ -90,6 +91,11 @@ function Contacts() {
 			padding: '0 5px',
 			transform: 'translate(25px,50%)',
 			display: 'inline-flex',
+			'&:hover': {
+				transform: 'scale(1.1)',
+				color: '#000',
+				backgroundColor: theme.tertiary,
+			},
 		},
 		socialIcon: {
 			width: '45px',
@@ -104,14 +110,15 @@ function Contacts() {
 			transition: '250ms ease-in-out',
 			'&:hover': {
 				transform: 'scale(1.1)',
-				color: theme.secondary,
+				color: '#000',
 				backgroundColor: theme.tertiary,
 			},
 		},
 		detailsIcon: {
-			backgroundColor: theme.primary,
-			color: theme.secondary,
+			backgroundColor: '#667',
+			color: '#4faeba',
 			borderRadius: '50%',
+			border: '2px solid #4faeba',
 			width: '45px',
 			height: '45px',
 			display: 'flex',
@@ -122,8 +129,8 @@ function Contacts() {
 			flexShrink: 0,
 			'&:hover': {
 				transform: 'scale(1.1)',
-				color: theme.secondary,
-				backgroundColor: theme.tertiary,
+				color: '#667',
+				backgroundColor: '#4faeba',
 			},
 			typoImpo: {
 				color: theme.secondary,
@@ -141,7 +148,7 @@ function Contacts() {
 			style={{ backgroundColor: theme.secondary }}
 		>
 			<div className='contacts--container'>
-				<h1 style={{ color: theme.primary }}>Contacts</h1>
+				<h1>Contacts</h1>
 				<div className='contacts-body'>
 
 					<div className='contacts-details'>
@@ -153,9 +160,10 @@ function Contacts() {
 								<FiAtSign />
 							</div>
 							<p>
-								 {contactsData.email} 
+								{contactsData.email}
 							</p>
 						</a>
+
 						<a
 							href={`tel:${contactsData.phone}`}
 							className='personal-details'
@@ -164,18 +172,27 @@ function Contacts() {
 								<FiPhone />
 							</div>
 							<p>
-								<a href={`tel:${contactsData.phone}`}>{contactsData.phone}</a>
+								{contactsData.phone}
 							</p>
 						</a>
-						<div className='personal-details'>
+
+						<a
+							href={`https://www.google.com/maps/place/${contactsData.address}`}
+							className='personal-details'
+						>
 							<div className={classes.detailsIcon}>
 								<HiOutlineLocationMarker />
 							</div>
 							<p>
-								<a href={`https://www.google.com/maps/place/${contactsData.address}`}>Carrboro, NC</a>
-							</p>
-						</div>
+								{contactsData.address}
 
+							</p>
+						</a>
+
+
+
+
+						{/* NEXT SECTION */}
 						<div className='socialmedia-icons'>
 							{socialsData.github && (
 								<a
@@ -252,13 +269,13 @@ function Contacts() {
 						</div>
 					</div>
 				</div>
-				{/* <div style={{color: theme.primary}} variant="body2" align="center">
+				<footer style={{color: theme.primary}} variant="body2" align="center">
 					
 					<a style={{color: theme.primary}} href="https://jonchristie.net/">
 						jonchristie.net
 					</a>{' ©'}{new Date().getFullYear()}
 					
-				</div> */}
+				</footer>
 			</div>
 
 		</div>

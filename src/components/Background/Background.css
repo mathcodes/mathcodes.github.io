@@ -33,14 +33,16 @@ body{
 
 
 .area{
-     width: 100%;     
+     width: 90%;     
 }
 
 .circles, .circles2 {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 90%;
+    left: 20;
+    right: 20;
+    margin:25px;
+    width: 80%;
     height: 100%;
     overflow: revert;
 }

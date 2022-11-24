@@ -27,6 +27,7 @@
   width: 80%;
   height: 100%;
   margin-top: 2rem;
+  color: #4faeba;
 }
 
 .contacts--container>h1 {
@@ -65,16 +66,24 @@ a:-webkit-any-link {
   color: rgb(79, 224, 229);
   cursor: pointer;
   text-decoration: none;
+  transition: all 0s;
 }
 a:-webkit-any-link:hover {
-  text-decoration:wavy;
   background-color: rgb(79, 224, 229);
   color: #212121;
-  font-weight: 800;
+  font-weight: 400;
 }
 
+p.contactLoc{
+  color: yellow;
+  transition: all 0;
+}
+
+p.contactLoc:hover{
+  color: yellow;}
+
 .makeStyles-socialIcon-31 {
-  color: #212121;
+  /* color: #4faeba; */
   width: 45px;
   height: 45px;
   display: flex;

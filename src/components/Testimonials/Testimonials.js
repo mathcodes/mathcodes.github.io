@@ -39,10 +39,9 @@ function Testimonials() {
 			{testimonialsData.length > 0 && (
 				<div
 					className='testimonials'
-					style={{ backgroundColor: theme.primary }}
 				>
 					<div className='testimonials--header'>
-						<h1 style={{ color: theme.secondary }}>Testimonials</h1>
+						<h1 >Testimonials</h1>
 					</div>
 					<div className='testimonials--body'>
 
