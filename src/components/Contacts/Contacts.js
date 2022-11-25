@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
@@ -12,58 +12,17 @@ import {
 	FaYoutube,
 	FaStackOverflow,
 	FaCodepen,
-	FaInstagram,
 } from 'react-icons/fa';
 import { SiReplit } from 'react-icons/si';
-import { FiPhone, FiAtSign } from 'react-icons/fi';
-import { HiOutlineLocationMarker } from 'react-icons/hi';
-
 import { ThemeContext } from '../../contexts/ThemeContext';
-
 import { socialsData } from '../../data/socialsData';
-import { contactsData } from '../../data/contactsData';
 import './Contacts.css';
-import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
 
-
-function Copyright() {
-	return (
-		<Typography variant="body2" color="text.secondary" align="center">
-			{'Copyright © '}
-			<Link color="inherit" href="https://jonchristie.net/">
-				jonchristie.net
-			</Link>{' '}
-			{new Date().getFullYear()}
-			{'.'}
-		</Typography>
-	);
-}
 
 function Contacts() {
-	const { theme, theme2 } = useContext(ThemeContext);
-	const [open, setOpen] = useState(false);
-
-	const [name, setName] = useState('');
-	const [email, setEmail] = useState('');
-	const [message, setMessage] = useState('');
-
-	const [success, setSuccess] = useState(false);
-	const [errMsg, setErrMsg] = useState('');
-
-
-	// const theme2 = createTheme({
-	// 	spacing: [0, 4, 8, 16, 32, 64],
-	// });
-
-
-	const handleClose = (event, reason) => {
-		if (reason === 'clickaway') {
-			return;
-		}
-
-		setOpen(false);
-	};
+	const { theme } = useContext(ThemeContext);
+ 
+ 
 
 	const useStyles = makeStyles((t) => ({
 		input: {
@@ -78,17 +37,7 @@ function Contacts() {
 				color: 'black',
 			},
 		},
-		// message: {
-		// 	border: `4px solid ${theme.primary80}`,
-		// 	backgroundColor: `${theme.secondary}`,
-		// 	color: `${theme.tertiary}`,
-		// 	fontFamily: 'var(--primaryFont)',
-		// 	fontWeight: 500,
-		// 	transition: 'border 0.2s ease-in-out',
-		// 	'&:focus': {
-		// 		border: `4px solid ${theme.primary600}`,
-		// 	},
-		// },
+	
 		label: {
 			backgroundColor: `${theme.secondary}`,
 			color: `${theme.primary}`,
@@ -247,3 +196,4 @@ function Contacts() {
 }
 
 export default Contacts;
+

@@ -10,7 +10,8 @@ import './App.css'
 import { FormspreeProvider } from '@formspree/react';
 
 dotenv.config()
-console.log() 
+
+
 function App() {
   const { theme } = useContext(ThemeContext);
 

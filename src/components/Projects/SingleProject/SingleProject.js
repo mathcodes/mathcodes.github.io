@@ -2,9 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { FaCode } from 'react-icons/fa';
 import { HiLink} from 'react-icons/hi';
-import { MdOpenInNew } from 'react-icons/md';
 import Fade from 'react-reveal/Fade';
-
 import placeholder from '../../../assets/png/placeholder.png';
 import './SingleProject.css';
 

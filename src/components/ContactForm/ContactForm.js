@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
@@ -12,9 +11,8 @@ import { Grid } from '@mui/material';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { useContext, useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Container from '@mui/material/Container';
+import PsychologyIcon from '@mui/icons-material/Psychology';
 import {
   FaTwitter,
   FaLinkedinIn,
@@ -22,26 +20,14 @@ import {
   FaYoutube,
   FaStackOverflow,
   FaCodepen,
-  FaInstagram,
 } from 'react-icons/fa';
 import { SiReplit } from 'react-icons/si';
 import { FiPhone, FiAtSign } from 'react-icons/fi';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 import { styled } from '@mui/material/styles';
-import { ThemeContext } from '../../contexts/ThemeContext';
-
 import { socialsData } from '../../data/socialsData';
 import { contactsData } from '../../data/contactsData';
 import './ContactForm.css';
-
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: 'center',
-  color: theme.palette.text.secondary,
-}));
-
 
 const theme = createTheme({
   status: {
@@ -56,55 +42,24 @@ const theme = createTheme({
       main: '#BFD9DD',
       contrastText: '#333',
     },
+    container: {
+      height: '20rem',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+    },
   },
 });
 
-const useStyles = makeStyles((t) => ({
-  input: {
-    backgroundColor: `${theme.secondary}`,
-    color: `purple`,
-    fontFamily: 'var(--primaryFont)',
-    fontWeight: 500,
-    transition: 'border 0.2s ease-in-out',
-    '&:focus': {
-      color: 'black',
-    },
-  },
-  // message: {
-  // 	border: `4px solid ${theme.primary80}`,
-  // 	backgroundColor: `${theme.secondary}`,
-  // 	color: `${theme.tertiary}`,
-  // 	fontFamily: 'var(--primaryFont)',
-  // 	fontWeight: 500,
-  // 	transition: 'border 0.2s ease-in-out',
-  // 	'&:focus': {
-  // 		border: `4px solid ${theme.primary600}`,
-  // 	},
-  // },
-  label: {
-    backgroundColor: `${theme.secondary}`,
-    color: `${theme.primary}`,
-    fontFamily: 'var(--primaryFont)',
-    fontWeight: 600,
-    // fontSize: '0.9rem',
-    padding: '0 5px',
-    transform: 'translate(25px,50%)',
-    display: 'inline-flex',
-    '&:hover': {
-      transform: 'scale(1.1)',
-      color: '#000',
-      backgroundColor: theme.tertiary,
-    },
-  },
- 
-
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
 }));
 
-
-
-
 function Copyright(props) {
-
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
@@ -117,8 +72,6 @@ function Copyright(props) {
   );
 }
 
-
-
 function ContactForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -128,16 +81,13 @@ function ContactForm() {
       email: data.get('email'),
     });
   };
-  const classes = useStyles();
 
   return (
-
-    <>
+    <Container>
       <Grid className='contactsHead' >
         <h1 className="contactHeader">Contact</h1>
       </Grid>
       <ThemeProvider theme={theme}>
-
         <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
           <Box
             sx={{
@@ -148,22 +98,35 @@ function ContactForm() {
               alignItems: 'center',
             }}
           >
-            <Grid container spacing={3}>
-              <Grid item xs>
-                <Item><ConnectWithoutContactIcon sx={{ p: '0.2rem', width: '2rem', height: '2rem', borderRadius: "50%", bgcolor: '#4faeba' }} />Looking to updgrade your website? </Item>
-              </Grid>
-              <Grid item xs={6}>
-                <Item>xs=6</Item>
-              </Grid>
-              <Grid item xs>
-                <Item>xs</Item>
+            <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <Item><ConnectWithoutContactIcon sx={{ p: '0.2rem', width: '2rem', height: '2rem', borderRadius: "50%", bgcolor: '#4faeba' }} />
+                  Looking to updgrade your website? </Item>
               </Grid>
             </Grid>
-            <ConnectWithoutContactIcon />Looking to updgrade your website?
-            <Avatar sx={{ m: 1, bgcolor: '#4faeba' }}><ConnectWithoutContactIcon /></Avatar>Hiring web developers with my skillset?
-            Got an idea for an app or website that you'd like to see come to life?
-            Interested in collaborating or forming a team to create something amazing?
-            Want to learn more about open-source projects and start contributing or creating your own?
+
+            <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <Item><PsychologyIcon sx={{ p: '0.2rem', width: '2rem', height: '2rem', borderRadius: "50%", bgcolor: '#4faeba' }} />
+                  Got an idea for an app or website that you'd like to see come to life?</Item>
+              </Grid>
+            </Grid>
+
+            <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <Item><ConnectWithoutContactIcon sx={{ p: '0.2rem', width: '2rem', height: '2rem', borderRadius: "50%", bgcolor: '#4faeba' }} />
+                  Interested in collaborating or forming a team to create something amazing?</Item>
+              </Grid>
+            </Grid>
+
+            <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <Item><ConnectWithoutContactIcon sx={{ p: '0.2rem', width: '2rem', height: '2rem', borderRadius: "50%", bgcolor: '#4faeba' }} />Hiring web developers with my skillset?</Item>
+              </Grid>
+            </Grid>
+
+
+            <h2>Want to learn more about open-source projects and start contributing or creating your own?</h2>
 
             <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
               <TextField
@@ -229,53 +192,53 @@ function ContactForm() {
               ><div className='contact-icons'>
 
 
-                 
-                    <div className='contacts-details'>
-                      <ul>
-                        <li>
-                          <a
-                            href={`mailto:${contactsData.email}`}
-                            className='personal-details'
-                          >
-                            <div className='detailsIcon'>
-                              <FiAtSign />
-                            </div>
-                            <p>
-                              {contactsData.email}
-                            </p>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href={`tel:${contactsData.phone}`}
-                            className='personal-details'
-                          >
-                            <div className='detailsIcon'>
-                              <FiPhone />
-                            </div>
-                            <p>
-                              {contactsData.phone}
-                            </p>
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href={`https://www.google.com/maps/place/${contactsData.address}`}
-                            className='personal-details'
-                          >
-                            <div className='detailsIcon'>
-                              <HiOutlineLocationMarker />
-                            </div>
-                            <p>
-                              {contactsData.address}
 
-                            </p>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
+                  <div className='contacts-details'>
+                    <ul>
+                      <li>
+                        <a
+                          href={`mailto:${contactsData.email}`}
+                          className='personal-details'
+                        >
+                          <div className='detailsIcon'>
+                            <FiAtSign />
+                          </div>
+                          <p>
+                            {contactsData.email}
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href={`tel:${contactsData.phone}`}
+                          className='personal-details'
+                        >
+                          <div className='detailsIcon'>
+                            <FiPhone />
+                          </div>
+                          <p>
+                            {contactsData.phone}
+                          </p>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href={`https://www.google.com/maps/place/${contactsData.address}`}
+                          className='personal-details'
+                        >
+                          <div className='detailsIcon'>
+                            <HiOutlineLocationMarker />
+                          </div>
+                          <p>
+                            {contactsData.address}
+
+                          </p>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
-              
+                </div>
+
 
 
 
@@ -363,12 +326,10 @@ function ContactForm() {
                 </div>
               </Box>
             </Container>
-
           </div>
-
         </Grid>
-
-      </ThemeProvider></>
+      </ThemeProvider>
+    </Container>
   );
 }
 
