@@ -1,19 +1,21 @@
 .footer {
   font-family: 'var(--primaryFont)', sans-serif;
-  height: 60px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #FFB908;
 }
 
 .footer p {
   font-weight: 500;
-  font-family: var(--primaryFont);
+  font-family: var(--secondary70);
   font-size: 18px;
+  color: #FFB908;
 }
 
 .footer p span {
   font-size: 24px;
+  color: #FFB908;
 }
 

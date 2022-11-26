@@ -1,23 +1,32 @@
 .submitBtn
 {
-  background: #4faeba;
+  background:  #2d3334;
 }
 
 .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
 .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate
 {
-  color: #4faeba;
+  color: #2d3334;
 }
 
 .contactsHead
 {
-  background: linear-gradient(#222 0%, #a92ca2 100%)
+  background: linear-gradient(#222 0%,  #FFB908 100%)
 }
 
 .contactHeader
 {
-  color: var(--primary);
+  color: #2d3334;
   font-size: 48px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  line-height: 6rem;
+}
+
+.contactHeader
+{
+  color: #2d3334;
+  font-size: 30px;
   font-family: 'Poppins', sans-serif;
   text-align: center;
 }
@@ -70,7 +79,7 @@ li
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
-  background: linear-gradient(#a92ca2 0%, #222 100%);
+  background: linear-gradient( #FFB908 0%, #222 100%);
 
 }
 
@@ -83,25 +92,6 @@ li
   bottom: 0;
   width: 280px;
   pointer-events: none;
-}
-
-.contacts--container
-{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0.5rem;
-  height: 100%;
-
-  color: #4faeba;
-}
-
-.contacts--container>h1
-{
-  font-family: var(--primaryFont);
-  font-size: 3.5rem;
-  margin-bottom: 2.5rem;
 }
 
 .contacts-body
@@ -117,7 +107,7 @@ li
 
 a:-webkit-any-link
 {
-  color: rgb(79, 224, 229);
+  color: #2d3334;
   cursor: pointer;
   text-decoration: none;
   transition: all 0s;
@@ -125,14 +115,14 @@ a:-webkit-any-link
 
 a:-webkit-any-link:hover
 {
-  background-color: rgb(79, 224, 229);
+  background-color: #2d3334;
   color: #212121;
   font-weight: 400;
 }
 
 .makeStyles-socialIcon-31
 {
-  /* color: #4faeba; */
+  /* color:  #2d3334; */
   width: 45px;
   height: 45px;
   display: flex;
@@ -176,7 +166,7 @@ a:-webkit-any-link:hover
   justify-content: flex-start;
   width: 100%;
   margin-bottom: 2.5rem;
-  color: rgb(79, 224, 229);
+  color: #2d3334;
   text-decoration: wavy;
   font-weight: 400;
   background-color: #d3540000;
@@ -188,7 +178,7 @@ a:-webkit-any-link:hover
 .personal-details:hover
 {
   text-decoration: wavy;
-  background-color: rgb(79, 224, 229);
+  background-color: #2d3334;
   color: #212121;
   font-weight: 800;
 }
@@ -222,7 +212,7 @@ a:-webkit-any-link:hover
 detailsIcon
 {
   background-color: '#667';
-  color: '#4faeba';
+  color: '#2d3334';
   border-radius: '50%'; 
   margin-bottom: 0.3rem;
   width: '45px';
@@ -239,7 +229,7 @@ detailsIcon:hover
 {
   transform: 'scale(1.1)';
   color: '#667';
-  background-color: '#4faeba';
+  background-color: '#2d3334';
 }
 
 .contacts--img
@@ -263,6 +253,7 @@ ul,
 }
 
 
+
 @media screen and (max-width: 992px)
 {
   .contacts--img
@@ -270,12 +261,7 @@ ul,
     display: none;
   }
 
-  .contacts--container
-  {
-    /* width: 100%; */
-    margin-top: 1rem;
-  }
-
+ 
 
 
   .personal-details p
@@ -298,7 +284,7 @@ ul,
     justify-content: flex-start;
     width: 100%;
     margin-bottom: 2.5rem;
-    color: rgb(79, 224, 229);
+    color: #2d3334;
     text-decoration: wavy;
     font-weight: 400;
     background-color: #d3540000;
@@ -307,23 +293,14 @@ ul,
     transition: all .5s;
   }
 
-  .contacts--container h1
-  {
-    font-size: 3rem;
-    margin-bottom: 30px;
-  }
+ 
 
   .contacts-icons
   {
     font-size: .5rem;
   }
 
-  .contacts--container
-  {
-    padding: 2rem;
-    margin-top: 0rem;
-    align-items: center;
-  }
+ 
 
   .socialMedia-icons
   {
@@ -355,9 +332,6 @@ ul,
     margin-top: 2rem;
     /* flex-direction: column; */
   }
-
-
-
   .personal-details
   {
     margin-bottom: 1.8rem;
@@ -376,111 +350,32 @@ ul,
   {
     display: flex;
     flex: 1;
-
-  }
-
-  .contacts--container h1
-  {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
   }
 }
 
-@media screen and (max-width: 400px)
-{
-  .contacts-details
-  {
-    padding-left: 0rem;
-    padding: 0rem;
-    align-items: center;
-    margin-top: 2rem;
-  }
-
-  .submit-btn
-  {
-    align-self: center;
-  }
-
-
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3)
-{
-  .contacts-details
-  {
-    padding-left: 0rem;
-    padding: 0rem;
-  }
-}
-
-
-
-
-
-@keyframes spin
-{
-  0%
-  {
-    opacity: 1;
-    transform: translate(5px, -3px) rotate(0deg);
-  }
-
-  /* 60%{
-      opacity: 0;
-    }
-    80%{
-      opacity: 1;
-    } */
-  100%
-  {
-    transform: rotate(359deg);
-  }
-}
-
-@keyframes fly
-{
-
-  /* 0%,100%{
-        transform: translate(5px,-3px) rotate(-30deg);
-        opacity: 1;
-    }
-    25%{
-        transform: translate(15px,-10px) rotate(-30deg);
-        opacity: 0.8;
-    }
-    50%{
-        transform: translate(20px,-12px) rotate(-30deg);
-        opacity: 0;
-    }
-    60%{
-        transform: translate(-12px,10px) rotate(-30deg);
-        opacity: 0;
-    }
-    75%{
-        opacity: 0.8;
-    } */
-  10%
-  {
-    transform: rotate(0deg);
-  }
-
-  20%
-  {
-    transform: translateX(-10px);
-  }
-
-  70%
-  {
-    transform: translateX(60px);
-  }
-
-  100%
-  {
-    transform: translateX(80px);
-  }
-}
 
 .localIcon
 {
   font-size: 2rem;
+}
+ 
+.contactHeader2{
+  padding: 3rem 0 1rem 0;
+}
+ 
+.css-pjjdvz {
+  margin-left: 8px;
+  margin-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: inherit;
+  -webkit-box-align: inherit;
+  -ms-flex-align: inherit;
+  align-items: center;
+
 }

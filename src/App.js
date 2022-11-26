@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import { ThemeContext } from './contexts/ThemeContext';
-import { Main, ProjectPage } from './pages';
+import { ThemeSwitcher } from './contexts/ThemeSwitcher';
+import { Main, ProjectPage, ThankYou, FormPage } from './pages';
 import { BackToTop } from './components';
 import ScrollToTop from './utils/ScrollToTop';
 import * as dotenv from 'dotenv' // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
@@ -24,6 +25,8 @@ function App() {
         <Switch>
           <Route path="/" exact component={Main} />
           <Route path="/projects" exact component={ProjectPage} />
+          <Route path="/thankyou" exact component={ThankYou} />
+          <Route path="/formpage" exact component={FormPage} />
           <Redirect to="/" />
         </Switch>
       </Router>

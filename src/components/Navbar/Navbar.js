@@ -97,7 +97,7 @@ function Navbar() {
 			margin: '2rem auto',
 			borderRadius: '78.8418px',
 			background: '#333',
-			color: '#a92ca2',
+			color: ' #FFB908',
 			width: '85%',
 			height: '60px',
 			display: 'flex',
@@ -110,8 +110,8 @@ function Navbar() {
 			transition: 'background-color 0.2s, color 0.2s',
 			'&:hover': {
 				background: theme.primary,
-				color: '#4faeba',
-				border: '1px solid #4faeba',
+				color: '#2d3334',
+				border: '1px solid #2d3334',
 			},
 			[t.breakpoints.down('sm')]: {
 				width: '100%',

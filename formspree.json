@@ -3,6 +3,7 @@
     "contact": {
       "name": "Contact Form",
       "fields": {
+        "name": { "type": "name", "required": true },
         "email": { "type": "email", "required": true },
         "message": { "type": "text", "required": true }
       },

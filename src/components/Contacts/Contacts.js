@@ -21,8 +21,8 @@ import './Contacts.css';
 
 function Contacts() {
 	const { theme } = useContext(ThemeContext);
- 
- 
+
+
 
 	const useStyles = makeStyles((t) => ({
 		input: {
@@ -37,7 +37,7 @@ function Contacts() {
 				color: 'black',
 			},
 		},
-	
+
 		label: {
 			backgroundColor: `${theme.secondary}`,
 			color: `${theme.primary}`,
@@ -57,7 +57,7 @@ function Contacts() {
 			width: '55px',
 			height: '55px',
 			borderRadius: '50%',
-			border: `2px solid #4faeba`,
+			border: `2px solid #2d3334`,
 			fontSize: '45px',
 			display: 'flex',
 			alignItems: 'center',
@@ -74,9 +74,9 @@ function Contacts() {
 		},
 		detailsIcon: {
 			backgroundColor: '#667',
-			color: '#4faeba',
+			color: '#2d3334',
 			borderRadius: '50%',
-			border: '2px solid #4faeba',
+			border: '2px solid #2d3334',
 			width: '45px',
 			height: '45px',
 			display: 'flex',
@@ -88,7 +88,7 @@ function Contacts() {
 			'&:hover': {
 				transform: 'scale(1.1)',
 				color: '#667',
-				backgroundColor: '#4faeba',
+				backgroundColor: '#2d3334',
 			},
 			typoImpo: {
 				color: theme.secondary,
@@ -100,97 +100,98 @@ function Contacts() {
 	const classes = useStyles();
 
 	return (
-		<div
-			className='contacts'
-			id='contacts'
-			style={{ backgroundColor: theme.secondary }}
-		>
-			<CssBaseline />
+		<div className="contacts">
 
-			<Container maxWidth="sm">
-				<Box >
-
-					<div className='socialmedia-icons'>
-						{socialsData.github && (
-							<a
-								href={socialsData.github}
-								target='_blank'
-								rel='noreferrer'
-								className={classes.socialIcon}
-							>
-								<FaGithub aria-label='GitHub' className="localIcon" />
-							</a>
-						)}
-						{socialsData.twitter && (
-							<a
-								href={socialsData.twitter}
-								target='_blank'
-								rel='noreferrer'
-								className={classes.socialIcon}
-							>
-								<FaTwitter aria-label='Twitter' className="localIcon" />
-							</a>
-						)}
-
-						{socialsData.linkedIn && (
-							<a
-								href={socialsData.linkedIn}
-								target='_blank'
-								rel='noreferrer'
-								className={classes.socialIcon}
-							>
-								<FaLinkedinIn aria-label='LinkedIn' className="localIcon" />
-							</a>
-						)}
-
-						{socialsData.youtube && (
-							<a
-								href={socialsData.youtube}
-								target='_blank'
-								rel='noreferrer'
-								className={classes.socialIcon}
-							>
-								<FaYoutube aria-label='YouTube' className="localIcon" />
-							</a>
-						)}
-						{socialsData.stackOverflow && (
-							<a
-								href={socialsData.stackOverflow}
-								target='_blank'
-								rel='noreferrer'
-								className={classes.socialIcon}
-							>
-								<FaStackOverflow aria-label='Stack Overflow' className="localIcon" />
-							</a>
-						)}
-						{socialsData.codepen && (
-							<a
-								href={socialsData.codepen}
-								target='_blank'
-								rel='noreferrer'
-								className={classes.socialIcon}
-							>
-								<FaCodepen aria-label='CodePen' className="localIcon" />
-							</a>
-						)}
-						{socialsData.replit && (
-							<a
-								href={socialsData.replit}
-								target='_blank'
-								rel='noreferrer'
-								className={classes.socialIcon}
-							>
-								<SiReplit aria-label='replit' className="localIcon" />
-							</a>
-						)}
-					</div>
-				</Box>
-			</Container>
-		 
+			<div className="contactsHeader">
+				<div style={{ backgroundColor: theme.secondary50, height: '1rem' }}> </div>
+				<h2 style={{ color: theme.primary }}>Skills</h2>
 
 
- 
+				<Container maxWidth="sm">
+					<Box >
 
+						<div className='socialmedia-icons'>
+							{socialsData.github && (
+								<a
+									href={socialsData.github}
+									target='_blank'
+									rel='noreferrer'
+									className={classes.socialIcon}
+								>
+									<FaGithub aria-label='GitHub' className="localIcon" />
+								</a>
+							)}
+							{socialsData.twitter && (
+								<a
+									href={socialsData.twitter}
+									target='_blank'
+									rel='noreferrer'
+									className={classes.socialIcon}
+								>
+									<FaTwitter aria-label='Twitter' className="localIcon" />
+								</a>
+							)}
+
+							{socialsData.linkedIn && (
+								<a
+									href={socialsData.linkedIn}
+									target='_blank'
+									rel='noreferrer'
+									className={classes.socialIcon}
+								>
+									<FaLinkedinIn aria-label='LinkedIn' className="localIcon" />
+								</a>
+							)}
+
+							{socialsData.youtube && (
+								<a
+									href={socialsData.youtube}
+									target='_blank'
+									rel='noreferrer'
+									className={classes.socialIcon}
+								>
+									<FaYoutube aria-label='YouTube' className="localIcon" />
+								</a>
+							)}
+							{socialsData.stackOverflow && (
+								<a
+									href={socialsData.stackOverflow}
+									target='_blank'
+									rel='noreferrer'
+									className={classes.socialIcon}
+								>
+									<FaStackOverflow aria-label='Stack Overflow' className="localIcon" />
+								</a>
+							)}
+							{socialsData.codepen && (
+								<a
+									href={socialsData.codepen}
+									target='_blank'
+									rel='noreferrer'
+									className={classes.socialIcon}
+								>
+									<FaCodepen aria-label='CodePen' className="localIcon" />
+								</a>
+							)}
+							{socialsData.replit && (
+								<a
+									href={socialsData.replit}
+									target='_blank'
+									rel='noreferrer'
+									className={classes.socialIcon}
+								>
+									<SiReplit aria-label='replit' className="localIcon" />
+								</a>
+							)}
+						</div>
+					</Box>
+				</Container>
+
+
+
+
+
+			</div>
 		</div>
 	);
 }

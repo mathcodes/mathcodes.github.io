@@ -9,13 +9,15 @@ function Services() {
 	const { theme } = useContext(ThemeContext);
 	return (
 		<>
+				<div style={{ backgroundColor: theme.secondary50, height: '1rem' }}> </div>
+
 			{servicesData.length > 0 && (
 				<div className="services" id="services" style={{ backgroundColor: theme.secondary }}>
 					
 					{/* SHOPIFY PDF BUTTON ADN FREE OFFER CTA */}
 					
 					<div className="services-header">
-						<h1 style={{ color: theme.primary }}>Services</h1>
+						<h1 style={{ color: theme.secondary70 }}>Services</h1>
 					</div>
 					<div className="services-body">
 						<div className="services-bodycontainer">

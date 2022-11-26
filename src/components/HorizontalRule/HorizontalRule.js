@@ -7,7 +7,7 @@ function HorizontalRule() {
    
 
     return (
-      <div className="area" ><hr className="horizontal-rule" /></div>
+      <div className="area" > </div>
     )
 }
 

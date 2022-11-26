@@ -12,12 +12,16 @@
   src: url('./assets/fonts/Bestermind/BestermindRegular.ttf') format('embedded-opentype'), 
        url('./assets/fonts/Bestermind/BestermindRegular.ttf')  format('truetype'), 
 }
+body{
+  background: linear-gradient(#111 0%, #135d66 100%);
+
+}
 :root {
-  --primary: #4faeba;
+  --primary:  #2d3334;
   --white: #ffffff;
 }
 .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate{
-  color:#4faeba;
+  color: var(--primary);
 }
 * {
   margin: 0;
@@ -35,10 +39,10 @@ a {
     height: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #4faeba;
+    background:  var(--primary);
 }
 ::-webkit-scrollbar-thumb {
-    background: #a92ca2;
+    background:  #FFB908;
   border-radius: 10px;
   transition: 2.3s;
 }
@@ -54,7 +58,7 @@ img{
 }
 
 .makeStyles-drawerItem-77 {
-  color: #a92ca2;
+  color:  #FFB908;
 }
 
 

@@ -2,10 +2,10 @@
 {
   --primaryFont: 'Poppins', sans-serif;
 
-  --primary: #4faeba;
+  --primary:  #2d3334;
   --white: #ffffff;
 }
 
 .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate{
-  color:#4faeba;
+  color: #2d3334;
 }
