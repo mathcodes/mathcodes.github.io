@@ -15,6 +15,7 @@
 }
 
 .landing--img {
+  opacity: 0;
   --img-size: 400px;
   position: absolute;
   left: 35%;
@@ -27,6 +28,10 @@
   transition: opacity 0.3s;
 }
 
+.landing--img:hover {
+  opacity: 1;
+}
+
 .landing--container-left {
   flex: 35%;
   height: 100%;
@@ -34,6 +39,8 @@
   align-items: flex-end;
   justify-content: flex-start;
 }
+
+
 
 .lcl--content {
   margin: 3rem;
@@ -180,7 +187,7 @@
     flex: initial;
     height: 70%;
     width: 100%;
-    background-color: #eaeaea;
+    background-color: rgb(33, 33, 33);
     align-items: center;
     justify-content: center;
     padding: 0 2rem;

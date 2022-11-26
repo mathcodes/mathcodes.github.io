@@ -17,17 +17,19 @@ function Skills() {
 	}
 
 	return (
-		<div className="skills" style={{ backgroundColor: theme.secondary }}>
+		<div className="skills">
+
 			<div className="skillsHeader">
-				<h2 style={{ color: theme.primary }}>Skills</h2>
+					<div style={{ backgroundColor: theme.secondary50, height: '1rem' }}> </div>
+				<h2 style={{ color: theme.secondary70 }}>Skills</h2>
 			</div>
 			<div className="skillsContainer">
 				<div className="skill--scroll">
 					<Marquee
-						gradient={false}
-						speed={80}
+						gradient={true}
+						speed={30}
 						pauseOnHover={true}
-						pauseOnClick={true}
+						pauseOnClick={true} 
 						delay={0}
 						play={true}
 						direction="left"

@@ -1,0 +1,15 @@
+{
+  "forms": {
+    "contact": {
+      "name": "Contact Form",
+      "fields": {
+        "name": { "type": "name", "required": true },
+        "email": { "type": "email", "required": true },
+        "message": { "type": "text", "required": true }
+      },
+      "actions": [
+        { "type": "email", "to": "jon@jonchristie.net" }
+      ]
+    }
+  }
+}

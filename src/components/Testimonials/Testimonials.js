@@ -4,7 +4,8 @@ import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { testimonialsData } from '../../data/testimonialsData';
 import './Testimonials.css';
-import Background from '../Background/Background';
+import Button from '@mui/material/Button';
+
  
 function Testimonials() {
 	const { theme } = useContext(ThemeContext);
@@ -36,13 +37,13 @@ function Testimonials() {
 
 	return (
 		<>
+		<div style={{ backgroundColor: theme.secondary50, height: '1rem' }}> </div>
 			{testimonialsData.length > 0 && (
 				<div
 					className='testimonials'
-					style={{ backgroundColor: theme.primary }}
 				>
-					<div className='testimonials--header'>
-						<h1 style={{ color: theme.secondary }}>Testimonials</h1>
+					<div className='testimonials--header' style={{ color: theme.secondary70 }}>
+						<h1 >Testimonials</h1>
 					</div>
 					<div className='testimonials--body'>
 
@@ -91,7 +92,7 @@ function Testimonials() {
 								style={{ backgroundColor: theme.secondary }}
 							>
 								<FaArrowLeft
-									style={{ color: theme.primary }}
+									style={{ color: theme.secondary70 }}
 									aria-label='Previous testimonial'
 								/>
 							</button>
@@ -101,13 +102,24 @@ function Testimonials() {
 								style={{ backgroundColor: theme.secondary }}
 							>
 								<FaArrowRight
-									style={{ color: theme.primary }}
+									style={{ color: theme.secondary70 }}
 									aria-label='Next testimonial'
 								/>
 							</button>
 						</div>
 					</div>
-					<Background className="backgroundStyle"/>
+					<div className="formBtn">
+					<h1 className="blink" style={{fontSize:'3rem'}}>👉</h1><a style={{ backgroundColor: 'none' }}href="./formpage"><Button 
+						style={{
+							backgroundColor: theme.primary,
+							color: theme.secondary70,
+							width: '18rem',
+							display: 'flex',
+							alignItems: 'center',
+              justifyContent: 'center',
+						}} variant="contained"><h2>CONTACT ME</h2></Button></a><h1 className="blink2"  style={{fontSize:'3rem'}}>👈</h1>
+					</div>
+					
 				</div>
 			)}
 		</>

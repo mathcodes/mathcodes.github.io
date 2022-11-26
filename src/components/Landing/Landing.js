@@ -12,10 +12,10 @@ import {
 	FaLinkedin,
 	FaGithub,
 	FaYoutube,
-	FaBlogger,
-	FaCodepen
+	FaStackOverflow,
+	FaCodepen,
 } from 'react-icons/fa';
-import {SiReplit} from 'react-icons/si';
+import { SiReplit } from 'react-icons/si';
 function Landing() {
 	const { theme, drawerOpen } = useContext(ThemeContext);
 
@@ -81,19 +81,6 @@ function Landing() {
 					style={{ backgroundColor: theme.primary }}
 				>
 					<div className='lcl--content'>
-						{socialsData.linkedIn && (
-							<a
-								href={socialsData.linkedIn}
-								target='_blank'
-								rel='noreferrer'
-							>
-								<FaLinkedin
-									className='landing--social'
-									style={{ color: theme.secondary }}
-									aria-label='LinkedIn'
-								/>
-							</a>
-						)}
 						{socialsData.github && (
 							<a
 								href={socialsData.github}
@@ -106,8 +93,7 @@ function Landing() {
 									aria-label='GitHub'
 								/>
 							</a>
-						)}
-						{socialsData.twitter && (
+						)}{socialsData.twitter && (
 							<a
 								href={socialsData.twitter}
 								target='_blank'
@@ -117,6 +103,19 @@ function Landing() {
 									className='landing--social'
 									style={{ color: theme.secondary }}
 									aria-label='Twitter'
+								/>
+							</a>
+						)}
+						{socialsData.linkedIn && (
+							<a
+								href={socialsData.linkedIn}
+								target='_blank'
+								rel='noreferrer'
+							>
+								<FaLinkedin
+									className='landing--social'
+									style={{ color: theme.secondary }}
+									aria-label='LinkedIn'
 								/>
 							</a>
 						)}
@@ -133,16 +132,16 @@ function Landing() {
 								/>
 							</a>
 						)}
-						{socialsData.blogger && (
+						{socialsData.codepen && (
 							<a
-								href={socialsData.blogger}
+								href={socialsData.stackOverflow}
 								target='_blank'
 								rel='noreferrer'
 							>
-								<FaBlogger
+								<FaStackOverflow
 									className='landing--social'
 									style={{ color: theme.secondary }}
-									aria-label='Blogger'
+									aria-label='stackOverflow'
 								/>
 							</a>
 						)}
@@ -192,9 +191,9 @@ function Landing() {
 						style={{ color: theme.tertiary }}
 					>
 						<h6>{headerData.title}</h6>
-						<br/>
+						<br />
 						<h1>{headerData.name}</h1>
-						<br/>
+						<br />
 						<p>{headerData.description}</p>
 
 						<div className='lcr-buttonContainer'>
