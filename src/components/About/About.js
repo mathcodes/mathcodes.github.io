@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import './About.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { aboutData } from '../../data/aboutData'
-
+import Background from '../Background/Background';
 
 
 function About() {
@@ -18,7 +18,7 @@ function About() {
             </div>
             <div className="about-body">
                 <div className="about-description">
-                    <h2 style={{color: theme.primary}}>{aboutData.title}</h2>
+                    <h2 style={{color: theme.secondary70}}>{aboutData.title}</h2>
                     <p style={{color:theme.tertiary80}}>{aboutData.description1}<br/><br/>{aboutData.description2}<br/><br/>{aboutData.description3}<br/><br/>{aboutData.description4}</p>
                 </div>
                 <div className="about-img">
@@ -28,6 +28,7 @@ function About() {
                     />
                 </div>
             </div>
+            <Background />
         </div>
 
     )

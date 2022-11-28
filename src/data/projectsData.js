@@ -14,8 +14,8 @@ export const projectsData = [
 		projectName: 'Expense Tracker',
 		projectDesc: 'A React Native iOS/Android App to keep track of your expense (or anything else, like a to do list with deadlines). Includes navigation, authentication, and persistence of data.',
 		tags: ['React', 'React Native', 'Javascript', 'Expo', 'CSS', 'Firebase'	],
-		code: 'https://github.com/mathcodes/react-native-apps',
-		demo: 'https://github.com/mathcodes/react-native-apps',
+		code: 'https://github.com/mathcodes/react-native-apps/tree/main/sample-apps/rn-expense-tracker/rn-expense-trackers',
+		demo: 'https://github.com/mathcodes/react-native-apps/tree/main/sample-apps/rn-expense-tracker/rn-expense-trackers',
 		image: etrn
 	},
 	{

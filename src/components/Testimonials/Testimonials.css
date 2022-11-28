@@ -6,6 +6,10 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background: linear-gradient(#222 0%, #777 50%,  #FFB908 100%);
+  color:purple;
+    color:  var(--primary);
+  border-radius: 10px;
 }
 
 .slick-slider {
@@ -33,6 +37,7 @@
 }
 
 .testimonials--header h1 {
+  background: none;
   font-style: normal;
   font-weight: bold;
   font-size: 3.5rem;
@@ -90,6 +95,7 @@
   align-items: center;
   text-align: center;
   width: 70%;
+  border-radius: 20px;
 }
 
 .single--testimony {
@@ -140,6 +146,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 20px;
   justify-content: center;
 }
 
@@ -252,5 +259,48 @@
 
   .review--content {
     /* min-height: 350px; */
+  }
+}
+.filler{
+  height: 1rem;
+  /* color: var(--secondary50) */
+}
+.formBtn{
+  margin:3rem;
+  height: 4rem;
+  width:18rem;
+  display: flex;
+	align-items: flex;
+  justify-content: 'center',
+}
+.hand{
+  display:flex;
+  -webkit-animation: blink 3s infinite;
+  animation: blink 3s infinite;
+}
+
+.hand::before{
+  display: none;
+}
+
+.blink {
+  animation: blinker 2.2s linear infinite;
+  color:white;
+  width:100px;
+  font-weight:bold;
+}
+
+
+.blink2 {
+  animation: blinker 2.4s linear infinite;
+ 
+  color:white;
+  width:100px;
+  font-weight:bold;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
   }
 }

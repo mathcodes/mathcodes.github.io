@@ -1,0 +1,316 @@
+.background
+{
+    max-height: 0;
+    position: relative;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    font-family: 'Exo', sans-serif;
+}
+
+
+
+
+
+.context
+{
+    width: 100%;
+    position: absolute;
+    top: 50vh;
+
+}
+
+.context h1
+{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+.area
+{
+    width: 20%;
+}
+
+.circles,
+.circles2
+{
+    position: absolute;
+    top: 0;
+    left: 20;
+    right: 20;
+    margin: 25px;
+    width: 80%;
+    height: 100%;
+    overflow: revert;
+}
+
+.circles li
+{
+    transition: all 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    list-style: none;
+    width: 40px;
+    height: 20px;
+    animation: animate 25s alternate infinite;
+    bottom: -50px;
+    color: #FFB908;
+    font-size: 300%;
+}
+
+
+
+
+.circles li:nth-child(1)
+{
+    transition: all 0;
+    left: 5%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2)
+{
+    transition: all 0;
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3)
+{
+    transition: all 0;
+    left: 15%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(4)
+{
+    transition: all 0;
+    left: 20%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(5)
+{
+    transition: all 0;
+    left: 25%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6)
+{
+    transition: all 0;
+    left: 30%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(7)
+{
+    transition: all 0;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(8)
+{
+    transition: all 0;
+    left: 65%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 0s;
+    animation-duration: 22s;
+}
+
+.circles li:nth-child(9)
+{
+    transition: all 0;
+    left: 80%;
+    top:5%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 0s;
+    animation-duration: 13s;
+}
+
+.circles li:nth-child(10)
+{
+    transition: all 0;
+    left: 90%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ----------------------------------------circles2---------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
+.circles2 li
+{
+    transition: all 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    list-style: none;
+    width: 40px;
+    height: 20px;
+    animation: animate 25s alternate infinite;
+
+    bottom: -150px;
+    color: #FFB908;
+    font-size: 300%;
+}
+
+
+.circles2 li:nth-child(1)
+{
+    left: 35%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles2 li:nth-child(2)
+{
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+    animation-duration: 12s;
+}
+
+.circles2 li:nth-child(3)
+{
+    left: 80%;
+    width: 30px;
+    height: 25px;
+    animation-delay: 0s;
+    border-radius: 50%;
+}
+
+.circles2 li:nth-child(4)
+{
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles2 li:nth-child(5)
+{
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles2 li:nth-child(6)
+{
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 0s;
+}
+
+.circles2 li:nth-child(7)
+{
+    left: 35%;
+    animation-delay: 0s;
+}
+
+.circles2 li:nth-child(8)
+{
+    left: -20;
+    width: 25px;
+    height: 25px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+}
+
+.circles2 li:nth-child(9)
+{
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 0s;
+    animation-duration: 114s;
+}
+
+.circles2 li:nth-child(10)
+{
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate
+{
+
+    0%
+    {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%
+    {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+
+
+#root>div>div:nth-child(1)>div.MuiContainer-root.MuiContainer-maxWidthLg.css-1oqqzyl-MuiContainer-root>div.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation6.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-sm-8.MuiGrid-grid-md-5.css-is0ezk-MuiPaper-root-MuiGrid-root>div>div:nth-child(1)>div>div,
+#root>div>div:nth-child(1)>div.MuiContainer-root.MuiContainer-maxWidthLg.css-1oqqzyl-MuiContainer-root>div.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation6.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-sm-8.MuiGrid-grid-md-5.css-is0ezk-MuiPaper-root-MuiGrid-root>div>div:nth-child(2)>div>div,
+#root>div>div:nth-child(1)>div.MuiContainer-root.MuiContainer-maxWidthLg.css-1oqqzyl-MuiContainer-root>div.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation6.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-sm-8.MuiGrid-grid-md-5.css-is0ezk-MuiPaper-root-MuiGrid-root>div>div:nth-child(3)>div>div,
+#root>div>div:nth-child(1)>div.MuiContainer-root.MuiContainer-maxWidthLg.css-1oqqzyl-MuiContainer-root>div.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation6.MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-12.MuiGrid-grid-sm-8.MuiGrid-grid-md-5.css-is0ezk-MuiPaper-root-MuiGrid-root>div>div:nth-child(4)>div>div
+{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    color: #FFB908;
+}
