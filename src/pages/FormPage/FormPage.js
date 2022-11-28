@@ -4,24 +4,32 @@ import Paper from '@mui/material/Paper';
 import { useForm, ValidationError } from "@formspree/react";
 import { Container, Grid } from '@mui/material';
 import ThanksBar from './ThanksBar';
+import {headerData} from '../../data/headerData'
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("xaykzqea");
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return ( 
+    <>
+    <h1>Thank you! I will get back to you shortly!</h1>
+    <a href="../Main/Main" alt="button anchor tag jon christie"><button>HOME</button></a></>
+    );
   }
 
   const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#2d3334' : '#fff',
+    backgroundColor: theme.palette.mode === 'dark' ? '#232526' : '#fff',
     ...theme.typography.body2,
     padding: theme.spacing(1),
     textAlign: 'center',
     color: theme.palette.text.secondary,
   }));
 
+  const formStatus = state.succeeded ?
+  <h1>Thank you! I will get back to you shortly!</h1> : <img alt="jon christie web developer resume job portfolio" style={{height:'10rem', width:'10rem'}} src={headerData.BG} />
+
   return (
     <>
-      <ThanksBar />
+      <ThanksBar view={formStatus}/>
       <form className="mx-auto w-full pt-10 sm:w-3/4" onSubmit={handleSubmit}>
         <div className="flex flex-col md:flex-row">
           <Container maxWidth="sm">
@@ -31,7 +39,7 @@ function ContactForm() {
                   <input
                     data-aos="fade-right"
                     data-aos-duration="1000"
-                    className="mr-3 w-full rounded border px-4 py-3 font-body text-black md:w-1/2 lg:mr-5"
+                    className="mr-3 w-full rounded border font-body text-black md:w-1/2 lg:mr-5"
                     placeholder="Name"
                     type="text"
                     id="name"
@@ -44,7 +52,7 @@ function ContactForm() {
                   <input
                     data-aos="fade-left"
                     data-aos-duration="1000"
-                    className="mt-6 w-full rounded border px-4 py-3 font-body text-black md:mt-0 md:ml-3 md:w-1/2 lg:ml-5"
+                    className="mt-6 w-full rounded border font-body text-black md:mt-0 md:ml-3 md:w-1/2 lg:ml-5"
                     placeholder="Email"
                     type="email"
                     id="email"

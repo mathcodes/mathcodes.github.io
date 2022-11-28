@@ -19,14 +19,13 @@ const darkTheme = createTheme({
   },
 });
 
-export default function ThanksBar() {
+export default function ThanksBar({ view }) {
   return (
     <Stack spacing={2} sx={{ flexGrow: 1 }}>
       <ThemeProvider theme={darkTheme}>
  
         <AppBar position="static" color="primary">
-        <img alt="jon christie web developer resume job portfolio" style={{height:'10rem', width:'10rem'}} src={headerData.BG} className={darkTheme.palette} />
-
+          {view}
         </AppBar>
       </ThemeProvider>
     </Stack>

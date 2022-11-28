@@ -4,18 +4,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #FFB908;
+  color: #eaeaea;
 }
 
 .footer p {
   font-weight: 500;
   font-family: var(--secondary70);
   font-size: 18px;
-  color: #FFB908;
+  color: #eaeaea;
 }
 
 .footer p span {
   font-size: 24px;
-  color: #FFB908;
+  color: #eaeaea;
 }
 

@@ -67,7 +67,7 @@ body
     height: 20px;
     animation: animate 25s alternate infinite;
     bottom: -50px;
-    color: #FFB908;
+    color: #eaeaea;
     font-size: 300%;
 }
 
@@ -191,7 +191,7 @@ body
     animation: animate 25s alternate infinite;
 
     bottom: -150px;
-    color: #FFB908;
+    color: #eaeaea;
     font-size: 300%;
 }
 
@@ -312,5 +312,5 @@ body
     flex-direction: row;
     align-items: center;
     width: 100%;
-    color: #FFB908;
+    color: #eaeaea;
 }

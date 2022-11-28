@@ -57,7 +57,7 @@ function Contacts() {
 			width: '55px',
 			height: '55px',
 			borderRadius: '50%',
-			border: `2px solid #2d3334`,
+			border: `2px solid #232526`,
 			fontSize: '45px',
 			display: 'flex',
 			alignItems: 'center',
@@ -74,9 +74,9 @@ function Contacts() {
 		},
 		detailsIcon: {
 			backgroundColor: '#667',
-			color: '#2d3334',
+			color: '#232526',
 			borderRadius: '50%',
-			border: '2px solid #2d3334',
+			border: '2px solid #232526',
 			width: '45px',
 			height: '45px',
 			display: 'flex',
@@ -88,7 +88,7 @@ function Contacts() {
 			'&:hover': {
 				transform: 'scale(1.1)',
 				color: '#667',
-				backgroundColor: '#2d3334',
+				backgroundColor: '#232526',
 			},
 			typoImpo: {
 				color: theme.secondary,

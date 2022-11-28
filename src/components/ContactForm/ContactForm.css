@@ -1,22 +1,22 @@
 .submitBtn
 {
-  background:  #2d3334;
+  background:  #232526;
 }
 
 .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
 .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate
 {
-  color: #2d3334;
+  color: #232526;
 }
 
 .contactsHead
 {
-  background: linear-gradient(#222 0%,  #FFB908 100%)
+  background: #232526;
 }
 
 .contactHeader
 {
-  color: #2d3334;
+  color: #232526;
   font-size: 48px;
   font-family: 'Poppins', sans-serif;
   text-align: center;
@@ -25,7 +25,7 @@
 
 .contactHeader
 {
-  color: #2d3334;
+  color: #232526;
   font-size: 30px;
   font-family: 'Poppins', sans-serif;
   text-align: center;
@@ -79,7 +79,7 @@ li
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
-  background: linear-gradient( #FFB908 0%, #222 100%);
+  background: linear-gradient( #eaeaea 0%, #222 100%);
 
 }
 
@@ -107,7 +107,7 @@ li
 
 a:-webkit-any-link
 {
-  color: #2d3334;
+  color: #232526;
   cursor: pointer;
   text-decoration: none;
   transition: all 0s;
@@ -115,14 +115,14 @@ a:-webkit-any-link
 
 a:-webkit-any-link:hover
 {
-  background-color: #2d3334;
+  background-color: #232526;
   color: #212121;
   font-weight: 400;
 }
 
 .makeStyles-socialIcon-31
 {
-  /* color:  #2d3334; */
+  /* color:  #232526; */
   width: 45px;
   height: 45px;
   display: flex;
@@ -166,7 +166,7 @@ a:-webkit-any-link:hover
   justify-content: flex-start;
   width: 100%;
   margin-bottom: 2.5rem;
-  color: #2d3334;
+  color: #232526;
   text-decoration: wavy;
   font-weight: 400;
   background-color: #d3540000;
@@ -178,7 +178,7 @@ a:-webkit-any-link:hover
 .personal-details:hover
 {
   text-decoration: wavy;
-  background-color: #2d3334;
+  background-color: #232526;
   color: #212121;
   font-weight: 800;
 }
@@ -212,7 +212,7 @@ a:-webkit-any-link:hover
 detailsIcon
 {
   background-color: '#667';
-  color: '#2d3334';
+  color: '#232526';
   border-radius: '50%'; 
   margin-bottom: 0.3rem;
   width: '45px';
@@ -229,7 +229,7 @@ detailsIcon:hover
 {
   transform: 'scale(1.1)';
   color: '#667';
-  background-color: '#2d3334';
+  background-color: '#232526';
 }
 
 .contacts--img
@@ -284,7 +284,7 @@ ul,
     justify-content: flex-start;
     width: 100%;
     margin-bottom: 2.5rem;
-    color: #2d3334;
+    color: #232526;
     text-decoration: wavy;
     font-weight: 400;
     background-color: #d3540000;
