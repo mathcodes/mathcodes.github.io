@@ -1,9 +1,21 @@
 {
   "files": {
+<<<<<<< HEAD
 
     "main.css": "/static/css/main.ba96582f.chunk.css",
     "main.js": "/static/js/main.ac6118f4.chunk.js",
     "main.js.map": "/static/js/main.ac6118f4.chunk.js.map",
+=======
+<<<<<<< HEAD
+    "main.css": "/static/css/main.8bba0d8c.chunk.css",
+    "main.js": "/static/js/main.295a0fda.chunk.js",
+    "main.js.map": "/static/js/main.295a0fda.chunk.js.map",
+=======
+    "main.css": "/static/css/main.ba96582f.chunk.css",
+    "main.js": "/static/js/main.ac6118f4.chunk.js",
+    "main.js.map": "/static/js/main.ac6118f4.chunk.js.map",
+>>>>>>> 5dbcac5 (nov updated)
+>>>>>>> 854fe6e (nov updated)
     "runtime-main.js": "/static/js/runtime-main.cb89c5a1.js",
     "runtime-main.js.map": "/static/js/runtime-main.cb89c5a1.js.map",
     "static/css/2.65f8c46c.chunk.css": "/static/css/2.65f8c46c.chunk.css",
@@ -13,7 +25,15 @@
     "static/js/3.ea174584.chunk.js.map": "/static/js/3.ea174584.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.65f8c46c.chunk.css.map": "/static/css/2.65f8c46c.chunk.css.map",
+<<<<<<< HEAD
     "static/css/main.ba96582f.chunk.css.map": "/static/css/main.ba96582f.chunk.css.map",
+=======
+<<<<<<< HEAD
+    "static/css/main.8bba0d8c.chunk.css.map": "/static/css/main.8bba0d8c.chunk.css.map",
+=======
+    "static/css/main.ba96582f.chunk.css.map": "/static/css/main.ba96582f.chunk.css.map",
+>>>>>>> 5dbcac5 (nov updated)
+>>>>>>> 854fe6e (nov updated)
     "static/js/2.09d8be7a.chunk.js.LICENSE.txt": "/static/js/2.09d8be7a.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/BestermindRegular.e58a1922.ttf",
     "static/media/JCircle.396647e0.png": "/static/media/JCircle.396647e0.png",
@@ -118,7 +138,17 @@
     "static/js/runtime-main.cb89c5a1.js",
     "static/css/2.65f8c46c.chunk.css",
     "static/js/2.09d8be7a.chunk.js",
+<<<<<<< HEAD
     "static/css/main.ba96582f.chunk.css",
     "static/js/main.ac6118f4.chunk.js"
+=======
+<<<<<<< HEAD
+    "static/css/main.8bba0d8c.chunk.css",
+    "static/js/main.295a0fda.chunk.js"
+=======
+    "static/css/main.ba96582f.chunk.css",
+    "static/js/main.ac6118f4.chunk.js"
+>>>>>>> 5dbcac5 (nov updated)
+>>>>>>> 854fe6e (nov updated)
   ]
 }
