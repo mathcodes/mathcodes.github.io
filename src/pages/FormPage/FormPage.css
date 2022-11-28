@@ -1,0 +1,65 @@
+.formComp{
+  box-sizing: border-box;
+  padding: 0 0rem;
+  flex: initial;
+  height: 70%;
+  width: 100%;
+  background: var(--primary);
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  color: white;
+  margin-bottom:40%;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20%;
+    justify-content: center;
+    height: 100%;
+    width:100%;
+    position: relative;
+}
+
+.formHeader{
+  display: flex;
+  
+  text-align: left;
+  color:#eaeaea
+}
+.formButton{
+  width: 50%;
+  margin: auto;
+  padding: 0 5rem;
+}
+
+.formDiv{
+  /* width: 100%; */
+  margin: auto;
+}
+
+.inputForm{
+  background: #eaeaea;
+  color: black;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.formElement {
+  width: 30%;
+  display: inline-flex;
+  background: #eaeaea;
+}
+
+.imgForm{
+  display: flex;
+  justify-content: center;
+  width: 10%;
+  margin: 1rem;
+}
+
+.MuiInputBase-input {
+  margin: 3rem 3rem;
+}

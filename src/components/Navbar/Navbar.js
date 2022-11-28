@@ -229,7 +229,7 @@ function Navbar() {
 
 						<Fade left> 
 							<NavLink
-								to='/esume'
+								to='/Resume'
 								smooth={true}
 								spy='true'
 								duration={2000}

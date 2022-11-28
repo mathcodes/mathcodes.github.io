@@ -14,7 +14,7 @@ function Services() {
 			{servicesData.length > 0 && (
 				<div className="services" id="services" style={{ backgroundColor: theme.secondary }}>
 					
-					{/* SHOPIFY PDF BUTTON ADN FREE OFFER CTA */}
+				 
 					
 					<div className="services-header">
 						<h1 style={{ color: theme.secondary70 }}>Services</h1>

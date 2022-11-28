@@ -12,7 +12,7 @@ export const primaryThemeDark = {
 	primary80: '#165159',
 	primary50: '#032D3380',
 	primary30: '#0000004D',
-	secondary: '#000000F0',
+	secondary: '#00000053',
 	secondary70: '#FFB908',
 	secondary50: '#A08F23',
 	tertiary: '#eaeaea',
