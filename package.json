@@ -7,6 +7,8 @@
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
+    "@formspree/cli": "^0.9.6",
+    "@formspree/react": "^2.4.1",
     "@material-ui/core": "^4.12.2",
     "@material-ui/icons": "^4.11.2",
     "@mui/icons-material": "^5.8.4",
@@ -16,9 +18,14 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
     "caniuse-lite": "^1.0.30001364",
+    "dotenv": "^16.0.3",
     "emotion": "^11.0.0",
+    "env": "^0.0.2",
+    "express": "^4.18.2",
     "gh-pages": "^3.2.3",
+    "pull": "^2.1.1",
     "react": "^17.0.2",
+    "react-bootstrap": "^2.5.0",
     "react-dom": "^17.0.2",
     "react-fast-marquee": "^1.2.1",
     "react-helmet": "^6.1.0",
@@ -31,16 +38,18 @@
     "react-slick": "^0.28.1",
     "slick-carousel": "^1.8.1",
     "validator": "^13.6.0",
+    "vercel": "^28.5.6",
     "web-vitals": "^1.0.1"
   },
-  "scripts": {
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "devDependencies":{
+    "react-app-rewired": "@2.2.1"
   },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+},
   "eslintConfig": {
     "extends": [
       "react-app",
