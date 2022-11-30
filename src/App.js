@@ -5,7 +5,7 @@ import { ThemeSwitcher } from './contexts/ThemeSwitcher';
 import { Main, ProjectPage, ThankYou, FormPage } from './pages';
 import { BackToTop } from './components';
 import ScrollToTop from './utils/ScrollToTop';
-import * as dotenv from 'dotenv' // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
+import * as dotenv from 'dotenv'  
 // import express from 'express'
 import './App.css'
 import { FormspreeProvider } from '@formspree/react';

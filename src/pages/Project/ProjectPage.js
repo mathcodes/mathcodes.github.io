@@ -30,7 +30,7 @@ function ProjectPage() {
 			fontWeight: 500,
 			fontSize: '0.9rem',
 			backgroundColor: theme.secondary,
-			boxShadow: theme.type === 'dark' ? 'inset 3px 3px 6px #ffffff10, inset -3px -3px 6px #00000060' : 'inset 3px 3px 6px #ffffffbd, inset -3px -3px 6px #00000030',
+			boxShadow: theme.type === 'dark' ? 'inset 3px 3px 6px #eaeaea, inset -3px -3px 6px #00000060' : 'inset 3px 3px 6px #ffffffbd, inset -3px -3px 6px #00000030',
 			"&::placeholder": {
 				color: theme.tertiary80,
 			},

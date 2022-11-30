@@ -17,7 +17,7 @@ body{
 
 }
 :root {
-  --primary:  #2d3334;
+  --primary:  #232526;
   --white: #ffffff;
 }
 .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate{
@@ -42,7 +42,7 @@ a {
     background:  var(--primary);
 }
 ::-webkit-scrollbar-thumb {
-    background:  #FFB908;
+    background:  #eaeaea;
   border-radius: 10px;
   transition: 2.3s;
 }
@@ -58,7 +58,7 @@ img{
 }
 
 .makeStyles-drawerItem-77 {
-  color:  #FFB908;
+  color:  #eaeaea;
 }
 
 
