@@ -63,3 +63,18 @@
 .MuiInputBase-input {
   margin: 3rem 3rem;
 }
+.divFormBtn{
+  position: relative;
+  align-items: center;
+}
+
+#formButtonComponent {
+  display: flex;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+}
+
+Item{
+  background: orange;
+}

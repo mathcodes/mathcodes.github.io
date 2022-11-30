@@ -4,9 +4,10 @@ import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import { useForm, ValidationError } from "@formspree/react";
 import { Container, Grid } from '@mui/material';
-import ThanksBar from './ThanksBar';
+import ThanksBar from '../../components/ThanksBar/ThanksBar';
 import {headerData} from '../../data/headerData'
 import Button from '@mui/material/Button';
+import ButtonComponent from '../../components/ButtonComponent/ButtonComponent'
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("xaykzqea");
@@ -27,7 +28,7 @@ function ContactForm() {
   }));
 
   const formStatus = state.succeeded ?
-  <h1>Thank you! I will get back to you shortly!</h1> : <img alt="jon christie web developer resume job portfolio" style={{height:'10rem', width:'10rem'}} src={headerData.BG} />
+  <h1>Thank you! I will get back to you shortly!</h1> : <img alt="jon christie web developer resume job portfolio" style={{margin:'1rem', height:'4rem', width:'4rem'}} src={headerData.BG} />
 
  
 
@@ -43,7 +44,7 @@ function ContactForm() {
                   <input
                     data-aos="fade-right"
                     data-aos-duration="1000"
-                    className="mr-3 w-full rounded border font-body text-black md:w-1/2 lg:mr-5"
+                    className="w-full rounded border font-body text-black md:w-1/2"
                     placeholder="Name"
                     type="text"
                     id="name"
@@ -96,26 +97,12 @@ function ContactForm() {
                   </button>
                 </Item>
               </Grid>
-              <div className="formBtn">
-						<h1 className="blink" style={{ fontSize: '3rem' }}>👉</h1>
-						
-							<Button
-								style={{
-									backgroundColor: '#232526',
-									color: '#eaeaea',
-									width: '18rem',
-									display: 'flex',
-									alignItems: 'center',
-									justifyContent: 'center',
-								}} variant="contained">
-									<a style={{ backgroundColor: 'none' }} href="./formpage">
-								<h2>CONTACT ME</h2></a>
-							</Button>
-						
-						<h1 className="blink2" style={{ fontSize: '3rem' }}>👈</h1>
-					</div>
+              
 
             </Grid>
+            <div className="divFormBtn">
+              <ButtonComponent id="formButtonComponent" label="HOME" link="./" width="18rem" height="4rem"/>
+            </div>
           </Container>
         </div>
       </form>

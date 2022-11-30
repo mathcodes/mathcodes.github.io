@@ -272,41 +272,13 @@
   /* color: var(--secondary50) */
 }
 .formBtn{
-  margin:3rem;
+  position: relative;
+  margin:2rem auto;
   height: 4rem;
   width:18rem;
   display: flex;
 	align-items: flex;
-  justify-content: 'center',
-}
-.hand{
-  display:flex;
-  -webkit-animation: blink 3s infinite;
-  animation: blink 3s infinite;
-}
-
-.hand::before{
-  display: none;
-}
-
-.blink {
-  animation: blinker 2.2s linear infinite;
-  color:white;
-  width:100px;
-  font-weight:bold;
-}
-
-
-.blink2 {
-  animation: blinker 2.4s linear infinite;
- 
-  color:white;
-  width:100px;
-  font-weight:bold;
-}
-
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }

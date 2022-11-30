@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.57253ab5.chunk.css",
-    "main.js": "/static/js/main.e61c720f.chunk.js",
-    "main.js.map": "/static/js/main.e61c720f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.8438a55c.js",
-    "runtime-main.js.map": "/static/js/runtime-main.8438a55c.js.map",
+    "main.css": "/static/css/main.3413e163.chunk.css",
+    "main.js": "/static/js/main.c25e0387.chunk.js",
+    "main.js.map": "/static/js/main.c25e0387.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.46e82aaf.js",
+    "runtime-main.js.map": "/static/js/runtime-main.46e82aaf.js.map",
     "static/css/2.65f8c46c.chunk.css": "/static/css/2.65f8c46c.chunk.css",
-    "static/js/2.155945ac.chunk.js": "/static/js/2.155945ac.chunk.js",
-    "static/js/2.155945ac.chunk.js.map": "/static/js/2.155945ac.chunk.js.map",
-    "static/js/3.5fe3b995.chunk.js": "/static/js/3.5fe3b995.chunk.js",
-    "static/js/3.5fe3b995.chunk.js.map": "/static/js/3.5fe3b995.chunk.js.map",
+    "static/js/2.a481f127.chunk.js": "/static/js/2.a481f127.chunk.js",
+    "static/js/2.a481f127.chunk.js.map": "/static/js/2.a481f127.chunk.js.map",
+    "static/js/3.618ff7b6.chunk.js": "/static/js/3.618ff7b6.chunk.js",
+    "static/js/3.618ff7b6.chunk.js.map": "/static/js/3.618ff7b6.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.65f8c46c.chunk.css.map": "/static/css/2.65f8c46c.chunk.css.map",
-    "static/css/main.57253ab5.chunk.css.map": "/static/css/main.57253ab5.chunk.css.map",
-    "static/js/2.155945ac.chunk.js.LICENSE.txt": "/static/js/2.155945ac.chunk.js.LICENSE.txt",
+    "static/css/main.3413e163.chunk.css.map": "/static/css/main.3413e163.chunk.css.map",
+    "static/js/2.a481f127.chunk.js.LICENSE.txt": "/static/js/2.a481f127.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/BestermindRegular.e58a1922.ttf",
     "static/media/JCircle.396647e0.png": "/static/media/JCircle.396647e0.png",
     "static/media/JCircle_dark_gray.77dc7436.png": "/static/media/JCircle_dark_gray.77dc7436.png",
@@ -114,10 +114,10 @@
     "static/media/wordpress.1c0bf6df.svg": "/static/media/wordpress.1c0bf6df.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8438a55c.js",
+    "static/js/runtime-main.46e82aaf.js",
     "static/css/2.65f8c46c.chunk.css",
-    "static/js/2.155945ac.chunk.js",
-    "static/css/main.57253ab5.chunk.css",
-    "static/js/main.e61c720f.chunk.js"
+    "static/js/2.a481f127.chunk.js",
+    "static/css/main.3413e163.chunk.css",
+    "static/js/main.c25e0387.chunk.js"
   ]
 }

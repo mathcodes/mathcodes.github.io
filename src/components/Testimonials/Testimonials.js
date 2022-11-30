@@ -4,8 +4,7 @@ import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { testimonialsData } from '../../data/testimonialsData';
 import './Testimonials.css';
-import Button from '@mui/material/Button';
-
+import ButtonComponent from '../ButtonComponent/ButtonComponent'
 
 function Testimonials() {
 	const { theme } = useContext(ThemeContext);
@@ -108,20 +107,7 @@ function Testimonials() {
 							</button>
 						</div>
 					</div>
-					<div className="formBtn">
-						<Button
-							style={{
-								backgroundColor: theme.primary,
-								color: theme.secondary70,
-								width: '18rem',
-								display: 'flex',
-								alignItems: 'center',
-								justifyContent: 'center',
-							}} variant="contained">
-							<a style={{ backgroundColor: 'none' }} href="./formpage">
-								<h2>CONTACT ME</h2></a>
-						</Button>
-					</div>
+				<ButtonComponent label="CONTACT" link="./FormPage" />
 
 				</div>
 			)}
