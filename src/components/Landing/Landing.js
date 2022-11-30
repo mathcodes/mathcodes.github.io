@@ -197,28 +197,39 @@ function Landing() {
 						<p>{headerData.description}</p>
 
 						<div className='lcr-buttonContainer'>
-							{headerData.resumePdf && (
+						 
 								<a
 									href={headerData.resumePdf}
 									download='resume'
 									target='_blank'
 									rel='noreferrer'
 								>
-									<Button className={classes.resumeBtn}>
-										Download CV
-									</Button>
+								<Button
+								style={{
+									backgroundColor: theme.primary,
+									color: theme.secondary70,
+									width: '8rem',
+									display: 'flex',
+									alignItems: 'center',
+									justifyContent: 'center',
+								}} variant="contained">
+									<a style={{ backgroundColor: 'none' }} href={headerData.resumePdf}>
+								<h2>RESUME</h2></a>
+							</Button>
 								</a>
-							)}
-							<NavLink
-								to='/#contacts'
-								smooth={true}
-								spy='true'
-								duration={2000}
-							>
-								<Button className={classes.contactBtn}>
-									Contact
-								</Button>
-							</NavLink>
+						 
+								<Button
+								style={{
+									backgroundColor: theme.primary,
+									color: theme.secondary70,
+									width: '8rem',
+									display: 'flex',
+									alignItems: 'center',
+									justifyContent: 'center',
+								}} variant="contained">
+									<a style={{ backgroundColor: 'none' }} href="./formpage">
+								<h2>CONTACT</h2></a>
+							</Button>
 						</div>
 					</div>
 				</div>

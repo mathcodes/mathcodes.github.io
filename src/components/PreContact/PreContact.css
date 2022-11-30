@@ -180,7 +180,7 @@ a:-webkit-any-link:hover
 {
   text-decoration: wavy;
   background-color: #232526;
-  color: #212121;
+  color: #eaeaea;
   font-weight: 800;
 }
 
@@ -229,7 +229,7 @@ detailsIcon
 detailsIcon:hover
 {
   transform: 'scale(1.1)';
-  color: '#667';
+  color: '#eaeaea';
   background-color: '#232526';
 }
 
