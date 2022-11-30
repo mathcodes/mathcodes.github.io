@@ -1,10 +1,12 @@
-import React from "react";
+import React from 'react';
+// import { ThemeContext } from '../../contexts/ThemeContext';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import { useForm, ValidationError } from "@formspree/react";
 import { Container, Grid } from '@mui/material';
 import ThanksBar from './ThanksBar';
 import {headerData} from '../../data/headerData'
+import Button from '@mui/material/Button';
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("xaykzqea");
@@ -26,6 +28,8 @@ function ContactForm() {
 
   const formStatus = state.succeeded ?
   <h1>Thank you! I will get back to you shortly!</h1> : <img alt="jon christie web developer resume job portfolio" style={{height:'10rem', width:'10rem'}} src={headerData.BG} />
+
+ 
 
   return (
     <>
@@ -92,6 +96,25 @@ function ContactForm() {
                   </button>
                 </Item>
               </Grid>
+              <div className="formBtn">
+						<h1 className="blink" style={{ fontSize: '3rem' }}>👉</h1>
+						
+							<Button
+								style={{
+									backgroundColor: '#232526',
+									color: '#eaeaea',
+									width: '18rem',
+									display: 'flex',
+									alignItems: 'center',
+									justifyContent: 'center',
+								}} variant="contained">
+									<a style={{ backgroundColor: 'none' }} href="./formpage">
+								<h2>CONTACT ME</h2></a>
+							</Button>
+						
+						<h1 className="blink2" style={{ fontSize: '3rem' }}>👈</h1>
+					</div>
+
             </Grid>
           </Container>
         </div>

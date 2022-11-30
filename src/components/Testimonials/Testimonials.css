@@ -1,6 +1,6 @@
 .testimonials {
   font-family: var(--primaryFont);
-  height: 100vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,9 +33,15 @@
 .slick-dots {
   position: relative !important;
   bottom: 1rem !important;
-
+  
+}
+#root > div > div:nth-child(1) > div.testimonials > div.testimonials--body > div > div > ul > li > button{
+  background: #eaeaea;
+  width: .5rem;
+  height: .5rem;
 }
 
+ 
 .testimonials--header h1 {
   background: none;
   font-style: normal;
@@ -101,7 +107,7 @@
 .single--testimony {
   padding: 2rem;
   width: 100%;
-  height: 500px;
+  /* height: 500px; */
   position: relative;
   display: flex;
   flex-direction: column;

@@ -6,7 +6,7 @@ import { testimonialsData } from '../../data/testimonialsData';
 import './Testimonials.css';
 import Button from '@mui/material/Button';
 
- 
+
 function Testimonials() {
 	const { theme } = useContext(ThemeContext);
 	const sliderRef = useRef();
@@ -37,7 +37,7 @@ function Testimonials() {
 
 	return (
 		<>
-		<div style={{ backgroundColor: theme.secondary50, height: '1rem' }}> </div>
+			<div style={{ backgroundColor: theme.secondary50, height: '1rem' }}> </div>
 			{testimonialsData.length > 0 && (
 				<div
 					className='testimonials'
@@ -109,17 +109,20 @@ function Testimonials() {
 						</div>
 					</div>
 					<div className="formBtn">
-					<h1 className="blink" style={{fontSize:'3rem'}}>👉</h1><a style={{ backgroundColor: 'none' }}href="./formpage"><Button 
-						style={{
-							backgroundColor: theme.primary,
-							color: theme.secondary70,
-							width: '18rem',
-							display: 'flex',
-							alignItems: 'center',
-              justifyContent: 'center',
-						}} variant="contained"><h2>CONTACT ME</h2></Button></a><h1 className="blink2"  style={{fontSize:'3rem'}}>👈</h1>
+						<Button
+							style={{
+								backgroundColor: theme.primary,
+								color: theme.secondary70,
+								width: '18rem',
+								display: 'flex',
+								alignItems: 'center',
+								justifyContent: 'center',
+							}} variant="contained">
+							<a style={{ backgroundColor: 'none' }} href="./formpage">
+								<h2>CONTACT ME</h2></a>
+						</Button>
 					</div>
-					
+
 				</div>
 			)}
 		</>

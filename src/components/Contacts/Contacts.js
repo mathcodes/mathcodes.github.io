@@ -100,7 +100,7 @@ function Contacts() {
 	const classes = useStyles();
 
 	return (
-		<div className="contacts">
+		<div id="contacts" className="contacts">
 
 			<div className="contactsHeader">
 				<div style={{ backgroundColor: theme.secondary50, height: '1rem' }}> </div>
