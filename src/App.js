@@ -1,12 +1,10 @@
 import React, { useContext } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import { ThemeContext } from './contexts/ThemeContext';
-import { ThemeSwitcher } from './contexts/ThemeSwitcher';
 import { Main, ProjectPage, ThankYou, FormPage } from './pages';
 import { BackToTop } from './components';
 import ScrollToTop from './utils/ScrollToTop';
 import * as dotenv from 'dotenv'  
-// import express from 'express'
 import './App.css'
 import { FormspreeProvider } from '@formspree/react';
 

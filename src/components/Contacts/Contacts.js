@@ -1,7 +1,6 @@
 /* eslint-disable no-undef */
 import React, { useContext } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 

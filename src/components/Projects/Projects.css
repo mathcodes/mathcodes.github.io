@@ -57,8 +57,6 @@
 .project--desc:hover,
 .project--lang:hover {
   z-index: 100;
-  background-color: yellow;
-
 }
 
 .break{

@@ -1,5 +1,4 @@
 .services {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,6 +45,16 @@
   flex-wrap: wrap;
 }
 
+.services-bodycontainer2 {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  gap: 4.5rem;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+}
+
 /*  ------------------------------------ MEDIA QUERIES ------------------------------------ */
 @media (min-width: 992px) and (max-width: 1380px) {
   .services {
@@ -69,7 +78,7 @@
     margin-bottom: 4rem;
   }
 
-  .services-bodycontainer {
+  .services-bodycontainer, .services-bodycontainer2 {
     gap: 2.5rem;
   }
 }
@@ -91,7 +100,7 @@
     margin-bottom: 3rem;
   }
 
-  .services-bodycontainer {
+  .services-bodycontainer, .services-bodycontainer2 {
     gap: 2rem;
   }
 }

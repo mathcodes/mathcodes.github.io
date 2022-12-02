@@ -1,8 +1,7 @@
 /* eslint-disable */
 import { BsCodeSlash, BsGraphUp } from "react-icons/bs";
-import { AiFillAudio } from "react-icons/ai";
-import { FaVideo, FaTabletAlt, FaBook } from "react-icons/fa";
-
+import { FaTabletAlt, FaBook } from "react-icons/fa";
+import { MdOutlineReadMore } from "react-icons/md";
 export const servicesData = [
 	{
 		id: 1,
@@ -24,14 +23,12 @@ export const servicesData = [
 		title: 'Tutoring',
 		icon: <FaBook />
 	},
+]
+
+export const servicesData2 = [
 	{
-		id: 5,
-		title: 'Audio Engineering',
-		icon: <AiFillAudio />
-	},
-	{
-		id: 6,
-		title: 'Video Editing',
-		icon: <FaVideo />
+		id: 1,
+		title: 'Read More',
+		icon: <MdOutlineReadMore />
 	},
 ]

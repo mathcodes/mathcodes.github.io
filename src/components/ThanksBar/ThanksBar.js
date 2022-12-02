@@ -1,4 +1,9 @@
-import * as React from 'react';
+import React, { useContext } from 'react'
+import { Link } from 'react-router-dom';
+import { ThemeContext } from '../../contexts/ThemeContext';
+import { makeStyles } from '@material-ui/core/styles';
+import { AiOutlineHome } from "react-icons/ai";
+
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -8,39 +13,79 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
+// import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
-import {headerData} from '../../data/headerData'
-import { AiOutlineMenu } from "react-icons/ai";
+import { headerData } from '../../data/headerData'
+import './ThanksBar.css';
+
 const pages = ['Contact Page'];
-const settings = ['Home', 'Projects', 'Services'];
+// const settings = ['Home', 'Projects', 'Services'];
 
 function ThanksBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = (setting) => {
+  const { theme } = useContext(ThemeContext);
 
-    setAnchorElUser(null);
-  };
+
+  const useStyles = makeStyles((t) => ({
+    search: {
+      color: theme.tertiary,
+      width: '40%',
+      height: '2.75rem',
+      outline: 'none',
+      border: 'none',
+      borderRadius: '20px',
+      padding: '0.95rem 1rem',
+      fontFamily: "'Noto Sans TC', sans-serif",
+      fontWeight: 500,
+      fontSize: '0.9rem',
+      backgroundColor: theme.secondary,
+      boxShadow: theme.type === 'dark' ? 'inset 3px 3px 6px #eaeaea, inset -3px -3px 6px #00000060' : 'inset 3px 3px 6px #ffffffbd, inset -3px -3px 6px #00000030',
+      "&::placeholder": {
+        color: theme.tertiary80,
+      },
+      [t.breakpoints.down('sm')]: {
+        width: '350px',
+      },
+    },
+    home: {
+      color: theme.secondary,
+      position: 'absolute',
+      top: 25,
+      left: 25,
+      padding: '7px',
+      borderRadius: '50%',
+      boxSizing: 'content-box',
+      fontSize: '2rem',
+      cursor: 'pointer',
+      boxShadow: theme.type === 'dark' ? '3px 3px 6px #ffffff40, -3px -3px 6px #00000050' : '3px 3px 6px #ffffff40, -3px -3px 6px #00000050',
+      transition: 'all 0.3s ease-in-out',
+      "&:hover":
+      {
+        color: theme.tertiary,
+        transform: 'scale(1.1)',
+      },
+      [t.breakpoints.down('sm')]: {
+        fontSize: '1.8rem',
+      },
+    },
+  }));
+  const classes = useStyles();
+
+
 
   return (
-    <AppBar position="static" style={{marginBottom:'1rem'}} >
-      <Container maxWidth="xl" style={{background:'#222'}} >
+    <AppBar position="static" style={{ marginBottom: '1rem' }} >
+      <Container className="appBarHeader" style={{ background: '#222' }} >
         <Toolbar disableGutters>
-        <img src={headerData.BG} style={{margin:'1rem', height:'4rem', width:'4rem'}} alt="portfolio seo"/>      
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -50,34 +95,13 @@ function ThanksBar() {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              <Link to="/">
+                <AiOutlineHome className={classes.home} />
+              </Link>
             </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          {/* SPACE HOLDER IF SITE BUILDS AND THIS MENU IS NEEDED */}
+          {/* <AiOutlineMenu sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
@@ -90,7 +114,7 @@ function ThanksBar() {
             ))}
           </Box>
 
-              {/* TODO: COMPLETE DROPDOWN MENU OR SYNC WITH HOMEPAGE  */}
+          {/* TODO: COMPLETE DROPDOWN MENU OR SYNC WITH HOMEPAGE  */}
           {/* <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>

@@ -14,17 +14,12 @@ function Main() {
 			<Navbar />
 			<Landing />								
 			<About />			
-			{/* <Background className="backgroundStyle" style={{zIndex:'-30'}}/> */}
 			<HorizontalRule />
 			<Skills />
 			<Projects />
-			{/* <Background className="backgroundStyle" style={{zIndex:'-30'}}/>	 */}
 			<Services />
 			<Testimonials />
-			
-			{/* <ContactForm /> */}
-			{/* <Background className="backgroundStyle" style={{zIndex:'-30'}}/>	 */}
-			 <Footer />
+			<Footer />
 		</div> 
 	)
 }

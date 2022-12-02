@@ -1,12 +1,46 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom'
+import { makeStyles } from '@material-ui/core/styles';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { projectsData } from '../../data/projectsData'
+import { HiArrowRight } from "react-icons/hi";
 import './Projects.css'
 import SingleProject from './SingleProject/SingleProject';
 
 function Projects() {
 
 	const { theme } = useContext(ThemeContext);
+
+	const useStyles = makeStyles(() => ({
+		viewAllBtn: {
+			color: '#eaeaea',
+			backgroundColor: '#232526',
+			borderRadius: '10px',
+			padding: '10px',
+			transition: 'color 0.2s',
+			"&:hover": {
+				color: '#232526',
+				backgroundColor: '#eaeaea	',
+			}
+		},
+		viewArr: {
+			color: theme.tertiary,
+			backgroundColor: theme.secondary70,
+			width: '40px',
+			height: '40px',
+			padding: '0.5rem',
+			fontSize: '1.05rem',
+			borderRadius: '50%',
+			cursor: 'pointer',
+			transition: 'background-color 0.2s',
+			"&:hover": {
+				color: theme.tertiary,
+				backgroundColor: theme.secondary,
+			}
+		},
+	}));
+
+	const classes = useStyles();
 
 	return (
 		<>
@@ -51,6 +85,16 @@ function Projects() {
 							/>
 						))}
 					</div>
+					{projectsData.length > 3 && (
+							<div className="projects--viewAll">
+								<Link to="/projects">
+									<button className={classes.viewAllBtn}>
+										View All
+										<HiArrowRight />
+									</button>
+								</Link>
+							</div>
+						)}
 				</div>
 			)}
 		</>

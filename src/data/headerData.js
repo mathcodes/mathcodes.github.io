@@ -1,5 +1,3 @@
-import resume from '../assets/pdf/Jon_Christie_Resume.pdf';
-
 export const headerData = {
 	name: 'Jon Christie',
 	title: "",
