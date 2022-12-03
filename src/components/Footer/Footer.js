@@ -15,6 +15,8 @@ import { FiPhone, FiAtSign } from 'react-icons/fi';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 import { socialsData } from '../../data/socialsData';
 import { contactsData } from '../../data/contactsData';
+import SocialMediaIcons from '../SocialMediaIcons/SocialMediaIcons';
+
 const Footer = () => {
 
   const { theme } = useContext(ThemeContext)

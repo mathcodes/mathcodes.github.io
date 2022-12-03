@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import React, { useContext } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
@@ -15,11 +15,11 @@ import {
 import { SiReplit } from 'react-icons/si';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { socialsData } from '../../data/socialsData';
-import './Contacts.css';
+import './SocialMediaIcons.css';
 
 
-function Contacts() {
-	const { theme } = useContext(ThemeContext);
+function SocialMediaIcons() {
+  const { theme } = useContext(ThemeContext);
 
 
 
@@ -63,7 +63,7 @@ function Contacts() {
 			justifyContent: 'center',
 			padding: '5px',
 			backgroundColor: 'none',
-			color: theme.secondary70,
+			color: theme.secondary,
 			transition: '250ms ease-in-out',
 			'&:hover': {
 
@@ -73,7 +73,7 @@ function Contacts() {
 		},
 		detailsIcon: {
 			backgroundColor: '#667',
-			color: '#eaeaea',
+			color: '#232526',
 			borderRadius: '50%',
 			border: '2px solid #232526',
 			width: '45px',
@@ -97,19 +97,8 @@ function Contacts() {
 	}));
 
 	const classes = useStyles();
-
-	return (
-		<div id="contacts" className="contacts">
-
-			<div className="contactsHeader">
-				<div style={{ backgroundColor: theme.secondary50, height: '1rem' }}> </div>
-				<h2 style={{ color: theme.primary }}>Skills</h2>
-
-
-				<Container maxWidth="sm">
-					<Box >
-
-						<div className='socialmedia-icons'>
+  return (
+    <div className='socialmedia-icons'>
 							{socialsData.github && (
 								<a
 									href={socialsData.github}
@@ -183,17 +172,7 @@ function Contacts() {
 								</a>
 							)}
 						</div>
-					</Box>
-				</Container>
-
-
-
-
-
-			</div>
-		</div>
-	);
+  )
 }
 
-export default Contacts;
-
+export default SocialMediaIcons

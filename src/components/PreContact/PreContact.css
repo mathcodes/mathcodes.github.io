@@ -6,7 +6,7 @@
 .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
 .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate
 {
-  color: #232526;
+  color: #eaeaea;
 }
 
 .contactsHead
@@ -108,18 +108,18 @@ li
 
 a:-webkit-any-link
 {
-  color: #eaeaea;
+  /* color: #eaeaea; */
   cursor: pointer;
   text-decoration: none;
   transition: all 0s;
 }
 
-a:-webkit-any-link:hover
+/* a:-webkit-any-link:hover
 {
   background-color: #232526;
   color: #212121;
   font-weight: 400;
-}
+} */
 
 .makeStyles-socialIcon-31
 {

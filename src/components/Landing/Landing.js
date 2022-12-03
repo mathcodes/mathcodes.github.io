@@ -33,11 +33,12 @@ function Landing() {
 							>
 								<FaGithub
 									className='landing--social'
-									style={{ color: theme.secondary }}
+									style={{ color: theme.secondary70 }}
 									aria-label='GitHub'
 								/>
 							</a>
-						)}{socialsData.twitter && (
+						)}
+						{socialsData.twitter && (
 							<a
 								href={socialsData.twitter}
 								target='_blank'
@@ -45,7 +46,7 @@ function Landing() {
 							>
 								<FaTwitter
 									className='landing--social'
-									style={{ color: theme.secondary }}
+									style={{ color: theme.secondary70 }}
 									aria-label='Twitter'
 								/>
 							</a>
@@ -58,7 +59,7 @@ function Landing() {
 							>
 								<FaLinkedin
 									className='landing--social'
-									style={{ color: theme.secondary }}
+									style={{ color: theme.secondary70 }}
 									aria-label='LinkedIn'
 								/>
 							</a>
@@ -71,7 +72,7 @@ function Landing() {
 							>
 								<FaYoutube
 									className='landing--social'
-									style={{ color: theme.secondary }}
+									style={{ color: theme.secondary70 }}
 									aria-label='YouTube'
 								/>
 							</a>
@@ -84,7 +85,7 @@ function Landing() {
 							>
 								<FaStackOverflow
 									className='landing--social'
-									style={{ color: theme.secondary }}
+									style={{ color: theme.secondary70 }}
 									aria-label='stackOverflow'
 								/>
 							</a>
@@ -97,7 +98,7 @@ function Landing() {
 							>
 								<FaCodepen
 									className='landing--social'
-									style={{ color: theme.secondary }}
+									style={{ color: theme.secondary70 }}
 									aria-label='CodePen'
 								/>
 							</a>
@@ -110,7 +111,7 @@ function Landing() {
 							>
 								<SiReplit
 									className='landing--social'
-									style={{ color: theme.secondary }}
+									style={{ color: theme.secondary70 }}
 									aria-label='Replit'
 								/>
 							</a>
