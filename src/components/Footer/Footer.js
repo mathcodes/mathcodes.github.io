@@ -112,16 +112,6 @@ const Footer = () => {
               <FaYoutube aria-label='YouTube' className="localIcon" />
             </a>
           )}
-          {socialsData.stackOverflow && (
-            <a
-              href={socialsData.stackOverflow}
-              target='_blank'
-              rel='noreferrer'
-              className='socialIcon'
-            >
-              <FaStackOverflow aria-label='Stack Overflow' className="localIcon" />
-            </a>
-          )}
           {socialsData.codepen && (
             <a
               href={socialsData.codepen}

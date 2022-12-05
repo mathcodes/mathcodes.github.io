@@ -19,7 +19,7 @@ function ProjectPage() {
 	})
 	const useStyles = makeStyles((t) => ({
 		search: {
-			color: theme.tertiary,
+			color: theme.secondary70,
 			width: '40%',
 			height: '2.75rem',
 			outline: 'none',
@@ -39,7 +39,7 @@ function ProjectPage() {
 			},
 		},
 		home: {
-			color: theme.secondary,
+			color: theme.secondary70,
 			position: 'absolute',
 			top: 25,
 			left: 25,
@@ -71,7 +71,7 @@ function ProjectPage() {
 				<Link to="/">
 					<AiOutlineHome className={classes.home} />
 				</Link>
-				<h1 style={{ color: theme.secondary }}>Projects</h1>
+				<h1 style={{ color: theme.secondary70 }}>Projects</h1>
 			</div>
 			<div className="projectPage-container">
 				<div className="projectPage-search">

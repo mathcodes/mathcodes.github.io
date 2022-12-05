@@ -40,10 +40,12 @@
   justify-content: flex-start;
 }
 
-
+.landing--social2 {
+  display: none;
+}
 
 .lcl--content {
-  margin: 3rem;
+  /* margin: 3rem; */
   width: 100%;
   display: flex;
   align-items: center;
@@ -58,6 +60,16 @@
 }
 
 .landing--social:hover {
+  transform: scale(1.2);
+}
+
+.landing--social2 {
+  font-size: 35px;
+  margin: 0 1rem;
+  transition: transform 0.5s;
+}
+
+.landing--social2:hover {
   transform: scale(1.2);
 }
 
@@ -181,6 +193,10 @@
   }
   .landing--social {
     display: none;
+  }
+
+  .landing--social2 {
+    display: inline-flex;
   }
   .landing--container-right {
     box-sizing: border-box;

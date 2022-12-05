@@ -79,19 +79,6 @@ function Landing() {
 						)}
 						{socialsData.codepen && (
 							<a
-								href={socialsData.stackOverflow}
-								target='_blank'
-								rel='noreferrer'
-							>
-								<FaStackOverflow
-									className='landing--social'
-									style={{ color: theme.secondary70 }}
-									aria-label='stackOverflow'
-								/>
-							</a>
-						)}
-						{socialsData.codepen && (
-							<a
 								href={socialsData.replit}
 								target='_blank'
 								rel='noreferrer'
@@ -135,9 +122,91 @@ function Landing() {
 						className='lcr--content'
 						style={{ color: theme.tertiary }}
 					>
-						<h6>{headerData.title}</h6>
+
 						<br />
+
 						<h1>{headerData.name}</h1>
+						<div className='lcl--content2'>
+							{socialsData.github && (
+								<a
+									href={socialsData.github}
+									target='_blank'
+									rel='noreferrer'
+								>
+									<FaGithub
+										className='landing--social2'
+										style={{ color: theme.secondary70 }}
+										aria-label='GitHub'
+									/>
+								</a>
+							)}
+							{socialsData.twitter && (
+								<a
+									href={socialsData.twitter}
+									target='_blank'
+									rel='noreferrer'
+								>
+									<FaTwitter
+										className='landing--social2'
+										style={{ color: theme.secondary70 }}
+										aria-label='Twitter'
+									/>
+								</a>
+							)}
+							{socialsData.linkedIn && (
+								<a
+									href={socialsData.linkedIn}
+									target='_blank'
+									rel='noreferrer'
+								>
+									<FaLinkedin
+										className='landing--social2'
+										style={{ color: theme.secondary70 }}
+										aria-label='LinkedIn'
+									/>
+								</a>
+							)}
+							{socialsData.youtube && (
+								<a
+									href={socialsData.youtube}
+									target='_blank'
+									rel='noreferrer'
+								>
+									<FaYoutube
+										className='landing--social2'
+										style={{ color: theme.secondary70 }}
+										aria-label='YouTube'
+									/>
+								</a>
+							)}
+							{socialsData.codepen && (
+								<a
+									href={socialsData.replit}
+									target='_blank'
+									rel='noreferrer'
+								>
+									<FaCodepen
+										className='landing--social2'
+										style={{ color: theme.secondary70 }}
+										aria-label='CodePen'
+									/>
+								</a>
+							)}
+							{socialsData.replit && (
+								<a
+									href={socialsData.replit}
+									target='_blank'
+									rel='noreferrer'
+								>
+									<SiReplit
+										className='landing--social2'
+										style={{ color: theme.secondary70 }}
+										aria-label='Replit'
+									/>
+								</a>
+							)}
+						</div>
+
 						<br />
 						<p>{headerData.description}</p>
 
@@ -180,6 +249,7 @@ function Landing() {
 				</div>
 			</div>
 		</div>
+
 	);
 }
 

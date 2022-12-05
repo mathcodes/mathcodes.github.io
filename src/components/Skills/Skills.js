@@ -17,7 +17,9 @@ function Skills() {
 	}
 
 	return (
+		
 		<div className="skills">
+				<div style={{ backgroundColor: theme.secondary, height: '1rem' }}> </div>
 
 			<div className="skillsHeader">
 					<div style={{ backgroundColor: theme.secondary50, height: '1rem' }}> </div>
