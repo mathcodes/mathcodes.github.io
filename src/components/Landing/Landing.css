@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .landing--container {
@@ -54,9 +55,11 @@
 }
 
 .landing--social {
-  font-size: 35px;
-  margin: 0 1rem;
+  font-size: 2rem;
+  margin: 0 2rem;
   transition: transform 0.5s;
+  padding-bottom: .2rem;
+
 }
 
 .landing--social:hover {

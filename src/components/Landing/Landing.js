@@ -10,7 +10,6 @@ import {
 	FaLinkedin,
 	FaGithub,
 	FaYoutube,
-	FaStackOverflow,
 	FaCodepen,
 } from 'react-icons/fa';
 import { SiReplit } from 'react-icons/si';
