@@ -108,7 +108,7 @@ li
 
 a:-webkit-any-link
 {
-  /* color: #eaeaea; */
+  color: #eaeaea;
   cursor: pointer;
   text-decoration: none;
   transition: all 0s;

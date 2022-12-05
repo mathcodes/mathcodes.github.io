@@ -202,7 +202,7 @@ function FormPage() {
   const useStyles = makeStyles((t) => ({
     search: {
       color: theme.tertiary,
-      width: '40%',
+      width: '100%',
       height: '2.75rem',
       outline: 'none',
       border: 'none',
@@ -217,8 +217,28 @@ function FormPage() {
         color: theme.tertiary80,
       },
       [t.breakpoints.down('sm')]: {
-        width: '350px',
+        width: '100%',
       },
+    },
+    search2: {
+      color: theme.tertiary,
+      width: '100%',
+      height: '5.75rem',
+      outline: 'none',
+      border: 'none',
+      borderRadius: '20px',
+      padding: '0.95rem 1rem',
+      fontFamily: "'Noto Sans TC', sans-serif",
+      fontWeight: 500,
+      fontSize: '0.9rem',
+      backgroundColor: theme.secondary,
+      boxShadow: theme.type === 'dark' ? 'inset 3px 3px 6px #eaeaea, inset -3px -3px 6px #00000060' : 'inset 3px 3px 6px #ffffffbd, inset -3px -3px 6px #00000030',
+      "&::placeholder": {
+        color: theme.tertiary80,
+      },
+      [t.breakpoints.down('sm')]: {
+        width: '100%',
+      }, 
     },
     home: {
       color: theme.secondary,
@@ -273,16 +293,16 @@ function FormPage() {
         <h1 style={{ color: '#eaeaea' }}>Contact Form</h1>
       </div>
 
-      <form className="mx-auto w-full pt-10 sm:w-3/4" onSubmit={handleSubmit}>
+      <form className="mx-auto w-full pt-10" onSubmit={handleSubmit}>
         <div className="flex flex-col md:flex-row">
           <Container maxWidth="sm">
             <Grid container spacing={2} mt={4}>
-              <Grid item xs={6} md={8}>
-                <Item>
+              <Grid item xs={6} md={6}>
+                <Item className="projectPage-search">
                   <input
                     data-aos="fade-right"
                     data-aos-duration="1000"
-                    className="w-full rounded border font-body text-black md:w-1/2"
+                    className={classes.search}
                     placeholder="Name"
                     type="text"
                     id="name"
@@ -290,12 +310,12 @@ function FormPage() {
                   />
                 </Item>
               </Grid>
-              <Grid item xs={6} md={4}>
-                <Item>
+              <Grid item xs={6} md={6}>
+              <Item className="projectPage-search">
                   <input
                     data-aos="fade-left"
                     data-aos-duration="1000"
-                    className="mt-6 w-full rounded border font-body text-black md:mt-0 md:ml-3 md:w-1/2 lg:ml-5"
+                    className={classes.search}                    
                     placeholder="Email"
                     type="email"
                     id="email"
@@ -306,11 +326,11 @@ function FormPage() {
                 </Item>
               </Grid>
               <Grid item xs={12}>
-                <Item>
+              <Item className="projectPage-search">
                   <textarea
                     data-aos="fade-up"
                     data-aos-duration="1000"
-                    className="mt-6 w-full rounded border px-4 py-3 font-body text-black md:mt-8"
+                    className={classes.search2}
                     placeholder="Message"
                     id="message"
                     cols="30"
@@ -322,13 +342,13 @@ function FormPage() {
                 </Item>
               </Grid>
               <Grid item xs={12}>
-                <Item>
+              <Item className="projectPage-search">
                   <Button
                     data-aos="fade-down"
                     data-aos-duration="1000"
                     type="submit"
                     disabled={state.submitting}
-                    className="mt-6 flex items-center justify-center rounded bg-primary px-8 py-3 font-header text-lg font-bold uppercase text-white hover:bg-grey-20"
+                    className={classes.search} 
                   >
                     Send
                     <i className="bx bx-chevron-right relative -right-2 text-3xl"></i>

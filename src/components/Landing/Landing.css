@@ -223,11 +223,7 @@
   }
 }
 
-@media (max-width: 500px) {
-  .lcr--content {
-    margin-top: 35%;
-  }
-}
+ 
 @media (max-width: 370px) {
   .lcr--content {
     margin-top: 60%;
