@@ -7,7 +7,7 @@ function ButtonComponent({label, link, width, height}) {
       <Button
         style={{
           backgroundColor: '#232526',
-          color: '#eaeaea',
+          color: '#222',
           width: width ? width : '18rem',          
           height: height ? height : '4rem',
           display: 'flex',

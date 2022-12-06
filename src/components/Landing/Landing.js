@@ -15,13 +15,17 @@ import {
 import { SiReplit } from 'react-icons/si';
 function Landing() {
 	const { theme, drawerOpen } = useContext(ThemeContext);
+	let randomColor = Math.floor(Math.random()*16777215).toString(16);
+	console.log(randomColor)
+	console.log(`#,${randomColor}`)
+	
 
 	return (
 		<div className='landing'>
 			<div className='landing--container'>
 				<div
 					className='landing--container-left'
-					style={{ backgroundColor: theme.primary }}
+					style={{ backgroundColor: theme.primary}}
 				>
 					<div className='lcl--content'>
 						{socialsData.github && (
@@ -32,7 +36,6 @@ function Landing() {
 							>
 								<FaGithub
 									className='landing--social'
-									style={{ color: theme.secondary70 }}
 									aria-label='GitHub'
 								/>
 							</a>
@@ -45,7 +48,6 @@ function Landing() {
 							>
 								<FaTwitter
 									className='landing--social'
-									style={{ color: theme.secondary70 }}
 									aria-label='Twitter'
 								/>
 							</a>
@@ -58,7 +60,6 @@ function Landing() {
 							>
 								<FaLinkedin
 									className='landing--social'
-									style={{ color: theme.secondary70 }}
 									aria-label='LinkedIn'
 								/>
 							</a>
@@ -71,7 +72,6 @@ function Landing() {
 							>
 								<FaYoutube
 									className='landing--social'
-									style={{ color: theme.secondary70 }}
 									aria-label='YouTube'
 								/>
 							</a>
@@ -84,7 +84,6 @@ function Landing() {
 							>
 								<FaCodepen
 									className='landing--social'
-									style={{ color: theme.secondary70 }}
 									aria-label='CodePen'
 								/>
 							</a>
@@ -97,7 +96,6 @@ function Landing() {
 							>
 								<SiReplit
 									className='landing--social'
-									style={{ color: theme.secondary70 }}
 									aria-label='Replit'
 								/>
 							</a>
@@ -134,7 +132,7 @@ function Landing() {
 								>
 									<FaGithub
 										className='landing--social2'
-										style={{ color: theme.secondary70 }}
+
 										aria-label='GitHub'
 									/>
 								</a>
@@ -147,7 +145,7 @@ function Landing() {
 								>
 									<FaTwitter
 										className='landing--social2'
-										style={{ color: theme.secondary70 }}
+
 										aria-label='Twitter'
 									/>
 								</a>
@@ -160,7 +158,7 @@ function Landing() {
 								>
 									<FaLinkedin
 										className='landing--social2'
-										style={{ color: theme.secondary70 }}
+
 										aria-label='LinkedIn'
 									/>
 								</a>
@@ -173,7 +171,7 @@ function Landing() {
 								>
 									<FaYoutube
 										className='landing--social2'
-										style={{ color: theme.secondary70 }}
+
 										aria-label='YouTube'
 									/>
 								</a>
@@ -186,7 +184,7 @@ function Landing() {
 								>
 									<FaCodepen
 										className='landing--social2'
-										style={{ color: theme.secondary70 }}
+
 										aria-label='CodePen'
 									/>
 								</a>
@@ -199,7 +197,7 @@ function Landing() {
 								>
 									<SiReplit
 										className='landing--social2'
-										style={{ color: theme.secondary70 }}
+
 										aria-label='Replit'
 									/>
 								</a>

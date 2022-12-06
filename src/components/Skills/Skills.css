@@ -5,12 +5,14 @@
   justify-content: flex-start;
   min-height: 60vh;
   padding: 2.5rem 2rem 2rem 2rem;
+  background: rgb(151, 151, 162);
 }
 
 .skillsHeader {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .skillsHeader h2 {
@@ -169,3 +171,5 @@
     margin-top: 1rem;
   }
 }
+
+ 

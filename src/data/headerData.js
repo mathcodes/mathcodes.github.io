@@ -8,4 +8,5 @@ export const headerData = {
 	BG: 'https://raw.githubusercontent.com/mathcodes/mathcodes.github.io/main/src/assets/img/JCircle.png',
 	BG2: 'https://raw.githubusercontent.com/mathcodes/mathcodes.github.io/main/src/assets/img/JCircle_dark_gray.png',
 	resumePdf: 'https://raw.githubusercontent.com/mathcodes/mathcodes.github.io/main/public/Jon_Christie_Resume.pdf',
+	CTA_MARKETING_FOR_OPEN_SOURCE: 'https://github.com/mathcodes/mathcodes.github.io/raw/sync/public/Marketing%20for%20Open-Source%20Projects.pdf',
 }

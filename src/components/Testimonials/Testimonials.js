@@ -91,7 +91,7 @@ function Testimonials() {
 								style={{ backgroundColor: theme.secondary }}
 							>
 								<FaArrowLeft
-									style={{ color: theme.secondary70 }}
+									style={{ color: theme.primary }}
 									aria-label='Previous testimonial'
 								/>
 							</button>
@@ -101,13 +101,13 @@ function Testimonials() {
 								style={{ backgroundColor: theme.secondary }}
 							>
 								<FaArrowRight
-									style={{ color: theme.secondary70 }}
+									style={{ color: theme.primary }}
 									aria-label='Next testimonial'
 								/>
 							</button>
 						</div>
 					</div>
-				<ButtonComponent label="CONTACT" link="./FormPage" />
+				<ButtonComponent style={{ color: theme.primary }} label="CONTACT" link="./FormPage" />
 
 				</div>
 			)}

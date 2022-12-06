@@ -56,24 +56,30 @@
 
 .landing--social {
   font-size: 2rem;
-  margin: 0 2rem;
+  margin: 0 .5rem;
   transition: transform 0.5s;
   padding-bottom: .2rem;
-
+  color: #eaeaea;
 }
 
 .landing--social:hover {
   transform: scale(1.2);
+  color: #4faeba;
 }
 
 .landing--social2 {
   font-size: 35px;
-  margin: 0 1rem;
+  margin: 0 .3rem;
   transition: transform 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .landing--social2:hover {
   transform: scale(1.2);
+  color: #4faeba;
+
 }
 
 .landing--container-right {
@@ -122,6 +128,12 @@
   justify-content: space-between;
   font-family: "var(--primaryFont)", sans-serif;
 }
+
+.lcl--content2{
+  display: none;
+}
+
+
 
 @media (max-width: 1100px) {
   .landing--img {
@@ -172,7 +184,7 @@
   .lcr-buttonContainer {
     margin-top: 1rem;
     flex-direction: column;
-    width: 200px;
+    /* width: 200px; */
     height: 120px;
     align-items: flex-start;
   }
@@ -201,6 +213,13 @@
   .landing--social2 {
     display: inline-flex;
   }
+
+  .lcl--content2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .landing--container-right {
     box-sizing: border-box;
     padding: 0 2rem;
