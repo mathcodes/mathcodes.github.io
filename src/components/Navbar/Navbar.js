@@ -4,8 +4,8 @@ import Fade from 'react-reveal/Fade';
 import { IoMenuSharp, IoHomeSharp } from 'react-icons/io5';
 import { HiDocumentText } from 'react-icons/hi';
 import { BsFillGearFill } from 'react-icons/bs';
-import { MdPhone } from 'react-icons/md';
 import { FaUser } from 'react-icons/fa';
+import { GrProjects } from "react-icons/gr";
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CloseIcon from '@material-ui/icons/Close';
@@ -229,7 +229,7 @@ function Navbar() {
 
 						<Fade left> 
 							<NavLink
-								to='/Resume'
+								to='/#skills'
 								smooth={true}
 								spy='true'
 								duration={2000}
@@ -239,7 +239,7 @@ function Navbar() {
 										className={classes.drawerIcon}
 									/>
 									<span className={classes.drawerLinks}>
-										Resume
+										Skills
 									</span>
 								</div>
 							</NavLink>
@@ -265,15 +265,15 @@ function Navbar() {
 
 						<Fade left>
 							<NavLink
-								to='/#contacts'
+								to='/#projects'
 								smooth={true}
 								spy='true'
 								duration={2000}
 							>
 								<div className={classes.drawerItem}>
-									<MdPhone className={classes.drawerIcon} />
+									<GrProjects className={classes.drawerIcon} />
 									<span className={classes.drawerLinks}>
-										Contact
+										Projects
 									</span>
 								</div>
 							</NavLink>

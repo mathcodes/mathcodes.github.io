@@ -7,7 +7,6 @@ import {
   FaLinkedinIn,
   FaGithub,
   FaYoutube,
-  FaStackOverflow,
   FaCodepen,
 } from 'react-icons/fa';
 import { SiReplit } from 'react-icons/si';
@@ -15,7 +14,6 @@ import { FiPhone, FiAtSign } from 'react-icons/fi';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 import { socialsData } from '../../data/socialsData';
 import { contactsData } from '../../data/contactsData';
-import SocialMediaIcons from '../SocialMediaIcons/SocialMediaIcons';
 
 const Footer = () => {
 

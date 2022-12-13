@@ -279,3 +279,11 @@
     top: 20%;
   }
 }
+
+.MuiButton-label {
+  color: #4faeba;
+}
+
+.MuiButton-label:hover{
+  color: #4faeba;
+}

@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   overflow-x: hidden;
   padding: 2rem;
 }
@@ -28,6 +28,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 .projects--bodyContainer {
@@ -56,7 +57,7 @@
 
 .project--desc:hover,
 .project--lang:hover {
-  z-index: 100;
+  z-index: 1000;
 }
 
 .break{

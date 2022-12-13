@@ -5,7 +5,8 @@
   justify-content: flex-start;
   min-height: 60vh;
   padding: 2.5rem 2rem 2rem 2rem;
-  background: rgb(151, 151, 162);
+  background: rgb(50, 50, 50);
+  color: #eaeaea;
 }
 
 .skillsHeader {

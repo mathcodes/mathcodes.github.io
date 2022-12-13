@@ -15,17 +15,17 @@ import {
 import { SiReplit } from 'react-icons/si';
 function Landing() {
 	const { theme, drawerOpen } = useContext(ThemeContext);
-	let randomColor = Math.floor(Math.random()*16777215).toString(16);
+	let randomColor = Math.floor(Math.random() * 16777215).toString(16);
 	console.log(randomColor)
 	console.log(`#,${randomColor}`)
-	
+
 
 	return (
 		<div className='landing'>
 			<div className='landing--container'>
 				<div
 					className='landing--container-left'
-					style={{ backgroundColor: theme.primary}}
+					style={{ backgroundColor: theme.primary }}
 				>
 					<div className='lcl--content'>
 						{socialsData.github && (
@@ -119,9 +119,7 @@ function Landing() {
 						className='lcr--content'
 						style={{ color: theme.tertiary }}
 					>
-
 						<br />
-
 						<h1>{headerData.name}</h1>
 						<div className='lcl--content2'>
 							{socialsData.github && (
@@ -132,7 +130,6 @@ function Landing() {
 								>
 									<FaGithub
 										className='landing--social2'
-
 										aria-label='GitHub'
 									/>
 								</a>
@@ -145,7 +142,6 @@ function Landing() {
 								>
 									<FaTwitter
 										className='landing--social2'
-
 										aria-label='Twitter'
 									/>
 								</a>
@@ -158,7 +154,6 @@ function Landing() {
 								>
 									<FaLinkedin
 										className='landing--social2'
-
 										aria-label='LinkedIn'
 									/>
 								</a>
@@ -171,7 +166,6 @@ function Landing() {
 								>
 									<FaYoutube
 										className='landing--social2'
-
 										aria-label='YouTube'
 									/>
 								</a>
@@ -184,7 +178,6 @@ function Landing() {
 								>
 									<FaCodepen
 										className='landing--social2'
-
 										aria-label='CodePen'
 									/>
 								</a>
@@ -197,18 +190,14 @@ function Landing() {
 								>
 									<SiReplit
 										className='landing--social2'
-
 										aria-label='Replit'
 									/>
 								</a>
 							)}
 						</div>
-
 						<br />
 						<p>{headerData.description}</p>
-
 						<div className='lcr-buttonContainer'>
-
 							<a
 								href={headerData.resumePdf}
 								download='resume'
@@ -216,6 +205,7 @@ function Landing() {
 								rel='noreferrer'
 							>
 								<Button
+									className='landing--button'
 									style={{
 										backgroundColor: theme.primary,
 										color: theme.secondary70,
@@ -228,7 +218,6 @@ function Landing() {
 										<h2>RESUME</h2></a>
 								</Button>
 							</a>
-
 							<Button
 								style={{
 									backgroundColor: theme.primary,
@@ -246,7 +235,6 @@ function Landing() {
 				</div>
 			</div>
 		</div>
-
 	);
 }
 

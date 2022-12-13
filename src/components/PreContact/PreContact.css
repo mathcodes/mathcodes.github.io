@@ -112,14 +112,15 @@ a:-webkit-any-link
   cursor: pointer;
   text-decoration: none;
   transition: all 0s;
+  text-shadow: none;
 }
 
-/* a:-webkit-any-link:hover
+a:-webkit-any-link:hover
 {
-  background-color: #232526;
-  color: #212121;
-  font-weight: 400;
-} */
+  text-shadow:#fff 2px solid;
+  color: #4faeba;
+  
+}
 
 .makeStyles-socialIcon-31
 {

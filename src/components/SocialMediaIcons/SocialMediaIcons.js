@@ -1,9 +1,6 @@
 /* eslint-disable no-undef */
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
-
 import {
 	FaTwitter,
 	FaLinkedinIn,
@@ -20,8 +17,6 @@ import './SocialMediaIcons.css';
 
 function SocialMediaIcons() {
   const { theme } = useContext(ThemeContext);
-
-
 
 	const useStyles = makeStyles((t) => ({
 		input: {
@@ -119,7 +114,6 @@ function SocialMediaIcons() {
 									<FaTwitter aria-label='Twitter' className="localIcon" />
 								</a>
 							)}
-
 							{socialsData.linkedIn && (
 								<a
 									href={socialsData.linkedIn}
@@ -130,7 +124,6 @@ function SocialMediaIcons() {
 									<FaLinkedinIn aria-label='LinkedIn' className="localIcon" />
 								</a>
 							)}
-
 							{socialsData.youtube && (
 								<a
 									href={socialsData.youtube}
@@ -175,4 +168,4 @@ function SocialMediaIcons() {
   )
 }
 
-export default SocialMediaIcons
+export default SocialMediaIcons;

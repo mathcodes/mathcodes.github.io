@@ -1,20 +1,15 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 import { AiOutlineHome } from "react-icons/ai";
 import './FormPage.css'
-import { SingleProject } from '../../components';
 import { ThemeContext } from '../../contexts/ThemeContext';
-import { headerData } from '../../data/headerData'
-import { styled } from '@mui/material/styles';
-import Paper from '@mui/material/Paper';
-import { useForm, ValidationError } from "@formspree/react";
+import { headerData } from '../../data/headerData';
+import { useForm } from "@formspree/react";
 import { Container, Grid } from '@mui/material';
-import ThanksBar from '../../components/ThanksBar/ThanksBar';
 import Button from '@mui/material/Button';
 import ButtonComponent from '../../components/ButtonComponent/ButtonComponent'
-
 
 function FormPageTY() {
   const [state, handleSubmit] = useForm("xaykzqea");
@@ -68,7 +63,7 @@ function FormPageTY() {
   if (state.succeeded) {
     return (
       <>
-        <ThanksBar />
+    
         <h1>Thank you! I will get back to you shortly!</h1>
 
       </>
@@ -91,22 +86,12 @@ function FormPageTY() {
         <div className="flex flex-col md:flex-row">
           <Container maxWidth="sm">
             <Grid container spacing={1} mt={4}>
-             <h2 style={{ color: '#eaeaea' }}>Thank you for getting in touch.</h2>            
-            </Grid>
-            <Grid container spacing={1} mt={4}>
-             <Button
-									style={{
-										backgroundColor: theme.primary,
-										color: theme.secondary70,
-										width: '14rem',
-										display: 'flex',
-										alignItems: 'center',
-										justifyContent: 'center',
-									}} variant="contained">
-									<a style={{ backgroundColor: 'none' }} href={headerData.CTA_MARKETING_FOR_OPEN_SOURCE}>
-										<h2>FREE PDF</h2></a>
-								</Button>
-                </Grid>
+             <h2 style={{color:'#4faeba', fontSize:'1.5rem', margin:'.5rem 0 0 .3rem', fontFamily: "'Noto Sans TC', sans-serif"}}>Thank you for getting in touch! <br/><br/><hr/><br/><br/> Enjoy your 
+             <span style={{color:"yellow"}}> FREE GUIDE 👇</span> </h2><h2 className={classes.search2}>Open-Source Marketing Guide:</h2>
+            <div className="divFormBtn">
+               <ButtonComponent id="pdfButton" label="👉 FREE PDF 👈" link="https://github.com/mathcodes/mathcodes.github.io/raw/main/public/Marketing%20for%20Open-Source%20Projects.pdf" width="18rem" height="4rem"/>
+             </div>
+             </Grid>
             {/* <div className="divFormBtn">
                <ButtonComponent id="formButtonComponent" label="HOME" link="./" width="18rem" height="4rem"/>
              </div> */}

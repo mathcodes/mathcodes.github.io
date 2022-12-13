@@ -1,9 +1,8 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from '../../contexts/ThemeContext';
-import { servicesData, servicesData2 } from '../../data/servicesData';
+import { servicesData } from '../../data/servicesData';
 import './Services.css'
 import SingleService from './SingleService/SingleService';
-import ButtonComponent from '../ButtonComponent/ButtonComponent';
 
 function Services() {
 
