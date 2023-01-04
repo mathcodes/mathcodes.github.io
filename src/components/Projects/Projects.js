@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom'
+import { Grid, Container } from '@mui/material';
 import { makeStyles } from '@material-ui/core/styles';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { projectsData } from '../../data/projectsData'
@@ -50,12 +51,12 @@ function Projects() {
 				<div style={{ backgroundColor: theme.secondary50, height: '1rem' }}> </div>
 
 			{projectsData.length > 0 && (
-				<div className="projects" id="projects" style={{ backgroundColor: theme.secondary }}>
-					<div className="projects--header">
+				<Container className="projects" id="projects" style={{ backgroundColor: theme.secondary }}>
+					<Grid className="projects--header">
 						<h1 style={{ color: theme.secondary70 }}>Projects</h1>
-					</div>
-					<div className="projects--body">
-						<div className="projects--bodyContainer">
+					</Grid>
+					<Grid item xs={1} sm={1} md={2} lg={4} className="projects--body">
+						<Grid className="projects--bodyContainer">
 							{projectsData.slice(0, 4).map(project => (
 								<SingleProject
 									theme={theme}
@@ -69,10 +70,10 @@ function Projects() {
 									image={project.image}
 								/>
 							))}
-						</div>
-					</div>
-					<div className="break"><hr /><hr /><hr /><hr /><hr /></div>
-					<div className="break"><hr /><hr /><hr /><hr /><hr /></div>
+						</Grid>
+					</Grid>
+					{/* <div className="break"><hr /><hr /><hr /><hr /><hr /></div>
+					<div className="break"><hr /><hr /><hr /><hr /><hr /></div> */}
 					{/* <div className="projects--bodyContainer">
 						{projectsData.slice(4, 8).map(project => (
 							<SingleProject
@@ -89,7 +90,7 @@ function Projects() {
 						))}
 					</div> */}
 					<div>
-						<h1 style={{color:'#333333'}}className="projects--body">Viewing 4 of {projectsData.length} projects</h1>
+						<h1 style={{color:'#777777'}}className="projects--body">Viewing 4 of {projectsData.length} projects</h1>
 					</div>
 					{projectsData.length > 3 && (
 							<div className="projects--viewAll">
@@ -100,7 +101,7 @@ function Projects() {
 								</Link>
 							</div>
 						)}
-				</div>
+				</Container>
 			)}
 		</>
 	)

@@ -92,12 +92,11 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
 				<div className='projectContent'>
 					<h2
 						id={name.replace(' ', '-').toLowerCase()}
-						style={{ color: theme.tertiary, height: '40.2px'}}
+						style={{ color: theme.tertiary, height: '3.2px' }}
 					>
 						{name}
 					</h2>
 					<img src={image ? image : placeholder} alt={name} />
-
 				</div>
 				<p
 					className='project--desc'
@@ -111,13 +110,9 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
 						width: '97%',
 
 					}}
-				><div> 
-					 
+				>
+					<div>
 						<div className="ProjDesc">{desc}</div>
-					 
-
-
-
 						<Box
 							sx={{
 								display: 'flex',
@@ -174,42 +169,56 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
 					</div> */}
 						<BottomNavigation
 							showLabels
-							style={{background: '#519ba5', borderRadius: "10px", border: 'rgba(0,0,0,0,)'}} 
+							style={{ 
+								background: '#519ba5', 
+								borderRadius: "10px",
+								border: 'rgba(0,0,0,0,)',
+								// create hover effect
+								
+							}}
 							value={value}
 							onChange={(event, newValue) => {
 								setValue(newValue);
 							}}
 						>
 							<a
-							href={demo}
-							target='_blank'
-							rel='noreferrer'
-							 
-							aria-labelledby={`${name
-								.replace(' ', '-')
-								.toLowerCase()} ${name
+								href={demo}
+								target='_blank'
+								rel='noreferrer'
+
+								aria-labelledby={`${name
 									.replace(' ', '-')
-									.toLowerCase()}-demo`}
-						>
-							 
-					 
-							<BottomNavigationAction style={{margin: ".5rem", color:"#fff", background:"#333", fontSize: "2rem"}} icon={<HiLink />} /></a>
-							
+									.toLowerCase()} ${name
+										.replace(' ', '-')
+										.toLowerCase()}-demo`}
+							>
+
+
+								<BottomNavigationAction style={{ 
+									margin: ".5rem", 
+									color: "#fff", 
+									background: "#333", 
+									fontSize: "2rem",
+									'&:hover': {
+										background: 'yellow',
+									}
+								}} icon={<HiLink />} /></a>
+
 							<a
-							href={code}
-							target='_blank'
-							rel='noreferrer'
-							className={classes.iconBtn}
-							aria-labelledby={`${name
-								.replace(' ', '-')
-								.toLowerCase()} ${name
+								href={code}
+								target='_blank'
+								rel='noreferrer'
+								className={classes.iconBtn}
+								aria-labelledby={`${name
 									.replace(' ', '-')
-									.toLowerCase()}-code`}
-						>
-							
-							<BottomNavigationAction style={{margin: ".5rem", color:"#fff", border:"none", background:"#333", fontSize: "2rem"}} icon={<FaCode />} />
-						 
-						</a>
+									.toLowerCase()} ${name
+										.replace(' ', '-')
+										.toLowerCase()}-code`}
+							>
+
+								<BottomNavigationAction style={{ margin: ".5rem", color: "#fff", border: "none", background: "#333", fontSize: "2rem" }} icon={<FaCode />} />
+
+							</a>
 
 						</BottomNavigation>
 

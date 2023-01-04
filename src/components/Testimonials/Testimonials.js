@@ -1,6 +1,7 @@
 import React, { useContext, useRef } from 'react';
 import Slider from 'react-slick';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
+import { Container } from '@material-ui/core';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { testimonialsData } from '../../data/testimonialsData';
 import './Testimonials.css';
@@ -36,28 +37,29 @@ function Testimonials() {
 
 	return (
 		<>
-			<div style={{ backgroundColor: theme.secondary50, height: '1rem' }}> </div>
-			{testimonialsData.length > 0 && (
-				<div
-					className='testimonials'
-				>
-					<div className='testimonials--header' style={{ color: theme.secondary70 }}>
-						<h1 >Testimonials</h1>
-					</div>
-					<div className='testimonials--body'>
+			<Container>
+				<div style={{ backgroundColor: theme.secondary50, height: '1rem' }}> </div>
+				{testimonialsData.length > 0 && (
+					<div
+						className='testimonials'
+					>
+						<div className='testimonials--header' style={{ color: theme.secondary70 }}>
+							<h1 >Testimonials</h1>
+						</div>
+						<div className='testimonials--body'>
 
-						<div
-							className='testimonials--slider'
-							style={{ backgroundColor: theme.primary }}
-						>
-							<Slider {...settings} ref={sliderRef}>
-								{testimonialsData.map((test) => (
-									<div
-										className='single--testimony'
-										key={test.id}
-									>
-										<div className='testimonials--container'>
-											{/* <div
+							<div
+								className='testimonials--slider'
+								style={{ backgroundColor: theme.primary }}
+							>
+								<Slider {...settings} ref={sliderRef}>
+									{testimonialsData.map((test) => (
+										<div
+											className='single--testimony'
+											key={test.id}
+										>
+											<div className='testimonials--container'>
+												{/* <div
                                                 className='review--img'
                                                 style={{
                                                     backgroundColor:
@@ -69,48 +71,48 @@ function Testimonials() {
                                                     alt={test.name}
                                                 /> 
                                             </div> */}
-											<div
-												className='review--content'
-												style={{
-													backgroundColor:
-														theme.secondary,
-													color: theme.tertiary,
-												}}
-											>
-												<p>{test.text}</p>
-												<h1>{test.name}</h1>
-												<h4>{test.title}</h4>
+												<div
+													className='review--content'
+													style={{
+														backgroundColor:
+															theme.secondary,
+														color: theme.tertiary,
+													}}
+												>
+													<p>{test.text}</p>
+													<h1>{test.name}</h1>
+													<h4>{test.title}</h4>
+												</div>
 											</div>
 										</div>
-									</div>
-								))}
-							</Slider>
-							<button
-								className='prevBtn'
-								onClick={gotoPrev}
-								style={{ backgroundColor: theme.secondary }}
-							>
-								<FaArrowLeft
-									style={{ color: theme.primary }}
-									aria-label='Previous testimonial'
-								/>
-							</button>
-							<button
-								className='nextBtn'
-								onClick={gotoNext}
-								style={{ backgroundColor: theme.secondary }}
-							>
-								<FaArrowRight
-									style={{ color: theme.primary }}
-									aria-label='Next testimonial'
-								/>
-							</button>
+									))}
+								</Slider>
+								<button
+									className='prevBtn'
+									onClick={gotoPrev}
+									style={{ backgroundColor: theme.secondary }}
+								>
+									<FaArrowLeft
+										style={{ color: theme.primary }}
+										aria-label='Previous testimonial'
+									/>
+								</button>
+								<button
+									className='nextBtn'
+									onClick={gotoNext}
+									style={{ backgroundColor: theme.secondary }}
+								>
+									<FaArrowRight
+										style={{ color: theme.primary }}
+										aria-label='Next testimonial'
+									/>
+								</button>
+							</div>
 						</div>
+						<ButtonComponent style={{ color: theme.primary }} label="CONTACT" link="./FormPage" />
 					</div>
-				<ButtonComponent style={{ color: theme.primary }} label="CONTACT" link="./FormPage" />
-
-				</div>
-			)}
+				)}
+			</Container>
 		</>
 	);
 }

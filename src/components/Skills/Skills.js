@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import Marquee from "react-fast-marquee";
-
+import { Container } from '@material-ui/core';
 import './Skills.css'
 
 import { ThemeContext } from '../../contexts/ThemeContext';
@@ -17,7 +17,7 @@ function Skills() {
 	}
 
 	return (
-		
+		<Container>
 		<div className="skills" id="skills">
 				<div style={{ backgroundColor: theme.secondary70, height: '1rem' }}> </div>
 
@@ -48,6 +48,7 @@ function Skills() {
 				</div>
 			</div>
 		</div>
+		</Container>
 	)
 }
 

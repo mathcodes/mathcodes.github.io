@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Container } from '@material-ui/core';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { servicesData } from '../../data/servicesData';
 import './Services.css'
@@ -10,6 +11,7 @@ function Services() {
 	return (
 		<>
 			<div style={{ backgroundColor: theme.secondary50, height: '1rem' }}> </div>
+			<Container>
 			{servicesData.length > 0 && (
 				<div className="services" id="services" style={{ backgroundColor: theme.secondary }}>
 					<div className="services-header">
@@ -32,6 +34,7 @@ function Services() {
 					</div>
 				</div>
 			)}
+			</Container>
 		</>
 	)
 }

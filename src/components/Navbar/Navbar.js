@@ -6,6 +6,7 @@ import { HiDocumentText } from 'react-icons/hi';
 import { BsFillGearFill } from 'react-icons/bs';
 import { FaUser } from 'react-icons/fa';
 import { GrProjects } from "react-icons/gr";
+import { Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CloseIcon from '@material-ui/icons/Close';
@@ -149,6 +150,7 @@ function Navbar() {
 
 	return (
 		<div className='navbar'>
+			<Container>
 			<div className='navbar--container'>
 
 				<img alt="jon christie web developer resume job portfolio" src={headerData.BG}className={classes.bgStyle} />
@@ -281,6 +283,7 @@ function Navbar() {
 					</div>
 				</div>
 			</Drawer>
+						</Container>
 		</div>
 	);
 }

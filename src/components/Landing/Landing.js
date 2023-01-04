@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
-import { Button } from '@material-ui/core';
+import { Grid, Button, Container } from '@material-ui/core';
+
 import './Landing.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { headerData } from '../../data/headerData';
@@ -22,12 +23,12 @@ function Landing() {
 
 	return (
 		<div className='landing'>
-			<div className='landing--container'>
-				<div
+			<Container >
+				<Grid item xs={12} 
 					className='landing--container-left'
 					style={{ backgroundColor: theme.primary }}
 				>
-					<div className='lcl--content'>
+					<Grid className='lcl--content'>
 						{socialsData.github && (
 							<a
 								href={socialsData.github}
@@ -100,8 +101,8 @@ function Landing() {
 								/>
 							</a>
 						)}
-					</div>
-				</div>
+					</Grid>
+				</Grid>
 				<img
 					src={headerData.image}
 					alt=''
@@ -111,7 +112,7 @@ function Landing() {
 						borderColor: theme.secondary,
 					}}
 				/>
-				<div
+				<Grid item xs={12} 
 					className='landing--container-right'
 					style={{ backgroundColor: theme.secondary }}
 				>
@@ -232,9 +233,11 @@ function Landing() {
 							</Button>
 						</div>
 					</div>
-				</div>
-			</div>
+				</Grid>
+				</Container>		
 		</div>
+
+
 	);
 }
 
