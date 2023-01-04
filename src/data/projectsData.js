@@ -9,25 +9,7 @@ import pytho from '../assets/svg/projects/python.png'
 import scical from '../assets/svg/projects/scical.png'
 
 export const projectsData = [
- 
-	// { 
-	// 	id: 1,
-	// 	projectName: 'Expense Tracker',
-	// 	projectDesc: '\n\n\nA React Native iOS/Android App to keep track of your expense (or anything else, like a to do list with deadlines). Includes navigation, authentication, and persistence of data.\n',
-	// 	tags: ['React', 'React Native', 'Javascript', 'Expo', 'CSS', 'Firebase'	],
-	// 	code: 'https://github.com/mathcodes/react-native-apps/tree/main/sample-apps/rn-expense-tracker/rn-expense-trackers',
-	// 	demo: 'https://github.com/mathcodes/react-native-apps/tree/main/sample-apps/rn-expense-tracker/rn-expense-trackers',
-	// 	image: etrn
-	// },
-	{
-		id: 1,
-		projectName: 'Scientific Calculator',
-		projectDesc: '\n\n\nWorking the wonders of Vanilla JS here, providing users with a mobile-first, desktop-ready scientific-calculator with the ability to solve high-level Algebraic and Geeomtric problems in 1, 2, or 3 dimensions.\n',
-		tags: ['HTML', 'CSS', 'Javascript', 'Ganja.JS'	],
-		code: 'https://github.com/mathcodes/scientific-calculator',
-		demo: 'https://scientific-calulator.vercel.app/',
-		image: scical
-	},
+
 
 	{
 		id: 2,
@@ -47,23 +29,41 @@ export const projectsData = [
 	// 	demo: 'https://superpantrybuddy.herokuapp.com/',
 	// 	image: one
 	// },
+	// {
+	// 	id: 3,
+	// 	projectName: 'Google Book Search',
+	// 	projectDesc: ' \nFull Stack React ORM-built book search using MongoDb to give users their own account with increasing abilities as the app progresses, such as sotring their favorites andn star ratings.\n',
+	// 	tags: ['MERN', 'ORM', 'OAuth', 'Jest'],
+	// 	code: 'https://github.com/mathcodes/spb/',
+	// 	demo: 'https://superpantrybuddy.herokuapp.com/',
+	// 	image: one
+	// },
 	{
 		id: 3,
-		projectName: 'Google Book Search',
-		projectDesc: ' \nFull Stack React ORM-built book search using MongoDb to give users their own account with increasing abilities as the app progresses, such as sotring their favorites andn star ratings.\n',
-		tags: ['MERN', 'ORM', 'OAuth', 'Jest'],
-		code: 'https://github.com/mathcodes/spb/',
-		demo: 'https://superpantrybuddy.herokuapp.com/',
+		projectName: 'Content For Developers',
+		projectDesc: ' \nOpen-source project created and maintained by me with a growing list of almost 20 contributors. A site with education and learning as a top priority. Utilizing the power of open-source contributors to offer the most diverse collection of learning tools for coding.\n',
+		tags: ['React', 'SASS', 'Material UI', 'Open Source'],
+		code: 'https://github.com/mathcodes/contentfordevelopers/',
+		demo: 'https://www.contentfordevelopers.com/',
 		image: one
 	},
+	// {
+	// 	id: 4,
+	// 	projectName: 'A Python Log',
+	// 	projectDesc: '\n\n\nA full stack website with blog, using Python to run the backend, and allowing users to post, share, and delete content. A user-centric and mobile-friendly design adds functionality and a responsive UI.\n',
+	// 	tags: ['Python', 'JS', 'Django', 'Tkinter', 'CRUD'],
+	// 	code: 'https://github.com/mathcodes/PythonLog/',
+	// 	demo: 'https://jonspythonlog.herokuapp.com/',
+	// 	image: tech
+	// },
 	{
 		id: 4,
-		projectName: 'A Python Log',
-		projectDesc: '\n\n\nA full stack website with blog, using Python to run the backend, and allowing users to post, share, and delete content. A user-centric and mobile-friendly design adds functionality and a responsive UI.\n',
-		tags: ['Python', 'JS', 'Django', 'Tkinter', 'CRUD'],
-		code: 'https://github.com/mathcodes/PythonLog/',
-		demo: 'https://jonspythonlog.herokuapp.com/',
-		image: tech
+		projectName: 'Scientific Calculator',
+		projectDesc: '\n\n\nWorking the wonders of Vanilla JS here, providing users with a mobile-first, desktop-ready scientific-calculator with the ability to solve high-level Algebraic and Geeomtric problems in 1, 2, or 3 dimensions.\n',
+		tags: ['HTML', 'CSS', 'Javascript', 'Ganja.JS'	],
+		code: 'https://github.com/mathcodes/scientific-calculator',
+		demo: 'https://scientific-calulator.vercel.app/',
+		image: scical
 	},
 	{
 		id: 5,
