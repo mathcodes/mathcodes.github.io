@@ -101,22 +101,5 @@ export const projectsData = [
 		demo: 'https://mathcodes.github.io/pick2hand/',
 		image: keys
 	},
-	{
-		id: 9,
-		projectName: 'Scientific Calculator',
-		projectDesc: '\n\n\nAn advanced, mobile-friendly calculator built using ganja.js. This app works great on mobile, providing a full screen, highly-capable calculator which includes a help button that provides useful guides on what each button does, with examples ready to go.\n',
-		tags: ['HTML', 'CSS', 'JS', 'Ganja.js'],
-		code: 'https://github.com/mathcodes/scientific-calculator',
-		demo: 'https://scientific-calulator.vercel.app/',
-		image: keys
-	},
-	{
-		id: 10,
-		projectName: 'contentfordevelopers.com',
-		projectDesc: '\n\n\nOpen-source project with MVP in the works. A website built by devs, for devs, with education and learning as a top priority. Utilizing the power of open source contributors brings the most diverse collection of learning tools for coding.\n',
-		tags: ['Data Structures', 'Algorithms', 'Open Source'],
-		code: 'https://github.com/mathcodes/contentfordevelopers',
-		demo: 'https://mathcodes.github.io/pick2hand/',
-		image: keys
-	},
+	
 ]
