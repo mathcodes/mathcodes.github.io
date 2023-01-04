@@ -2,7 +2,7 @@ import one from '../assets/svg/projects/bookShelves.png'
 import tech from '../assets/svg/projects/pythonlog.svg'
 import three from '../assets/svg/projects/mars.svg'
 import scb from '../assets/svg/projects/scb.svg'
-import etrn from '../assets/img/expensetracker.png'
+import cfd from '../assets/svg/projects/cfd.svg'
 import keys from '../assets/svg/projects/keys.png'
 import gnco from '../assets/img/gnco.png'
 import pytho from '../assets/svg/projects/python.png'
@@ -45,7 +45,7 @@ export const projectsData = [
 		tags: ['React', 'SASS', 'Material UI', 'Open Source'],
 		code: 'https://github.com/mathcodes/contentfordevelopers/',
 		demo: 'https://www.contentfordevelopers.com/',
-		image: one
+		image: cfd
 	},
 	// {
 	// 	id: 4,
