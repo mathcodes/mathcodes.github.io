@@ -191,10 +191,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
 									.replace(' ', '-')
 									.toLowerCase()}-demo`}
 						>
-							 
-					 
 							<BottomNavigationAction style={{margin: ".5rem", color:"#fff", background:"#333", fontSize: "2rem"}} icon={<HiLink />} /></a>
-							
 							<a
 							href={code}
 							target='_blank'

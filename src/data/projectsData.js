@@ -1,12 +1,13 @@
-import one from '../assets/svg/projects/bookShelves.png'
-import tech from '../assets/svg/projects/pythonlog.svg'
-import three from '../assets/svg/projects/mars.svg'
+// import one from '../assets/svg/projects/bookShelves.png'
+// import tech from '../assets/svg/projects/pythonlog.svg'
+// import three from '../assets/svg/projects/mars.svg'
 import scb from '../assets/svg/projects/scb.svg'
 import cfd from '../assets/svg/projects/cfd.svg'
 import keys from '../assets/svg/projects/keys.png'
 import gnco from '../assets/img/gnco.png'
 import pytho from '../assets/svg/projects/python.png'
 import scical from '../assets/svg/projects/scical.png'
+import tstodo from '../assets/svg/projects/TS-todo.jpg'
 
 export const projectsData = [
 
@@ -57,6 +58,15 @@ export const projectsData = [
 	// 	image: tech
 	// },
 	{
+		id: 9,
+		projectName: 'TypeScript-To-Do',
+		projectDesc: '\n\n\nThis is an advanced to-do list using TypeScript and React. Users have the ability to filter, create, delete, edit and update their notes. Fully responsive and written with clean, easy to understand code!\n',
+		tags: ['TypeScript', 'React', 'Bootstrap', 'vite'],
+		code: 'https://github.com/mathcodes/typescript-tags-todo/',
+		demo: 'https://typescript-tags-todo.vercel.app/',
+		image: tstodo
+	},
+	{
 		id: 4,
 		projectName: 'Scientific Calculator',
 		projectDesc: '\n\n\nWorking the wonders of Vanilla JS here, providing users with a mobile-first, desktop-ready scientific-calculator with the ability to solve high-level Algebraic and Geeomtric problems in 1, 2, or 3 dimensions.\n',
@@ -64,24 +74,6 @@ export const projectsData = [
 		code: 'https://github.com/mathcodes/scientific-calculator',
 		demo: 'https://scientific-calulator.vercel.app/',
 		image: scical
-	},
-	{
-		id: 5,
-		projectName: 'Mars Project',
-		projectDesc: '\n\n\nWeather forecast systems and applications predict weather conditions based on multiple parameters.\n',
-		tags: ['MySQL', 'Sequelize', 'ORM', 'API'],
-		code: 'https://github.com/mathcodes/Red-Planet-Voyagers',
-		demo: 'https://team-5-project-2.herokuapp.com/',
-		image: three
-	},
-	{
-		id: 6,
-		projectName: 'A Collection of Python Projects',
-		projectDesc: "Refreshed for 2023, React-based Google Books Search app brings you, on the frontend, reusable, scalable, gorgeous, responsive, and simple components. Express serves us up the connections needed to fully utilize not only the  helper/util functions with React's lifecycle methods, but storing user settings to MongoDB to enable saving books.\n",
-		tags: ['MERN', 'Axios', 'if-env', 'dotenv'],
-		code: 'https://github.com/mathcodes/book-search-v.1.2.0',
-		demo: 'https://book-search-v-1-2-0.vercel.app/',
-		image: pytho
 	},
 	{
 		id: 7,
@@ -101,5 +93,6 @@ export const projectsData = [
 		demo: 'https://mathcodes.github.io/pick2hand/',
 		image: keys
 	},
+
 	
 ]
