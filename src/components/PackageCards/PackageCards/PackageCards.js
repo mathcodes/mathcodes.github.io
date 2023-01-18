@@ -42,7 +42,9 @@ export const packages = [
     price: "$3000/month",
     link: `<ReadMoreIcon />`
 
-  },
+  }]
+
+export const packages2 = [
   {
     key: 6,
     name: "Basic SEO Startup Suite",
@@ -90,14 +92,15 @@ function PackageCards() {
   return (
     <>
       <div className="services-header">
-        <h1 style={{ color: theme.secondary70 }}>Services</h1>
-      </div><Box>
-        <Grid container spacing={{ xs: 3, md: 1, }}  >
+        <h1 style={{ color: theme.secondary70 }} className="items-center justify-center h-screen">Services</h1>
+      </div>
+      <Box>
+        <Grid container spacing={{ xs: 1, sm: 2, md: 5, }} className="items-center justify-center h-screen" style={{ justifyContent: "center" }}>
           {packages.map((p) => (
 
-            <Grid container style={{ textAlign: "center", padding: '5px' }} mt={15} elevation={6} rowSpacing={3} xs={12} sm={6} md={4} lg={3}>
+            <Grid container style={{ textAlign: "center", padding: '5px', }} mt={15} elevation={6} rowSpacing={3} xs={12} sm={3} md={5} lg={2} className="items-center justify-content-center h-screen">
               <Paper className="service servicePaper">
-                <Box className="service serviceBoxName" id={p.key} sx={{ mx: 'auto', py: 1, fontSize: '2rem', fontWeight: 500 }} Grid xs={12}>
+                <Box className="service serviceBoxName" id={p.key} sx={{ mx: 'auto', py: 1, height: '8rem', fontSize: '2rem', background: "#d35400", zIndex: 20, boxShadow: '4px 4px 8px rgba(36, 3, 6, 1)' }} Grid xs={12}>
                   {p.name}
                 </Box>
                 <Box className="service serviceBoxDesc" sx={{ mx: 'auto', py: 1, fontSize: '1rem', fontWeight: 500 }} Grid xs={12}>
@@ -112,7 +115,31 @@ function PackageCards() {
             </Grid>
 
           ))}
-        </Grid></Box>
+        </Grid>
+      </Box>
+      <Box>
+        <Grid container spacing={{ xs: 1, sm: 2, md: 5, }} className="items-center justify-center h-screen" style={{ justifyContent: "center" }}>
+          {packages2.map((p) => (
+
+            <Grid container style={{ textAlign: "center", padding: '5px', }} mt={15} elevation={6} rowSpacing={3} xs={12} sm={3} md={5} lg={2} className="items-center justify-content-center h-screen">
+              <Paper className="service servicePaper">
+                <Box className="service serviceBoxName" id={p.key} sx={{ mx: 'auto', py: 1, height: '8rem', fontSize: '2rem', background: "#db11a9", zIndex: 20, boxShadow: '4px 4px 8px rgba(36, 3, 6, 1)' }} Grid xs={12}>
+                  {p.name}
+                </Box>
+                <Box className="service serviceBoxDesc" sx={{ mx: 'auto', py: 1, fontSize: '1rem', fontWeight: 500 }} Grid xs={12}>
+                  {p.description}
+                </Box>
+                <Box className="service serviceBox3" sx={{ mx: 'auto', py: 1, fontSize: '2rem', fontWeight: 500 }} Grid xs={12}>
+                  <Box className="service serviceBox4">
+                    {p.price}
+                  </Box>
+                </Box>
+              </Paper>
+            </Grid>
+
+          ))}
+        </Grid>
+      </Box>
     </>
   );
 }
