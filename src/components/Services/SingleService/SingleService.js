@@ -14,8 +14,8 @@ function SingleService({ id, title, icon }) {
 	console.log(theme)
 	return (
 		<>
-			<div className="projects--header">
-						<h1 style={{ color: theme.secondary70 }}>Services</h1>
+			<div className="services--header">
+						<h2 style={{ color: theme.secondary70 }}>Services</h2>
 					</div>
 					
 		<Fade bottom>

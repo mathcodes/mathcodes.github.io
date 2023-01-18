@@ -44,7 +44,8 @@
     "web-vitals": "^1.0.1"
   },
   "devDependencies": {
-    "react-app-rewired": "^2.2.1"
+    "react-app-rewired": "^2.2.1",
+    "sass": "^1.57.1"
   },
   "scripts": {
     "start": "react-app-rewired start",

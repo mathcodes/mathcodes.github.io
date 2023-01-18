@@ -1,14 +1,21 @@
 {
   "forms": {
     "contact": {
-      "name": "Contact Form",
+      "name": "Clients Spreadsheet",
       "fields": {
         "name": { "type": "name", "required": true },
         "email": { "type": "email", "required": true },
         "message": { "type": "text", "required": true }
       },
       "actions": [
-        { "type": "email", "to": "jon@jonchristie.net" }
+        { "type": "email", "to": "jon@jonchristie.net" },
+        {
+          "app": "googlesheets",
+          "privateKey": "b3fa02a7218117d7c3f83051b034efcc58c21646",
+          "serviceAccount": "formspree@fbclone-f66d7.iam.gserviceaccount.com",
+          "type": "sendToSpreadsheet",
+          "sendInvitationTo": "jon@jonchristie.net"
+        }
       ]
     }
   }

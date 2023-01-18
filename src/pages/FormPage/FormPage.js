@@ -41,7 +41,7 @@ function FormPage() {
         width: '100%',
       },
     },
-    searchArea : {
+    searchArea: {
       color: theme.tertiary,
       width: '100%',
       height: '8.75rem',
@@ -60,7 +60,7 @@ function FormPage() {
       [t.breakpoints.down('sm')]: {
         width: '100%',
       },
-    },    search2: {
+    }, search2: {
       color: '#4faeba',
       width: '100%',
       height: '5.75rem',
@@ -124,7 +124,7 @@ function FormPage() {
         <h1 style={{ color: '#eaeaea' }}>Contact Form</h1>
       </div>
       <div>
-        <h3 style={{color:'#4faeba', fontSize:'1.5rem', margin:'.5rem 0 0 .3rem', fontFamily: "'Noto Sans TC', sans-serif"}}>Fill out the form and I'll get back with you shortly! </h3>
+        <h3 style={{ color: '#4faeba', fontSize: '1.5rem', margin: '.5rem 0 0 .3rem', fontFamily: "'Noto Sans TC', sans-serif" }}>Fill out the form and I'll get back with you shortly! </h3>
       </div>
       <form className="mx-auto w-full pt-10" onSubmit={handleSubmit}>
         <div className="flex flex-col md:flex-row">
@@ -157,7 +157,35 @@ function FormPage() {
                   <ValidationError prefix="Email" field="email" errors={state.errors} />
 
                 </Item>
+
               </Grid>
+              <Grid item xs={12}>
+                <Item className="projectPage-search">
+              
+                  <label>Select which service you are interested in:
+                <input list="browsers" name="myBrowser" data-aos="fade-left"
+                    data-aos-duration="1000"
+                    className={classes.search}/></label>
+              <datalist id="services">
+                <option value="Website Design and Development" />
+                <option value="E-commerce Solutions" />
+                <option value="Content Management Systems (CMS)" />
+                <option value="Search Engine Optimization (SEO)" />
+                <option value="Web Hosting and Maintenance" />
+                <option value="Basic SEO Startup Suite" />
+                <option value="Advanced SEO Startup Suite" />
+                <option value="Marketing Startup Suite" />
+                <option value="Branding Startup Suite" />
+                <option value="Social Media Marketing Startup Suite" />
+                <option value="Basic SEO" />
+                <option value="Advanced SEO" />
+                <option value="Social Media Marketing(CMS)" />
+                <option value="Branding" />
+                <option value="Marketing" />
+              </datalist>
+              </Item>
+              </Grid>
+              
               <Grid item xs={12}>
                 <Item className="projectPage-search">
                   <textarea
@@ -182,7 +210,7 @@ function FormPage() {
                     type="submit"
                     disabled={state.submitting}
                     className={classes.search}
-                    style={{background:'#4faeba', color:'black', fontSize:'1.5rem', margin:'.5rem 0 0 .3rem', fontFamily: "'Noto Sans TC', sans-serif"}}
+                    style={{ background: '#4faeba', color: 'black', fontSize: '1.5rem', margin: '.5rem 0 0 .3rem', fontFamily: "'Noto Sans TC', sans-serif" }}
                   >
                     Send
                     <i className="bx bx-chevron-right relative -right-2 text-3xl"></i>
@@ -194,8 +222,8 @@ function FormPage() {
 
           </Container>
         </div>
-      </form>
-    </div>
+      </form >
+    </div >
   )
 }
 

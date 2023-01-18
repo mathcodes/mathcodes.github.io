@@ -5,7 +5,7 @@
   justify-content: flex-start;
   min-height: 60vh;
   padding: 2.5rem 2rem 2rem 2rem;
-  background: rgb(50, 50, 50);
+  background: linear-gradient(180deg, #232526 0%, #556a2f 100%);
   color: #eaeaea;
 }
 
@@ -31,18 +31,21 @@
   width: 100%;
   margin-top: 3.5rem;
   padding: 0 2rem;
+  
 }
 
 .skill--scroll {
   width: 100%;
+  border:#232526 3px solid;
   margin: 0 2rem;
+  border-radius: 20px;
 }
 
 
 .skill--box {
   background: #FAFAFA;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12);
-  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(77, 95, 45, 0.92);
+  border-radius: 10px 0 10px 0;
   width: 160px;
   height: 160px;
   margin: 1.5rem;
@@ -73,13 +76,13 @@
 }
 
 .marquee {
-  padding: 3rem 0;
+  padding: 1rem 0;
 }
 
 .overlay{
-  --gradient-color: rgb(0, 0, 0), rgba(255, 255, 255, 0)!important;
-  --gradient-width: 200px;
-  border-radius: 10px;
+  --gradient-color: rgb(77, 95, 45), rgba(77, 95, 45, 0)!important;
+  --gradient-width: 50%;
+  /* border-radius: 10px; */
 }
 
 .overlay::after, .overlay::before{

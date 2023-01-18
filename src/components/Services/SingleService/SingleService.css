@@ -106,3 +106,22 @@
     top: 50%;
   }
 }
+
+
+
+.services-header
+{
+  font-family: var(--primaryFont);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 1rem;
+}
+
+.services-header h2
+{
+  margin-bottom: 40px;
+  font-size: 3.5rem;
+  font-family: var(--primaryFont);
+}

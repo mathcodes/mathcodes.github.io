@@ -17,7 +17,7 @@ color: darkolivegreen;
 
 .landing--img {
   opacity: 0;
-  --img-size: 400px;
+  --img-size: 200px;
   position: absolute;
   left: 35%;
   transform: translateX(-50%);

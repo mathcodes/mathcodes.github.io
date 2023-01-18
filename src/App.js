@@ -22,6 +22,7 @@ function App() {
       <FormspreeProvider project={process.env.YOUR_PROJECT_ID}>
       <Router>
         <ScrollToTop />
+  
         <Switch>
           <Route path="/" exact component={Main} />
           <Route path="/projects" exact component={ProjectPage} />
