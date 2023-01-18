@@ -3,10 +3,9 @@ import {
 	floatingMan,contactsPrimary
 } from './images'
 
-
 export const primaryThemeDark = {
 	type: 'dark',
-	primary: '#232526',
+	primary: '#646464',
 	primary400: '#232526',
 	primary600: '#1A1C1E',
 	primary80: '#1A1C1E',
@@ -14,8 +13,8 @@ export const primaryThemeDark = {
 	primary30: '#1E1F20',
 	secondary: '#000000',
 	secondary70: '#eaeaea',
-	secondary50: '#eaeaea',
-	tertiary: '#eaeaea',
+	secondary50: '#D1D1D1',
+	tertiary: '#D1D1D1',
 	tertiary80: '#eeeeee',
 	tertiary70: '#C0C1C6',
 	tertiary50: '#FFFFFF',

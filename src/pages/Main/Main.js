@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { Navbar, Landing, About, Skills, Testimonials, Services, Projects, HorizontalRule, Footer } from '../../components'
+import { Navbar, Landing,PackageCards, About, Skills, Testimonials, Services, Projects, HorizontalRule, Footer, Offers} from '../../components'
 import { headerData } from '../../data/headerData'
 
 
@@ -14,17 +14,14 @@ function Main() {
 			<Navbar />
 			<Landing />								
 			<About />			
-			{/* <Background className="backgroundStyle" style={{zIndex:'-30'}}/> */}
 			<HorizontalRule />
 			<Skills />
 			<Projects />
-			{/* <Background className="backgroundStyle" style={{zIndex:'-30'}}/>	 */}
+			<Offers />
+			<PackageCards/>
 			<Services />
 			<Testimonials />
-			
-			{/* <ContactForm /> */}
-			{/* <Background className="backgroundStyle" style={{zIndex:'-30'}}/>	 */}
-			 <Footer />
+			<Footer />
 		</div> 
 	)
 }

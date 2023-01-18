@@ -1,49 +1,141 @@
-import React from 'react';
-// import { ThemeContext } from '../../contexts/ThemeContext';
+import React, { useContext } from 'react'
+import { Helmet } from 'react-helmet'
+import { Link } from 'react-router-dom'
+import { makeStyles } from '@material-ui/core/styles';
+import { AiOutlineHome } from "react-icons/ai";
+import ButtonComponent from '../../components/ButtonComponent/ButtonComponent'
+import './FormPage.css'
+import { ThemeContext } from '../../contexts/ThemeContext';
+import { headerData } from '../../data/headerData'
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import { useForm, ValidationError } from "@formspree/react";
 import { Container, Grid } from '@mui/material';
-import ThanksBar from './ThanksBar';
-import {headerData} from '../../data/headerData'
 import Button from '@mui/material/Button';
+import FormPageTY from './FormPageTY'
 
-function ContactForm() {
+
+function FormPage() {
   const [state, handleSubmit] = useForm("xaykzqea");
+  // const [search, setSearch] = useState('')
+  const { theme } = useContext(ThemeContext);
+
+  const useStyles = makeStyles((t) => ({
+    search: {
+      color: theme.tertiary,
+      width: '100%',
+      height: '2.75rem',
+      outline: 'none',
+      border: 'none',
+      borderRadius: '20px',
+      padding: '0.95rem 1rem',
+      fontFamily: "'Noto Sans TC', sans-serif",
+      fontWeight: 500,
+      fontSize: '0.9rem',
+      backgroundColor: theme.secondary,
+      boxShadow: theme.type === 'dark' ? 'inset 3px 3px 6px #eaeaea, inset -3px -3px 6px #00000060' : 'inset 3px 3px 6px #ffffffbd, inset -3px -3px 6px #00000030',
+      "&::placeholder": {
+        color: theme.tertiary80,
+      },
+      [t.breakpoints.down('sm')]: {
+        width: '100%',
+      },
+    },
+    searchArea : {
+      color: theme.tertiary,
+      width: '100%',
+      height: '8.75rem',
+      outline: 'none',
+      border: 'none',
+      borderRadius: '20px',
+      padding: '0.95rem 1rem',
+      fontFamily: "'Noto Sans TC', sans-serif",
+      fontWeight: 500,
+      fontSize: '0.9rem',
+      backgroundColor: theme.secondary,
+      boxShadow: theme.type === 'dark' ? 'inset 3px 3px 6px #eaeaea, inset -3px -3px 6px #00000060' : 'inset 3px 3px 6px #ffffffbd, inset -3px -3px 6px #00000030',
+      "&::placeholder": {
+        color: theme.tertiary80,
+      },
+      [t.breakpoints.down('sm')]: {
+        width: '100%',
+      },
+    },    search2: {
+      color: '#4faeba',
+      width: '100%',
+      height: '5.75rem',
+      outline: 'none',
+      border: 'none',
+      padding: '0.95rem 1rem',
+      fontFamily: "'Noto Sans TC', sans-serif",
+      fontWeight: 500,
+      fontSize: '1.9rem',
+    },
+    home: {
+      color: theme.secondary,
+      position: 'absolute',
+      top: 25,
+      left: 25,
+      padding: '7px',
+      borderRadius: '50%',
+      boxSizing: 'content-box',
+      fontSize: '2rem',
+      cursor: 'pointer',
+      boxShadow: theme.type === 'dark' ? '3px 3px 6px #ffffff40, -3px -3px 6px #00000050' : '3px 3px 6px #ffffff40, -3px -3px 6px #00000050',
+      transition: 'all 0.3s ease-in-out',
+      "&:hover":
+      {
+        color: theme.tertiary,
+        transform: 'scale(1.1)',
+      },
+      [t.breakpoints.down('sm')]: {
+        fontSize: '1.8rem',
+      },
+    },
+  }));
+  const classes = useStyles();
   if (state.succeeded) {
-    return ( 
-    <>
-    <h1>Thank you! I will get back to you shortly!</h1>
-    <a href="../Main/Main" alt="button anchor tag jon christie"><button>HOME</button></a></>
+    return (
+      <>
+        <FormPageTY />
+        {/* <h1>Thank you! I will get back to you shortly!</h1> */}
+
+      </>
     );
   }
 
   const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#232526' : '#fff',
+    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
     padding: theme.spacing(1),
     textAlign: 'center',
     color: theme.palette.text.secondary,
   }));
 
-  const formStatus = state.succeeded ?
-  <h1>Thank you! I will get back to you shortly!</h1> : <img alt="jon christie web developer resume job portfolio" style={{height:'10rem', width:'10rem'}} src={headerData.BG} />
-
- 
-
   return (
-    <>
-      <ThanksBar view={formStatus}/>
-      <form className="mx-auto w-full pt-10 sm:w-3/4" onSubmit={handleSubmit}>
+    <div className="formPage" style={{ backgroundColor: theme.secondary }}>
+      <Helmet>
+        <title>{headerData.name} | Contact Form</title>
+      </Helmet>
+      <div className="formPage-header" style={{ backgroundColor: theme.primary }}>
+        <Link to="/">
+          <AiOutlineHome className={classes.home} />
+        </Link>
+        <h1 style={{ color: '#eaeaea' }}>Contact Form</h1>
+      </div>
+      <div>
+        <h3 style={{color:'#4faeba', fontSize:'1.5rem', margin:'.5rem 0 0 .3rem', fontFamily: "'Noto Sans TC', sans-serif"}}>Fill out the form and I'll get back with you shortly! </h3>
+      </div>
+      <form className="mx-auto w-full pt-10" onSubmit={handleSubmit}>
         <div className="flex flex-col md:flex-row">
           <Container maxWidth="sm">
-            <Grid container spacing={2}>
-              <Grid item xs={6} md={8}>
-                <Item>
+            <Grid container spacing={2} mt={4}>
+              <Grid item xs={6} md={6}>
+                <Item className="projectPage-search">
                   <input
                     data-aos="fade-right"
                     data-aos-duration="1000"
-                    className="mr-3 w-full rounded border font-body text-black md:w-1/2 lg:mr-5"
+                    className={classes.search}
                     placeholder="Name"
                     type="text"
                     id="name"
@@ -51,12 +143,12 @@ function ContactForm() {
                   />
                 </Item>
               </Grid>
-              <Grid item xs={6} md={4}>
-                <Item>
+              <Grid item xs={6} md={6}>
+                <Item className="projectPage-search">
                   <input
                     data-aos="fade-left"
                     data-aos-duration="1000"
-                    className="mt-6 w-full rounded border font-body text-black md:mt-0 md:ml-3 md:w-1/2 lg:ml-5"
+                    className={classes.search}
                     placeholder="Email"
                     type="email"
                     id="email"
@@ -67,11 +159,11 @@ function ContactForm() {
                 </Item>
               </Grid>
               <Grid item xs={12}>
-                <Item>
+                <Item className="projectPage-search">
                   <textarea
                     data-aos="fade-up"
                     data-aos-duration="1000"
-                    className="mt-6 w-full rounded border px-4 py-3 font-body text-black md:mt-8"
+                    className={classes.searchArea}
                     placeholder="Message"
                     id="message"
                     cols="30"
@@ -83,44 +175,28 @@ function ContactForm() {
                 </Item>
               </Grid>
               <Grid item xs={12}>
-                <Item>
-                  <button
+                <Item className="projectPage-search">
+                  <Button
                     data-aos="fade-down"
                     data-aos-duration="1000"
                     type="submit"
                     disabled={state.submitting}
-                    className="mt-6 flex items-center justify-center rounded bg-primary px-8 py-3 font-header text-lg font-bold uppercase text-white hover:bg-grey-20"
+                    className={classes.search}
+                    style={{background:'#4faeba', color:'black', fontSize:'1.5rem', margin:'.5rem 0 0 .3rem', fontFamily: "'Noto Sans TC', sans-serif"}}
                   >
                     Send
                     <i className="bx bx-chevron-right relative -right-2 text-3xl"></i>
-                  </button>
+                  </Button>
                 </Item>
               </Grid>
-              <div className="formBtn">
-						<h1 className="blink" style={{ fontSize: '3rem' }}>👉</h1>
-						
-							<Button
-								style={{
-									backgroundColor: '#232526',
-									color: '#eaeaea',
-									width: '18rem',
-									display: 'flex',
-									alignItems: 'center',
-									justifyContent: 'center',
-								}} variant="contained">
-									<a style={{ backgroundColor: 'none' }} href="./formpage">
-								<h2>CONTACT ME</h2></a>
-							</Button>
-						
-						<h1 className="blink2" style={{ fontSize: '3rem' }}>👈</h1>
-					</div>
 
             </Grid>
+
           </Container>
         </div>
       </form>
-    </>
-  );
+    </div>
+  )
 }
 
-export default ContactForm;
+export default FormPage

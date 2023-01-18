@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   overflow-x: hidden;
   padding: 2rem;
 }
@@ -28,6 +28,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 .projects--bodyContainer {
@@ -56,9 +57,7 @@
 
 .project--desc:hover,
 .project--lang:hover {
-  z-index: 100;
-  background-color: yellow;
-
+  z-index: 1000;
 }
 
 .break{
@@ -87,7 +86,7 @@
 
 @media screen and (max-width: 800px) {
   .projects--header h1 {
-    font-size: 1rem;
+    font-size: 2.8rem;
     margin-bottom: 30px;
   }
   div.projectContent > img{

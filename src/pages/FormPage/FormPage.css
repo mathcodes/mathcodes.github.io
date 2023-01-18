@@ -1,4 +1,4 @@
-.formComp{
+/* .formComp{
   box-sizing: border-box;
   padding: 0 0rem;
   flex: initial;
@@ -34,7 +34,7 @@
 }
 
 .formDiv{
-  /* width: 100%; */
+  width: 100%;
   margin: auto;
 }
 
@@ -63,3 +63,111 @@
 .MuiInputBase-input {
   margin: 3rem 3rem;
 }
+.divFormBtn{
+  position: relative;
+  align-items: center;
+}
+
+#formButtonComponent {
+  display: flex;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+}
+
+Item{
+  background: orange;
+}
+ */
+
+
+ .formPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+.formPage-header {
+  height: 35vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.formPage-header>h1 {
+  font-size: 4rem;
+  font-family: var(--primaryFont);
+}
+
+.formPage-container {
+  padding: 3rem 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.formPage-search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  margin-top: 5rem;
+  width: 100%;
+  background-color: none;
+}
+
+.form-grid {
+  display: flex;
+  gap: 4rem;
+}
+
+/*  ------------------------------------ MEDIA QUERIES ------------------------------------ */
+@media screen and (max-width: 992px) {
+  .formPage-header {
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-grid {
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 702px) {
+  .form-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .formPage-header h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .formPage-header {
+    height: 20vh;
+  }
+
+  .formPage-header h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.projectPage-search{
+  background: none !important;
+}
+

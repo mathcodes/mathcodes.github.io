@@ -62,52 +62,36 @@
 
 .singleProject .project--desc {
   position: absolute;
-  width: 95%;
-  height: 160px;
+  width: 400px;
+  height: 100%;
   left: 0;
   top: 0;
-  font-size: 0.75rem;
+  font-size: 1rem;
   color:#fff !important;
   border: 2px solid #fff;
   transform: translate(-110%, 40%);
   padding: 15px;
-  border-radius: 0 20px 20px 0;
+  border-radius: 5px 30px 5px 30px;
   transition: transform 0.9s;
   line-height: 110%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--primaryFont);
-  overflow:auto;;
+  overflow:auto;
+  z-index: 1000;
 }
 
 .singleProject:hover .project--desc {
-  transform: translate(2px, 5rem);
- 
+  transform: translate(4px, 0);
+  z-index: 1000;
+  border-radius: 30px 10px 30px 10px;
+
 }
 
-.singleProject .project--lang {
-  position: absolute;
-  bottom: 20px;
-  right: 0;
-  width: 140px;
-  font-size: 0.8rem;
-  color:#fff !important;
-  background-color: #417f88;
-  border: 2px solid #fff;
-
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  flex-direction: column;
-  border-radius: 10px 0 0 10px;
-  transform: translateX(100%);
-  transition: transform 0.5s 0.3s;
-  padding: 0.825rem;
-}
-
-.singleProject:hover .project--lang {
-  transform: translateX(0); 
+.project--desc {
+  height: 147.30px;
+  font-size:.5rem;
 }
 
 .project--lang>span {
@@ -115,4 +99,21 @@
   font-weight: 500;
   word-break: break-word;
   line-height: 100%;
+}
+
+
+
+.cardTitle{
+  font-size: 1rem;
+  margin-top: -20px;
+}
+
+.botCardBtn{
+  background: #222;
+  color: white;
+  margin: .1rem;
+}
+
+.ProjDesc{
+  padding: .5rem .5rem 1.5rem .5rem;
 }

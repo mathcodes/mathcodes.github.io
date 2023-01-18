@@ -1,7 +1,6 @@
 /* eslint-disable no-undef */
 import React, { useContext } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 
@@ -64,7 +63,7 @@ function Contacts() {
 			justifyContent: 'center',
 			padding: '5px',
 			backgroundColor: 'none',
-			color: theme.secondary,
+			color: theme.secondary70,
 			transition: '250ms ease-in-out',
 			'&:hover': {
 
@@ -74,7 +73,7 @@ function Contacts() {
 		},
 		detailsIcon: {
 			backgroundColor: '#667',
-			color: '#232526',
+			color: '#eaeaea',
 			borderRadius: '50%',
 			border: '2px solid #232526',
 			width: '45px',

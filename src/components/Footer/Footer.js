@@ -1,14 +1,12 @@
 import React, { useContext } from 'react'
 import './Footer.css'
 import { ThemeContext } from '../../contexts/ThemeContext'
-import { headerData } from '../../data/headerData'
 import { Grid } from '@mui/material';
 import {
   FaTwitter,
   FaLinkedinIn,
   FaGithub,
   FaYoutube,
-  FaStackOverflow,
   FaCodepen,
 } from 'react-icons/fa';
 import { SiReplit } from 'react-icons/si';
@@ -16,6 +14,7 @@ import { FiPhone, FiAtSign } from 'react-icons/fi';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 import { socialsData } from '../../data/socialsData';
 import { contactsData } from '../../data/contactsData';
+
 const Footer = () => {
 
   const { theme } = useContext(ThemeContext)
@@ -109,16 +108,6 @@ const Footer = () => {
               className='socialIcon'
             >
               <FaYoutube aria-label='YouTube' className="localIcon" />
-            </a>
-          )}
-          {socialsData.stackOverflow && (
-            <a
-              href={socialsData.stackOverflow}
-              target='_blank'
-              rel='noreferrer'
-              className='socialIcon'
-            >
-              <FaStackOverflow aria-label='Stack Overflow' className="localIcon" />
             </a>
           )}
           {socialsData.codepen && (

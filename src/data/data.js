@@ -1,4 +1,4 @@
-import resume from '../assets/pdf/Jon_Christie_Web_Developer_Resume.pdf';
+import resume from '../assets/pdf/Jon_Christie_Resume_2023.pdf';
 
 
 // about
