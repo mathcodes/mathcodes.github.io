@@ -16,29 +16,12 @@ export const projectsData = [
 		id: 2,
 		projectName: 'Gladis & Co',
 		projectDesc: '\n\n\nFreelance gig to fix issues with website in wordpress. Used advanced Javascript methods and CSS selectors that could find a needle in a haystack to override the entire site.\n',
-		tags: ['WordPress', 'JS', 'CSS', 'server-side rendering'],
+		tags: ['WordPress', 'JS', 'CSS', 'SSR'],
 		code: 'https://www.gladisandco.com',
 		demo: 'https://www.gladisandco.com',
-		image: gnco
+		image: gnco,
+		alt: 'server-side rendering, wordpress, javascript, css, html, seo, gladis and co'
 	},
-	// {
-	// 	id: 3,
-	// 	projectName: 'Super Pantry Buddy',
-	// 	projectDesc: '\n\n\nBuilt with a team of three developers, this app uses the MERN stack to provide users with a responsive, customizable experience to search and save recipes by entering in any number of ingredients.\n',
-	// 	tags: ['MERN', 'ORM', 'OAuth', 'Jest', 'Bulma'],
-	// 	code: 'https://github.com/mathcodes/spb/',
-	// 	demo: 'https://superpantrybuddy.herokuapp.com/',
-	// 	image: one
-	// },
-	// {
-	// 	id: 3,
-	// 	projectName: 'Google Book Search',
-	// 	projectDesc: ' \nFull Stack React ORM-built book search using MongoDb to give users their own account with increasing abilities as the app progresses, such as sotring their favorites andn star ratings.\n',
-	// 	tags: ['MERN', 'ORM', 'OAuth', 'Jest'],
-	// 	code: 'https://github.com/mathcodes/spb/',
-	// 	demo: 'https://superpantrybuddy.herokuapp.com/',
-	// 	image: one
-	// },
 	{
 		id: 3,
 		projectName: 'Content For Developers',
@@ -46,17 +29,10 @@ export const projectsData = [
 		tags: ['React', 'SASS', 'Material UI', 'Open Source'],
 		code: 'https://github.com/mathcodes/contentfordevelopers/',
 		demo: 'https://www.contentfordevelopers.com/',
-		image: cfd
+		image: cfd,
+		alt: 'react, sass, material ui, open source, content for developers, education, learning, coding, programming'
+
 	},
-	// {
-	// 	id: 4,
-	// 	projectName: 'A Python Log',
-	// 	projectDesc: '\n\n\nA full stack website with blog, using Python to run the backend, and allowing users to post, share, and delete content. A user-centric and mobile-friendly design adds functionality and a responsive UI.\n',
-	// 	tags: ['Python', 'JS', 'Django', 'Tkinter', 'CRUD'],
-	// 	code: 'https://github.com/mathcodes/PythonLog/',
-	// 	demo: 'https://jonspythonlog.herokuapp.com/',
-	// 	image: tech
-	// },
 	{
 		id: 9,
 		projectName: 'TypeScript-To-Do',
@@ -64,7 +40,8 @@ export const projectsData = [
 		tags: ['TypeScript', 'React', 'Bootstrap', 'vite'],
 		code: 'https://github.com/mathcodes/typescript-tags-todo/',
 		demo: 'https://typescript-tags-todo.vercel.app/',
-		image: tstodo
+		image: tstodo,
+		alt: 'typescript, react, bootstrap, vite, to-do, todo, tags, filter, create, delete, edit, update, notes, fully responsive, clean, easy to understand code'
 	},
 	{
 		id: 4,
@@ -73,7 +50,8 @@ export const projectsData = [
 		tags: ['HTML', 'CSS', 'Javascript', 'Ganja.JS'	],
 		code: 'https://github.com/mathcodes/scientific-calculator',
 		demo: 'https://scientific-calulator.vercel.app/',
-		image: scical
+		image: scical,
+		alt: 'html, css, javascript, ganja.js, scientific calculator, mobile-first, desktop-ready, algebraic, geometric, 1, 2, 3 dimensions'
 	},
 	{
 		id: 7,
@@ -82,7 +60,8 @@ export const projectsData = [
 		tags: ['CSS', 'HTML', 'JS', 'Squarespace', 'Adobe Illustrator'],
 		code: 'www.sweetcloverbarn.com',
 		demo: 'www.sweetcloverbarn.com',
-		image: scb
+		image: scb,
+		alt: 'css, html, javascript, squarespace, adobe illustrator, sweet clover barn, modern, responsive, online payments, ecommerce, community-based, event-scheduling, blog'
 	},
 	{
 		id: 8,
@@ -91,7 +70,8 @@ export const projectsData = [
 		tags: ['HTML', 'CSS', 'JS', 'express'],
 		code: 'https://github.com/mathcodes/monitor',
 		demo: 'https://mathcodes.github.io/pick2hand/',
-		image: keys
+		image: keys,
+		alt: 'html, css, javascript, express, pro typer, keyboarding skills, scoring, typing words, difficulty levels, wpm calculation'
 	},
 
 	

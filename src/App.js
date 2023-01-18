@@ -13,11 +13,13 @@ dotenv.config()
 
 function App() {
   const { theme } = useContext(ThemeContext);
+ 
+	console.log(theme)
+ 
 
-  return (
+  return (<>
     <div className={theme}>
       <FormspreeProvider project={process.env.YOUR_PROJECT_ID}>
-
       <Router>
         <ScrollToTop />
         <Switch>
@@ -32,6 +34,7 @@ function App() {
       </FormspreeProvider>
 
     </div>
+    </>
   );
 }
 

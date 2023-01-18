@@ -78,7 +78,7 @@
   align-items: center;
   justify-content: center;
   font-family: var(--primaryFont);
-  overflow:auto;
+  /* overflow:auto; */
   z-index: 1000;
 }
 
@@ -115,5 +115,27 @@
 }
 
 .ProjDesc{
-  padding: .5rem .5rem 1.5rem .5rem;
+  padding: .5rem .5rem 1.5rem 1rem;
+  font-size: .7rem;
+}
+
+
+.vaB
+{
+  color: 'orange';
+  font-family: "'Poppins', sans-serif";
+  background-color: '#232526';
+  border-radius: '10px';
+  font-size: '2rem';
+  padding: '1rem';
+  transition: 'color 0.2s';
+
+}
+
+.vaB:hover
+{
+  color: '#232526';
+  background-color: '#eaeaea';
+  font-family: "'Poppins', sans-serif";
+  cursor: 'pointer';
 }

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { projectsData } from '../../data/projectsData'
-import { HiArrowRight } from "react-icons/hi";
 import SingleProject from './SingleProject/SingleProject';
 import './Projects.css'
 
@@ -13,18 +12,7 @@ function Projects() {
 
 	const useStyles = makeStyles(() => ({
 		viewAllBtn: {
-			color: '#eaeaea',
-			fontFamily: "'Poppins', sans-serif",
-			backgroundColor: '#232526',
-			borderRadius: '10px',
-			fontSize: '2rem',
-			padding: '1rem',
-			transition: 'color 0.2s',
-			"&:hover": {
-				color: '#232526',
-				backgroundColor: '#eaeaea	',
-				fontFamily: "'Poppins', sans-serif"
-			}
+			
 		},
 		viewArr: {
 			color: theme.tertiary,
@@ -67,39 +55,24 @@ function Projects() {
 									code={project.code}
 									demo={project.demo}
 									image={project.image}
+									alt={project.alt}
 								/>
 							))}
 						</div>
 					</div>
 					<div className="break"><hr /><hr /><hr /><hr /><hr /></div>
 					<div className="break"><hr /><hr /><hr /><hr /><hr /></div>
-					{/* <div className="projects--bodyContainer">
-						{projectsData.slice(4, 8).map(project => (
-							<SingleProject
-								theme={theme}
-								key={project.id}
-								id={project.id}
-								name={project.projectName}
-								desc={project.projectDesc}
-								tags={project.tags}
-								code={project.code}
-								demo={project.demo}
-								image={project.image}
-							/>
-						))}
-					</div> */}
+
 					<div>
-						<h1 style={{color:'#333333'}}className="projects--body">Viewing 4 of {projectsData.length} projects</h1>
+						<h1 className="view">Viewing 4 of {projectsData.length} projects</h1>
 					</div>
-					{projectsData.length > 3 && (
+					{projectsData.length > 4 && (<>
 							<div className="projects--viewAll">
 								<Link to="/projects">
-									<button className={classes.viewAllBtn}>
-										View All 	⇨
-									</button>
+									<h1 className='view'>VIEW MORE</h1>
 								</Link>
 							</div>
-						)}
+						</>)}
 				</div>
 			)}
 		</>

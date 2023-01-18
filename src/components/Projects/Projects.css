@@ -1,4 +1,5 @@
-.projects {
+.projects
+{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,7 +9,8 @@
   padding: 2rem;
 }
 
-.projects--header {
+.projects--header
+{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,13 +18,15 @@
   margin: 1rem;
 }
 
-.projects--header h1 {
+.projects--header h1
+{
   margin-bottom: 40px;
   font-size: 3.5rem;
   font-family: var(--primaryFont);
 }
 
-.projects--body {
+.projects--body
+{
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -31,7 +35,8 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.projects--bodyContainer {
+.projects--bodyContainer
+{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,9 +44,11 @@
   width: 100%;
 }
 
-.projects--viewAll {
+.projects--viewAll
+{
   width: 100%;
-  padding: 2rem;
+  padding: 1rem;
+  font-size: .2rem;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -51,22 +58,27 @@
 
 
 .project--lang,
-.project--desc {
+.project--desc
+{
   z-index: 1;
 }
 
 .project--desc:hover,
-.project--lang:hover {
+.project--lang:hover
+{
   z-index: 1000;
 }
 
-.break{
-  opacity:0;
+.break
+{
+  opacity: 0;
 }
 
 /*  ------------------------------------ MEDIA QUERIES ------------------------------------ */
-@media screen and (min-width: 992px) {
-  .projects--bodyContainer {
+@media screen and (min-width: 992px)
+{
+  .projects--bodyContainer
+  {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -74,8 +86,11 @@
     width: 100%;
   }
 }
-@media screen and (max-width: 992px) {
-  .projects--bodyContainer {
+
+@media screen and (max-width: 992px)
+{
+  .projects--bodyContainer
+  {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,15 +99,54 @@
   }
 }
 
-@media screen and (max-width: 800px) {
-  .projects--header h1 {
+@media screen and (max-width: 800px)
+{
+  .projects--header h1
+  {
     font-size: 2.8rem;
     margin-bottom: 30px;
   }
-  div.projectContent > img{
+
+  div.projectContent>img
+  {
     width: 100%;
     height: 60%;
     transition: opacity 0.7s 0.3s;
   }
 }
- 
+
+
+.vaB
+{
+  color: 'white';
+  font-family: "'Poppins', sans-serif";
+  background-color: '#232526';
+  border-radius: '10px';
+  font-size: '2rem';
+  padding: '1rem';
+  transition: 'color 0.2s';
+
+}
+
+.vaB:hover
+{
+  color: '#232526';
+  background-color: '#eaeaea';
+  font-family: "'Poppins', sans-serif";
+  cursor: 'pointer';
+}
+
+.view{
+  font-size: 1.2rem;
+  color: gray;
+  font-weight: 200;
+  font-family: var(--primaryFont);
+  transition: color 2.2s;
+}
+
+.view:hover{
+  font-size: 1.2rem;
+  color: #D1ff;
+  font-weight: 200;
+  font-family: var(--primaryFont);
+}

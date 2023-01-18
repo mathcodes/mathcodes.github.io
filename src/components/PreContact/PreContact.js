@@ -2,7 +2,7 @@ import * as React from 'react';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import { Grid } from '@mui/material';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { useTheme, ThemeProvider } from '@mui/material/styles';
 import PsychologyIcon from '@mui/icons-material/Psychology';
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import WorkIcon from '@mui/icons-material/Work';
@@ -10,34 +10,36 @@ import UpgradeIcon from '@mui/icons-material/Upgrade';
 import { styled } from '@mui/material/styles';
 import './PreContact.css';
 
-const theme = createTheme({
-  status: {
-    danger: ' #eaeaea',
-  },
-  palette: {
-    primary: {
-      main: '#232526',
-      darker: '#135d66',
-    },
-    neutral: {
-      main: '#BFD9DD',
-      contrastText: '#333',
-    },
-    container: {
-      height: '20rem',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-    },
-    h2: {
-      fontSize: '112rem',
-      fontWeight: 'bold',
-      color: 'red',
-    }
-  },
-});
+// const theme = createTheme({
+//   status: {
+//     danger: ' #eaeaea',
+//   },
+//   palette: {
+//     primary: {
+//       main: '#232526',
+//       darker: '#135d66',
+//     },
+//     neutral: {
+//       main: '#BFD9DD',
+//       contrastText: '#333',
+//     },
+//     container: {
+//       height: '20rem',
+//       display: 'flex',
+//       flexDirection: 'column',
+//       justifyContent: 'center',
+//     },
+//     h2: {
+//       fontSize: '112rem',
+//       fontWeight: 'bold',
+//       color: 'red',
+//     }
+//   },
+// });
 
 const Item = styled(Paper)(({ theme }) => ({
+
+ 
 
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#232526',
   ...theme.typography.body2,
@@ -45,12 +47,12 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: 'center',
   color: theme.palette.text.secondary,
 }
-)); console.log(theme.palette.mode)
+));  
 
 
 
 function PreContact() {
-
+  const theme = useTheme();
   return (
     <ThemeProvider theme={theme}>
       <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
@@ -93,9 +95,6 @@ function PreContact() {
 
         </Box>
       </Grid>
-
-
-
     </ThemeProvider>
   );
 }

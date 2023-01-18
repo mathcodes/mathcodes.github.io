@@ -20,7 +20,8 @@ import './Contacts.css';
 
 function Contacts() {
 	const { theme } = useContext(ThemeContext);
-
+ 
+	console.log(theme)
 
 
 	const useStyles = makeStyles((t) => ({

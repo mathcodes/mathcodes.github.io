@@ -9,7 +9,8 @@ function BackToTop() {
 	const [visible, setVisible] = useState(false);
 
 	const { theme } = useContext(ThemeContext);
-
+ 
+	console.log(theme)
 	const toggleVisible = () => {
 		const scrolled = document.documentElement.scrollTop;
 		if (scrolled > 300) {
