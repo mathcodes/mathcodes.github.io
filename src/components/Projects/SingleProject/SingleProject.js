@@ -33,7 +33,8 @@ function Item(props) {
 		/>
 	);
 }
-function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
+
+export function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
 	const [value, setValue] = React.useState(0);
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { Navbar, Landing, About, Skills, Testimonials, Services, Projects, HorizontalRule, Footer } from '../../components'
+import { Navbar, Landing,PackageCards, About, Skills, Testimonials, Services, Projects, HorizontalRule, Footer, Offers} from '../../components'
 import { headerData } from '../../data/headerData'
 
 
@@ -17,6 +17,8 @@ function Main() {
 			<HorizontalRule />
 			<Skills />
 			<Projects />
+			<Offers />
+			<PackageCards/>
 			<Services />
 			<Testimonials />
 			<Footer />
