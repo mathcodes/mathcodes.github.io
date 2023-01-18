@@ -142,7 +142,7 @@ function FormPage() {
               <Grid item xs={12}>
                 <Item className="projectPage-search">
 
-                  <label style={{ color: 'orange', fontSize: '1.2rem' }}>Select up to three services you are interested in:
+                  <label style={{ width:"100%", color: 'orange', fontSize: '1.2rem' }}>Select up to three services you are interested in:
                     <input style={{ width: '100%'}} list="services" name="Service" data-aos="fade-left"
                       data-aos-duration="1000"
                       className={classes.search} /></label>
@@ -168,7 +168,7 @@ function FormPage() {
               <Grid item xs={12}>
                 <Item className="projectPage-search">
 
-                  <label style={{ color: 'orange', fontSize: '1.2rem' }}>
+                  <label style={{ width:"100%", color: 'orange', fontSize: '1.2rem' }}>
                     <input style={{ width: '100%'}} list="services" name="Service" data-aos="fade-left"
                       data-aos-duration="1000"
                       className={classes.search} /></label>
@@ -194,7 +194,7 @@ function FormPage() {
               <Grid item xs={12}>
                 <Item className="projectPage-search">
 
-                  <label style={{ color: 'orange', fontSize: '1.2rem' }}>
+                  <label style={{ width:"100%", color: 'orange', fontSize: '1.2rem' }}>
                     <input style={{ width: '100%'}} w-full list="services" name="Service" data-aos="fade-left"
                       data-aos-duration="1000"
                       className={classes.search} /></label>
