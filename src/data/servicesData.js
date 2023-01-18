@@ -1,4 +1,5 @@
 /* eslint-disable */
+import React from 'react';
 import { BsCodeSlash, BsGraphUp } from "react-icons/bs";
 import { FaTabletAlt, FaBook } from "react-icons/fa";
 import { MdOutlineReadMore } from "react-icons/md";
