@@ -1,4 +1,4 @@
-import resume from '../assets/pdf/Jon_Christie_Resume_2023.pdf';
+import resume from '../assets/pdf/Jon_Christie_Resume.pdf';
 
 
 // about
@@ -57,7 +57,7 @@ export const headerData = {
 	image: 'https://raw.githubusercontent.com/mathcodes/mathcodes.github.io/main/src/assets/png/HEADSHOT_CIRCLE.png',
 	BG: 'https://raw.githubusercontent.com/mathcodes/mathcodes.github.io/main/src/assets/img/JCircle.png',
 	BG2: 'https://raw.githubusercontent.com/mathcodes/mathcodes.github.io/main/src/assets/img/JCircle_dark_gray.png',
-	resumePdf: resume
+	resumePdf: #fe6600
 }
 // projects
 import one from '../assets/svg/projects/spb.png'

@@ -64,7 +64,7 @@ color: darkolivegreen;
 
 .landing--social:hover {
   transform: scale(1.2);
-  color: orange;
+  color: #fe6600;
 }
 
 .landing--social2 {
@@ -78,7 +78,7 @@ color: darkolivegreen;
 
 .landing--social2:hover {
   transform: scale(1.2);
-  color: orange;
+  color: #fe6600;
 
 }
 
@@ -282,14 +282,14 @@ color: darkolivegreen;
 }
 
 .MuiButton-label {
-  color: orange;
+  color: #fe6600;
 }
 
 .MuiButton-label:hover{
-  color: orange;
+  color: #fe6600;
 }
 
 
 h2:hover{
-  color:orange;
+  color:#fe6600;
 }

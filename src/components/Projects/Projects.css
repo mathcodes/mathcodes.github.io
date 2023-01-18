@@ -141,7 +141,7 @@
 
 .view{
   font-size: 1.2rem;
-  color: orange;
+  color: #fe6600;
   font-weight: 200;
   font-family: var(--primaryFont);
   transition: color 2.2s;
