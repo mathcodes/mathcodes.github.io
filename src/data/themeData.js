@@ -1,8 +1,8 @@
 /* eslint-disable */
 import {
-	primaryThemeDark
+	theme
 } from '../theme/theme'
 
 export const themeData = {
-	theme: primaryThemeDark
+	theme: theme
 }

@@ -100,10 +100,10 @@ function PackageCards() {
                 <Box className="service serviceBoxName" id={p.key} sx={{ mx: 'auto', py: 1, fontSize: '2rem', fontWeight: 500 }} Grid xs={12}>
                   {p.name}
                 </Box>
-                <Box className="service serviceBoxDesc" Grid xs={12}>
+                <Box className="service serviceBoxDesc" sx={{ mx: 'auto', py: 1, fontSize: '1rem', fontWeight: 500 }} Grid xs={12}>
                   {p.description}
                 </Box>
-                <Box className="service serviceBox3" Grid xs={12}>
+                <Box className="service serviceBox3" sx={{ mx: 'auto', py: 1, fontSize: '2rem', fontWeight: 500 }} Grid xs={12}>
                   <Box className="service serviceBox4">
                     {p.price}
                   </Box>

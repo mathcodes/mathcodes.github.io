@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Button } from '@material-ui/core';
 import './Landing.css';
+import { useTheme } from '@material-ui/core/styles';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { headerData } from '../../data/headerData';
 import { socialsData } from '../../data/socialsData';
@@ -14,11 +15,8 @@ import {
 } from 'react-icons/fa';
 import { SiReplit } from 'react-icons/si';
 function Landing() {
-	const { theme, drawerOpen } = useContext(ThemeContext);
-	let randomColor = Math.floor(Math.random() * 16777215).toString(16);
-	console.log(randomColor)
-	console.log(`#,${randomColor}`)
-
+	const theme = useTheme();
+	const { drawerOpen } = useContext(ThemeContext);
 
 	return (
 		<div className='landing'>
@@ -207,7 +205,7 @@ function Landing() {
 								<Button
 									className='landing--button'
 									style={{
-										backgroundColor: theme.primary,
+										backgroundColor: 'darkolivegreen',
 										color: theme.secondary70,
 										width: '8rem',
 										display: 'flex',
@@ -220,7 +218,7 @@ function Landing() {
 							</a>
 							<Button
 								style={{
-									backgroundColor: theme.primary,
+									backgroundColor: 'darkolivegreen',
 									color: theme.secondary70,
 									width: '8rem',
 									display: 'flex',

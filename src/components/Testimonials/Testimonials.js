@@ -41,7 +41,7 @@ function Testimonials() {
 				<div
 					className='testimonials'
 				>
-					<div className='testimonials--header' style={{ color: theme.secondary70 }}>
+					<div className='testimonials--header' style={{ color: 'darkolivegreen' }}>
 						<h1 >Testimonials</h1>
 					</div>
 					<div className='testimonials--body'>
@@ -88,7 +88,7 @@ function Testimonials() {
 							<button
 								className='prevBtn'
 								onClick={gotoPrev}
-								style={{ backgroundColor: theme.secondary }}
+								style={{ backgroundColor: 'darkolivegreen' }}
 							>
 								<FaArrowLeft
 									style={{ color: theme.primary }}
@@ -98,7 +98,7 @@ function Testimonials() {
 							<button
 								className='nextBtn'
 								onClick={gotoNext}
-								style={{ backgroundColor: theme.secondary }}
+								style={{ backgroundColor: 'darkolivegreen' }}
 							>
 								<FaArrowRight
 									style={{ color: theme.primary }}
@@ -107,7 +107,7 @@ function Testimonials() {
 							</button>
 						</div>
 					</div>
-				<ButtonComponent style={{ color: theme.primary }} label="CONTACT" link="./FormPage" />
+				<ButtonComponent style={{ backgroundColor: 'darkolivegreen' }} label="CONTACT" link="./FormPage" />
 
 				</div>
 			)}

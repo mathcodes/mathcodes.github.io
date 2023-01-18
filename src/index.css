@@ -14,11 +14,11 @@
        url('./assets/fonts/Bestermind/BestermindRegular.ttf')  format('truetype'), 
 }
 body{
-  background: linear-gradient(#111 0%, #135d66 100%);
+  background:  darkolivegreen;
 
 }
 :root {
-  --primary:  #04a0ee;
+  --primary:  darkolivegreen;
   --white: #ffffff;
 }
 .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate{
@@ -75,4 +75,3 @@ img{
       overflow-x: hidden;
     }
 }
-

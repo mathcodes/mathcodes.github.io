@@ -23,7 +23,7 @@ function Skills() {
 
 			<div className="skillsHeader">
 					<div style={{ backgroundColor: theme.secondary50, height: '1rem' }}> </div>
-				<h2 style={{ }}>Skills</h2>
+				<h2 style={{color:'darkolivegreen'}}>Skills</h2>
 			</div>
 			<div className="skillsContainer">
 				<div className="skill--scroll">
@@ -39,7 +39,7 @@ function Skills() {
 						{skillsData.map((skill, id) => (
 							<div className="skill--box" key={id} style={skillBoxStyle}>
 								<img src={skillsImage(skill)} alt={skill} />
-								<h3 style={{ color: theme.tertiary }}>
+								<h3 style={{ color: 'darkolivegreen' }}>
 									{skill}
 								</h3>
 							</div>

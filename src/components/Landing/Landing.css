@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+color: darkolivegreen;
 }
 
 .landing--container {
@@ -64,7 +64,7 @@
 
 .landing--social:hover {
   transform: scale(1.2);
-  color: #4faeba;
+  color: orange;
 }
 
 .landing--social2 {
@@ -78,7 +78,7 @@
 
 .landing--social2:hover {
   transform: scale(1.2);
-  color: #4faeba;
+  color: orange;
 
 }
 
@@ -127,6 +127,7 @@
   align-items: center;
   justify-content: space-between;
   font-family: "var(--primaryFont)", sans-serif;
+  color: darkolivegreen;
 }
 
 .lcl--content2{
@@ -281,9 +282,14 @@
 }
 
 .MuiButton-label {
-  color: #4faeba;
+  color: orange;
 }
 
 .MuiButton-label:hover{
-  color: #4faeba;
+  color: orange;
+}
+
+
+h2:hover{
+  color:orange;
 }
