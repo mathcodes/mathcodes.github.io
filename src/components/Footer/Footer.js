@@ -74,8 +74,9 @@ const Footer = () => {
             <a
               href={socialsData.github}
               target='_blank'
-              rel='noreferrer'
+              rel="noopener noreferrer"
               className='socialIcon'
+               
             >
               <FaGithub aria-label='GitHub' className="localIcon" />
             </a>
@@ -84,7 +85,7 @@ const Footer = () => {
             <a
               href={socialsData.twitter}
               target='_blank'
-              rel='noreferrer'
+              rel="noopener noreferrer"
               className='socialIcon'
             >
               <FaTwitter aria-label='Twitter' className="localIcon" />
@@ -94,7 +95,7 @@ const Footer = () => {
             <a
               href={socialsData.linkedIn}
               target='_blank'
-              rel='noreferrer'
+              rel="noopener noreferrer"
               className='socialIcon'
             >
               <FaLinkedinIn aria-label='LinkedIn' className="localIcon" />
@@ -104,7 +105,7 @@ const Footer = () => {
             <a
               href={socialsData.youtube}
               target='_blank'
-              rel='noreferrer'
+              rel="noopener noreferrer"
               className='socialIcon'
             >
               <FaYoutube aria-label='YouTube' className="localIcon" />
@@ -114,7 +115,7 @@ const Footer = () => {
             <a
               href={socialsData.codepen}
               target='_blank'
-              rel='noreferrer'
+              rel="noopener noreferrer"
               className='socialIcon'
             >
               <FaCodepen aria-label='CodePen' className="localIcon" />
@@ -124,7 +125,7 @@ const Footer = () => {
             <a
               href={socialsData.replit}
               target='_blank'
-              rel='noreferrer'
+              rel="noopener noreferrer"
               className='socialIcon'
             >
               <SiReplit aria-label='replit' className="localIcon" />

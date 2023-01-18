@@ -1,4 +1,4 @@
-import { Grid, Paper, Box, Typography } from '@material-ui/core';
+import { Grid, Paper, Box } from '@material-ui/core';
 // import icons frmo  mui
 // import mui icon
 import React, { useContext } from 'react';

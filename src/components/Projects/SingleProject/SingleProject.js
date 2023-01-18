@@ -1,5 +1,4 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import { FaCode } from 'react-icons/fa';
 import { HiLink } from 'react-icons/hi';
 import Fade from 'react-reveal/Fade';
@@ -90,7 +89,7 @@ export function SingleProject({ id, name, desc, tags, code, demo, image, theme, 
 							<a
 								href={demo}
 								target='_blank'
-								rel='noreferrer'
+								rel="noopener noreferrer"
 								style={{  borderRadius: "30px"}}
 
 								aria-labelledby={`${name
@@ -103,7 +102,7 @@ export function SingleProject({ id, name, desc, tags, code, demo, image, theme, 
 							<a
 								href={code}
 								target='_blank'
-								rel='noreferrer'
+								rel="noopener noreferrer"
 								aria-labelledby={`${name
 									.replace(' ', '-')
 									.toLowerCase()} ${name

@@ -1,17 +1,11 @@
-// import one from '../assets/svg/projects/bookShelves.png'
-// import tech from '../assets/svg/projects/pythonlog.svg'
-// import three from '../assets/svg/projects/mars.svg'
 import scb from '../assets/svg/projects/scb.svg'
 import cfd from '../assets/svg/projects/cfd.svg'
 import keys from '../assets/svg/projects/keys.png'
 import gnco from '../assets/img/gnco.png'
-import pytho from '../assets/svg/projects/python.png'
 import scical from '../assets/svg/projects/scical.png'
 import tstodo from '../assets/svg/projects/TS-todo.jpg'
 
 export const projectsData = [
-
-
 	{
 		id: 2,
 		projectName: 'Gladis & Co',

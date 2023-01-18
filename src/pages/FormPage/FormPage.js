@@ -1,12 +1,9 @@
 import React, { useContext } from 'react'
-import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 import { AiOutlineHome } from "react-icons/ai";
-import ButtonComponent from '../../components/ButtonComponent/ButtonComponent'
 import './FormPage.css'
 import { ThemeContext } from '../../contexts/ThemeContext';
-import { headerData } from '../../data/headerData'
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import { useForm, ValidationError } from "@formspree/react";
@@ -23,7 +20,6 @@ function FormPage() {
   const useStyles = makeStyles((t) => ({
     search: {
       color: theme.tertiary,
-      width: '100%',
       height: '2.75rem',
       outline: 'none',
       border: 'none',
@@ -33,17 +29,13 @@ function FormPage() {
       fontWeight: 500,
       fontSize: '0.9rem',
       backgroundColor: theme.secondary,
-      boxShadow: theme.type === 'dark' ? 'inset 3px 3px 6px #eaeaea, inset -3px -3px 6px #00000060' : 'inset 3px 3px 6px #ffffffbd, inset -3px -3px 6px #00000030',
-      "&::placeholder": {
-        color: theme.tertiary80,
-      },
-      [t.breakpoints.down('sm')]: {
+       
+      [t.breakpoints.down('xs')]: {
         width: '100%',
       },
     },
     searchArea: {
       color: theme.tertiary,
-      width: '100%',
       height: '8.75rem',
       outline: 'none',
       border: 'none',
@@ -60,17 +52,7 @@ function FormPage() {
       [t.breakpoints.down('sm')]: {
         width: '100%',
       },
-    }, search2: {
-      color: '#4faeba',
-      width: '100%',
-      height: '5.75rem',
-      outline: 'none',
-      border: 'none',
-      padding: '0.95rem 1rem',
-      fontFamily: "'Noto Sans TC', sans-serif",
-      fontWeight: 500,
-      fontSize: '1.9rem',
-    },
+    }, 
     home: {
       color: theme.secondary,
       position: 'absolute',
@@ -114,17 +96,15 @@ function FormPage() {
 
   return (
     <div className="formPage" style={{ backgroundColor: theme.secondary }}>
-      <Helmet>
-        <title>{headerData.name} | Contact Form</title>
-      </Helmet>
-      <div className="formPage-header" style={{ backgroundColor: theme.primary }}>
+      
+      <div className='formPage-header' style={{ color: 'orange', fontFamily: 'system-ui' }}>
         <Link to="/">
           <AiOutlineHome className={classes.home} />
         </Link>
-        <h1 style={{ color: '#eaeaea' }}>Contact Form</h1>
-      </div>
+						<h2>Contact</h2>
+					</div>
       <div>
-        <h3 style={{ color: '#4faeba', fontSize: '1.5rem', margin: '.5rem 0 0 .3rem', fontFamily: "'Noto Sans TC', sans-serif" }}>Fill out the form and I'll get back with you shortly! </h3>
+        <h3 style={{ color: 'orange', fontSize: '1.5rem', margin: '.5rem 0 0 .3rem', fontFamily: "'Noto Sans TC', sans-serif" }}>Fill out the form and I'll get back with you shortly! </h3>
       </div>
       <form className="mx-auto w-full pt-10" onSubmit={handleSubmit}>
         <div className="flex flex-col md:flex-row">
@@ -161,31 +141,83 @@ function FormPage() {
               </Grid>
               <Grid item xs={12}>
                 <Item className="projectPage-search">
-              
-                  <label>Select which service you are interested in:
-                <input list="services" name="Service" data-aos="fade-left"
-                    data-aos-duration="1000"
-                    className={classes.search}/></label>
-              <datalist id="services">
-                <option value="Website Design and Development" />
-                <option value="E-commerce Solutions" />
-                <option value="Content Management Systems (CMS)" />
-                <option value="Search Engine Optimization (SEO)" />
-                <option value="Web Hosting and Maintenance" />
-                <option value="Basic SEO Startup Suite" />
-                <option value="Advanced SEO Startup Suite" />
-                <option value="Marketing Startup Suite" />
-                <option value="Branding Startup Suite" />
-                <option value="Social Media Marketing Startup Suite" />
-                <option value="Basic SEO" />
-                <option value="Advanced SEO" />
-                <option value="Social Media Marketing(CMS)" />
-                <option value="Branding" />
-                <option value="Marketing" />
-              </datalist>
-              </Item>
+
+                  <label style={{ color: 'orange', fontSize: '1.2rem' }}>Select up to three services you are interested in:
+                    <input style={{ width: '100%'}} list="services" name="Service" data-aos="fade-left"
+                      data-aos-duration="1000"
+                      className={classes.search} /></label>
+                  <datalist id="services">
+                    <option value="Website Design and Development" />
+                    <option value="E-commerce Solutions" />
+                    <option value="Content Management Systems (CMS)" />
+                    <option value="Search Engine Optimization (SEO)" />
+                    <option value="Web Hosting and Maintenance" />
+                    <option value="Basic SEO Startup Suite" />
+                    <option value="Advanced SEO Startup Suite" />
+                    <option value="Marketing Startup Suite" />
+                    <option value="Branding Startup Suite" />
+                    <option value="Social Media Marketing Startup Suite" />
+                    <option value="Basic SEO" />
+                    <option value="Advanced SEO" />
+                    <option value="Social Media Marketing(CMS)" />
+                    <option value="Branding" />
+                    <option value="Marketing" />
+                  </datalist>
+                </Item>
               </Grid>
-              
+              <Grid item xs={12}>
+                <Item className="projectPage-search">
+
+                  <label style={{ color: 'orange', fontSize: '1.2rem' }}>
+                    <input style={{ width: '100%'}} list="services" name="Service" data-aos="fade-left"
+                      data-aos-duration="1000"
+                      className={classes.search} /></label>
+                  <datalist id="services">
+                    <option value="Website Design and Development" />
+                    <option value="E-commerce Solutions" />
+                    <option value="Content Management Systems (CMS)" />
+                    <option value="Search Engine Optimization (SEO)" />
+                    <option value="Web Hosting and Maintenance" />
+                    <option value="Basic SEO Startup Suite" />
+                    <option value="Advanced SEO Startup Suite" />
+                    <option value="Marketing Startup Suite" />
+                    <option value="Branding Startup Suite" />
+                    <option value="Social Media Marketing Startup Suite" />
+                    <option value="Basic SEO" />
+                    <option value="Advanced SEO" />
+                    <option value="Social Media Marketing(CMS)" />
+                    <option value="Branding" />
+                    <option value="Marketing" />
+                  </datalist>
+                </Item>
+              </Grid>
+              <Grid item xs={12}>
+                <Item className="projectPage-search">
+
+                  <label style={{ color: 'orange', fontSize: '1.2rem' }}>
+                    <input style={{ width: '100%'}} w-full list="services" name="Service" data-aos="fade-left"
+                      data-aos-duration="1000"
+                      className={classes.search} /></label>
+                  <datalist id="services">
+                    <option value="Website Design and Development" />
+                    <option value="E-commerce Solutions" />
+                    <option value="Content Management Systems (CMS)" />
+                    <option value="Search Engine Optimization (SEO)" />
+                    <option value="Web Hosting and Maintenance" />
+                    <option value="Basic SEO Startup Suite" />
+                    <option value="Advanced SEO Startup Suite" />
+                    <option value="Marketing Startup Suite" />
+                    <option value="Branding Startup Suite" />
+                    <option value="Social Media Marketing Startup Suite" />
+                    <option value="Basic SEO" />
+                    <option value="Advanced SEO" />
+                    <option value="Social Media Marketing(CMS)" />
+                    <option value="Branding" />
+                    <option value="Marketing" />
+                  </datalist>
+                </Item>
+              </Grid>
+
               <Grid item xs={12}>
                 <Item className="projectPage-search">
                   <textarea
@@ -210,16 +242,14 @@ function FormPage() {
                     type="submit"
                     disabled={state.submitting}
                     className={classes.search}
-                    style={{ background: '#4faeba', color: 'black', fontSize: '1.5rem', margin: '.5rem 0 0 .3rem', fontFamily: "'Noto Sans TC', sans-serif" }}
+                    style={{ background: 'orange', color: 'black', fontSize: '1.5rem', margin: '.5rem 0 0 .3rem', fontFamily: "'Noto Sans TC', sans-serif" }}
                   >
                     Send
                     <i className="bx bx-chevron-right relative -right-2 text-3xl"></i>
                   </Button>
                 </Item>
               </Grid>
-
             </Grid>
-
           </Container>
         </div>
       </form >

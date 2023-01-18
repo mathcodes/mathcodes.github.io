@@ -8,7 +8,6 @@ import { ThemeContext } from '../../contexts/ThemeContext';
 import { headerData } from '../../data/headerData';
 import { useForm } from "@formspree/react";
 import { Container, Grid } from '@mui/material';
-import Button from '@mui/material/Button';
 import ButtonComponent from '../../components/ButtonComponent/ButtonComponent'
 
 function FormPageTY() {
@@ -87,7 +86,7 @@ function FormPageTY() {
           <Container maxWidth="sm">
             <Grid container spacing={1} mt={4}>
              <h2 style={{color:'#4faeba', fontSize:'1.5rem', margin:'.5rem 0 0 .3rem', fontFamily: "'Noto Sans TC', sans-serif"}}>Thank you for getting in touch! <br/><br/><hr/><br/><br/> Enjoy your 
-             <span style={{color:"yellow"}}> FREE GUIDE 👇</span> </h2><h2 className={classes.search2}>Open-Source Marketing Guide:</h2>
+             <span style={{color:"yellow"}}> FREE GUIDE <span role="img" aria-label="none">👇</span></span> </h2><h2 className={classes.search2}>Open-Source Marketing Guide:</h2>
             <div className="divFormBtn">
                <ButtonComponent id="pdfButton" label="👉 FREE PDF 👈" link="https://github.com/mathcodes/mathcodes.github.io/raw/main/public/Marketing%20for%20Open-Source%20Projects.pdf" width="18rem" height="4rem"/>
              </div>

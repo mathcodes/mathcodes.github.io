@@ -98,7 +98,7 @@ function SocialMediaIcons() {
 								<a
 									href={socialsData.github}
 									target='_blank'
-									rel='noreferrer'
+									rel="noopener noreferrer"
 									className={classes.socialIcon}
 								>
 									<FaGithub aria-label='GitHub' className="localIcon" />
@@ -108,7 +108,7 @@ function SocialMediaIcons() {
 								<a
 									href={socialsData.twitter}
 									target='_blank'
-									rel='noreferrer'
+									rel="noopener noreferrer"
 									className={classes.socialIcon}
 								>
 									<FaTwitter aria-label='Twitter' className="localIcon" />
@@ -118,7 +118,7 @@ function SocialMediaIcons() {
 								<a
 									href={socialsData.linkedIn}
 									target='_blank'
-									rel='noreferrer'
+									rel="noopener noreferrer"
 									className={classes.socialIcon}
 								>
 									<FaLinkedinIn aria-label='LinkedIn' className="localIcon" />
@@ -128,7 +128,7 @@ function SocialMediaIcons() {
 								<a
 									href={socialsData.youtube}
 									target='_blank'
-									rel='noreferrer'
+									rel="noopener noreferrer"
 									className={classes.socialIcon}
 								>
 									<FaYoutube aria-label='YouTube' className="localIcon" />
@@ -138,7 +138,7 @@ function SocialMediaIcons() {
 								<a
 									href={socialsData.stackOverflow}
 									target='_blank'
-									rel='noreferrer'
+									rel="noopener noreferrer"
 									className={classes.socialIcon}
 								>
 									<FaStackOverflow aria-label='Stack Overflow' className="localIcon" />
@@ -148,7 +148,7 @@ function SocialMediaIcons() {
 								<a
 									href={socialsData.codepen}
 									target='_blank'
-									rel='noreferrer'
+									rel="noopener noreferrer"
 									className={classes.socialIcon}
 								>
 									<FaCodepen aria-label='CodePen' className="localIcon" />
@@ -158,7 +158,7 @@ function SocialMediaIcons() {
 								<a
 									href={socialsData.replit}
 									target='_blank'
-									rel='noreferrer'
+									rel="noopener noreferrer"
 									className={classes.socialIcon}
 								>
 									<SiReplit aria-label='replit' className="localIcon" />
