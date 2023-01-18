@@ -163,7 +163,7 @@ function FormPage() {
                 <Item className="projectPage-search">
               
                   <label>Select which service you are interested in:
-                <input list="browsers" name="myBrowser" data-aos="fade-left"
+                <input list="services" name="Service" data-aos="fade-left"
                     data-aos-duration="1000"
                     className={classes.search}/></label>
               <datalist id="services">
