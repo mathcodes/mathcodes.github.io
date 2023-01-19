@@ -44,7 +44,7 @@ export function SingleProject({ id, name, desc, tags, code, demo, image, theme, 
 			<div
 				key={id}
 				className='singleProject'
-				style={{ backgroundColor: "#fe6600" }}
+				style={{ backgroundColor: "#7a7709" }}
 			>
 				<div className='projectContent'>
 					<h2
@@ -109,7 +109,7 @@ export function SingleProject({ id, name, desc, tags, code, demo, image, theme, 
 										.replace(' ', '-')
 										.toLowerCase()}-code`}
 							>
-								<BottomNavigationAction style={{ margin: ".5rem", color: "#fe6600", border: "none", background: "none", fontSize: "2rem" }} icon={<FaCode />} />
+								<BottomNavigationAction style={{ margin: ".5rem", color: "#7a7709", border: "none", background: "none", fontSize: "2rem" }} icon={<FaCode />} />
 							</a>
 
 						</BottomNavigation>

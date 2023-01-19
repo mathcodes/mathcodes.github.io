@@ -97,14 +97,14 @@ function FormPage() {
   return (
     <div className="formPage" style={{ backgroundColor: theme.secondary }}>
       
-      <div className='formPage-header' style={{ color: '#fe6600', fontFamily: 'system-ui' }}>
+      <div className='formPage-header' style={{ color: '#7a7709', fontFamily: 'system-ui' }}>
         <Link to="/">
           <AiOutlineHome className={classes.home} />
         </Link>
 						<h2>Contact</h2>
 					</div>
       <div>
-        <h3 style={{ color: '#fe6600', fontSize: '1.5rem', margin: '.5rem 0 0 .3rem', fontFamily: "'Noto Sans TC', sans-serif" }}>Fill out the form and I'll get back with you shortly! </h3>
+        <h3 style={{ color: '#7a7709', fontSize: '1.5rem', margin: '.5rem 0 0 .3rem', fontFamily: "'Noto Sans TC', sans-serif" }}>Fill out the form and I'll get back with you shortly! </h3>
       </div>
       <form className="mx-auto w-full pt-10" onSubmit={handleSubmit}>
         <div className="flex flex-col md:flex-row">
@@ -142,7 +142,7 @@ function FormPage() {
               <Grid item xs={12}>
                 <Item className="projectPage-search">
 
-                  <label style={{ width:"100%", color: '#fe6600', fontSize: '1.2rem' }}>Select up to three services you are interested in:
+                  <label style={{ width:"100%", color: '#7a7709', fontSize: '1.2rem' }}>Select up to three services you are interested in:
                     <input style={{ width: '100%'}} list="services" name="Service" data-aos="fade-left"
                       data-aos-duration="1000"
                       className={classes.search} /></label>
@@ -168,7 +168,7 @@ function FormPage() {
               <Grid item xs={12}>
                 <Item className="projectPage-search">
 
-                  <label style={{ width:"100%", color: '#fe6600', fontSize: '1.2rem' }}>
+                  <label style={{ width:"100%", color: '#7a7709', fontSize: '1.2rem' }}>
                     <input style={{ width: '100%'}} list="services" name="Service" data-aos="fade-left"
                       data-aos-duration="1000"
                       className={classes.search} /></label>
@@ -194,7 +194,7 @@ function FormPage() {
               <Grid item xs={12}>
                 <Item className="projectPage-search">
 
-                  <label style={{ width:"100%", color: '#fe6600', fontSize: '1.2rem' }}>
+                  <label style={{ width:"100%", color: '#7a7709', fontSize: '1.2rem' }}>
                     <input style={{ width: '100%'}} w-full list="services" name="Service" data-aos="fade-left"
                       data-aos-duration="1000"
                       className={classes.search} /></label>
@@ -242,7 +242,7 @@ function FormPage() {
                     type="submit"
                     disabled={state.submitting}
                     className={classes.search}
-                    style={{ background: '#fe6600', color: 'black', fontSize: '1.5rem', margin: '.5rem 0 0 .3rem', fontFamily: "'Noto Sans TC', sans-serif" }}
+                    style={{ background: '#7a7709', color: 'black', fontSize: '1.5rem', margin: '.5rem 0 0 .3rem', fontFamily: "'Noto Sans TC', sans-serif" }}
                   >
                     Send
                     <i className="bx bx-chevron-right relative -right-2 text-3xl"></i>

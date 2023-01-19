@@ -57,7 +57,7 @@ export const headerData = {
 	image: 'https://raw.githubusercontent.com/mathcodes/mathcodes.github.io/main/src/assets/png/HEADSHOT_CIRCLE.png',
 	BG: 'https://raw.githubusercontent.com/mathcodes/mathcodes.github.io/main/src/assets/img/JCircle.png',
 	BG2: 'https://raw.githubusercontent.com/mathcodes/mathcodes.github.io/main/src/assets/img/JCircle_dark_gray.png',
-	resumePdf: #fe6600
+	resumePdf: {resume}
 }
 // projects
 import one from '../assets/svg/projects/spb.png'
