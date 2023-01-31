@@ -1,25 +1,26 @@
-import React, { useContext } from 'react'
+import React  from 'react'
 import { Link } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 import { AiOutlineHome } from "react-icons/ai";
 import './FormPage.css'
-import { ThemeContext } from '../../contexts/ThemeContext';
+// import { theme } from '../../theme/theme';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import { useForm, ValidationError } from "@formspree/react";
 import { Container, Grid } from '@mui/material';
 import Button from '@mui/material/Button';
 import FormPageTY from './FormPageTY'
+import { useTheme } from '@mui/material/styles';
 
 
 function FormPage() {
   const [state, handleSubmit] = useForm("xaykzqea");
   // const [search, setSearch] = useState('')
-  const { theme } = useContext(ThemeContext);
+  const theme = useTheme();
 
   const useStyles = makeStyles((t) => ({
     search: {
-      color: theme.tertiary,
+      color: theme.palette.primary.main,
       height: '2.75rem',
       outline: 'none',
       border: 'none',
@@ -35,7 +36,7 @@ function FormPage() {
       },
     },
     searchArea: {
-      color: theme.tertiary,
+      color: theme.palette.primary.main,
       height: '8.75rem',
       outline: 'none',
       border: 'none',
@@ -54,7 +55,7 @@ function FormPage() {
       },
     }, 
     home: {
-      color: theme.secondary,
+      color: theme.palette.primary.main,
       position: 'absolute',
       top: 25,
       left: 25,
@@ -97,14 +98,14 @@ function FormPage() {
   return (
     <div className="formPage" style={{ backgroundColor: theme.secondary }}>
       
-      <div className='formPage-header' style={{ color: '#7a7709', fontFamily: 'system-ui' }}>
+      <div className='formPage-header' style={{ color: '#fdd43c', fontFamily: 'system-ui' }}>
         <Link to="/">
           <AiOutlineHome className={classes.home} />
         </Link>
 						<h2>Contact</h2>
 					</div>
       <div>
-        <h3 style={{ color: '#7a7709', fontSize: '1.5rem', margin: '.5rem 0 0 .3rem', fontFamily: "'Noto Sans TC', sans-serif" }}>Fill out the form and I'll get back with you shortly! </h3>
+        <h3 style={{ color: '#fdd43c', fontSize: '1.5rem', margin: '.5rem 0 0 .3rem', fontFamily: "'Noto Sans TC', sans-serif" }}>Fill out the form and I'll get back with you shortly! </h3>
       </div>
       <form className="mx-auto w-full pt-10" onSubmit={handleSubmit}>
         <div className="flex flex-col md:flex-row">
@@ -142,7 +143,7 @@ function FormPage() {
               <Grid item xs={12}>
                 <Item className="projectPage-search">
 
-                  <label style={{ width:"100%", color: '#7a7709', fontSize: '1.2rem' }}>Select up to three services you are interested in:
+                  <label style={{ width:"100%", color: '#fdd43c', fontSize: '1.2rem' }}>Select up to three services you are interested in:
                     <input style={{ width: '100%'}} list="services" name="Service" data-aos="fade-left"
                       data-aos-duration="1000"
                       className={classes.search} /></label>
@@ -168,7 +169,7 @@ function FormPage() {
               <Grid item xs={12}>
                 <Item className="projectPage-search">
 
-                  <label style={{ width:"100%", color: '#7a7709', fontSize: '1.2rem' }}>
+                  <label style={{ width:"100%", color: '#fdd43c', fontSize: '1.2rem' }}>
                     <input style={{ width: '100%'}} list="services" name="Service" data-aos="fade-left"
                       data-aos-duration="1000"
                       className={classes.search} /></label>
@@ -194,7 +195,7 @@ function FormPage() {
               <Grid item xs={12}>
                 <Item className="projectPage-search">
 
-                  <label style={{ width:"100%", color: '#7a7709', fontSize: '1.2rem' }}>
+                  <label style={{ width:"100%", color: '#fdd43c', fontSize: '1.2rem' }}>
                     <input style={{ width: '100%'}} w-full list="services" name="Service" data-aos="fade-left"
                       data-aos-duration="1000"
                       className={classes.search} /></label>
@@ -242,7 +243,7 @@ function FormPage() {
                     type="submit"
                     disabled={state.submitting}
                     className={classes.search}
-                    style={{ background: '#7a7709', color: 'black', fontSize: '1.5rem', margin: '.5rem 0 0 .3rem', fontFamily: "'Noto Sans TC', sans-serif" }}
+                    style={{ background: '#fdd43c', color: 'black', fontSize: '1.5rem', margin: '.5rem 0 0 .3rem', fontFamily: "'Noto Sans TC', sans-serif" }}
                   >
                     Send
                     <i className="bx bx-chevron-right relative -right-2 text-3xl"></i>

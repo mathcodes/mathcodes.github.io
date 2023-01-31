@@ -1,9 +1,8 @@
 /* eslint-disable no-undef */
-import React, { useContext } from 'react';
+import React  from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-
 import {
 	FaTwitter,
 	FaLinkedinIn,
@@ -13,21 +12,18 @@ import {
 	FaCodepen,
 } from 'react-icons/fa';
 import { SiReplit } from 'react-icons/si';
-import { ThemeContext } from '../../contexts/ThemeContext';
+// import { theme } from '../../theme/theme';
 import { socialsData } from '../../data/socialsData';
-import './Contacts.css';
-
 
 function Contacts() {
-	const { theme } = useContext(ThemeContext);
  
 	console.log(theme)
 
 
 	const useStyles = makeStyles((t) => ({
 		input: {
-			border: `4px solid ${theme.primary80}`,
-			backgroundColor: `${theme.secondary}`,
+			border: `4px solid ${theme.palette.primary.main}`,
+			backgroundColor: `${theme.palette.background.default}`,
 			color: `purple`,
 			fontFamily: 'var(--primaryFont)',
 			fontWeight: 500,
@@ -39,7 +35,7 @@ function Contacts() {
 		},
 
 		label: {
-			backgroundColor: `${theme.secondary}`,
+			backgroundColor: `${theme.palette.background.default}`,
 			color: `${theme.primary}`,
 			fontFamily: 'var(--primaryFont)',
 			fontWeight: 600,
@@ -49,7 +45,7 @@ function Contacts() {
 			display: 'inline-flex',
 			'&:hover': {
 				transform: 'scale(1.1)',
-				color: '#000',
+				color: 'red',
 				backgroundColor: theme.tertiary,
 			},
 		},
@@ -68,7 +64,7 @@ function Contacts() {
 			transition: '250ms ease-in-out',
 			'&:hover': {
 
-				color: '#000',
+				color: 'red',
 				backgroundColor: theme.tertiary,
 			},
 		},
@@ -87,7 +83,7 @@ function Contacts() {
 			flexShrink: 0,
 			'&:hover': {
 				transform: 'scale(1.1)',
-				color: '#667',
+				color: 'red',
 				backgroundColor: '#232526',
 			},
 			typoImpo: {
@@ -103,8 +99,8 @@ function Contacts() {
 		<div id="contacts" className="contacts">
 
 			<div className="contactsHeader">
-				<div style={{ backgroundColor: theme.secondary50, height: '1rem' }}> </div>
-				<h2 style={{ color: theme.primary }}>Skills</h2>
+				<div style={{ backgroundColor: theme.palette.background.default, height: '1rem' }}> </div>
+				<h2 style={{ color: theme.palette.text.main }}>Skills</h2>
 
 
 				<Container maxWidth="sm">

@@ -5,8 +5,8 @@
   justify-content: flex-start;
   min-height: 60vh;
   padding: 2.5rem 2rem 2rem 2rem;
-  background: linear-gradient(180deg, #232526 0%, #556a2f 100%);
-  color: #eaeaea;
+  /* background: linear-gradient(180deg, #232526 0%, #556a2f 100%); */
+  /* color: #eaeaea; */
 }
 
 .skillsHeader {
@@ -43,7 +43,7 @@
 
 
 .skill--box {
-  background: #FAFAFA;
+  /* background: #FAFAFA; */
   box-shadow: 0px 10px 20px rgba(77, 95, 45, 0.92);
   border-radius: 10px 0 10px 0;
   width: 160px;
@@ -79,11 +79,7 @@
   padding: 1rem 0;
 }
 
-.overlay{
-  --gradient-color: rgb(77, 95, 45), rgba(77, 95, 45, 0)!important;
-  --gradient-width: 50%;
-  /* border-radius: 10px; */
-}
+ 
 
 .overlay::after, .overlay::before{
   border-radius: 10%;

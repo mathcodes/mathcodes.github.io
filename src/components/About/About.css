@@ -1,8 +1,6 @@
 .about {
     position: relative;
     top: 1px solid #fff;
-    background: linear-gradient(#eaeaea 0%, #444 75%, #232526 100%)
-
 }
 
 .about .line-styling{
@@ -55,7 +53,7 @@
 
 .about-description > p {
     font-size: 1.25rem;
-    color: #e0d9d9;
+    /* color: #e0d9d9; */
     font-family: var(--primaryFont);
 }
 

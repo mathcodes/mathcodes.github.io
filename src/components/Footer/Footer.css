@@ -4,35 +4,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #eaeaea;
+  /* color: #eaeaea; */
 }
 
 .footer p {
   font-weight: 500;
   font-family: var(--secondary70);
   font-size: 18px;
-  color: #eaeaea;
+  /* color: #eaeaea; */
 }
 
 .footer p span {
-  font-size: 24px;
-  color: #eaeaea;
-}
-
-.contact-icons{
-  color: #eaeaea;
-}
-
-.detailsIcon, .socialIcon {
-  background: none;
-  font-size: 35px;
-  margin: 0 1rem;
-  color:#eaeaea;
-  transition: transform 0.5s;
-}
-
-.detailsIcon:hover, .socialIcon:hover {
-  transform: scale(1.2);
-  color: #C0C1C6;
-  background: none;
+  font-size: 24px; 
 }

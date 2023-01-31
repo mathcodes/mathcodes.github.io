@@ -9,14 +9,16 @@ const [theme, setTheme] = useState(themeData.theme)
 	const setHandleDrawer = () => {
 		setDrawerOpen(!drawerOpen);
 		setTheme(themeData.theme)
+		console.log(theme)
 	}
 
 	const value = { theme, drawerOpen, setHandleDrawer }
 	return (
-		<ThemeContext.Provider value={value}>
+		<ThemeContext.Provider value={value} theme={theme}>
 			{props.children}
 		</ThemeContext.Provider>
 	)
 }
 
 export default ThemeContextProvider
+

@@ -1,6 +1,6 @@
-import React, { useContext } from 'react'
+import React  from 'react'
 import './Footer.css'
-import { ThemeContext } from '../../contexts/ThemeContext'
+import { useTheme } from '@mui/material/styles';
 import { Grid } from '@mui/material';
 import {
   FaTwitter,
@@ -16,11 +16,10 @@ import { socialsData } from '../../data/socialsData';
 import { contactsData } from '../../data/contactsData';
 
 const Footer = () => {
-
-  const { theme } = useContext(ThemeContext)
+const theme = useTheme();
 
   return (
-    <div className="footer" style={{ backgroundColor: theme.secondary }}>
+    <div className="footer" style={{color: theme.palette.text.main, backgroundColor: theme.palette.background.paper }}>
       <Grid style={{ display: "block" }}>
         <div className='contact-icons'>
           <div className='contacts-details'>

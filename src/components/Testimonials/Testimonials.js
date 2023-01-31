@@ -1,13 +1,12 @@
-import React, { useContext, useRef } from 'react';
+import React, { useRef } from 'react';
 import Slider from 'react-slick';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
-import { ThemeContext } from '../../contexts/ThemeContext';
 import { testimonialsData } from '../../data/testimonialsData';
 import './Testimonials.css';
 import ButtonComponent from '../ButtonComponent/ButtonComponent'
+import { useTheme } from '@mui/material/styles';
 
 function Testimonials() {
-	const { theme } = useContext(ThemeContext);
 	const sliderRef = useRef();
 	const settings = {
 		dots: true,
@@ -34,21 +33,23 @@ function Testimonials() {
 		sliderRef.current.slickPrev();
 	};
 
+	const theme = useTheme();
+
 	return (
 		<>
-			<div style={{ backgroundColor: theme.secondary50, height: '1rem' }}> </div>
 			{testimonialsData.length > 0 && (
 				<div
 					className='testimonials'
+					style={{ background: theme.palette.background.default }}
 				>
-					<div className='testimonials--header' style={{ color: 'darkolivegreen' }}>
+					<div className='testimonials--header' style={{ color: theme.palette.text.main, backgroundColor: theme.palette.background.default }}>
 						<h1 >Testimonials</h1>
 					</div>
 					<div className='testimonials--body'>
 
 						<div
 							className='testimonials--slider'
-							style={{ backgroundColor: theme.primary }}
+							style={{ backgroundColor: theme.palette.background.default }}
 						>
 							<Slider {...settings} ref={sliderRef}>
 								{testimonialsData.map((test) => (
@@ -73,13 +74,13 @@ function Testimonials() {
 												className='review--content'
 												style={{
 													backgroundColor:
-														theme.secondary,
-													color: theme.tertiary,
+													theme.palette.background.paper,
+													color: theme.palette.action.active,
 												}}
 											>
-												<p>{test.text}</p>
-												<h1>{test.name}</h1>
-												<h4>{test.title}</h4>
+												<h3>"{test.text}"</h3>
+												<h4>-{test.name}</h4>
+												<h5>{test.title}</h5>
 											</div>
 										</div>
 									</div>
@@ -88,27 +89,26 @@ function Testimonials() {
 							<button
 								className='prevBtn'
 								onClick={gotoPrev}
-								style={{ backgroundColor: 'darkolivegreen' }}
+								style={{ backgroundColor: theme.palette.background.paper }}
 							>
 								<FaArrowLeft
-									style={{ color: theme.primary }}
+									style={{ color: theme.palette.secondary.main }}
 									aria-label='Previous testimonial'
 								/>
 							</button>
 							<button
 								className='nextBtn'
 								onClick={gotoNext}
-								style={{ backgroundColor: 'darkolivegreen' }}
+								style={{ backgroundColor: theme.palette.background.paper }}
 							>
 								<FaArrowRight
-									style={{ color: theme.primary }}
+									style={{ color: theme.palette.secondary.main }}
 									aria-label='Next testimonial'
 								/>
 							</button>
 						</div>
 					</div>
-				<ButtonComponent style={{ backgroundColor: 'darkolivegreen' }} label="CONTACT" link="./FormPage" />
-
+				<ButtonComponent  label="CONTACT" link="./FormPage" />
 				</div>
 			)}
 		</>

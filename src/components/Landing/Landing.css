@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-color: darkolivegreen;
 }
 
 .landing--container {
@@ -51,7 +50,7 @@ color: darkolivegreen;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  color:#eaeaea;
+  /* color:#eaeaea; */
 }
 
 .landing--social {
@@ -59,12 +58,12 @@ color: darkolivegreen;
   margin: 0 .5rem;
   transition: transform 0.5s;
   padding-bottom: .2rem;
-  color: #eaeaea;
+  /* color: #eaeaea; */
 }
 
 .landing--social:hover {
   transform: scale(1.2);
-  color: #7a7709;
+  color: #fca311;
 }
 
 .landing--social2 {
@@ -78,7 +77,7 @@ color: darkolivegreen;
 
 .landing--social2:hover {
   transform: scale(1.2);
-  color: #7a7709;
+  color: #fca311;
 
 }
 
@@ -127,7 +126,11 @@ color: darkolivegreen;
   align-items: center;
   justify-content: space-between;
   font-family: "var(--primaryFont)", sans-serif;
-  color: darkolivegreen;
+  color: black;
+}
+
+.lcr-buttonContainer:hover {
+  color: #fca311;
 }
 
 .lcl--content2{
@@ -189,9 +192,9 @@ color: darkolivegreen;
     height: 120px;
     align-items: flex-start;
   }
-  .lcr-buttonContainer button:nth-child(2) {
+  /* .lcr-buttonContainer button:nth-child(2) {
     display: none;
-  }
+  } */
 }
 
 @media (max-width: 600px) {
@@ -280,16 +283,4 @@ color: darkolivegreen;
     top: 20%;
   }
 }
-
-.MuiButton-label {
-  color: #7a7709;
-}
-
-.MuiButton-label:hover{
-  color: #7a7709;
-}
-
-
-h2:hover{
-  color:#7a7709;
-}
+ 

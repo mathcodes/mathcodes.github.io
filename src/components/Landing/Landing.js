@@ -1,11 +1,10 @@
-import React, { useContext } from 'react';
+import React, { useContext }  from 'react'
 import { Button } from '@material-ui/core';
 import './Landing.css';
-import { useTheme } from '@material-ui/core/styles';
+// import { theme } from '../../theme/theme';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { headerData } from '../../data/headerData';
 import { socialsData } from '../../data/socialsData';
-
 import {
 	FaTwitter,
 	FaLinkedin,
@@ -14,17 +13,19 @@ import {
 	FaCodepen,
 } from 'react-icons/fa';
 import { SiReplit } from 'react-icons/si';
-function Landing() {
-	const theme = useTheme();
-	const { drawerOpen } = useContext(ThemeContext);
+import { useTheme } from '@mui/material/styles';
 
+function Landing() {
+	const { drawerOpen } = useContext(ThemeContext);
+	const theme = useTheme();
 	return (
 		<div className='landing'>
 			<div className='landing--container'>
 				<div
 					className='landing--container-left'
-					style={{ backgroundColor: theme.primary }}
+					style={{ backgroundColor: theme.palette.secondary.main }}
 				>
+					{/* SOCIAL MEDIA CONTENT */}
 					<div className='lcl--content'>
 						{socialsData.github && (
 							<a
@@ -106,19 +107,20 @@ function Landing() {
 					className='landing--img'
 					style={{
 						opacity: `${drawerOpen ? '0' : '1'}`,
-						borderColor: theme.secondary,
+						borderColor: theme.palette.action.active,
 					}}
 				/>
 				<div
 					className='landing--container-right'
-					style={{ backgroundColor: theme.secondary }}
+					style={{ backgroundColor: theme.palette.background.default }}
 				>
 					<div
 						className='lcr--content'
-						style={{ color: theme.tertiary }}
+						style={{ color: theme.palette.text.main }}
 					>
 						<br />
 						<h1>{headerData.name}</h1>
+						{/* SOCIAL MEDIA ICONS */}
 						<div className='lcl--content2'>
 							{socialsData.github && (
 								<a
@@ -193,9 +195,10 @@ function Landing() {
 								</a>
 							)}
 						</div>
+
 						<br />
 						<p>{headerData.description}</p>
-						<div className='lcr-buttonContainer'>
+						<div className=' lcr-buttonContainer'>
 							<a
 								href={headerData.resumePdf}
 								download='resume'
@@ -205,27 +208,28 @@ function Landing() {
 								<Button
 									className='landing--button'
 									style={{
-										backgroundColor: 'darkolivegreen',
-										color: theme.secondary70,
+										backgroundColor: theme.palette.primary.main,
+										color: theme.palette.secondary.main,
 										width: '8rem',
 										display: 'flex',
 										alignItems: 'center',
 										justifyContent: 'center',
+										
 									}} variant="contained">
-									<a style={{ backgroundColor: 'none' }} href={headerData.resumePdf}>
+									<a style={{ backgroundColor: 'none',  }} href={headerData.resumePdf}>
 										<h2>RESUME</h2></a>
 								</Button>
 							</a>
 							<Button
 								style={{
-									backgroundColor: 'darkolivegreen',
-									color: theme.secondary70,
+									backgroundColor: theme.palette.primary.main,
+									color: theme.palette.primary.main,
 									width: '8rem',
 									display: 'flex',
 									alignItems: 'center',
 									justifyContent: 'center',
 								}} variant="contained">
-								<a style={{ backgroundColor: 'none' }} href="./formpage">
+								<a href="./formpage">
 									<h2>CONTACT</h2></a>
 							</Button>
 						</div>

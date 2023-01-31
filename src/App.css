@@ -3,18 +3,15 @@
 :root
 {
   --primaryFont: 'Poppins', sans-serif;
-
-  --primary:  #232526;
-  --white: #ffffff;
 }
 
 .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate{
-  color: #232526;
+  /* color: #232526; */
 }
 
 .DLSwitch{
-  position: absolute;
-  left: 50%;
-  top: 5%;
+  position: fixed;
+  right: 1px;
+  top: 1px;
   z-index:1000;
 }

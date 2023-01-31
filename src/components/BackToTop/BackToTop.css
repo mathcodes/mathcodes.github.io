@@ -7,6 +7,10 @@
   z-index: 999;
 }
 
+.backToTop:hover {
+color: #fca311;
+}
+
 .backToTop button {
   outline: none;
   border: none;

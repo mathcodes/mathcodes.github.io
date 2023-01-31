@@ -19,11 +19,12 @@
   margin: 1rem;
 }
 
-.projects--header h1
-{
-  margin-bottom: 40px;
-  font-size: 3.5rem;
+.projects--header h2 {
   font-family: var(--primaryFont);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
 }
 
 .projects--body
@@ -81,7 +82,7 @@
 {
   .projects--bodyContainer
   {
-    background-color: var(--primaryColor);
+    /* background-color: var(--primaryColor); */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -141,7 +142,7 @@
 
 .view{
   font-size: 1.2rem;
-  color: #7a7709;
+  /* color: #fdd43c; */
   font-weight: 200;
   font-family: var(--primaryFont);
   transition: color 2.2s;

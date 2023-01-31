@@ -13,17 +13,9 @@
   src: url('./assets/fonts/Bestermind/BestermindRegular.ttf') format('embedded-opentype'), 
        url('./assets/fonts/Bestermind/BestermindRegular.ttf')  format('truetype'), 
 }
-body{
-  background:  darkolivegreen;
+ 
+ 
 
-}
-:root {
-  --primary:  darkolivegreen;
-  --white: #ffffff;
-}
-.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, .css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate{
-  color: var(--primary);
-}
 * {
   margin: 0;
   box-sizing: border-box;

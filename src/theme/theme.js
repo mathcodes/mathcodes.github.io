@@ -108,71 +108,58 @@ export const theme = createTheme({
       }
     },
     MuiTableHead: {
-      styleOverrides: {
-        root: {
-          backgroundColor: 'darkolivegreen',
-          '.MuiTableCell-root': {
-            color: 'darkolivegreen'
-          },
-          borderBottom: 'none',
-          '& .MuiTableCell-root': {
-            borderBottom: 'none',
-            fontSize: '12px',
-            fontWeight: 600,
-            lineHeight: 1,
-            letterSpacing: 0.5,
-            textTransform: 'uppercase'
-          },
-          '& .MuiTableCell-paddingCheckbox': {
-            paddingTop: 4,
-            paddingBottom: 4
-          }
-        }
-      }
+      // styleOverrides: {
+      //   root: {
+      //     backgroundColor: theme.palette.primary.main,
+      //     '.MuiTableCell-root': {
+      //       color: theme.palette.primary.main
+      //     },
+      //     borderBottom: 'none',
+      //     '& .MuiTableCell-root': {
+      //       borderBottom: 'none',
+      //       fontSize: '12px',
+      //       fontWeight: 600,
+      //       lineHeight: 1,
+      //       letterSpacing: 0.5,
+      //       textTransform: 'uppercase'
+      //     },
+      //     '& .MuiTableCell-paddingCheckbox': {
+      //       paddingTop: 4,
+      //       paddingBottom: 4
+      //     }
+      //   }
+      // }
     }
   },
   palette: {
-    neutral: {
-      100: '#darkolivegreen',
-      200: '#darkolivegreen',
-      300: '#darkolivegreen',
-      400: '#darkolivegreen',
-      500: '#darkolivegreen',
-      600: '#darkolivegreen',
-      700: '#darkolivegreen',
-      800: '#darkolivegreen',
-      900: '#darkolivegreen'
-    },
     action: {
-      active: '#6B7280',
-      focus: 'rgba(55, 65, 81, 0.12)',
-      hover: 'rgba(55, 65, 81, 0.04)',
-      selected: 'rgba(55, 65, 81, 0.08)',
-      disabledBackground: 'rgba(55, 65, 81, 0.12)',
-      disabled: 'rgba(55, 65, 81, 0.26)'
+      active: '#fca311',
+      focus: '#fca311',
+      hover: '#fca311',
+      selected: '#fca311',
+      disabledBackground: '#fca311',
+      disabled: '#fca311'
     },
     background: {
-      default: '#F9FAFC',
-      paper: '#FFFFFF'
+      default: '#cfcfcf',
+      paper: '#555',
     },
     divider: '#E6E8F0',
+    text: {
+      main: '#4e6e5d',
+      light: '#fff',
+    },
     primary: {
-      main: 'darkolivegreen',
-      light: 'darkolivegreen',
-      dark: 'darkolivegreen',
-      contrastText: '#FFFFFF'
+      main: '#14213d',
     },
     secondary: {
-      main: '#10B981',
-      light: '#3FC79A',
-      dark: '#0B815A',
-      contrastText: '#FFFFFF'
+      main: '#000',
+      // light: '#3FC79A',
+      // dark: '#0B815A',
+      // contrastText: '#FFFFFF'
     },
     success: {
-      main: '#14B8A6',
-      light: '#43C6B7',
-      dark: '#0E8074',
-      contrastText: '#FFFFFF'
+      main: '#fca311',
     },
     info: {
       main: '#2196F3',
@@ -191,11 +178,6 @@ export const theme = createTheme({
       light: '#DA6868',
       dark: '#922E2E',
       contrastText: '#FFFFFF'
-    },
-    text: {
-      primary: 'darkolivegreen',
-      secondary: '#65748B',
-      disabled: 'rgba(55, 65, 81, 0.48)'
     }
   },
   shape: {

@@ -4,12 +4,16 @@ import { HiLink } from 'react-icons/hi';
 import Fade from 'react-reveal/Fade';
 import placeholder from '../../../assets/png/placeholder.png';
 import './SingleProject.css';
+// import { theme } from '../../../theme/theme';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import Box from '@mui/material/Box';
+import { useTheme } from '@mui/material/styles';
 
 function Item(props) {
 	const { sx, ...other } = props;
+	const theme = useTheme();
+	
 	return (
 		<Box
 			sx={{
@@ -19,11 +23,9 @@ function Item(props) {
 				m: '0.2rem',
 				ml: '0.9rem',
 				height: '1.5rem',
-				bgcolor: '#109910',
-				color: 'grey.800',
+				bgcolor: theme.palette.grey[400],
+				color: theme.palette.primary.contrastText,
 				border: '1px solid',
-				borderColor: (theme) =>
-					theme.palette.mode === '#101010',
 				borderRadius: 2,
 				fontSize: '0.875rem',
 				fontWeight: '400',
@@ -44,12 +46,19 @@ export function SingleProject({ id, name, desc, tags, code, demo, image, theme, 
 			<div
 				key={id}
 				className='singleProject'
-				style={{ backgroundColor: "#7a7709" }}
+				style={{ 
+					background: theme.palette.background.paper,
+					backgroundHover: theme.palette.background.paper, 
+					color: theme.palette.text.main,
+					'&:hover': {
+						backgroundColor: theme.palette.grey[900],
+						color: theme.palette.text.light
+					},
+				}}
 			>
 				<div className='projectContent'>
 					<h2
 						id={name.replace(' ', '-').toLowerCase()}
-						style={{ color: theme.tertiary, height: '40.2px' }}
 					>
 						{name}
 					</h2>
@@ -59,18 +68,30 @@ export function SingleProject({ id, name, desc, tags, code, demo, image, theme, 
 				<p
 					className='project--desc'
 					style={{
-						background: '#222',
-						color: theme.tertiary,
+						background: theme.palette.background.paper,
+						color: theme.palette.action.active,
 						display: `flex`,
 						flexDirection: 'right',
 						alignItems: `center`,
 						justifyContent: `center`,
 						width: '97%',
-
+						 
 					}}
 				><div>
 
-						<div className="ProjDesc">{desc}</div>
+						<div className="ProjDesc" style={{
+						background: theme.palette.background.paper,
+						color: theme.palette.text.main,
+						display: `flex`,
+						flexDirection: 'right',
+						alignItems: `center`,
+						justifyContent: `center`,
+						width: '97%',
+						'&:hover': {
+							backgroundColor: theme.palette.grey[900],
+							color: theme.palette.text.light
+						},
+					}}>{desc}</div>
 						 
 							{tags.map((tag, id) => (
 								<Item style={{width:"80%"}}>
@@ -98,7 +119,7 @@ export function SingleProject({ id, name, desc, tags, code, demo, image, theme, 
 										.replace(' ', '-')
 										.toLowerCase()}-demo`}
 							>
-								<BottomNavigationAction style={{ margin: ".5rem", color: "purple", background: "none", fontSize: "2rem" }} icon={<HiLink />} /></a>
+								<BottomNavigationAction style={{ margin: ".5rem", color: theme.palette.grey[400], background: "none", fontSize: "2rem" }} icon={<HiLink />} /></a>
 							<a
 								href={code}
 								target='_blank'
@@ -109,7 +130,7 @@ export function SingleProject({ id, name, desc, tags, code, demo, image, theme, 
 										.replace(' ', '-')
 										.toLowerCase()}-code`}
 							>
-								<BottomNavigationAction style={{ margin: ".5rem", color: "#7a7709", border: "none", background: "none", fontSize: "2rem" }} icon={<FaCode />} />
+								<BottomNavigationAction style={{ margin: ".5rem", color: theme.palette.grey[400], border: "none", background: "none", fontSize: "2rem" }} icon={<FaCode />} />
 							</a>
 
 						</BottomNavigation>

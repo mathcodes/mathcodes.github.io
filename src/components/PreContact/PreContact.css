@@ -68,7 +68,7 @@ li
   justify-content: center;
   gap: 1.5rem;
   margin: 1rem;
-  color: #eaeaea;
+  /* color: #eaeaea; */
 }
 
 
@@ -80,11 +80,25 @@ li
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
-  background: linear-gradient( #eaeaea 0%, #222 100%);
-
 }
 
-
+.personal-details
+{
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 2.5rem;
+  color: #232526;
+  text-decoration: wavy;
+  font-weight: 400;
+  background-color: #d3540000;
+  border-radius: 10px;
+  padding: 5px;
+  transition: all .5s;
+}
 
 .contacts--img
 {
@@ -108,7 +122,7 @@ li
 
 a:-webkit-any-link
 {
-  color: #eaeaea;
+  color: #555;
   cursor: pointer;
   text-decoration: none;
   transition: all 0s;
@@ -118,7 +132,7 @@ a:-webkit-any-link
 a:-webkit-any-link:hover
 {
   text-shadow:#fff 2px solid;
-  color: #4faeba;
+  color: #fca311;
   
 }
 
@@ -190,27 +204,6 @@ a:-webkit-any-link:hover
 
 @media (min-width: 992px)
 {
-  socialIcon
-  {
-    width: '55px';
-    height: '55px';
-    border-radius: '50%'; 
-    font-size: '45px';
-    display: 'flex';
-    align-items: 'center';
-    justify-content: 'center';
-    padding: '5px';
-    background-color: 'none';
-    transition: '250ms ease-in-out';
-  }
-
-  socialIcon:hover
-  {
-    color: '#000';
-    background-color: red,
-  }
-}
-
 detailsIcon
 {
   background-color: '#667';
@@ -254,7 +247,7 @@ ul,
   flex-direction: row;
 }
 
-
+}
 
 @media screen and (max-width: 992px)
 {
@@ -281,7 +274,7 @@ ul,
   {
     display: flex;
     flex-direction: row;
-    font-size: 0.5rem;
+    font-size: 1.5rem;
     align-items: center;
     justify-content: flex-start;
     width: 100%;
@@ -295,14 +288,10 @@ ul,
     transition: all .5s;
   }
 
- 
-
   .contacts-icons
   {
     font-size: .5rem;
   }
-
- 
 
   .socialMedia-icons
   {
@@ -313,7 +302,6 @@ ul,
   {
     display: flex;
     flex: 1;
-
   }
 
   .form-input
@@ -348,6 +336,23 @@ ul,
 
 @media screen and (max-width: 600px)
 {
+  .personal-details
+  {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 2.5rem;
+    color: #232526;
+    text-decoration: wavy;
+    font-weight: 400;
+    background-color: #d3540000;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all .5s;
+  }
   .contacts-form
   {
     display: flex;
@@ -355,11 +360,11 @@ ul,
   }
 }
 
-
+/* 
 .localIcon
 {
   font-size: 2rem;
-}
+} */
  
 .contactHeader2{
   padding: 3rem 0 1rem 0;

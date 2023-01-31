@@ -5,19 +5,18 @@ import { IoMenuSharp, IoHomeSharp } from 'react-icons/io5';
 import { HiDocumentText } from 'react-icons/hi';
 import { BsFillGearFill } from 'react-icons/bs';
 import { FaUser } from 'react-icons/fa';
-import { GrProjects } from "react-icons/gr";
+import { AiFillProject } from 'react-icons/ai';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import CloseIcon from '@material-ui/icons/Close';
-import BG from "../../assets/img/JCircle.png";
-import BG2 from "../../assets/img/JCircle_dark_gray.png";
 import './Navbar.css';
 import { ThemeContext } from '../../contexts/ThemeContext';
 import { headerData } from '../../data/headerData'
+import { useTheme } from '@mui/material/styles';
 
 function Navbar() {
-	const { theme, setHandleDrawer } = useContext(ThemeContext); //useContext accepts ThemeContext and set to  destructured the theme and setHandleDrawer
-
+	const { themeState, setHandleDrawer } = useContext(ThemeContext); //useContext accepts ThemeContext and set to  destructured the theme and setHandleDrawer
+	const theme = useTheme();
 	const [open, setOpen] = useState(false);
 
 	// handler function for drawer that sets the state of the drawer to Open and calls 	the setHandleDrawer function in the ThemeContext
@@ -34,12 +33,12 @@ function Navbar() {
 	const useStyles = makeStyles((t) => ({
 		navMenu: {
 			fontSize: '2.5rem',
-			color: theme.tertiary,
+			color: t.palette.text.main,
 			cursor: 'pointer',
 			transform: 'translateY(-10px)',
 			transition: 'color 0.3s',
 			'&:hover': {
-				color: theme.primary,
+				color: t.palette.action.active,
 			},
 			[t.breakpoints.down('sm')]: {
 				fontSize: '2.5rem',
@@ -55,7 +54,8 @@ function Navbar() {
 			fontStyle: ' normal',
 			fontWeight: ' normal',
 			fontSize: ' 24px',
-			background: theme.secondary,
+			background: t.palette.action.active,
+			color: t.palette.text.main,
 			overflow: 'hidden',
 			borderTopRightRadius: '40px',
 			borderBottomRightRadius: '40px',
@@ -64,14 +64,16 @@ function Navbar() {
 			},
 		},
 		bgStyle: {
-			height: '10em',
+
+			fontSize: '1rem',
+			height: '1em',
 			paddingTop: '5%',
 			[t.breakpoints.down('sm')]: {
 				paddingTop: '13%',
 			},
-			background: `url(${BG})`,
+			background: `url(${headerData.BG2})`,
 			'&:hover': {
-				background: `url(${BG2})`,
+				background: `url(${headerData.BG})`,
 			},
 			
 		},
@@ -80,13 +82,13 @@ function Navbar() {
 			fontSize: '2rem',
 			fontWeight: 'bold',
 			cursor: 'pointer',
-			color: theme.primary,
+			color: t.palette.text.main,
 			position: 'absolute',
 			right: 40,
 			top: 40,
 			transition: 'color 0.2s',
 			'&:hover': {
-				color: theme.tertiary,
+				color: t.palette.action.active,
 			},
 			[t.breakpoints.down('sm')]: {
 				right: 20,
@@ -96,8 +98,8 @@ function Navbar() {
 		drawerItem: {
 			margin: '2rem auto',
 			borderRadius: '78.8418px',
-			background: '#333',
-			color: ' #eaeaea',
+			background: t.palette.background.default,
+			color: t.palette.text.main,
 			width: '85%',
 			height: '60px',
 			display: 'flex',
@@ -106,11 +108,11 @@ function Navbar() {
 			padding: '0 30px',
 			boxSizing: 'border-box',
 			border: '2px solid',
-			borderColor: theme.primary,
+			borderColor: t.palette.action.active,
 			transition: 'background-color 0.2s, color 0.2s',
 			'&:hover': {
-				background: theme.primary,
-				color: '#232526',
+				background: t.palette.text.main,
+				color: t.palette.background.default,
 				border: '1px solid #232526',
 			},
 			[t.breakpoints.down('sm')]: {
@@ -147,11 +149,14 @@ function Navbar() {
 		}
 	};
 
+	const imageHandler = theme.palette.mode === 'dark' ? headerData.BG2 : headerData.BG
+	
+
 	return (
 		<div className='navbar'>
 			<div className='navbar--container'>
 
-				<img alt="jon christie web developer resume job portfolio" src={headerData.BG}className={classes.bgStyle} />
+				<img alt="jon christie web developer resume job portfolio" src={imageHandler} className={classes.bgStyle} />
 
 				<IoMenuSharp
 					className={classes.navMenu}
@@ -271,7 +276,7 @@ function Navbar() {
 								duration={2000}
 							>
 								<div className={classes.drawerItem}>
-									<GrProjects className={classes.drawerIcon} />
+									<AiFillProject className={classes.drawerIcon} />
 									<span className={classes.drawerLinks}>
 										Projects
 									</span>

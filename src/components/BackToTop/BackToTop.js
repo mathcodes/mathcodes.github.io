@@ -1,15 +1,13 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import { IoIosArrowDropupCircle } from 'react-icons/io';
-import { makeStyles } from '@material-ui/core/styles';
-
-import { ThemeContext } from '../../contexts/ThemeContext';
+// import { useTheme } from '@mui/material/styles';
 import './BackToTop.css';
 
-function BackToTop() {
+function BackToTop({theme}) {
 	const [visible, setVisible] = useState(false);
 
-	const { theme } = useContext(ThemeContext);
- 
+	// const { theme } = useTheme();
+
 	console.log(theme)
 	const toggleVisible = () => {
 		const scrolled = document.documentElement.scrollTop;
@@ -29,22 +27,20 @@ function BackToTop() {
 
 	window.addEventListener('scroll', toggleVisible);
 
-	const useStyles = makeStyles(() => ({
-		icon: {
-			fontSize: '3rem',
-			color: theme.tertiary,
-		},
-	}));
 
-	const classes = useStyles();
 
 	return (
 		<div
-			style={{ display: visible ? 'inline' : 'none' }}
-			className='backToTop'
+			style={{
+				display: visible ? 'inline' : 'none', 
+				fontSize: '6rem',
+				color: theme.palette.text.main,
+			}}
+			className='backToTop font-3xl'
+
 		>
-			<button onClick={scrollToTop} aria-label='Back to top'>
-				<IoIosArrowDropupCircle className={classes.icon} />
+			<button onClick={scrollToTop} aria-label='Back to top' className='backToTop font-3xl'>
+				<IoIosArrowDropupCircle />
 			</button>
 		</div>
 	);

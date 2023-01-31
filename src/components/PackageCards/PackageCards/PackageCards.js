@@ -1,8 +1,8 @@
 import { Grid, Paper, Box } from '@material-ui/core';
 // import icons frmo  mui
 // import mui icon
-import React, { useContext } from 'react';
-import { ThemeContext } from '../../../contexts/ThemeContext';
+import React from 'react';
+import { useTheme } from '@material-ui/core/styles';
 import './PackageCards.css'
 import Button from '@material-ui/core/Button';
 
@@ -126,29 +126,30 @@ export const MonthlyPackages = [
 ];
 
 function PackageCards() {
-  const { theme } = useContext(ThemeContext);
+  const {theme} = useTheme();
 
   return (
     <>
       <div className="services-header">
-        <h1 style={{ color: theme.secondary70 }} className="items-center justify-center h-screen">Services</h1>
+        <h1 style={{ color: theme.secondary.main }} className="items-center justify-center h-screen">Services</h1>
       </div>
       <Box>
+      <h3 style={{ color: theme.secondary }} className="items-center justify-center h-screen">Web Development</h3>
         <Grid container spacing={{ xs: 1, sm: 2, md: 5, }} className="items-center justify-center h-screen" style={{ justifyContent: "center" }}>
           {WebDesignPackages.map((p) => (
 
             <Grid container style={{ textAlign: "center", padding: '5px', }} mt={15} elevation={6} rowSpacing={3} xs={12} sm={3} md={5} lg={2} className="items-center justify-content-center h-screen">
               <Paper className="service servicePaper">
-                <Box className="service serviceBoxName" id={p.key} sx={{ mx: 'auto', py: 1, height: '8rem', fontSize: '2rem', background: "#d35400", zIndex: 20, boxShadow: '4px 4px 8px rgba(36, 3, 6, 1)' }} Grid xs={12}>
+                <Box className="service serviceBoxName" id={p.key} sx={{ mx: 'auto', py: 1, height: '8rem', fontSize: '1.5rem', background: "#fdd43c", zIndex: 20, boxShadow: '4px 4px 8px rgba(36, 3, 6, 1)' }} Grid xs={12}>
                   {p.name}
                 </Box>
-                <Box className="service serviceBoxDesc" sx={{ my:2, mx: 'auto', py: 1, fontSize: '1rem',  height: '12rem', fontWeight: 500 }} Grid xs={12}>
+                <Box className="service serviceBoxDesc" sx={{ my:2, mx: 'auto', py: 1, fontSize: '1rem',  height: '10vm', fontWeight: 500 }} Grid xs={12}>
                   {p.description}
                 </Box>
-                <Box className="service serviceBox3" sx={{my:2,  mx: 'auto', py: 1, fontSize: '2rem',  height: '2rem', fontWeight: 500 }} Grid xs={12}>
+                <Box className="service serviceBox3" sx={{my:5,  mx: 'auto', py: 5, fontSize: '1rem',  height: '2rem', fontWeight: 500 }} Grid xs={12}>
                   <Box className="service serviceBox4">
                     {/*   button that takes user to contact form */}
-                    <Button onClick={() => window.location.href = p.link} variant="contained" color="primary" style={{ background: "darkolivegreen", color: "#fff", fontWeight: 500, fontSize: '1rem', height: '2rem', width: '80%', boxShadow: '4px 4px 8px rgba(36, 3, 6, 1)' }}>Start Here!</Button>
+                    <Button onClick={() => window.location.href = p.link}   variant="contained" color="primary" style={{ background: "darkolivegreen", color: "#fff", fontWeight: 500, fontSize: '1rem', height: '3rem', width: '80%', boxShadow: '4px 4px 8px rgba(36, 3, 6, 1)' }}>Start Here!</Button>
 
                   </Box>
                 </Box>
@@ -163,19 +164,21 @@ function PackageCards() {
           {MonthlyPackages.map((p) => (
 
             <Grid container style={{ textAlign: "center", padding: '5px', }} mt={15} elevation={6} rowSpacing={3} xs={12} sm={3} md={5} lg={2} className="items-center justify-content-center h-screen">
+              <Grid px={6} >
               <Paper className="service servicePaper">
-                <Box className="service serviceBoxName" id={p.key} sx={{ mx: 'auto', py: 1, height: '8rem', fontSize: '2rem', background: "#61dafb", zIndex: 20, boxShadow: '4px 4px 8px rgba(36, 3, 6, 1)' }} Grid xs={12}>
+                <Box className="service serviceBoxName" id={p.key} sx={{  py: 1, height: '8rem', fontSize: '1.5rem', background: "#fdd43c", zIndex: 20, boxShadow: '4px 4px 8px rgba(36, 3, 6, 1)' }} Grid xs={12}>
                   {p.name}
                 </Box>
-                <Box className="service serviceBoxDesc" sx={{ my:2,mx: 'auto', py: 1, fontSize: '1rem',  height: '12rem', fontWeight: 500 }} Grid xs={12}>
+                <Box className="service serviceBoxDesc" sx={{ my:2,mx: 'auto', py: 1, fontSize: '1rem',  height: '10vm', fontWeight: 500 }} Grid xs={12}>
                   {p.description}
                 </Box>
-                <Box className="service serviceBox3" sx={{ my:2,mx: 'auto', py: 1, fontSize: '2rem',  height: '2rem', fontWeight: 500 }} Grid xs={12}>
+                <Box className="service serviceBox3" sx={{my:5,  mx: 'auto', py: 5, fontSize: '1rem',  height: '2rem', fontWeight: 500 }} Grid xs={12}>
                   <Box className="service serviceBox4">
                   <Button onClick={() => window.location.href = p.link} variant="contained" color="primary" style={{ background: "darkolivegreen", color: "#fff", fontWeight: 500, fontSize: '1rem', height: '2rem', width: '80%', boxShadow: '4px 4px 8px rgba(36, 3, 6, 1)' }}>Start Here!</Button>
                   </Box>
                 </Box>
               </Paper>
+              </Grid>
             </Grid>
 
           ))}
@@ -187,7 +190,7 @@ function PackageCards() {
 
             <Grid container style={{ textAlign: "center", padding: '5px', }} mt={15} elevation={6} rowSpacing={3} xs={12} sm={3} md={5} lg={2} className="items-center justify-content-center h-screen">
               <Paper className="service servicePaper">
-                <Box className="service serviceBoxName" id={p.key} sx={{ mx: 'auto', py: 1, height: '8rem', fontSize: '2rem', background: "#db11a9", zIndex: 20, boxShadow: '4px 4px 8px rgba(36, 3, 6, 1)' }} Grid xs={12}>
+                <Box className="service serviceBoxName" id={p.key} sx={{ mx: 'auto', py: 1, height: '8rem', fontSize: '1.5rem', background: "#fdd43c", zIndex: 20, boxShadow: '4px 4px 8px rgba(36, 3, 6, 1)' }} Grid xs={12}>
                   {p.name}
                 </Box>
                 <Box className="service serviceBoxDesc" sx={{ my:2,mx: 'auto', py: 1, fontSize: '1rem',  height: '12rem', fontWeight: 500 }} Grid xs={12}>
@@ -195,7 +198,7 @@ function PackageCards() {
                 </Box>
                 <Box className="service serviceBox3" sx={{my:2, mx: 'auto', py: 1, fontSize: '2rem',  height: '3rem', fontWeight: 500 }} Grid xs={12}>
                   <Box className="service serviceBox4">
-                  <Button onClick={() => window.location.href = p.link} variant="contained" color="primary" style={{ background: "darkolivegreen", color: "#fff", fontWeight: 500, fontSize: '1rem', height: '2rem', width: '80%', boxShadow: '4px 4px 8px rgba(36, 3, 6, 1)' }}>Start Here!</Button>
+                  <Button onClick={() => window.location.href = p.link} variant="contained" color="primary" style={{ background: "darkolivegreen", color: "#fdd43c", fontWeight: 500, fontSize: '1rem', height: '2rem', width: '80%', boxShadow: '4px 4px 8px rgba(36, 3, 6, 1)' }}>Start Here!</Button>
                   </Box>
                 </Box>
               </Paper>

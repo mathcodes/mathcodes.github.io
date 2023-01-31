@@ -17,7 +17,7 @@ function Main() {
 			<HorizontalRule />
 			<Skills />
 			<Projects />
-			<PackageCards/>
+			{/* <PackageCards/> */}
 			{/* <Services /> */}
 			<Testimonials />
 			<Footer />

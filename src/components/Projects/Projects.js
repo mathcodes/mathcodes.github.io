@@ -1,22 +1,18 @@
-import React, { useContext } from 'react';
+import React  from 'react';
 import { Link } from 'react-router-dom'
-import { ThemeContext } from '../../contexts/ThemeContext';
 import { projectsData } from '../../data/projectsData'
 import SingleProject from './SingleProject/SingleProject';
 import './Projects.css'
+import { useTheme } from '@mui/material/styles';
 
 function Projects() {
-
-	const { theme } = useContext(ThemeContext);
-
+	const theme = useTheme();
 	return (
 		<>
-				<div style={{ backgroundColor: theme.secondary50, height: '1rem' }}> </div>
-
 			{projectsData.length > 0 && (
-				<div className="projects" id="projects" style={{ backgroundColor: theme.secondary }}>
+				<div className="projects" id="projects" style={{ backgroundColor: theme.palette.background.default }}>
 					<div className="projects--header">
-						<h1 style={{ color: theme.secondary70 }}>Projects</h1>
+					<h2 style={{ color: theme.palette.text.main }}>Projects</h2>
 					</div>
 					<div className="projects--body">
 						<div className="projects--bodyContainer">
@@ -40,12 +36,12 @@ function Projects() {
 					<div className="break"><hr /><hr /><hr /><hr /><hr /></div>
 
 					<div>
-						<h1 className="view">Viewing 4 of {projectsData.length} projects</h1>
+						<h1 className="view" style={{ color: theme.palette.text.main }}>Viewing 4 of {projectsData.length} projects</h1>
 					</div>
 					{projectsData.length > 4 && (<>
 							<div className="projects--viewAll">
 								<Link to="/projects">
-									<h1 className='view'>VIEW MORE</h1>
+									<h1 className='view' style={{ color: theme.palette.text.main }}>VIEW MORE</h1>
 								</Link>
 							</div>
 						</>)}
