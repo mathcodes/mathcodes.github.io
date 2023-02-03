@@ -297,29 +297,29 @@ export default function ToggleColorMode() {
   theme = createTheme(theme, {
     palette: {
       primary: {
-        main: theme.palette.mode === 'dark' ? '#14213d' : '#14213d',
+        main: theme.palette.mode === 'dark' ? '#101935' : '#101935',
       },
       secondary: {
-        main: theme.palette.mode === 'dark' ? '#000' : '#e5e5e5',
+        main: theme.palette.mode === 'dark' ? '#222' : '#e5e5e5',
       },
       success: {
-        main: '#fca311',
+        main: '#a92ca2',
       },
       action: {
-        active: '#fca311',
-        focus: '#fca311',
-        hover: '#fca311',
-        selected: '#fca311',
-        disabledBackground: '#fca311',
-        disabled: '#fca311'
+        active: theme.palette.mode === 'dark' ? '#a92ca2' : '#272822',
+        background: theme.palette.mode === 'dark' ? '#272822' : '#a92ca2',
+        hover: '#a92ca2',
+        selected: '#a92ca2',
+        disabledBackground: '#a92ca2',
+        disabled: '#a92ca2'
       },
       text: {
-        main: theme.palette.mode === 'dark' ? '#fff' : '#000',
+        main: theme.palette.mode === 'dark' ? '#e5e5e5' : '#101935',
         light: '#fff',
       },
       background: {
-        default: theme.palette.mode === 'dark' ? '#222' : '#fff',
-        paper:  theme.palette.mode === 'dark' ? '#111' : '#e5e5e5',
+        default: theme.palette.mode === 'dark' ? '#222' : '#e5e5e5',
+        paper:  theme.palette.mode === 'dark' ? '#222' : '#e5e5e5',
       },
     }
   });

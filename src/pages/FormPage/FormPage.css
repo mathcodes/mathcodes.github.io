@@ -7,11 +7,11 @@
 }
 
 .formPage-header {
-  height: 35vh;
+  height: 15vh;
   background: none;
   font-style: normal;
   font-weight: bold;
-  font-size: 3.5rem;
+  font-size: 2rem;
   text-align: center;
   display: flex;
   align-items: center;
@@ -20,12 +20,12 @@
 }
 
 .formPage-header>h1 {
-  font-size: 4rem;
+  font-size: 2rem;
   font-family: roboto sans-serif;
 }
 
 .formPage-container {
-  padding: 3rem 2rem;
+  /* padding: 3rem 2rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,7 +39,7 @@
 }
 
 .form-container {
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
   background-color: none;
 }
 
@@ -51,7 +51,7 @@
 /*  ------------------------------------ MEDIA QUERIES ------------------------------------ */
 @media screen and (max-width: 992px) {
   .formPage-header {
-    height: 25vh;
+    /* height: 25vh; */
     display: flex;
     align-items: center;
     justify-content: center;

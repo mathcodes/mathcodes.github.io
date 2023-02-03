@@ -133,33 +133,30 @@ export const theme = createTheme({
   },
   palette: {
     action: {
-      active: '#fca311',
-      focus: '#fca311',
-      hover: '#fca311',
-      selected: '#fca311',
-      disabledBackground: '#fca311',
-      disabled: '#fca311'
+      active: '#a92ca2',
+      focus: '#a92ca2',
+      hover: '#a92ca2',
+      selected: '#a92ca2',
+      disabledBackground: '#a92ca2',
+      disabled: '#a92ca2'
     },
     background: {
-      default: '#cfcfcf',
-      paper: '#555',
+      default: '#dddddd',
+      paper: '#dddddd',
     },
     divider: '#E6E8F0',
     text: {
-      main: '#4e6e5d',
-      light: '#fff',
+      main: '#101935',
+      light: '#dddddd',
     },
     primary: {
-      main: '#14213d',
+      main: '#101935',
     },
     secondary: {
-      main: '#000',
-      // light: '#3FC79A',
-      // dark: '#0B815A',
-      // contrastText: '#FFFFFF'
+      main: '#135d66',
     },
     success: {
-      main: '#fca311',
+      main: '#a92ca2',
     },
     info: {
       main: '#2196F3',

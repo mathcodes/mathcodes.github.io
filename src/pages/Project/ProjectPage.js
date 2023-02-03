@@ -6,20 +6,22 @@ import { makeStyles } from '@material-ui/core/styles';
 import { AiOutlineHome } from "react-icons/ai";
 import './ProjectPage.css'
 import { SingleProject } from '../../components';
-import { ThemeContext } from '../../contexts/ThemeContext';
+// import { ThemeContext } from '../../contexts/ThemeContext';
+import { useTheme } from '@mui/material/styles';
 import { projectsData } from '../../data/projectsData'
 import { headerData } from '../../data/headerData'
 
 function ProjectPage() {
 	const [search, setSearch] = useState('')
-	const { theme } = useContext(ThemeContext);
+	const theme = useTheme();
+	// const { theme } = useContext(ThemeContext);
 	const filteredArticles = projectsData.filter((project) => {
 		const content = project.projectName + project.projectDesc + project.tags
 		return content.toLowerCase().includes(search.toLowerCase())
 	})
 	const useStyles = makeStyles((t) => ({
 		search: {
-			color: theme.secondary70,
+			color: theme.palette.text.main,
 			width: '40%',
 			height: '2.75rem',
 			outline: 'none',
@@ -29,7 +31,7 @@ function ProjectPage() {
 			fontFamily: "'Noto Sans TC', sans-serif",
 			fontWeight: 500,
 			fontSize: '0.9rem',
-			backgroundColor: theme.secondary,
+			backgroundColor: theme.palette.background.default,
 			boxShadow: theme.type === 'dark' ? 'inset 3px 3px 6px #eaeaea, inset -3px -3px 6px #00000060' : 'inset 3px 3px 6px #ffffffbd, inset -3px -3px 6px #00000030',
 			"&::placeholder": {
 				color: theme.tertiary80,
@@ -52,8 +54,9 @@ function ProjectPage() {
 			transition: 'all 0.3s ease-in-out',
 			"&:hover":
 			{
-				color: theme.tertiary,
-				transform: 'scale(1.1)',
+				color: theme.palette.text.light,
+				backgroundColor: theme.palette.action.active,
+				transform: 'scale(0.9)',
 			},
 			[t.breakpoints.down('sm')]: {
 				fontSize: '1.8rem',
@@ -63,7 +66,7 @@ function ProjectPage() {
 	const classes = useStyles();
 
 	return (
-		<div className="projectPage" style={{ backgroundColor: theme.secondary }}>
+		<div className="projectPage" style={{ color: theme.palette.text.main, backgroundColor: theme.palette.background.paper }}>
 			<Helmet>
 				<title>{headerData.name} | Projects</title>
 			</Helmet>
