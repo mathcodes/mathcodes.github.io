@@ -1,20 +1,16 @@
-import Listing from './components/Listing/Listing';
-import SearchPage from './components/SearchPage/SearchPage';
-import Test from './components/Test/Test';
-import Card from './components/Card/Card';
-import Header from './components/Header/Header';
-import Test2 from './components/Test/Test2';
-import Input from './components/Input/Input';
+
+import {Card} from './components/Card';
+import {Header} from './components/Header';
+import MediumFeed from './components/MediumFeed';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      {/* <Listing /> */}
-      {/* <SearchPage /> */}
       <Header/>
       <Card />
-      <Input />
+      <MediumFeed />
       <Test />
       {/* <Test2 /> */}
     </div>
