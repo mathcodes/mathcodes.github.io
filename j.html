@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Analog Clock</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<style>
+.timer {
+	width: 300px;
+	height: 300px;
+	position: relative;
+	border: 7px solid black;
+	border-radius: 50%;
+	margin: 0 auto;
+	background-color: white;
+	overflow: hidden;
+}
+
+.timer:before {
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #f00;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	}
+
+.second {
+	width: 50px;
+	height: 5px;
+	border-radius: 5px;
+	background-color: black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform-origin: center;
+}
+
+.minute {
+	width: 50px;
+	height: 5px;
+	border-radius: 5px;
+	background-color: black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform-origin: center;
+}
+
+.hour {
+	width: 50px;
+	height: 5px;
+	border-radius: 5px;
+	background-color: black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform-origin: center;
+}
+</style>
+        <div class="timer">
+            <div class="second"></div>
+            <div class="minute"></div>
+            <div class="hour"></div>
+        </div>
+        <script>
+
+let timer = document.querySelector(".timer"),
+    createClock = () => {
+    let now = new Date();
+
+    let second = now.getSeconds()*6, // 6 deg per second
+        secondHand = document.querySelector('.second');
+    secondHand.style.transform = `rotate(${second}deg)`;
+
+    let minute = now.getMinutes()*6, // 6 deg per minute
+        minuteHand = document.querySelector('.minute');
+    minuteHand.style.transform = `rotate(${minute}deg)`;
+
+    let hour = now.getHours()*30, // 30 deg per hour
+        hourHand = document.querySelector('.hour');
+    hourHand.style.transform = `rotate(${hour}deg)`;
+
+};
+
+setInterval(createClock, 1000);
+createClock();
+</script>
+    </body>
+</html>
