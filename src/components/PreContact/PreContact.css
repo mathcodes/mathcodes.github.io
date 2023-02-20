@@ -38,18 +38,6 @@ ul
   text-align: justify;
 }
 
-ul:after
-{
-  content: '';
-  display: inline-block;
-  width: 100%;
-}
-
-ul:before
-{
-  content: '';
-  display: block;
-}
 
 li
 {
@@ -133,7 +121,7 @@ a:-webkit-any-link:hover
 {
   text-shadow:#fff 2px solid;
   color: #fca311;
-  
+
 }
 
 .makeStyles-socialIcon-31
@@ -152,7 +140,7 @@ a:-webkit-any-link:hover
 
 .contacts-details
 {
-  display: flex; 
+  display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
   flex: none;
@@ -163,9 +151,9 @@ a:-webkit-any-link:hover
 
 .personal-details p
 {
-  margin-left: 1.5rem;
+  margin: 0 1.5rem;
   font-size: 18px;
-  line-height: 110%;
+  line-height: 100%;
   font-weight: 500;
   font-family: var(--primaryFont);
   white-space: nowrap;
@@ -181,20 +169,18 @@ a:-webkit-any-link:hover
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  margin-bottom: 2.5rem;
+
   color: #eaeaea;
     text-decoration: wavy;
   font-weight: 400;
   background-color: #d3540000;
   border-radius: 10px;
-  padding: 5px;
+  /* padding: 5px; */
   transition: all .5s;
 }
 
 .personal-details:hover
 {
-  text-decoration: wavy;
-  background-color: #232526;
   color: #eaeaea;
   font-weight: 800;
 }
@@ -208,7 +194,7 @@ detailsIcon
 {
   background-color: '#667';
   color: '#232526';
-  border-radius: '50%'; 
+  border-radius: '50%';
   margin-bottom: 0.3rem;
   width: '45px';
   height: '45px';
@@ -256,12 +242,12 @@ ul,
     display: none;
   }
 
- 
+
 
 
   .personal-details p
   {
-    margin-left: 1rem;
+
 
     flex-direction: row;
   }
@@ -269,7 +255,7 @@ ul,
 
 @media screen and (max-width: 800px)
 {
-  
+
   .personal-details
   {
     display: flex;
@@ -329,7 +315,7 @@ ul,
 
   .personal-details p
   {
-    margin-left: 1.2rem;
+
     width: 95%;
   }
 }
@@ -344,7 +330,7 @@ ul,
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    margin-bottom: 2.5rem;
+
     color: #232526;
     text-decoration: wavy;
     font-weight: 400;
@@ -360,18 +346,17 @@ ul,
   }
 }
 
-/* 
+/*
 .localIcon
 {
   font-size: 2rem;
 } */
- 
+
 .contactHeader2{
   padding: 3rem 0 1rem 0;
 }
- 
+
 .css-pjjdvz {
-  margin-left: 8px;
   margin-right: 8px;
   display: -webkit-box;
   display: -webkit-flex;

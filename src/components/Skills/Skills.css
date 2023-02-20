@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  min-height: 60vh;
+  /* min-height: 60vh; */
   padding: 2.5rem 2rem 2rem 2rem;
   /* background: linear-gradient(180deg, #232526 0%, #556a2f 100%); */
   /* color: #eaeaea; */
@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
 }
 
 .skillsHeader h2 {
@@ -31,23 +31,17 @@
   width: 100%;
   margin-top: 3.5rem;
   padding: 0 2rem;
-  
+
 }
 
-.skill--scroll {
-  width: 100%;
-  border:#232526 3px solid;
-  margin: 0 2rem;
-  border-radius: 20px;
-}
 
 
 .skill--box {
   /* background: #FAFAFA; */
   box-shadow: 0px 10px 20px rgba(77, 95, 45, 0.92);
   border-radius: 10px 0 10px 0;
-  width: 160px;
-  height: 160px;
+  width: 40px;
+  /* height: 80px; */
   margin: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -61,10 +55,10 @@
   transform: scale(1.15);
 }
 
-.skill--box>img {
+/* .skill--box>img {
   height: 50px;
   pointer-events: none;
-}
+} */
 
 .skill--box h3 {
   font-family: Big Shoulders Text;
@@ -79,22 +73,18 @@
   padding: 1rem 0;
 }
 
- 
 
-.overlay::after, .overlay::before{
-  border-radius: 10%;
-}
 
 /*  ------------------------------------ MEDIA QUERIES ------------------------------------ */
 @media (min-width: 992px) and (max-width: 1380px) {
-  .skills {
+  /* .skills {
     padding: 2rem 1rem 1rem 1rem;
   }
 
   .skillsContainer {
     padding: 1.5rem;
     margin-top: 1.5rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 992px) {
@@ -113,8 +103,8 @@
   }
 
   .skill--box {
-    width: 150px;
-    height: 150px;
+    /* width: 150px;
+    height: 150px; */
     margin: 1.2rem;
     padding: 2rem 1rem;
   }
@@ -152,14 +142,14 @@
 
 @media screen and (max-width: 600px) {
   .skill--box {
-    width: 135px;
-    height: 135px;
+    width: 50px;
+    height: 50px;
     margin: 1.2rem;
     padding: 2rem 1rem;
   }
 
   .skill--box>img {
-    height: 40px;
+    height: 10px;
   }
 
   .skillsHeader h2 {
@@ -172,4 +162,3 @@
   }
 }
 
- 

@@ -1,7 +1,11 @@
-import React  from 'react'
+import React from 'react'
 import './Footer.css'
 import { useTheme } from '@mui/material/styles';
-import { Grid } from '@mui/material';
+import { experimentalStyled as styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
+// import { Item } from '@mui/material/Grid';
 import {
   FaTwitter,
   FaLinkedinIn,
@@ -14,18 +18,25 @@ import { FiPhone, FiAtSign } from 'react-icons/fi';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 import { socialsData } from '../../data/socialsData';
 import { contactsData } from '../../data/contactsData';
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(2),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+}));
 
 const Footer = () => {
-const theme = useTheme();
+  const theme = useTheme();
 
   return (
-    <div className="footer" style={{color: theme.palette.text.main, backgroundColor: theme.palette.background.paper }}>
+    <div className="footer" style={{ color: theme.palette.text.main, backgroundColor: theme.palette.background.paper }}>
       <Grid style={{ display: "block" }}>
-        <div className='contact-icons'>
-          <div className='contacts-details'>
-            <ul>
-              <li>
-                <a
+        <Grid container spacing={{ xs: 2, md: 3, lg:4 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+
+            <Grid item xs={2} sm={4} md={4}>
+              <Item>
+              <a
                   href={`mailto:${contactsData.email}`}
                   className='personal-details'
                 >
@@ -36,9 +47,11 @@ const theme = useTheme();
                     {contactsData.email}
                   </p>
                 </a>
-              </li>
-              <li>
-                <a
+              </Item>
+            </Grid>
+            <Grid item xs={2} sm={4} md={4}>
+              <Item>
+              <a
                   href={`tel:${contactsData.phone}`}
                   className='personal-details'
                 >
@@ -49,9 +62,11 @@ const theme = useTheme();
                     {contactsData.phone}
                   </p>
                 </a>
-              </li>
-              <li>
-                <a
+              </Item>
+            </Grid>
+            <Grid item xs={2} sm={4} md={4}>
+              <Item>
+              <a
                   href={`https://www.google.com/maps/place/${contactsData.address}`}
                   className='personal-details'
                 >
@@ -63,6 +78,30 @@ const theme = useTheme();
 
                   </p>
                 </a>
+              </Item>
+            </Grid>
+            <Grid item xs={2} sm={4} md={4}>
+              <Item>xs=2</Item>
+            </Grid>
+            <Grid item xs={2} sm={4} md={4}>
+              <Item>xs=2</Item>
+            </Grid>
+            <Grid item xs={2} sm={4} md={4}>
+              <Item>xs=2</Item>
+            </Grid>
+
+        </Grid>
+        <div className='contact-icons'>
+          <div className='contacts-details'>
+            <ul style={{ padding: 0 }}>
+              <li>
+
+              </li>
+              <li>
+
+              </li>
+              <li>
+
               </li>
             </ul>
           </div>
@@ -75,7 +114,7 @@ const theme = useTheme();
               target='_blank'
               rel="noopener noreferrer"
               className='socialIcon'
-               
+
             >
               <FaGithub aria-label='GitHub' className="localIcon" />
             </a>
@@ -134,7 +173,7 @@ const theme = useTheme();
 
 
       </Grid>
-       
+
     </div>
   )
 }

@@ -14,13 +14,10 @@ function About() {
                     <p style={{color:theme.palette.text.main}}>{aboutData.description1}<br/><br/>{aboutData.description2}<br/><br/>{aboutData.description3}<br/><br/>{aboutData.description4}</p>
                 </div>
                 <div className="about-img">
-                    <img 
-                        src={aboutData.image}  
-                        alt="" 
-                    />
+
                 </div>
             </div>
-           
+
         </div>
 
     )
