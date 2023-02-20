@@ -43,7 +43,7 @@ export const projectsData = [
 		projectDesc: '\n\n\nWorking the wonders of Vanilla JS here, providing users with a mobile-first, desktop-ready scientific-calculator with the ability to solve high-level Algebraic and Geeomtric problems in 1, 2, or 3 dimensions.\n',
 		tags: ['HTML', 'CSS', 'Javascript', 'Ganja.JS'	],
 		code: 'https://github.com/mathcodes/scientific-calculator',
-		demo: 'https://scientific-calulator.vercel.app/',
+		demo: 'https://scientific-calulator-qov8zx63p-mathcodes.vercel.app/',
 		image: scical,
 		alt: 'html, css, javascript, ganja.js, scientific calculator, mobile-first, desktop-ready, algebraic, geometric, 1, 2, 3 dimensions'
 	},
