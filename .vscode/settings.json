@@ -1,8 +1,12 @@
 {
-  "dotenv.enableAutocloaking": false,
-  "workbench.colorCustomizations": {
-    "activityBar.background": "#182F46",
-    "titleBar.activeBackground": "#224262",
-    "titleBar.activeForeground": "#F8FAFC"
-  }
+	"cSpell.words": [
+		"compat",
+		"craco",
+		"tailwindcss"
+	],
+	"workbench.colorCustomizations": {
+		"activityBar.background": "#0C323C",
+		"titleBar.activeBackground": "#114653",
+		"titleBar.activeForeground": "#F4FBFD"
+	}
 }

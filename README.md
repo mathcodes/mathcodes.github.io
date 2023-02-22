@@ -1,55 +1,91 @@
-# Jon's Portfolio
+# React & TailwindCSS Portfolio - With Dark Mode
 
-[LIVE](https://www.jonchristie.net/) 
+A simple portfolio starter theme built with React and Tailwind CSS. This is the React version of [vuejs-tailwindcss-portfolio](https://github.com/mathcodes/vuejs-tailwindcss-portfolio).
 
-<img src="https://raw.githubusercontent.com/mathcodes/mathcodes.github.io/main/src/assets/img/portfolio_ss_0.png" width="45%"/>
-<br/>
-<img src="https://raw.githubusercontent.com/mathcodes/mathcodes.github.io/main/src/assets/img/portfolio_ss_1.png" width="45%"/>
-<br/>
-<img src="https://raw.githubusercontent.com/mathcodes/mathcodes.github.io/main/src/assets/img/portfolio_ss_2.png" width="45%"/>
-<br/>
-<img src="https://raw.githubusercontent.com/mathcodes/mathcodes.github.io/main/src/assets/img/portfolio_ss_3.png" width="45%"/>
-<br/>
-<img src="https://raw.githubusercontent.com/mathcodes/mathcodes.github.io/main/src/assets/img/portfolio_ss_4.png" width="45%"/>
-<br/>
-<img src="https://raw.githubusercontent.com/mathcodes/mathcodes.github.io/main/src/assets/img/portfolio_ss_5.png" width="45%"/>
-<br/>
+![React-TailwindCSS-Portfolio](https://user-images.githubusercontent.com/16396664/146666086-28e88beb-c2f0-431f-adfb-2396d8f64c80.png)
 
+## Demo URL
 
-![badge](https://img.shields.io/badge/•-material_ui/core.4.12.2-blue) 
-![badge](https://img.shields.io/badge/•-material_ui/icons.4.11.2-blue) 
-![badge](https://img.shields.io/badge/•-testing_library_jest_dom.5.11.4-blue)
-![badge](https://img.shields.io/badge/•-testing_library/react.11.1.0-blue)
-![badge](https://img.shields.io/badge/•-axios.0.21.1-blue)
-![badge](https://img.shields.io/badge/•-gh_pages.3.2.3-blue)
-![badge](https://img.shields.io/badge/•-react.17.0.2-blue)
-![badge](https://img.shields.io/badge/•-react_dom.17.0.2-blue)
-![badge](https://img.shields.io/badge/•-react_fast_marquee.1.2.1-blue)
-![badge](https://img.shields.io/badge/•-react_helmet.6.1.0-blue)
-![badge](https://img.shields.io/badge/•-react_icons.4.2.0-blue) 
-![badge](https://img.shields.io/badge/•-react_reveal.1.2.2-blue) 
-![badge](https://img.shields.io/badge/•-react_router_dom.5.2.0-blue) 
-![badge](https://img.shields.io/badge/•-react_router_hash_link.2.4.3-blue) 
-![badge](https://img.shields.io/badge/•-react_scripts.4.0.3-blue) 
-![badge](https://img.shields.io/badge/•-react_slick.0.28.1-blue) 
-![badge](https://img.shields.io/badge/•-slick_carousel.1.8.1-blue) 
-![badge](https://img.shields.io/badge/•-validator.13.6.0-blue) 
-![badge](https://img.shields.io/badge/•-web_vitals.1.0.1-blue)
+[https://react-tailwindcss-portfolio.netlify.app](https://react-tailwindcss-portfolio.netlify.app)
 
-## Description
-Welcome to my site, updated as of August 2022! I've added some more projects and implemented some more advanced features to the page! Enjoy and please contact me if you have a job opening for a full stack web developer! 
+## Features
 
-## Contact
-<img src="https://avatars0.githubusercontent.com/u/17928947?v=4" alt="Github profile image" width="80px" height="80px" />
+-   [React v18](https://reactjs.org) with [React Router v6](https://reactrouter.com)
+-   [Tailwind CSS v3](https://tailwindcss.com)
+-   Context API For State Management
+-   Custom Hooks
+-   Unit Testing
+-   Framer Motion transitions & animations
+-   Reusable components
+-   Dark mode
+-   Projects filter by category
+-   Projects filter by search
+-   Smooth scroll
+-   Counter
+-   Dynamic forms
+-   Back to top button
+-   Download file button
+-   Simple and responsive design
 
-__Jon Christie__ 
+### To Contribute to this project, read the [Contribution Guidlines](https://github.com/mathcodes/react-tailwindcss-portfolio/blob/main/CONTRIBUTING.md)
 
-GitHub: [mathcodes](https://github.com/mathcodes) 
+## Setup
 
-[<code><img width="36px" src="https://img.icons8.com/color/48/000000/linkedin.png"/></code>](https://www.linkedin.com/jonchristie)       
-[<code><img width="36" src="https://img.icons8.com/color/48/000000/twitter--v2.png"/></code>](https://twitter.com/jcircle9)       
-[<code><img width="36" src="https://img.icons8.com/color/48/000000/youtube-play.png"/></code>](https://www.youtube.com/channel/UC5GFnN-lv8Yuqc9O3b79k6g)       
-[<code><img width="36" src="https://img.icons8.com/color/48/000000/facebook.png"/></code>](https://www.facebook.com/jonpchristie)       
-[<code><img width="36" src="https://img.icons8.com/color/48/000000/instagram-new--v2.png"/></code>](https://www.instagram.com/fullstack11235)       
-[<code><img width="36" src="https://img.icons8.com/color/48/000000/soundcloud.png"/></code>](https://soundcloud.com/jonchristie#/)       
-[<code><img width="36" src="https://img.icons8.com/color/48/000000/spotify--v1.png"/></code>](https://open.spotify.com/artist/07S7aLfxH70VAX64g1WuFw?si=tlOj1OMBRLm-y4sY8Lox3Q)
+1. Make sure you have Node JS installed. If you don't have it:
+
+-   [Download it from nodejs.org](https://nodejs.org)
+-   [Install it using NVM ](https://github.com/nvm-sh/nvm)
+-   If you're on Mac, Homebrew is a good option too:
+
+```
+brew install node
+```
+
+2. Clone the repo:
+
+```
+git clone https://github.com/mathcodes/react-tailwindcss-portfolio.git
+```
+
+3. Open the project folder:
+
+```
+cd react-tailwindcss-portfolio
+```
+
+4. Install packages and dependencies:
+
+```
+yarn
+```
+
+4. NOTE: If you don't have yarn installed, you can install it globally using npm:
+
+```
+npm install --global yarn
+```
+
+5. Start a local dev server at `http://localhost:3000`:
+
+```
+yarn start
+```
+
+6. ##### Run tests:
+
+```
+yarn test
+```
+
+## Notes
+
+-   Always run `yarn install` after pulling new changes
+-   I'll be constantly updating this repo as I'll be adding more sections to it, so please always check the projects section of this repo to see what tasks are under todo and in progress
+-   Coming Soon [I'll be doing a screencast](https://www.youtube.com/mathcodes). Soon I'll be uploading a video to my YouTube channel where I'll be going through the process of creating this portoflio
+-   Illustrations from [unDraw](https://undraw.co) and [Freepik](https://freepik.com)
+-   Images from [Unsplash](https://unsplash.com)
+-   Feel free to use it as your own portfolio
+-   Contributions are welcome
+
+### License
+[MIT](https://github.com/mathcodes/react-tailwindcss-portfolio/blob/main/LICENSE)
