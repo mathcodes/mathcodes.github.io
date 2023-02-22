@@ -9,7 +9,7 @@ export const projectsData = [
 	{
 		id: 1,
 		title: 'Content For Developers',
-		category: 'Open Source',
+		category: 'Open Source Web App',
 		img: cfd,
 		projectDesc: ' \nOpen-source project created and maintained by me with a growing list of almost 20 contributors. A site with education and learning as a top priority. Utilizing the power of open-source contributors to offer the most diverse collection of learning tools for coding.\n',
 		tags: ['React', 'SASS', 'Material UI', 'Open Source'],

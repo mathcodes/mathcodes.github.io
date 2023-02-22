@@ -1,8 +1,8 @@
 const selectOptions = [
-	'Web Application',
-	'Mobile Application',
-	'UI/UX Design',
-	'Branding',
+	'Web App',
+	'Open Source',
+	'Freelance',
+	'Mobile App',
 ];
 
 const ProjectsFilter = ({ setSelectProject }) => {
@@ -11,7 +11,7 @@ const ProjectsFilter = ({ setSelectProject }) => {
 			onChange={(e) => {
 				setSelectProject(e.target.value);
 			}}
-			className="font-general-medium 
+			className="font-general-medium
                 px-4
                 sm:px-6
                 py-2

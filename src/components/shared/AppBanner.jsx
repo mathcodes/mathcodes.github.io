@@ -69,6 +69,7 @@ const AppBanner = () => {
 				className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0"
 			>
 				<img
+					style={{ height: '20rem', margin:	'0 auto' }}
 					src={
 						activeTheme === 'dark' ? developerLight : developerDark
 					}
