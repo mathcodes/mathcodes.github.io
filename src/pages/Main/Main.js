@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { Navbar, Landing,PackageCards, About, Skills, Testimonials, Projects, HorizontalRule, Footer} from '../../components'
+import { Navbar, Landing,PackageCards, About, Skills, Projects, HorizontalRule, Footer} from '../../components'
 import { headerData } from '../../data/headerData'
 
 
@@ -12,16 +12,15 @@ function Main() {
 				<title>{headerData.name} - Portfolio</title>
 			</Helmet>
 			<Navbar />
-			<Landing />								
-			<About />			
+			<Landing />
+			<About />
 			<HorizontalRule />
 			<Skills />
 			<Projects />
 			{/* <PackageCards/> */}
 			{/* <Services /> */}
-			<Testimonials />
 			<Footer />
-		</div> 
+		</div>
 	)
 }
 
