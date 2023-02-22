@@ -736,7 +736,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .bg-indigo-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
+  background-color: rgb(169 44 162 / var(--tw-bg-opacity));
 }
 .bg-gray-600 {
   --tw-bg-opacity: 1;
@@ -988,7 +988,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .hover\:bg-indigo-500:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
+  background-color: rgb(169 44 162 / var(--tw-bg-opacity));
 }
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
@@ -996,7 +996,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .hover\:text-indigo-500:hover {
   --tw-text-opacity: 1;
-  color: rgb(99 102 241 / var(--tw-text-opacity));
+  color: rgb(169 44 162 / var(--tw-text-opacity));
 }
 .hover\:text-primary-dark:hover {
   --tw-text-opacity: 1;
