@@ -65,12 +65,6 @@ const ContactForm = () => {
 						>Send Message</button>
 					</div>
 				</form>
-				<form action="https://formspree.io/f/xaykzqea" method="post">
-					<label for="email">Your Email</label>
-					<input name="Email" id="email" type="email" />
-					<button type="submit">Submit</button>
-				</form>
-
 			</div>
 		</div>
 	);
