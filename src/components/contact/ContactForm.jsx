@@ -1,14 +1,12 @@
-import Button from '../reusable/Button';
+
 import FormInput from '../reusable/FormInput';
 
 const ContactForm = () => {
 	return (
 		<div className="w-full lg:w-1/2">
 			<div className="leading-loose">
-				<form
-					onSubmit={(e) => {
-						e.preventDefault();
-					}}
+				<form action="https://formspree.io/f/xaykzqea"
+					method="post"
 					className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl text-left"
 				>
 					<p className="font-general-medium text-primary-dark dark:text-primary-light text-2xl mb-8">
@@ -60,13 +58,19 @@ const ContactForm = () => {
 					</div>
 
 					<div className="font-general-medium w-40 px-4 py-2.5 text-white text-center font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg mt-6 duration-500">
-						<Button
+						<button
 							title="Send Message"
 							type="submit"
 							aria-label="Send Message"
-						/>
+						>Send Message</button>
 					</div>
 				</form>
+				<form action="https://formspree.io/f/xaykzqea" method="post">
+					<label for="email">Your Email</label>
+					<input name="Email" id="email" type="email" />
+					<button type="submit">Submit</button>
+				</form>
+
 			</div>
 		</div>
 	);
