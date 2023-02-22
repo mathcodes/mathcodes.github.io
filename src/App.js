@@ -297,10 +297,10 @@ export default function ToggleColorMode() {
   theme = createTheme(theme, {
     palette: {
       primary: {
-        main: theme.palette.mode === 'dark' ? '#14213d' : '#14213d',
+        main: theme.palette.mode === 'dark' ? '#fca311' : '#272822',
       },
       secondary: {
-        main: theme.palette.mode === 'dark' ? '#000' : '#e5e5e5',
+        main: theme.palette.mode === 'dark' ? '#272822' : '#fca311',
       },
       success: {
         main: '#fca311',

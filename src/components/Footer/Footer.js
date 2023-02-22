@@ -32,10 +32,10 @@ const Footer = () => {
   return (
     <div className="footer" style={{ color: theme.palette.text.main, backgroundColor: theme.palette.background.paper }}>
       <Grid style={{ display: "block" }}>
-        <Grid container spacing={{ xs: 2, md: 3, lg:4 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+        <Grid container spacing={{ xs: 1, md: 3, lg:4 }} columns={{ xs: 4, sm: 8, md: 12 }}>
 
             <Grid item xs={2} sm={4} md={4}>
-              <Item>
+            <Item style={{ color: theme.palette.text.main, backgroundColor: theme.palette.background.default, padding: '0 5px', margin: '10px 6px'}}>
               <a
                   href={`mailto:${contactsData.email}`}
                   className='personal-details'
@@ -50,27 +50,27 @@ const Footer = () => {
               </Item>
             </Grid>
             <Grid item xs={2} sm={4} md={4}>
-              <Item>
+            <Item style={{ color: theme.palette.text.main, backgroundColor: theme.palette.background.default, padding: '0 5px', margin: '10px 6px'}}>
               <a
                   href={`tel:${contactsData.phone}`}
                   className='personal-details'
                 >
-                  <div className='detailsIcon'>
+                  <div>
                     <FiPhone />
                   </div>
                   <p>
                     {contactsData.phone}
                   </p>
                 </a>
-              </Item>
+              </Item >
             </Grid>
             <Grid item xs={2} sm={4} md={4}>
-              <Item>
+              <Item style={{ color: theme.palette.text.main, backgroundColor: theme.palette.background.default, padding: '0 5px', margin: '10px 6px'}}>
               <a
                   href={`https://www.google.com/maps/place/${contactsData.address}`}
                   className='personal-details'
                 >
-                  <div className='detailsIcon'>
+                  <div>
                     <HiOutlineLocationMarker />
                   </div>
                   <p>
@@ -80,32 +80,10 @@ const Footer = () => {
                 </a>
               </Item>
             </Grid>
-            <Grid item xs={2} sm={4} md={4}>
-              <Item>xs=2</Item>
-            </Grid>
-            <Grid item xs={2} sm={4} md={4}>
-              <Item>xs=2</Item>
-            </Grid>
-            <Grid item xs={2} sm={4} md={4}>
-              <Item>xs=2</Item>
-            </Grid>
+
 
         </Grid>
-        <div className='contact-icons'>
-          <div className='contacts-details'>
-            <ul style={{ padding: 0 }}>
-              <li>
 
-              </li>
-              <li>
-
-              </li>
-              <li>
-
-              </li>
-            </ul>
-          </div>
-        </div>
 
         <div className='socialmedia-icons'>
           {socialsData.github && (
