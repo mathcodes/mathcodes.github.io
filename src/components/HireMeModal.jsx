@@ -7,6 +7,8 @@ const selectOptions = [
 	'Mobile Application',
 	'UI/UX Design',
 	'Branding',
+	'Marketing & SEO',
+	'Tutoring'
 ];
 
 const HireMeModal = ({ onClose, onRequest }) => {
@@ -36,10 +38,9 @@ const HireMeModal = ({ onClose, onRequest }) => {
 							</button>
 						</div>
 						<div className="modal-body p-5 w-full h-full">
-							<form
-								onSubmit={(e) => {
-									e.preventDefault();
-								}}
+						<form action="https://formspree.io/f/xaykzqea"
+						 method="post"
+
 								className="max-w-xl m-4 text-left"
 							>
 								<div className="">
@@ -111,7 +112,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 											focus:ring-1 focus:ring-indigo-900 duration-500"
 										aria-label="Submit Request"
 									>
-										<Button title="Send Request" />
+										<button type="submit" >Send Request</button>
 									</span>
 								</div>
 							</form>

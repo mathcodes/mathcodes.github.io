@@ -3,36 +3,37 @@ import {
 	FiTwitter,
 	FiLinkedin,
 	FiGlobe,
-	FiYoutube,
+	FiYoutube
 } from 'react-icons/fi';
+import { BsMedium } from 'react-icons/bs';
 import AppFooterCopyright from './AppFooterCopyright';
 
 const socialLinks = [
 	{
 		id: 1,
-		icon: <FiGlobe />,
-		url: 'https://www.www.jonchristie.net/',
-	},
-	{
-		id: 2,
 		icon: <FiGithub />,
 		url: 'https://github.com/mathcodes',
 	},
 	{
 		id: 3,
 		icon: <FiTwitter />,
-		url: 'https://twitter.com/mathcodes',
+		url: 'https://twitter.com/jcircle9',
 	},
 	{
 		id: 4,
 		icon: <FiLinkedin />,
-		url: 'https://www.linkedin.com/in/mathcodes',
+		url: 'https://www.linkedin.com/in/jonpchristie',
 	},
 	{
 		id: 5,
 		icon: <FiYoutube />,
-		url: 'https://www.youtube.com/c/mathcodes',
+		url: 'https://www.youtube.com/@TheJonChristie',
 	},
+	{
+		id: 6,
+		icon: <BsMedium />,
+		url: 'https://medium.com/@jcircle9',
+	}
 ];
 
 const AppFooter = () => {
