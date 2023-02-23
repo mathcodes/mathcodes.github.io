@@ -8,9 +8,9 @@ const About = () => {
 	return (
 		<AboutMeProvider>
 			<motion.div
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1, delay: 1 }}
-				exit={{ opacity: 0 }}
+				initial={{ opacity: 0 }} // initial state set to opacity: 0
+				animate={{ opacity: 1, delay: 1 }} // animate state set to opacity: 1
+				exit={{ opacity: 0 }} // exit state set to opacity: 0
 				className="container mx-auto"
 			>
 				<AboutMeBio />

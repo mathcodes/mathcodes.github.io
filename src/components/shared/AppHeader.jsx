@@ -166,7 +166,7 @@ const AppHeader = () => {
 
 				{/* Header right section buttons */}
 				<div className="hidden sm:flex justify-between items-center flex-col md:flex-row">
-					{/* HIRE ME BUTTON - FUTURE DEV */}
+					{/* HIRE ME BUTTON - FUTURE DEVç */}
 					{/* <div className="hidden md:flex">
 						<span
 							onClick={showHireMeModal}
