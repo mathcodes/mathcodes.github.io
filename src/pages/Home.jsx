@@ -3,15 +3,22 @@ import AppBanner from '../components/shared/AppBanner';
 import ProjectsGrid from '../components/projects/ProjectsGrid';
 import { ProjectsProvider } from '../context/ProjectsContext';
 import Button from '../components/reusable/Button';
+// import { AboutMeProvider } from '../context/AboutMeContext';
+// import AboutMe from '../components/about/AboutMe';
+import ServicesGallery from '../components/services/ServicesGallery';
 
 const Home = () => {
 	return (
 		<div className="container mx-auto">
 			<AppBanner></AppBanner>
-
+			{/* <AboutMeProvider>
+				<AboutMe/>
+			</AboutMeProvider> */}
 			<ProjectsProvider>
 				<ProjectsGrid></ProjectsGrid>
 			</ProjectsProvider>
+			{/* <ServicesGallery /> */}
+
 
 			<div className="mt-8 sm:mt-10 flex justify-center">
 				<Link
