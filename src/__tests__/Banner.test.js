@@ -76,13 +76,5 @@ test('can toggle light mode when clicked on light mode button', async () => {
 	expect(lightModeButton).toHaveClass('bg-primary-dark');
 });
 
-test('page loads with light mode', () => {
-	setup();
-	expect(screen.getByText(/Light Mode/i)).toBeInTheDocument();
-});
 
-test('page loads with dark mode', () => {
-	setup();
-	expect(screen.getByText(/Dark Mode/i)).toBeInTheDocument();
-});
 

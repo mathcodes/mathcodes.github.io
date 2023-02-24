@@ -594,6 +594,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-7 {
   height: 1.75rem;
 }
+.h-10 {
+  height: 2.5rem;
+}
+.h-12 {
+  height: 3rem;
+}
+.h-16 {
+  height: 4rem;
+}
+.h-20 {
+  height: 5rem;
+}
 .max-h-screen {
   max-height: 100vh;
 }
@@ -617,6 +629,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-7 {
   width: 1.75rem;
+}
+.w-10 {
+  width: 2.5rem;
+}
+.w-12 {
+  width: 3rem;
+}
+.w-16 {
+  width: 4rem;
+}
+.w-20 {
+  width: 5rem;
 }
 .w-24 {
   width: 6rem;
@@ -723,6 +747,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-border-opacity: 1;
   border-color: rgb(199 210 254 / var(--tw-border-opacity));
 }
+
+.border-pink-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(169 44 162  / var(--tw-border-opacity));
+}
+
 .border-opacity-50 {
   --tw-border-opacity: 0.5;
 }
@@ -986,6 +1016,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(30 56 81 / var(--tw-bg-opacity));
 }
+.hover\:bg-secondary-dark:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 45 68 / var(--tw-bg-opacity));
+}
+.hover\:bg-primary-light:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 248 252 / var(--tw-bg-opacity));
+}
 .hover\:bg-indigo-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(169 44 162 / var(--tw-bg-opacity));
@@ -1055,6 +1093,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-border-opacity: 1;
   border-color: rgb(13 36 56 / var(--tw-border-opacity));
 }
+.dark .dark\:border-pink-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 65 108 / var(--tw-border-opacity));
+}
+.dark .dark\:border-gray-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
 .dark .dark\:bg-primary-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(13 36 56 / var(--tw-bg-opacity));
@@ -1062,6 +1108,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .dark .dark\:bg-ternary-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(30 56 81 / var(--tw-bg-opacity));
+}
+.dark .dark\:bg-pink-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 65 108 / var(--tw-bg-opacity));
 }
 .dark .dark\:bg-gray-200 {
   --tw-bg-opacity: 1;
@@ -1271,6 +1321,22 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .sm\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -1420,6 +1486,28 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+
 }
 @media (min-width: 1024px) {
 
@@ -1438,6 +1526,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+
 
   .lg\:flex-row {
     flex-direction: row;

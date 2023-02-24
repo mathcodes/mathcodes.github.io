@@ -5,7 +5,7 @@ import { ProjectsProvider } from '../context/ProjectsContext';
 import Button from '../components/reusable/Button';
 // import { AboutMeProvider } from '../context/AboutMeContext';
 // import AboutMe from '../components/about/AboutMe';
-import ServicesGallery from '../components/services/ServicesGallery';
+import Skills from '../components/skills/Skills';
 
 const Home = () => {
 	return (
@@ -17,7 +17,7 @@ const Home = () => {
 			<ProjectsProvider>
 				<ProjectsGrid></ProjectsGrid>
 			</ProjectsProvider>
-			{/* <ServicesGallery /> */}
+			<Skills />
 
 
 			<div className="mt-8 sm:mt-10 flex justify-center">
