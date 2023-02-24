@@ -6,15 +6,21 @@ const AboutMeBio = () => {
 	const { aboutMe } = useContext(AboutMeContext);
 
 	return (
-		<div className="block sm:flex sm:gap-10 mt-10 sm:mt-20">
+		<section className="py-5 mt-5 sm:py-10 sm:mt-10">
+		<div id="projects" className="text-center">
+			<p className="mb-1 text-2xl font-general-medium sm:text-4xl text-ternary-dark dark:text-ternary-light">
+				About
+			</p>
+		</div>
+		<div className="block mt-4 sm:flex sm:gap-10 sm:mt-6">
 			<div className="w-full sm:w-1/4 mb-7 sm:mb-0">
-				<img src={profileImage} className="rounded-lg w-96" alt="" />
+				<img src={profileImage} className="w-64 rounded-lg" alt="" />
 			</div>
 
-			<div className="font-general-regular w-full sm:w-3/4 text-left">
+			<div className="w-full text-left font-general-regular sm:w-3/4">
 				{aboutMe.map((bio) => (
 					<p
-						className="mb-4 text-ternary-dark dark:text-ternary-light text-lg"
+						className="mb-4 text-lg text-ternary-dark dark:text-ternary-light"
 						key={bio.id}
 					>
 						{bio.bio}
@@ -22,6 +28,7 @@ const AboutMeBio = () => {
 				))}
 			</div>
 		</div>
+	</section>
 	);
 };
 

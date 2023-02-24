@@ -57,18 +57,18 @@ export const logos = [
 export default function Skills() {
 
   return (
-    <section className="py-5 sm:py-10 mt-5 sm:mt-10">
+    <section className="py-5 mt-5 sm:py-10 sm:mt-10">
       <div id="projects" className="text-center">
-        <p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
+        <p className="mb-1 text-2xl font-general-medium sm:text-4xl text-ternary-dark dark:text-ternary-light selection:bg-ternary-dark">
           Skills
         </p>
       </div>
       <div className="container mx-auto">
-        <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 mt-6 sm:gap-10">
+        <ul className="grid grid-cols-1 mt-6 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 sm:gap-10">
           {logos.map((logo) => (
-            <li key={logo} className="flex justify-center rounded-lg border border-pink-500 dark:border-white bg-primary-light dark:bg-ternary-dark shadow-black shadow hover:bg-secondary-dark">
-              <div className="rounded-lg border-2 hover:border-3 bg-pink-500 p-4 flex items-center justify-center text-gray-500 text-sm ">
-                <img src={logo} alt="logo" className="w-20 h-20 "/>
+            <li key={logo} className="flex justify-center border border-2 border-pink-500 rounded-lg shadow-lg hover:border-40 dark:border-white bg-primary-light dark:bg-ternary-dark shadow-black hover:bg-secondary-dark">
+              <div className="flex items-center justify-center p-4 text-sm text-gray-500 bg-indigo-200 border-2 rounded-lg ">
+                <img src={logo} alt="logo" className="h-20 "/>
               </div>
             </li>
           ))}

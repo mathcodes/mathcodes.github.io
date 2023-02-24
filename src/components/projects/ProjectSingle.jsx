@@ -41,10 +41,10 @@ const ProjectSingle = ({ title, category, image, code, demo, tags }) => {
 					)}
 				</div>
 				<div className="grid justify-around mb-4">
-					<button className="px-4 py-2 m-4 text-sm bg-indigo-500 rounded-lg text-primary-light dark:text-ternary-light font-general-medium hover:bg-indigo-700 dark:hover:bg-ternary-dark hover:text-secondary-light dark:hover:text-secondary-dark">
+					<button className="px-4 py-2 m-4 text-sm bg-pink-500 border border-pink-500 rounded-lg border-3 text-primary-light hover:bg-secondary-dark dark:text-ternary-light font-general-medium hover:bg-indigo-700 dark:hover:bg-ternary-dark hover:text-secondary-light dark:hover:text-secondary-dark">
 						<a href={demo}>Demo</a>
 					</button>
-					<button className="px-4 py-2 m-4 text-sm bg-indigo-500 rounded-lg text-primary-light dark:text-ternary-light font-general-medium hover:bg-indigo-700 dark:hover:bg-ternary-dark hover:text-secondary-light dark:hover:text-secondary-light">
+					<button className="px-4 py-2 m-4 text-sm bg-pink-500 border border-pink-500 rounded-lg border-3 text-primary-light hover:bg-secondary-dark dark:text-ternary-light font-general-medium hover:bg-indigo-700 dark:hover:bg-ternary-dark hover:text-secondary-light dark:hover:text-secondary-dark">
 						<a href={code}>Code</a>
 					</button>
 				</div>
