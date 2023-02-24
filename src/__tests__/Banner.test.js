@@ -43,3 +43,46 @@ test('can download cv when clicked on download cv button', async () => {
 	// expect(downloadLink.href).toEqual('/files/Jon-Resume.pdf');
 	// expect(downloadLink.click).toHaveBeenCalledTimes(1);
 });
+
+test('can toggle dark mode when clicked on dark mode button', async () => {
+	const { user } = setupUserEvent(<AppBanner />);
+
+	const darkMode = screen.getByText(/Dark Mode/i);
+
+	expect(darkMode).toBeInTheDocument();
+
+	const darkModeButton = darkMode.parentElement.parentElement;
+
+	expect(darkModeButton).toBeInTheDocument();
+
+	await user.click(darkModeButton);
+
+	expect(darkModeButton).toHaveClass('bg-primary-light');
+});
+
+test('can toggle light mode when clicked on light mode button', async () => {
+	const { user } = setupUserEvent(<AppBanner />);
+
+	const lightMode = screen.getByText(/Light Mode/i);
+
+	expect(lightMode).toBeInTheDocument();
+
+	const lightModeButton = lightMode.parentElement.parentElement;
+
+	expect(lightModeButton).toBeInTheDocument();
+
+	await user.click(lightModeButton);
+
+	expect(lightModeButton).toHaveClass('bg-primary-dark');
+});
+
+test('page loads with light mode', () => {
+	setup();
+	expect(screen.getByText(/Light Mode/i)).toBeInTheDocument();
+});
+
+test('page loads with dark mode', () => {
+	setup();
+	expect(screen.getByText(/Dark Mode/i)).toBeInTheDocument();
+});
+
