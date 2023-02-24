@@ -4,6 +4,7 @@
 	"private": true,
 	"dependencies": {
 		"@heroicons/react": "^2.0.16",
+
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^13.4.0",
 		"@testing-library/user-event": "^14.4.3",
@@ -45,10 +46,12 @@
 		]
 	},
 	"devDependencies": {
+		"@tailwindcss/jit": "^0.1.18",
 		"@tailwindcss/forms": "^0.5.2",
 		"@testing-library/dom": "^8.20.0",
 		"autoprefixer": "^10.4.7",
 		"postcss": "^8.4.21",
-		"tailwindcss": "^3.0.24"
+		"tailwindcss": "^3.0.24",
+		"tailwindcss-debug-screens": "^2.2.1"
 	}
 }

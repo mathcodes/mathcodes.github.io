@@ -34,7 +34,7 @@ export const projectsData = [
 		title: 'Numbers Game',
 		category: 'Mobile App',
 		projectDesc: '\n\n\nReact-Native game built with Expo uses state, logic, and handler functions to provide the computer with the ability to find the answer and call you out if your cheating. \n',
-		tags: ['React', 'React Native', 'Expo', 'State', 'expo-status-bar'],
+		tags: ['React', 'React Native', 'Expo', 'State'],
 		code: 'https://github.com/mathcodes/react-native-apps/tree/main/SAMPLE%20APPS/rn-numbers/numbers',
 		demo: '',
 		img: rnGuess,

@@ -1,9 +1,22 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-	content: ['./src/**/*.{js,jsx,ts,tsx}'],
+	mode: 'jit',
+	purge: [
+		'./public/**/*.html',
+		'./src/**/*.{js,jsx,ts,tsx,vue}',
+	],
+	content: ['./src/**/*.{js,jsx,ts,tsx}', './public/**/*.html'],
 	darkMode: 'class',
 	theme: {
+		debugScreens: {
+      selector: '.debug-screens',
+			style: {
+        backgroundColor: '#C0FFEE',
+        color: 'black',
+      },
+			position: ['bottom', 'left'],
+    },
 		extend: {
 			colors: {
 				'primary-light': '#F7F8FC',
@@ -37,5 +50,9 @@ module.exports = {
 	variants: {
 		extend: { opacity: ['disabled'] },
 	},
-	plugins: ['@tailwindcss/forms'],
+	plugins: [
+		require('@tailwindcss/forms'),
+		require('tailwindcss-debug-screens'),
+		require('@tailwindcss/jit'),
+	],
 };

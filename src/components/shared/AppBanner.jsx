@@ -66,15 +66,19 @@ const AppBanner = () => {
 				initial={{ opacity: 0, y: -180 }}
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
-				className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0"
+				className=" sm:w-2/3 text-right float-right mt-8 sm:mt-0 relative"
+
 			>
+				<div style={{ position: 'absolute', top: 0, right: 0}} className="absolute bottom-0 right-0">
 				<img
-					style={{ height: '20rem', margin:	'0 auto' }}
+				className=""
+					style={{ height: '20rem', margin:	'0 auto'}}
 					src={
 						activeTheme === 'dark' ? developerLight : developerDark
 					}
 					alt="Developer"
 				/>
+				</div>
 			</motion.div>
 		</motion.section>
 	);

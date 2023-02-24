@@ -16,7 +16,7 @@ const Projects = lazy(() => import('./pages/Projects'));
 function App() {
 	return (
 		<AnimatePresence>
-			<div className=" bg-secondary-light dark:bg-primary-dark transition duration-300">
+			<div className=" duration-300  bg-secondary-light dark:bg-primary-dark transition">
 				<Router>
 					<ScrollToTop />
 					<AppHeader />
@@ -24,8 +24,6 @@ function App() {
 						<Routes>
 							<Route path="/" element={<Home />} />
 							<Route path="projects" element={<Projects />} />
-
-
 							<Route path="about" element={<About />} />
 							<Route path="contact" element={<Contact />} />
 						</Routes>
