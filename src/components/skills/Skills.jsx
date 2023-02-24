@@ -64,10 +64,10 @@ export default function Skills() {
         </p>
       </div>
       <div className="container mx-auto">
-        <ul className="grid grid-cols-1 mt-6 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 sm:gap-10">
+        <ul className="grid grid-cols-2 gap-5 mt-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 sm:gap-10">
           {logos.map((logo) => (
             <li key={logo} className="flex justify-center border border-2 border-pink-500 rounded-lg shadow-lg hover:border-40 dark:border-white bg-primary-light dark:bg-ternary-dark shadow-black hover:bg-secondary-dark">
-              <div className="flex items-center justify-center p-4 text-sm text-gray-500 bg-indigo-200 border-2 rounded-lg ">
+              <div className="flex items-center justify-center p-4 text-sm text-gray-500 bg-indigo-200 rounded-lg ">
                 <img src={logo} alt="logo" className="h-20 "/>
               </div>
             </li>

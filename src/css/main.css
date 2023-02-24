@@ -767,8 +767,112 @@ Ensure the default browser behavior of the `hidden` attribute.
 .justify-between {
   justify-content: space-between;
 }
+/* setup gradients */
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+.bg-gradient-to-l {
+  background-image: linear-gradient(to left, var(--tw-gradient-stops));
+}
+.bg-gradient-to-t {
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+.bg-gradient-to-tr {
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+.bg-gradient-to-tl {
+  background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+}
+.bg-gradient-to-bl {
+  background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
+}
+.bg-gradient-to-r-from-blue-500 {
+  --tw-gradient-from: #3b82f6;
+  --tw-gradient-to: #6366f1;
+}
+.bg-gradient-to-r-from-blue-600 {
+  --tw-gradient-from: #2563eb;
+  --tw-gradient-to: #4f46e5;
+}
+.bg-gradient-to-r-from-blue-700 {
+  --tw-gradient-from: #1d4ed8;
+  --tw-gradient-to: #4338ca;
+}
+.bg-gradient-to-r-from-blue-800 {
+  --tw-gradient-from: #1e40af;
+  --tw-gradient-to: #3730a3;
+}
+.bg-gradient-to-r-from-blue-900 {
+  --tw-gradient-from: #1e3a8a;
+  --tw-gradient-to: #312e81;
+}
+.bg-gradient-to-r-from-gray-100 {
+  --tw-gradient-from: #f3f4f6;
+  --tw-gradient-to: #e5e7eb;
+}
+.bg-gradient-to-r-from-gray-200 {
+  --tw-gradient-from: #e5e7eb;
+  --tw-gradient-to: #d1d5db;
+}
+.bg-gradient-to-r-from-gray-300 {
+  --tw-gradient-from: #d1d5db;
+  --tw-gradient-to: #9ca3af;
+}
+.bg-gradient-to-r-from-gray-400 {
+  --tw-gradient-from: #9ca3af;
+  --tw-gradient-to: #6b7280;
+}
+.bg-gradient-to-r-from-gray-500 {
+  --tw-gradient-from: #6b7280;
+  --tw-gradient-to: #4b5563;
+}
+.bg-gradient-to-r-from-gray-600 {
+  --tw-gradient-from: #4b5563;
+  --tw-gradient-to: #374151;
+}
+.bg-gradient-to-r-from-fuschia-500 {
+  --tw-gradient-from: #ec4899;
+  --tw-gradient-to: #db2777;
+}
+.bg-gradient-to-r-from-fuschia-600 {
+  --tw-gradient-from: #d946ef;
+  --tw-gradient-to: #b832d9;
+}
+.bg-gradient-to-r-from-fuschia-700 {
+  --tw-gradient-from: #c026d3;
+  --tw-gradient-to: #a21caf;
+}
+
+.from-ternary-dark {
+  --tw-gradient-from: #1e3a8a;
+  --tw-gradient-to: #312e81;
+}
+
+.to-ternary-light {
+  --tw-gradient-from: #6366f1;
+  --tw-gradient-to: #3b82f6;
+}
+
 .gap-10 {
   gap: 2.5rem;
+}
+.gap-8 {
+  gap: 2rem;
+}
+.gap-6 {
+  gap: 1.5rem;
+}
+.gap-5 {
+  gap: 1.25rem;
+}
+.gap-1 {
+  gap: 0.25rem;
 }
 .gap-2 {
   gap: 0.5rem;
