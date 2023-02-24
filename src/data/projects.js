@@ -12,7 +12,7 @@ export const projectsData = [
 		category: 'Open Source Web App',
 		img: cfd,
 		projectDesc: ' \nOpen-source project created and maintained by me with a growing list of almost 20 contributors. A site with education and learning as a top priority. Utilizing the power of open-source contributors to offer the most diverse collection of learning tools for coding.\n',
-		tags: ['React', 'SASS', 'Material UI', 'Open Source'],
+		tags: ['React', 'TailwindCSS', 'MUI', 'Open Source'],
 		code: 'https://github.com/mathcodes/contentfordevelopers/',
 		demo: 'https://www.contentfordevelopers.com/',
 		alt: 'react, sass, material ui, open source, content for developers, education, learning, coding, programming'
@@ -23,7 +23,7 @@ export const projectsData = [
 		title: 'Gladis & Co',
 		category: 'Freelance',
 		projectDesc: '\n\n\nFreelance gig to fix issues with website in wordpress. Used advanced Javascript methods and CSS selectors that could find a needle in a haystack to override the entire site.\n',
-		tags: ['WordPress', 'JS', 'CSS', 'SSR'],
+		tags: ['WordPress', 'JavaScript', 'CSS', 'HTML'],
 		code: 'https://www.gladisandco.com',
 		demo: 'https://www.gladisandco.com',
 		img: gnco,
@@ -44,7 +44,7 @@ export const projectsData = [
 		title: 'TypeScript-To-Do',
 		category: 'Web App',
 		projectDesc: '\n\n\nThis is an advanced to-do list using TypeScript and React. Users have the ability to filter, create, delete, edit and update their notes. Fully responsive and written with clean, easy to understand code!\n',
-		tags: ['TypeScript', 'React', 'Bootstrap', 'vite'],
+		tags: ['TypeScript', 'React', 'Bootstrap', 'CRUD'],
 		code: 'https://github.com/mathcodes/typescript-tags-todo/',
 		demo: 'https://typescript-tags-todo.vercel.app/',
 		img: tstodo,
@@ -59,7 +59,7 @@ export const projectsData = [
 		code: 'https://github.com/mathcodes/react-native-apps/tree/main/SAMPLE%20APPS/rn-calculator',
 		demo: '',
 		img: rnCalc,
-		alt: 'react native, react, expo, typescript, calculator, dark mode'
+		alt: 'React Native, React, Expo, TypeScript, calculator, dark mode'
 	},
 	{
 		id: 6,

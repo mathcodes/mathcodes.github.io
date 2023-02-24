@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-const ProjectSingle = ({ title, category, image, code, demo }) => {
+const ProjectSingle = ({ title, category, image, code, demo, tags }) => {
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -26,6 +26,19 @@ const ProjectSingle = ({ title, category, image, code, demo }) => {
 					<span className="text-lg text-ternary-dark dark:text-ternary-light">
 						{category}
 					</span>
+				</div>
+				<div className="flex flex-wrap px-4">
+					{tags.map((tag) => {
+						return (
+							<div className="m-2 px-1 border-pink-500 bg-primary-light dark:bg-ternary-light shadow-sm rounded-md cursor-pointer"
+								key={tag}
+							>
+								{tag}
+
+							</div>
+						);
+					}
+					)}
 				</div>
 				<div className="grid justify-around  mb-4">
 					<button className="bg-indigo-500 text-primary-light dark:text-ternary-light font-general-medium text-sm m-4 px-4 py-2 rounded-lg  hover:bg-indigo-700 dark:hover:bg-ternary-dark hover:text-secondary-light dark:hover:text-secondary-dark">

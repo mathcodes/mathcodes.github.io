@@ -26,7 +26,7 @@ import flask from '../../images/skills/flask.svg';
 import python from '../../images/skills/python.svg';
 
 
-const logos = [
+export const logos = [
   html,
   css,
   typescript,
