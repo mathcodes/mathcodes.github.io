@@ -1,4 +1,4 @@
-import React, { useContext }  from 'react'
+import React, { useContext } from 'react'
 import { Button } from '@material-ui/core';
 import './Landing.css';
 // import { theme } from '../../theme/theme';
@@ -14,6 +14,8 @@ import {
 } from 'react-icons/fa';
 import { SiReplit } from 'react-icons/si';
 import { useTheme } from '@mui/material/styles';
+import { aboutData } from '../../data/aboutData'
+
 
 function Landing() {
 	const { drawerOpen } = useContext(ThemeContext);
@@ -197,7 +199,7 @@ function Landing() {
 						</div>
 
 						<br />
-						<p>{headerData.description}</p>
+						<p style={{ color: theme.palette.text.main }}>{aboutData.description1}<br /><br />{aboutData.description2}<br /><br />{aboutData.description3}<br /><br />{aboutData.description4}</p>
 						<div className=' lcr-buttonContainer'>
 							<a
 								href={headerData.resumePdf}
@@ -214,16 +216,16 @@ function Landing() {
 										display: 'flex',
 										alignItems: 'center',
 										justifyContent: 'center',
-										
+
 									}} variant="contained">
-									<a style={{ backgroundColor: 'none',  }} href={headerData.resumePdf}>
+									<a style={{ backgroundColor: 'none', }} href={headerData.resumePdf}>
 										<h2>RESUME</h2></a>
 								</Button>
 							</a>
 							<Button
 								style={{
 									backgroundColor: theme.palette.primary.main,
-									color: theme.palette.primary.main,
+									color: theme.palette.background.default,
 									width: '8rem',
 									display: 'flex',
 									alignItems: 'center',
