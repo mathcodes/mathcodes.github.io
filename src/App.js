@@ -11,12 +11,13 @@ const About = lazy(() => import('./pages/AboutMe'));
 const Contact = lazy(() => import('./pages/Contact.jsx'));
 const Home = lazy(() => import('./pages/Home'));
 const Projects = lazy(() => import('./pages/Projects'));
+const Blogs = lazy(() => import('./pages/Blogs'));
 
 
 function App() {
 	return (
 		<AnimatePresence>
-			<div className=" duration-300  bg-secondary-light dark:bg-primary-dark transition">
+			<div className="transition duration-300 bg-secondary-light dark:bg-primary-dark">
 				<Router>
 					<ScrollToTop />
 					<AppHeader />
@@ -25,6 +26,7 @@ function App() {
 							<Route path="/" element={<Home />} />
 							<Route path="projects" element={<Projects />} />
 							<Route path="about" element={<About />} />
+							<Route path="blogs" element={<Blogs />} />
 							<Route path="contact" element={<Contact />} />
 						</Routes>
 					</Suspense>

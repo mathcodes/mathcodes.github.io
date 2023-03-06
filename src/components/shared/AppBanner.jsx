@@ -39,6 +39,7 @@ const AppBanner = () => {
 				>
 					Full-Stack Developer & Educator
 				</motion.p>
+				<div className="animate-bounce">
 				<motion.div
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
@@ -47,7 +48,7 @@ const AppBanner = () => {
 						duration: 0.9,
 						delay: 0.3,
 					}}
-					className="flex justify-center sm:block"
+					className="flex justify-center sm:block "
 				>
 					<a
 						download="Christie-Resume.pdf"
@@ -61,6 +62,7 @@ const AppBanner = () => {
 						</span>
 					</a>
 				</motion.div>
+				</div>
 			</div>
 			<motion.div
 				initial={{ opacity: 0, y: -180 }}

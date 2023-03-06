@@ -50,5 +50,6 @@ module.exports = {
 		require('@tailwindcss/forms'),
 		require('tailwindcss-debug-screens'),
 		require('@tailwindcss/jit'),
+		require('@tailwindcss/animations'),
 	],
 };

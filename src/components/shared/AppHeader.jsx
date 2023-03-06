@@ -122,6 +122,13 @@ const AppHeader = () => {
 						About Me
 					</Link>
 					<Link
+						to="/blogs"
+						className="block p-3 mb-2 text-lg text-left border-2 border-pink-500 rounded-md shadow-lg hover:bg-pink-500 text-primary-dark dark:text-ternary-light hover:text-secondary-dark sm:mx-4 sm:py-2 sm:pt-2 "
+						aria-label="About Me"
+					>
+						Blogs
+					</Link>
+					<Link
 						to="/contact"
 						className="block p-3 mb-2 text-lg text-left border-2 border-pink-500 rounded-md shadow-lg hover:bg-pink-500 text-primary-dark dark:text-ternary-light hover:text-secondary-dark sm:mx-4 sm:py-2 sm:pt-2 "
 						aria-label="Contact"
@@ -146,6 +153,13 @@ const AppHeader = () => {
 						aria-label="About Me"
 					>
 						About Me
+					</Link>
+					<Link
+						to="/blogs"
+						className="block mb-2 text-lg text-left text-primary-dark dark:text-ternary-light hover:text-pink-500 sm:mx-4 sm:py-2"
+						aria-label="About Me"
+					>
+						Blogs
 					</Link>
 					<Link
 						to="/contact"
