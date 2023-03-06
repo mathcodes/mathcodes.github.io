@@ -15,7 +15,7 @@ Revised portfolio for 2023. Built with React, Tailwind CSS, and Framer Motion.
 
 # Demo
 
-[Live Demo](https://jonchristie.netlify.app/)
+[Live Demo](https://jonchristie.net)
 
 # Features
 
