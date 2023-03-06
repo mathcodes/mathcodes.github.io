@@ -1,14 +1,13 @@
-import { ServicesProvider } from '../context/ServicesContext';
-import ServiceGallery from '../components/services/ServiceGallery';
+import React from "react";
+import Pricing from "../components/pricing/Pricing";
+import ServicesComponent from "../components/pricing/ServicesComponent";
 
 const Services = () => {
-	return (
-		<ServicesProvider>
-			<div className="container mx-auto">
-				<ServiceGallery />
-			</div>
-		</ServicesProvider>
-	);
-};
+    return (
+<>
+			<ServicesComponent />
+            <Pricing />
+						</>
+)}
 
-export default Services;
+export default Services

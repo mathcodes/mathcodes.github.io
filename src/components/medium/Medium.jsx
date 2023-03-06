@@ -75,8 +75,12 @@ function Medium() {
   },)
 
   return (<>
-    <div id="blogs">
-      <h1 className="container mx-auto mb-20 text-4xl font-bold text-center text-zinc-800">Medium Blogs</h1>
+    <section className="py-5 mt-5 sm:py-10 sm:mt-10">
+			<div id="projects" className="text-center">
+				<p className="mb-1 text-2xl font-general-medium sm:text-4xl text-ternary-dark dark:text-ternary-light">
+					Blogs
+				</p>
+			</div>
 
       <Container className="grid grid-cols-1 mx-auto text-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 rounde d border-1 d-flex bg-zinc-400 justify-content-center">
         {myBlogs.map(blog => {
@@ -119,7 +123,8 @@ function Medium() {
         })}
       </Container>
 
-    </div>
+  </section>
+
   </>)
 }
 

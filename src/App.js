@@ -12,6 +12,7 @@ const Contact = lazy(() => import('./pages/Contact.jsx'));
 const Home = lazy(() => import('./pages/Home'));
 const Projects = lazy(() => import('./pages/Projects'));
 const Blogs = lazy(() => import('./pages/Blogs'));
+const Services = lazy(() => import('./pages/Services'));
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
 							<Route path="about" element={<About />} />
 							<Route path="blogs" element={<Blogs />} />
 							<Route path="contact" element={<Contact />} />
+							<Route path="services" element={<Services />} />
 						</Routes>
 					</Suspense>
 					<AppFooter />

@@ -9,6 +9,7 @@
 		"@testing-library/user-event": "^14.4.3",
 		"dotenv": "^16.0.3",
 		"framer-motion": "4.1.17",
+		"jspdf": "^2.5.1",
 		"postcss-cli": "^10.1.0",
 		"react": "^18.1.0",
 		"react-bootstrap": "^2.7.2",
