@@ -1062,9 +1062,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(199 210 254 / var(--tw-border-opacity));
 }
 
-.border-pink-500 {
+.border-orange-500 {
   --tw-border-opacity: 1;
-  border-color: rgb(169 44 162  / var(--tw-border-opacity));
+  border-color: rgb(236 137 54  / var(--tw-border-opacity));
 }
 
 .border-opacity-50 {
@@ -1078,13 +1078,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
-.bg-pink-500 {
+.bg-orange-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(169 44 162 / var(--tw-bg-opacity));
+  background-color: rgb(236 137 54 / var(--tw-bg-opacity));
 }
-.bg-pink-600 {
+.bg-orange-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(169 44 162 / var(--tw-bg-opacity));
+  background-color: rgb(236 137 54 / var(--tw-bg-opacity));
 }
 .bg-gray-600 {
   --tw-bg-opacity: 1;
@@ -1401,7 +1401,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .hover\:bg-indigo-500:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(169 44 162 / var(--tw-bg-opacity));
+  background-color: rgb(236 137 54 / var(--tw-bg-opacity));
 }
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
@@ -1436,17 +1436,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hover\:text-indigo-500:hover {
   --tw-text-opacity: 1;
-  color: rgb(169 44 162 / var(--tw-text-opacity));
+  color: rgb(236 137 54 / var(--tw-text-opacity));
 }
 .hover\:text-primary-dark:hover {
   --tw-text-opacity: 1;
   color: rgb(13 36 56 / var(--tw-text-opacity));
 }
-.hover\:text-pink-500:hover {
+.hover\:text-orange-500:hover {
   --tw-text-opacity: 1;
   color: rgb(169, 44, 162/ var(--tw-text-opacity));
 }
-.hover\:bg-pink-500:hover {
+.hover\:bg-orange-500:hover {
   --tw-text-opacity: 1;
   color: rgb(169, 44, 162/ var(--tw-text-opacity));
 }
@@ -1505,7 +1505,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-border-opacity: 1;
   border-color: rgb(13 36 56 / var(--tw-border-opacity));
 }
-.dark .dark\:border-pink-500 {
+.dark .dark\:border-orange-500 {
   --tw-border-opacity: 1;
   border-color: rgb(255 65 108 / var(--tw-border-opacity));
 }
@@ -1521,11 +1521,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(30 56 81 / var(--tw-bg-opacity));
 }
-.dark .dark\:bg-pink-500{
+.dark .dark\:bg-orange-500{
   --tw-bg-opacity: 1;
   background-color: rgb(255 65 108 / var(--tw-bg-opacity));
 }
-.dark .dark\:bg-pink-600 {
+.dark .dark\:bg-orange-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(255 65 108 / var(--tw-bg-opacity));
 }

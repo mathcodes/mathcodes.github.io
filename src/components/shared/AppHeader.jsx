@@ -109,28 +109,28 @@ const AppHeader = () => {
 				>
 					<Link
 						to="/projects"
-						className="block p-3 mb-2 text-lg text-left border-2 border-pink-500 rounded-md shadow-lg hover:bg-pink-500 text-primary-dark dark:text-ternary-light hover:text-secondary-dark sm:mx-4 sm:py-2"
+						className="block p-3 mb-2 text-lg text-left border-2 border-orange-500 rounded-md shadow-lg hover:bg-orange-500 text-primary-dark dark:text-ternary-light hover:text-secondary-dark sm:mx-4 sm:py-2"
 						aria-label="Projects"
 					>
 						Projects
 					</Link>
 					<Link
 						to="/about"
-						className="block p-3 mb-2 text-lg text-left border-2 border-pink-500 rounded-md shadow-lg hover:bg-pink-500 text-primary-dark dark:text-ternary-light hover:text-secondary-dark sm:mx-4 sm:py-2 sm:pt-2 "
+						className="block p-3 mb-2 text-lg text-left border-2 border-orange-500 rounded-md shadow-lg hover:bg-orange-500 text-primary-dark dark:text-ternary-light hover:text-secondary-dark sm:mx-4 sm:py-2 sm:pt-2 "
 						aria-label="About Me"
 					>
 						About Me
 					</Link>
 					<Link
 						to="/blogs"
-						className="block p-3 mb-2 text-lg text-left border-2 border-pink-500 rounded-md shadow-lg hover:bg-pink-500 text-primary-dark dark:text-ternary-light hover:text-secondary-dark sm:mx-4 sm:py-2 sm:pt-2 "
+						className="block p-3 mb-2 text-lg text-left border-2 border-orange-500 rounded-md shadow-lg hover:bg-orange-500 text-primary-dark dark:text-ternary-light hover:text-secondary-dark sm:mx-4 sm:py-2 sm:pt-2 "
 						aria-label="About Me"
 					>
 						Blogs
 					</Link>
 					<Link
 						to="/contact"
-						className="block p-3 mb-2 text-lg text-left border-2 border-pink-500 rounded-md shadow-lg hover:bg-pink-500 text-primary-dark dark:text-ternary-light hover:text-secondary-dark sm:mx-4 sm:py-2 sm:pt-2 "
+						className="block p-3 mb-2 text-lg text-left border-2 border-orange-500 rounded-md shadow-lg hover:bg-orange-500 text-primary-dark dark:text-ternary-light hover:text-secondary-dark sm:mx-4 sm:py-2 sm:pt-2 "
 						aria-label="Contact"
 					>
 						Contact
@@ -139,31 +139,31 @@ const AppHeader = () => {
 				</div>
 
 				{/* Header links large screen */}
-				<div className="items-center justify-center hidden p-5 m-0 mt-5 shadow-lg font-general-medium sm:ml-4 sm:mt-3 sm:flex sm:p-0 sm:shadow-none hover:bg-pink-500">
+				<div className="items-center justify-center hidden p-5 m-0 mt-5 shadow-lg font-general-medium sm:ml-4 sm:mt-3 sm:flex sm:p-0 sm:shadow-none hover:bg-orange-500">
 					<Link
 						to="/projects"
-						className="block mb-2 text-lg text-left text-pink-500 dark:text-ternary-light hover:text-pink-500 sm:mx-4 sm:py-2"
+						className="block mb-2 text-lg text-left text-orange-500 dark:text-ternary-light hover:text-orange-500 sm:mx-4 sm:py-2"
 						aria-label="Projects"
 					>
 						Projects
 					</Link>
 					<Link
 						to="/about"
-						className="block mb-2 text-lg text-left text-primary-dark dark:text-ternary-light hover:text-pink-500 sm:mx-4 sm:py-2"
+						className="block mb-2 text-lg text-left text-primary-dark dark:text-ternary-light hover:text-orange-500 sm:mx-4 sm:py-2"
 						aria-label="About Me"
 					>
 						About Me
 					</Link>
 					<Link
 						to="/blogs"
-						className="block mb-2 text-lg text-left text-primary-dark dark:text-ternary-light hover:text-pink-500 sm:mx-4 sm:py-2"
+						className="block mb-2 text-lg text-left text-primary-dark dark:text-ternary-light hover:text-orange-500 sm:mx-4 sm:py-2"
 						aria-label="About Me"
 					>
 						Blogs
 					</Link>
 					<Link
 						to="/contact"
-						className="block mb-2 text-lg text-left text-primary-dark dark:text-ternary-light hover:text-pink-500 sm:mx-4 sm:py-2"
+						className="block mb-2 text-lg text-left text-primary-dark dark:text-ternary-light hover:text-orange-500 sm:mx-4 sm:py-2"
 						aria-label="Contact"
 					>
 						Contact

@@ -53,7 +53,7 @@ const AppBanner = () => {
 					<a
 						download="Christie-Resume.pdf"
 						href="/files/Christie-Resume.pdf"
-						className="font-general-medium flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg text-white bg-pink-500 border border-2 border-pink-500  py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-500 focus:ring-1 focus:ring-indigo-900 hover:bg-secondary-dark  duration-500"
+						className="font-general-medium flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg text-white bg-orange-500 border border-2 border-orange-500  py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-500 focus:ring-1 focus:ring-indigo-900 hover:bg-secondary-dark  duration-500"
 						aria-label="Download Resume"
 					>
 						<FiArrowDownCircle className="w-5 h-5 mr-2 duration-100 sm:mr-3 sn:w-6 sm:h-6"></FiArrowDownCircle>
