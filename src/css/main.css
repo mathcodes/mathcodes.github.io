@@ -1114,17 +1114,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(255 230 159 / var(--tw-bg-opacity));
 }
-.bg-orange-50 {
+.bg-orange-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 251 235 / var(--tw-bg-opacity));
+  background-color: rgb(255 102 0 / var(--tw-bg-opacity));
 }
 .bg-orange-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(236 137 54 / var(--tw-bg-opacity));
+  background-color: rgb(255 102 0 / var(--tw-bg-opacity));
 }
 .bg-orange-700 {
   --tw-bg-opacity: 1;
-  background-color: rgb(236 137 54 / var(--tw-bg-opacity));
+  background-color: rgb(255 102 0 / var(--tw-bg-opacity));
 }
 
 .bg-gray-600 {
