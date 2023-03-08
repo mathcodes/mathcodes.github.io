@@ -1041,6 +1041,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-none {
   border-style: none;
 }
+
 .border-ternary-light {
   --tw-border-opacity: 1;
   border-color: rgb(246 247 248 / var(--tw-border-opacity));
@@ -1147,6 +1148,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
+
+
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }

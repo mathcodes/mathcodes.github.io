@@ -33,23 +33,23 @@ const servicesData = [
 
 export default function ServicesGallery() {
   return (
-    <div className="bg-primary-dark py-2 sm:py-3">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center">
+    <div className="py-2 bg-primary-dark sm:py-3">
+      <div className="px-6 mx-auto max-w-7xl lg:px-8">
+        <div className="max-w-2xl mx-auto lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-600">Services</h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
             I offer a wide range of services. I can help you build a website or web application, build a mobile application, help you with your SEO, marketing, and branding needs, and teach you how to code.
           </p>
         </div>
-        <div className="bg-indigo-600 flex flex-col grid-cols-4 mx-auto mt-16 max-w-2xl justify-around sm:mt-20 lg:mt-24 lg:max-w-4xl">
+        <div className="flex flex-col justify-around max-w-2xl grid-cols-4 mx-auto mt-16 bg-indigo-600 sm:mt-20 lg:mt-24 lg:max-w-4xl">
             {servicesData.map((s) => (<>
-              <div key={s.id} className="flex items-center m-4 rounded-lg bg-indigo-600">
+              <div key={s.id} className="flex items-center m-4 bg-indigo-600 rounded-lg">
                 {s.id}
               </div>
-              <div className="m-4 flex font-semibold leading-7 text-gray-900 bg-indigo-600">{s.title}</div>
-              <div className="m-4 flex font-semibold leading-7 text-gray-900 bg-indigo-600">{s.icon}</div>
+              <div className="flex m-4 font-semibold leading-7 text-gray-900 bg-indigo-600">{s.title}</div>
+              <div className="flex m-4 font-semibold leading-7 text-gray-900 bg-indigo-600">{s.icon}</div>
 
-              <div className="m-4 flex text-base leading-7 text-gray-600">{s.desc}</div>
+              <div className="flex m-4 text-xs text-base text-pink-500 p-9">{s.desc}</div>
             </>
             ))}
 
