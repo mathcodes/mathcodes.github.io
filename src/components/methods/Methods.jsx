@@ -34,7 +34,7 @@ const Methods = () => {
                     <div style={codeStyle}>
                       {/* {firstDesc} */}
 
-                    <div><code className="text-sm">{method.descr}</code></div>
+                    <div><code className="text-sm">{method.desc}</code></div>
                     <div><code className="text-sm">{method.descr2}</code></div>
                     <div><code className="text-sm">{method.descr3}</code></div>
                     <div><code className="text-sm">{method.descr4}</code></div>

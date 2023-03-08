@@ -75,55 +75,59 @@ function Medium() {
   },)
 
   return (<>
-    <section className="py-5 mt-5 sm:py-10 sm:mt-10">
-			<div id="projects" className="text-center">
-				<p className="mb-1 text-2xl font-general-medium sm:text-4xl text-ternary-dark dark:text-ternary-light">
-					Blogs
-				</p>
-			</div>
+    <section className="py-5 mt-5 sm:py-5 sm:mt-10">
+      <div id="Blogs" className="text-center">
+        <p className="mb-1 text-2xl font-general-medium sm:text-4xl text-ternary-dark dark:text-ternary-light">
+          Blogs
+        </p>
+      </div>
 
-      <Container className="grid grid-cols-1 mx-auto text-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 rounde d border-1 d-flex bg-zinc-400 justify-content-center">
+      <Container className="grid grid-cols-1 mx-auto text-center rounded sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
         {myBlogs.map(blog => {
           return (
-            <Tilt className="w-full text-center Tilt" tiltMaxAngleX={20} tiltMaxAngleY={30} perspective={2000} scale={.99} transitionSpeed={3000} gyroscope={true} glareEnable={true} glareMaxOpacity={0.5} glareColor="#ffffff" glarePosition="all">
-              <Card className="w-1/3 m-10">
-                <Card.Img
-                  className="object-cover h-48 mx-auto w-fit blog-img"
-                  variant="top" src={blog.thumbnail} />
-                <Card.Body
-                  className="flex flex-col justify-between text-xl text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light"
-                >
-                  <Card.Title>{blog.title}</Card.Title>
-                  {/* <Card.Text>
-                      {blog.description}
-                    </Card.Text> */}
-                  <Card.Text
-                  // className="text-xl text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light"
+            <div
+              className="w-1/3 m-1 mt-6 h-128">
+              <Tilt className="w-full text-center Tilt" tiltMaxAngleX={10} tiltMaxAngleY={15} perspective={2000} scale={.99} transitionSpeed={3000} gyroscope={true} glareEnable={true} glareMaxOpacity={0.5} glareColor="#ffffff" glarePosition="all">
+                <Card className="w-1/3 m-10 border-2 border-gray-200 border-opacity-50 h-96">
+                  <div className="h-36">
+                    <Card.Img
+                      className="object-scale-down p-12 mx-auto h-36 blog-img"
+                      variant="top" src={blog.thumbnail} />
+                  </div>
+                  <Card.Body
+                    className="flex flex-col justify-between text-xl text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light"
                   >
-                    {blog.pubDate.slice(0, 10)}
-                  </Card.Text>
+                    <Card.Title>{blog.title}</Card.Title>
+                    <div className="p-2 mx-auto bg-gray-300 border-2 border-black border-opacity-50 rounded-lg text-md text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light">
 
-                  <Tilt className="w-full text-center Tilt" tiltMaxAngleX={-20} tiltMaxAngleY={-10} perspective={-2000} scale={.99} transitionSpeed={5000} gyroscope={true} glareEnable={true} glareMaxOpacity={0.9} glareColor="#ffffff" glarePosition="all">
-
-                    <Card.Link
-                      className="text-4xl font-bold text-center text-zinc-200"
-                      href={blog.link}>
-                      <div className="flex flex-row justify-end ">
-
-                        {/* <GrArticle /> */}
-                        <SiMedium />
-                        <AiOutlineArrowRight />
-                      </div>
-                    </Card.Link>
-                  </Tilt>
-                </Card.Body>
-              </Card>
-            </Tilt>
+                      <Card.Text
+                      >
+                        {blog.pubDate.slice(0, 10)}
+                      </Card.Text>
+                    </div>
+                    <Tilt
+                      style={{ position: 'absolute', bottom: '0px', right: '20%' }}
+                      className="w-full py-12 text-center Tilt" tiltMaxAngleX={-20} tiltMaxAngleY={-10} perspective={-2000} scale={.99} transitionSpeed={5000} gyroscope={true} glareEnable={true} glareMaxOpacity={0.9} glareColor="#ffffff" glarePosition="all"
+                    >
+                      <Card.Link
+                        className="text-4xl font-bold text-center text-zinc-200"
+                        href={blog.link}>
+                        <div className="flex flex-row justify-end ">
+                          {/* <GrArticle /> */}
+                          <SiMedium />
+                          <AiOutlineArrowRight />
+                        </div>
+                      </Card.Link>
+                    </Tilt>
+                  </Card.Body>
+                </Card>
+              </Tilt>
+            </div>
           )
         })}
       </Container>
 
-  </section>
+    </section>
 
   </>)
 }
