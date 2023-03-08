@@ -2,15 +2,14 @@ import { useState } from 'react';
 import { FiMenu, FiMoon, FiSun, FiX } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
-import HireMeModal from '../HireMeModal';
+// import HireMeModal from '../HireMeModal';
 import logoLight from '../../images/logo-light.svg';
 import logoDark from '../../images/logo-dark.svg';
 import { motion } from 'framer-motion';
-import Button from '../reusable/Button';
 
 const AppHeader = () => {
 	const [showMenu, setShowMenu] = useState(false);
-	const [showModal, setShowModal] = useState(false);
+	// const [showModal, setShowModal] = useState(false);
 	const [activeTheme, setTheme] = useThemeSwitcher();
 
 	function toggleMenu() {
@@ -21,19 +20,19 @@ const AppHeader = () => {
 		}
 	}
 
-	function showHireMeModal() {
-		if (!showModal) {
-			document
-				.getElementsByTagName('html')[0]
-				.classList.add('overflow-y-hidden');
-			setShowModal(true);
-		} else {
-			document
-				.getElementsByTagName('html')[0]
-				.classList.remove('overflow-y-hidden');
-			setShowModal(false);
-		}
-	}
+	// function showHireMeModal() {
+	// 	if (!showModal) {
+	// 		document
+	// 			.getElementsByTagName('html')[0]
+	// 			.classList.add('overflow-y-hidden');
+	// 		setShowModal(true);
+	// 	} else {
+	// 		document
+	// 			.getElementsByTagName('html')[0]
+	// 			.classList.remove('overflow-y-hidden');
+	// 		setShowModal(false);
+	// 	}
+	// }
 
 	return (
 		<motion.nav
@@ -210,9 +209,10 @@ const AppHeader = () => {
 						)}
 					</div>
 				</div>
+
 			</div>
 			{/* Hire me modal */}
-			<div>
+			{/* <div>
 				{showModal ? (
 					<HireMeModal
 						onClose={showHireMeModal}
@@ -220,7 +220,7 @@ const AppHeader = () => {
 					/>
 				) : null}
 				{showModal ? showHireMeModal : null}
-			</div>
+			</div> */}
 		</motion.nav>
 	);
 };

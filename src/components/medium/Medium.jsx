@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import Image from 'react-bootstrap/Image';
+// import Image from 'react-bootstrap/Image';
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Tilt from 'react-parallax-tilt';
 import { SiMedium } from "react-icons/si";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import { GrArticle } from "react-icons/gr";
+// import { GrArticle } from "react-icons/gr";
 
 export const MagGlass = () => {
   return (
@@ -53,7 +53,7 @@ export const BookIcon = (props) => {
 
 function Medium() {
 
-  const [blogs, setBlogs] = useState([])
+  const [blogs] = useState([])
   const [myBlogs, setMyBlogs] = useState([])
 
 

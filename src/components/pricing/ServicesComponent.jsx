@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import Image from 'react-bootstrap/Image';
+import React from 'react';
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Tilt from 'react-parallax-tilt';
@@ -48,7 +47,7 @@ function ServicesComponent() {
 				</p>
 			</div>
 
-      <Container className="grid object-center grid-cols-1 p-12 mx-auto text-center rounded bg-ternary-dark md:grid-cols-2 border-1 d-flex justify-center">
+      <Container className="grid justify-center object-center grid-cols-1 p-12 mx-auto text-center rounded bg-ternary-dark md:grid-cols-2 border-1 d-flex">
         {servicesArray.map(s => {
 
           return (

@@ -17,6 +17,9 @@ module.exports = {
       },
 			position: ['bottom', 'left'],
     },
+		active: {
+			bgColor: 'primary-light',
+		},
 		extend: {
 			colors: {
 				'primary-light': '#F7F8FC',
