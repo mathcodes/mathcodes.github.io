@@ -3,17 +3,8 @@ import Image from 'react-bootstrap/Image';
 import Container from "react-bootstrap/Container";
 import Card from "react-bootstrap/Card";
 import Tilt from 'react-parallax-tilt';
-import { SiMedium } from "react-icons/si";
-import { AiOutlineArrowRight } from "react-icons/ai";
-import { GrArticle } from "react-icons/gr";
-
-
-
 
 function ServicesComponent() {
-
-
-
    const servicesArray = [
     {
       id: 1,
@@ -48,7 +39,6 @@ function ServicesComponent() {
   // create conditional based on parent element;s color to decide on the glareColor of the Tilt
   // const parentColor = getComputedStyle(parent).getPropertyValue('background-color');
   // const glareColor = parentColor = "bg-ternary-dark" ? "#000000" : "#ffffff"
-
 
   return (<>
     <section className="py-5 mt-5 sm:py-10 sm:mt-10">
