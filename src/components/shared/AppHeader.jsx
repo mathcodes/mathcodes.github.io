@@ -148,35 +148,35 @@ const AppHeader = () => {
 				<div className="items-center justify-center hidden p-5 m-0 mt-5 shadow-lg font-general-medium sm:ml-4 sm:mt-3 sm:flex sm:p-0 sm:shadow-none hover:bg-orange-600">
 					<Link
 						to="/projects"
-						className="block mb-2 text-lg text-left text-orange-600 dark:text-ternary-light hover:text-orange-600 sm:mx-4 sm:py-2"
+						className="block p-2 mb-2 text-lg text-left rounded shadow-lg shadow-primary-dark hover:shadow-orange-500 text-primary-dark dark:text-ternary-light hover:text-orange-500 sm:mx-4 sm:py-2"
 						aria-label="Projects"
 					>
 						Projects
 					</Link>
 					<Link
 						to="/about"
-						className="block mb-2 text-lg text-left text-primary-dark dark:text-ternary-light hover:text-orange-600 sm:mx-4 sm:py-2"
+						className="block p-2 mb-2 text-lg text-left rounded shadow-lg text-primary-dark dark:text-ternary-light hover:text-orange-500 sm:mx-4 sm:py-2"
 						aria-label="About"
 					>
 						About
 					</Link>
 					<Link
 						to="/blogs"
-						className="block mb-2 text-lg text-left text-primary-dark dark:text-ternary-light hover:text-orange-600 sm:mx-4 sm:py-2"
+						className="block p-2 mb-2 text-lg text-left rounded shadow-lg text-primary-dark dark:text-ternary-light hover:text-orange-600 sm:mx-4 sm:py-2"
 						aria-label="About"
 					>
 						Blogs
 					</Link>
 					<Link
 						to="/services"
-						className="block mb-2 text-lg text-left text-primary-dark dark:text-ternary-light hover:text-orange-600 sm:mx-4 sm:py-2"
+						className="block p-2 mb-2 text-lg text-left rounded shadow-lg text-primary-dark dark:text-ternary-light hover:text-orange-600 sm:mx-4 sm:py-2"
 						aria-label="About"
 					>
 						Services
 					</Link>
 					<Link
 						to="/contact"
-						className="block mb-2 text-lg text-left text-primary-dark dark:text-ternary-light hover:text-orange-600 sm:mx-4 sm:py-2"
+						className="block p-2 mb-2 text-lg text-left rounded shadow-lg text-primary-dark dark:text-ternary-light hover:text-orange-600 sm:mx-4 sm:py-2"
 						aria-label="Contact"
 					>
 						Contact

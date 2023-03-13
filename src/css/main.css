@@ -1524,9 +1524,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(13 36 56 / var(--tw-text-opacity));
 }
+.hover\:text-orange-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(236 137 54 / var(--tw-text-opacity));
+}
 .hover\:text-orange-600:hover {
   --tw-text-opacity: 1;
-  color: rgb(169, 44, 162/ var(--tw-text-opacity));
+  color: rgb(245 158 11/ var(--tw-text-opacity));
 }
 .hover\:bg-orange-600:hover {
   --tw-text-opacity: 1;
