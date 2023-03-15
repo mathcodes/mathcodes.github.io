@@ -86,28 +86,27 @@ function Medium() {
         {myBlogs.map(blog => {
           return (
             <div
-              className="w-1/3 m-1 mt-6 h-128">
+              className="w-1/3 m-1 mt-6">
               <Tilt className="w-full text-center Tilt" tiltMaxAngleX={10} tiltMaxAngleY={15} perspective={2000} scale={.99} transitionSpeed={3000} gyroscope={true} glareEnable={true} glareMaxOpacity={0.5} glareColor="#ffffff" glarePosition="all">
-                <Card className="w-1/3 m-10 border-2 border-gray-200 border-opacity-50 h-96">
+                <Card className="w-1/3 h-64 m-6 overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
                   <div className="h-36">
                     <Card.Img
-                      className="object-scale-down p-12 mx-auto h-36 blog-img"
+                      className="object-cover object-center h-20 mx-auto"
                       variant="top" src={blog.thumbnail} />
                   </div>
                   <Card.Body
                     className="flex flex-col justify-between text-xl text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light"
                   >
                     <Card.Title>{blog.title}</Card.Title>
-                    <div className="p-2 mx-auto bg-gray-300 border-2 border-black border-opacity-50 rounded-lg text-md text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light">
+                    <div className="p-2 text-sm text-left rounded-lg text-md text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light">
 
-                      <Card.Text
-                      >
+                      <Card.Text>
                         {blog.pubDate.slice(0, 10)}
                       </Card.Text>
                     </div>
                     <Tilt
-                      style={{ position: 'absolute', bottom: '0px', right: '20%' }}
-                      className="w-full py-12 text-center Tilt" tiltMaxAngleX={-20} tiltMaxAngleY={-10} perspective={-2000} scale={.99} transitionSpeed={5000} gyroscope={true} glareEnable={true} glareMaxOpacity={0.9} glareColor="#ffffff" glarePosition="all"
+
+                      className="w-full py-12 text-center Tilt" tiltMaxAngleX={-10} tiltMaxAngleY={-10} perspective={-2000} scale={.99} transitionSpeed={5000} gyroscope={true} glareEnable={true} glareMaxOpacity={0.9} glareColor="#ffffff" glarePosition="all"
                     >
                       <Card.Link
                         className="text-4xl font-bold text-center text-zinc-200"

@@ -43,19 +43,19 @@ const AppHeader = () => {
 		>
 			<div className="z-10 block max-w-screen-lg py-6 xl:max-w-screen-xl sm:flex sm:justify-between sm:items-center">
 				{/* Header menu links and small screen hamburger menu */}
-				<div className="flex items-center justify-between px-4 sm:px-0">
+				<div className="flex items-center justify-between px-4 ">
 					<div>
 						<Link to="/">
 							{activeTheme === 'dark' ? (
 								<img
 									src={logoDark}
-									className="w-36"
+									className="w-36 "
 									alt="Dark Logo"
 								/>
 							) : (
 								<img
 									src={logoLight}
-									className="w-36"
+									className=" md:block w-36"
 									alt="Dark Logo"
 								/>
 							)}

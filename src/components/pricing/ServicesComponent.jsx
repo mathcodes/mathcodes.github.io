@@ -53,7 +53,7 @@ function ServicesComponent() {
           return (
 
             <Tilt className="grid m-6 my-2 mb-10 text-center Tilt " tiltMaxAngleX={2} tiltMaxAngleY={2} perspective={2000} scale={.99} transitionSpeed={3000} gyroscope={true} glareEnable={true} glareMaxOpacity={0.5} glareColor="#777" glarePosition="all" glareBorderRadius="6px" >
-              <Card className="w-1/3 m-10 shadow-lg border-1 border-ternary-dark dark:border-ternary-light">
+              <Card className="w-1/3 p-6 m-10 shadow-lg border-1 border-ternary-dark dark:border-ternary-light">
 
                 <Card.Body
                   className="flex flex-col justify-between text-xl rounded-xl text-ternary-dark hover:text-zinc-900 dark:text-ternary-light dark:hover:text-primary-light"
@@ -64,7 +64,7 @@ function ServicesComponent() {
                   <hr/>
 
                   <Card.Text
-                    className="text-xs text-ternary-dark hover:text-zinc-900 dark:text-ternary-light dark:hover:text-primary-light"
+                    className="text-sm text-left md:text-xl text-ternary-dark dark:text-ternary-light"
                   >
                     <p className="mt-2">• {s.description}</p>
                     <p className="mt-2">• {s.description2}</p>
