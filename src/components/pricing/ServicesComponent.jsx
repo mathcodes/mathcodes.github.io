@@ -21,7 +21,7 @@ function ServicesComponent() {
     },
     {
       id: 3,
-      title: "SEARCH ENGINE OPTIMIZATION",
+      title: "SEO",
       description: "Help you rank higher on search engines and drive more traffic to your website.",
       description2: "SEO experts can help you create a customized SEO strategy that helps you rank higher on search engines.",
       description3: "Create a customized SEO strategy that drives more traffic to your website.",
@@ -64,7 +64,7 @@ function ServicesComponent() {
                   <hr/>
 
                   <Card.Text
-                    className="text-sm text-left md:text-xl text-ternary-dark dark:text-ternary-light"
+                    className="text-sm text-left lg:text-lg text-ternary-dark dark:text-ternary-light"
                   >
                     <p className="mt-2">• {s.description}</p>
                     <p className="mt-2">• {s.description2}</p>
