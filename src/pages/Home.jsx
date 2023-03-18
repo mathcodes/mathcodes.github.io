@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import AppBanner from '../components/shared/AppBanner';
-import ProjectsGrid from '../components/projects/ProjectsGrid';
-import { ProjectsProvider } from '../context/ProjectsContext';
+import Tweets from '../components/tweets/Tweets';
 import Button from '../components/reusable/Button';
 // import { AboutMeProvider } from '../context/AboutMeContext';
 // import AboutMe from '../components/about/AboutMe';
@@ -14,9 +13,7 @@ const Home = () => {
 			{/* <AboutMeProvider>
 				<AboutMe/>
 			</AboutMeProvider> */}
-			<ProjectsProvider>
-				<ProjectsGrid></ProjectsGrid>
-			</ProjectsProvider>
+			<Tweets/>
 			<Skills />
 
 

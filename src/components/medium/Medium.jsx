@@ -75,7 +75,7 @@ function Medium() {
   },)
 
   return (<>
-    <section className="py-5 mt-5 sm:py-5 sm:mt-10">
+    <section className="mt-5  sm:mt-10">
       <div id="Blogs" className="text-center">
         <p className="mb-1 text-2xl font-general-medium sm:text-4xl text-ternary-dark dark:text-ternary-light">
           Blogs
@@ -87,15 +87,15 @@ function Medium() {
           return (
             <div
               className="w-1/3 m-1 mt-6">
-              <Tilt className="w-full text-center Tilt" tiltMaxAngleX={10} tiltMaxAngleY={15} perspective={2000} scale={.99} transitionSpeed={3000} gyroscope={true} glareEnable={true} glareMaxOpacity={0.5} glareColor="#ffffff" glarePosition="all">
-                <Card className="w-1/3 h-64 m-6 overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
-                  <div className="h-36">
+              <Tilt className="w-full text-center " tiltMaxAngleX={10} tiltMaxAngleY={15} perspective={2000} scale={.99} transitionSpeed={3000} gyroscope={true} glareEnable={true} glareMaxOpacity={0.5} glareColor="#ffffff" glarePosition="all">
+                <Card className="w-1/3 h-64 m-6 overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 ">
+                  <div className="h-36 ">
                     <Card.Img
                       className="object-cover object-center h-20 mx-auto"
                       variant="top" src={blog.thumbnail} />
                   </div>
                   <Card.Body
-                    className="flex flex-col justify-between text-xl text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light"
+                    className="flex flex-col justify-between text-xl Tilt text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light"
                   >
                     <Card.Title>{blog.title}</Card.Title>
                     <div className="p-2 text-sm text-left rounded-lg text-md text-ternary-dark hover:text-gray-400 dark:text-ternary-light dark:hover:text-primary-light">

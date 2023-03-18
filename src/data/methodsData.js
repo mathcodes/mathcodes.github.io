@@ -5,7 +5,7 @@ export const arrayMethods = [
     desc: `
 const array1 = [1, 2, 3]; `, descr2: `
 const array2 = [4, 5, 6]; `, descr3: `
-const newArray = array1.concat(array2); `, descr4: `
+const newArray = array1.concat(array2); `, descr4: `react
 console.log(newArray); // Output: [1, 2, 3, 4, 5, 6] `
   },
   {
@@ -79,7 +79,7 @@ console.log(index); // Output: 1 `
 
 
 const array1 = [1, 2, 3]; `,
-descr2: `
+    descr2: `
     const newArray = array1.map(element => element * 2); `,
     descr3: `
     console.log(newArray); // Output: [2, 4, 6] `
