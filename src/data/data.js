@@ -1,4 +1,4 @@
-import resume from '../assets/pdf/Jon_Christie_Resume.pdf';
+// import resume from '../assets/pdf/Jon_Christie_Resume.pdf';
 
 
 // about
@@ -142,7 +142,7 @@ export const projectsData = [
 		demo: 'https://mathcodes.github.io/pick2hand/',
 		image: keys
 	}
-		
+
 ]
 // response
 export const responseData = {
@@ -220,7 +220,7 @@ export const socialsData = {
 	stackOverflow: 'https://stackoverflow.com/users/11303840/jon-christie',
 	replit: 'https://replit.com/@fullstack11235',
 }
- 
+
 // testimonials
 
 // theme

@@ -46,7 +46,7 @@ const Spaces = ({ spaces }) => {
           `https://api.twitter.com/2/tweets/search/recent?${queryParams}`,
           {
             headers: {
-              Authorization: "Bearer <your-bearer-token>",
+              Authorization: "Bearer AAAAAAAAAAAAAAAAAAAAAJbQiAEAAAAAkkBJXqWLiDogghSD0u9rmOEXXNg%3DKLi7RnqOujlBaJb3TEWbEFO9FXc0Gz4BO4OzuSAjMMs4JXxhb8",
             },
           }
         );

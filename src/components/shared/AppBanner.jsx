@@ -51,8 +51,8 @@ const AppBanner = () => {
 					className="flex justify-center sm:block "
 				>
 					<a
-						download="Christie_Resume.pdf"
-						href="/files/Christie_Resume.pdf"
+						download="Jon_Christie_Resume_March_2023_Online.pdf"
+						href="/files/Jon_Christie_Resume_March_2023_Online.pdf"
 						className="font-general-medium flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg text-white bg-orange-600 border border-2 border-orange-600  py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-500 focus:ring-1 focus:ring-indigo-900 hover:bg-secondary-dark  duration-500"
 						aria-label="Download Resume"
 					>

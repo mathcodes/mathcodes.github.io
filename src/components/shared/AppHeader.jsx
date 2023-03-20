@@ -4,7 +4,10 @@ import { Link } from 'react-router-dom';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 // import HireMeModal from '../HireMeModal';
 import logoLight from '../../images/logo-light.svg';
+import logoMd from '../../images/logo-dark-sm.png';
+import logoSm from '../../images/logo-dark-sm.png';
 import logoDark from '../../images/logo-dark.svg';
+import logoDarkSm from '../../images/logo-dark-sm.png';
 import { motion } from 'framer-motion';
 
 const AppHeader = () => {
@@ -19,6 +22,14 @@ const AppHeader = () => {
 			setShowMenu(false);
 		}
 	}
+
+	const logoSize = () => {
+		if (window.innerWidth < 768) {
+			return logoDarkSm;
+		} else {
+			return activeTheme === 'dark' ? logoDark : logoLight;
+		}
+	};
 
 	// function showHireMeModal() {
 	// 	if (!showModal) {
@@ -44,23 +55,32 @@ const AppHeader = () => {
 			<div className="z-10 block max-w-screen-lg py-6 xl:max-w-screen-xl sm:flex sm:justify-between sm:items-center">
 				{/* Header menu links and small screen hamburger menu */}
 				<div className="flex items-center justify-between px-4 ">
-					<div>
-						<Link to="/">
-							{activeTheme === 'dark' ? (
-								<img
-									src={logoDark}
-									className="w-36 "
-									alt="Dark Logo"
-								/>
-							) : (
-								<img
-									src={logoLight}
-									className=" md:block w-36"
-									alt="Dark Logo"
-								/>
-							)}
-						</Link>
-					</div>
+				<div className="flex items-center justify-between px-4 ">
+			<div>
+				<Link to="/">
+					{activeTheme === 'dark' ? (
+						<>
+							<img
+								src={logoMd}
+								className="block w-36 md:hidden"
+								alt="Dark Logo"
+							/>
+							<img
+								src={logoSm}
+								className="hidden w-36 md:block"
+								alt="Dark Logo"
+							/>
+						</>
+					) : (
+						<img
+							src={logoLight}
+							className="w-36"
+							alt="Light Logo"
+						/>
+					)}
+				</Link>
+			</div>
+		</div>
 
 					{/* Theme switcher small screen */}
 					<div
@@ -187,14 +207,14 @@ const AppHeader = () => {
 				<div className="flex-col items-center justify-between hidden sm:flex md:flex-row">
 					{/* HIRE ME BUTTON - FUTURE DEVç */}
 					{/* <div className="hidden md:flex">
-						<span
-							onClick={showHireMeModal}
-							className="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
-							aria-label="Hire Me Button"
-						>
-							<Button title="Hire Me" />
-						</span>
-					</div> */}
+		<span
+			onClick={showHireMeModal}
+			className="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
+			aria-label="Hire Me Button"
+		>
+			<Button title="Hire Me" />
+		</span>
+	</div> */}
 
 					{/* Theme switcher large screen */}
 					<div
@@ -208,19 +228,23 @@ const AppHeader = () => {
 							<FiSun className="text-xl text-gray-200 hover:text-gray-50" />
 						)}
 					</div>
+
+					<button class="bg-gradient-to-r from-blue-500 to-green-500 hover:from-green-500 hover:to-blue-500 text-white font-bold py-2 px-4 rounded">
+  Click me!
+</button>
 				</div>
 
 			</div>
 			{/* Hire me modal */}
 			{/* <div>
-				{showModal ? (
-					<HireMeModal
-						onClose={showHireMeModal}
-						onRequest={showHireMeModal}
-					/>
-				) : null}
-				{showModal ? showHireMeModal : null}
-			</div> */}
+{showModal ? (
+	<HireMeModal
+		onClose={showHireMeModal}
+		onRequest={showHireMeModal}
+	/>
+) : null}
+{showModal ? showHireMeModal : null}
+ 			</div> */}
 		</motion.nav>
 	);
 };
