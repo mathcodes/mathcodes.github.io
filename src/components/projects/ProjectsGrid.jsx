@@ -16,7 +16,7 @@ const ProjectsGrid = () => {
 	} = useContext(ProjectsContext);
 
 	return (
-		<section className="py-5 mt-5 sm:py-10 sm:mt-10">
+		<section className="container py-5 mt-5 sm:py-10 sm:mt-10">
 			<div id="projects" className="text-center">
 				<p className="mb-1 text-2xl font-general-medium sm:text-4xl text-ternary-dark dark:text-ternary-light">
 					Projects
@@ -30,7 +30,7 @@ const ProjectsGrid = () => {
 
 				</h3>
 				<div
-					className="flex justify-between gap-3 pb-3 border-b  border-primary-light dark:border-secondary-dark"
+					className="flex justify-between gap-3 pb-3 border-b border-primary-light dark:border-secondary-dark"
 				>
 					<div className="flex justify-between gap-2">
 						<span
