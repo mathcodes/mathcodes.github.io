@@ -16,7 +16,9 @@ const Methods = () => {
   // <div className="grid grid-cols-1 mt-6 sm:grid-cols-1 mg:grid-cols-2 sm:gap-10">
   let methods = arrayMethods.map((method) => (
 <div className="p-4 m-1 bg-white border border-gray-200 rounded-lg shadow-md">
-  <h1 className="mb-2 text-lg font-medium text-orange-500">{method.title}</h1>
+
+  {/* <h1 className="mb-2 text-lg font-medium text-orange-500">{method.title}</h1> */}
+  <h1 className="p-4 font-bold text-center text-transparent text-md from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text">{method.title}</h1>
   <p className="mb-4 text-sm text-gray-500">{method.def}</p>
   <div className="p-4 bg-gray-100 rounded-lg">
     <code className="block mb-2 text-sm text-gray-800 dark:text-gray-200">{method.desc}</code>

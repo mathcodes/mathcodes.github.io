@@ -1,11 +1,11 @@
 import React from "react";
-import Medium from "../components/medium/Medium";
+import Hashnode from "../components/Hashnode/Hashnode";
 import Tweets from "../components/tweets/Tweets";
 
 const Blogs = () => {
     return (
     <>
-        <Medium/>
+        <Hashnode/>
         <Tweets/>
     </>
 )}

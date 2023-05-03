@@ -1,5 +1,6 @@
 import { AnimatePresence } from 'framer-motion';
 import { lazy, Suspense } from 'react';
+import { PopupWidget } from "react-calendly";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import AppFooter from './components/shared/AppFooter';
@@ -42,3 +43,4 @@ function App() {
 }
 
 export default App;
+
