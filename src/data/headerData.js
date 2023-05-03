@@ -7,6 +7,5 @@ export const headerData = {
 	image: '/jonBnW.png',
 	BG2: '/jcircle3Dorange.svg',
 	BG: 'https://raw.githubusercontent.com/mathcodes/mathcodes.github.io/main/src/assets/img/JCircle_dark_gray.png',
-	// resumePdf: 'https://github.com/mathcodes/mathcodes.github.io/raw/main/src/assets/pdf/Jon_Christie_Resume.pdf',
 	CTA_MARKETING_FOR_OPEN_SOURCE: 'https://github.com/mathcodes/mathcodes.github.io/raw/sync/public/Marketing%20for%20Open-Source%20Projects.pdf',
 }
