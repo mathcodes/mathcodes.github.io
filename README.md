@@ -36,15 +36,15 @@ Revised portfolio for 2023. Built with React, Tailwind CSS, and Framer Motion.
 
 ## Technologies Explained
 
-React: A popular JavaScript library for building user interfaces.
-Tailwind CSS: A utility-first CSS framework for quickly styling UI components.
-Styled Components: A library that allows you to write CSS in your JavaScript code.
-Heroicons React: A library of free, high-quality icons that are designed to be easily customizable and used in various UI components.
-Testing Library: A suite of tools for testing user interfaces to ensure reliability and ease of use.
-Framer Motion: A library for creating smooth and subtle animations to enhance the user experience.
-React CountUp: A library for animating numbers, such as statistics or metrics, in a fun and engaging way.
-React Router Dom: A library for enabling navigation within the app.
-Web Vitals: A library for measuring and optimizing the app's speed and responsiveness.
+ - React: A popular JavaScript library for building user interfaces.
+ - Tailwind CSS: A utility-first CSS framework for quickly styling UI components.
+ - Styled Components: A library that allows you to write CSS in your JavaScript code.
+ - Heroicons React: A library of free, high-quality icons that are designed to be easily customizable and used in various UI components.
+ - Testing Library: A suite of tools for testing user interfaces to ensure reliability and ease of use.
+ - Framer Motion: A library for creating smooth and subtle animations to enhance the user experience.
+ - React CountUp: A library for animating numbers, such as statistics or metrics, in a fun and engaging way.
+ - React Router Dom: A library for enabling navigation within the app.
+ - Web Vitals: A library for measuring and optimizing the app's speed and responsiveness.
 
 ## Installation
 
