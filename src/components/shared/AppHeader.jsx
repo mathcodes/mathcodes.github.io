@@ -57,28 +57,7 @@ const AppHeader = () => {
 				<div className="flex items-center justify-between px-4 ">
 				<div className="flex items-center justify-between px-4 ">
 			<div>
-				<Link to="/">
-					{activeTheme === 'dark' ? (
-						<>
-							<img
-								src={logoMd}
-								className="block w-36 md:hidden"
-								alt="Dark Logo"
-							/>
-							<img
-								src={logoSm}
-								className="hidden w-36 md:block"
-								alt="Dark Logo"
-							/>
-						</>
-					) : (
-						<img
-							src={logoLight}
-							className="w-36"
-							alt="Light Logo"
-						/>
-					)}
-				</Link>
+
 			</div>
 		</div>
 
@@ -140,13 +119,7 @@ const AppHeader = () => {
 					>
 						About
 					</Link>
-					<Link
-						to="/blogs"
-						className="block p-3 mb-2 text-lg text-left border-2 border-orange-600 rounded-md shadow-lg hover:bg-orange-600 text-primary-dark dark:text-ternary-light hover:text-secondary-dark sm:mx-4 sm:py-2 sm:pt-2 "
-						aria-label="About"
-					>
-						Blogs
-					</Link>
+
 					<Link
 						to="/services"
 						className="block p-3 mb-2 text-lg text-left border-2 border-orange-600 rounded-md shadow-lg hover:bg-orange-600 text-primary-dark dark:text-ternary-light hover:text-secondary-dark sm:mx-4 sm:py-2 sm:pt-2 "
@@ -180,13 +153,7 @@ const AppHeader = () => {
 					>
 						About
 					</Link>
-					<Link
-						to="/blogs"
-						className="block p-2 mb-2 text-lg text-left rounded shadow-lg text-primary-dark dark:text-ternary-light hover:text-orange-600 sm:mx-4 sm:py-2"
-						aria-label="About"
-					>
-						Blogs
-					</Link>
+
 					<Link
 						to="/services"
 						className="block p-2 mb-2 text-lg text-left rounded shadow-lg text-primary-dark dark:text-ternary-light hover:text-orange-600 sm:mx-4 sm:py-2"

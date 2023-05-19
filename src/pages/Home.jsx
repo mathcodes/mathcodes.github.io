@@ -13,7 +13,7 @@ const Home = () => {
 			{/* <AboutMeProvider>
 				<AboutMe/>
 			</AboutMeProvider> */}
-			<Tweets/>
+
 			<Skills />
 
 
