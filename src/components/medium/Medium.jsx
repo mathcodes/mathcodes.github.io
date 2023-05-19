@@ -7,7 +7,7 @@ import { SiMedium } from "react-icons/si";
 import { AiOutlineArrowRight } from "react-icons/ai";
 // import { GrArticle } from "react-icons/gr";
 
-export const MagGlass = () => {
+export const MagGlass = () => {e App with Three.js
   return (
     <svg viewBox="0 0 20 20 h-3/4 w-3/4  " aria-hidden="true">
       <path strokeWidth="0" d="M2.5 8.5a6 6 0 1 1 12 0 6 6 0 0 1-12 0Z" />
@@ -132,3 +132,6 @@ function Medium() {
 }
 
 export default Medium
+
+
+
