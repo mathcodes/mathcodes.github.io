@@ -1,7 +1,6 @@
 import React from 'react'
 import html from '../../images/skills/html.svg';
 import css from '../../images/skills/css.svg';
-import reactnative from '../../images/skills/reactnative.png';
 import javascript from '../../images/skills/javascript.svg';
 import react from '../../images/skills/react.svg';
 import node from '../../images/skills/node.svg';
@@ -28,60 +27,57 @@ import python from '../../images/skills/python.svg';
 
 
 export const logos = [
-  { image: html, name: 'HTML', category: 'Frontend Development', color: 'text-green-500', description: 'A markup language for creating web pages.' },
-  { image: css, name: 'CSS', category: 'Frontend Development', color: 'text-green-500', description: 'A style-sheet language for styling web pages.' },
-  { image: javascript, name: 'JavaScript', category: 'Frontend Development', color: 'text-green-500', description: 'A high-level programming language commonly used in web development.' },
-  { image: typescript, name: 'TypeScript', category: 'Frontend Development', color: 'text-green-500', description: 'An open-source language which builds on JavaScript by adding static type definitions.' },
-  { image: react, name: 'React', category: 'Frontend Development', color: 'text-green-500', description: 'A JavaScript library for building user interfaces.' },
-  { image: reactnative, name: 'React Native', category: 'Frontend Development', color: 'text-green-500', description: 'A framework for building native apps using React.' },
-  { image: bootstrap, name: 'Bootstrap', category: 'Frontend Development', color: 'text-green-500', description: 'A CSS framework for developing responsive and mobile-first websites.' },
-  { image: tailwind, name: 'Tailwind CSS', category: 'Frontend Development', color: 'text-green-500', description: 'A utility-first CSS framework for rapidly building custom user interfaces.' },
-  { image: nextJS, name: 'Next.js', category: 'Frontend Development', color: 'text-green-500', description: 'A React framework for production - it gives you the best developer experience with all the features you need for production.' },
-  { image: redux, name: 'Redux', category: 'Frontend Development', color: 'text-green-500', description: 'A predictable state container for JavaScript apps.' },
-  { image: materialui, name: 'Material-UI', category: 'Frontend Development', color: 'text-green-500', description: 'A popular React UI framework.' },
-  { image: bulma, name: 'Bulma', category: 'Frontend Development', color: 'text-green-500', description: 'A free and open-source CSS framework based on Flexbox.' },
-  { image: node, name: 'Node.js', category: 'Backend Development', color: 'text-blue-500', description: 'A JavaScript runtime environment for server-side scripting.' },
-  { image: python, name: 'Python', category: 'Backend Development', color: 'text-blue-500', description: 'A high-level and general-purpose programming language.' },
-  { image: expressjs, name: 'Express.js', category: 'Backend Development', color: 'text-blue-500', description: 'A minimal and flexible Node.js web application framework.' },
-  { image: django, name: 'Django', category: 'Backend Development', color: 'text-blue-500', description: 'A high-level Python Web framework that encourages rapid development and clean, pragmatic design.' },
-  { image: flask, name: 'Flask', category: 'Backend Development', color: 'text-blue-500', description: 'A micro web framework written in Python.' },
-  { image: mongodb, name: 'MongoDB', category: 'Databases', color: 'text-yellow-500', description: 'A NoSQL database for modern apps.' },
-  { image: git, name: 'Git', category: 'Version Control System', color: 'text-red-500', description: 'A distributed version control system for tracking changes in source code.' },
-  { image: github, name: 'GitHub', category: 'Version Control System', color: 'text-red-500', description: 'A hosting service for Git repositories providing collaboration features.' },
-  { image: vercel, name: 'Vercel', category: 'Deployment and Hosting', color: 'text-purple-500', description: 'A platform for static sites and Serverless Functions.' },
-  { image: vscode, name: 'VS Code', category: 'Tools', color: 'text-indigo-500', description: 'A lightweight but powerful source code editor.' },
-  { image: figma, name: 'Figma', category: 'Design Tools', color: 'text-pink-500', description: 'A web-based vector graphics editor and prototyping tool.' },
-  { image: wordpress, name: 'WordPress', category: 'Content Management System', color: 'text-orange-500', description: 'A content management system based on PHP and MySQL.' },
-  { image: firebase, name: 'Firebase', category: 'Databases', color: 'text-yellow-500', description: 'A platform developed by Google for creating mobile and web applications.' },
-  { image: mysql, name: 'MySQL', category: 'Databases', color: 'text-yellow-500', description: 'An open-source relational database management system.' },
+  html,
+  css,
+  typescript,
+  javascript,
+  react,
+  tailwind,
+  node,
+  python,
+  django,
+  flask,
+  mongodb,
+  expressjs,
+  bootstrap,
+  git,
+  github,
+  vercel,
+  vscode,
+  figma,
+  wordpress,
+  nextJS,
+  redux,
+  materialui,
+  firebase,
+  mysql,
+  bulma
 ]
 
-
-
-
 export default function Skills() {
+
   return (
     <section className="py-5 mt-5 sm:py-10 sm:mt-10">
-      {/* ... */}
+      <div id="projects" className="text-center">
+        <p className="mb-1 text-2xl font-general-medium sm:text-4xl text-ternary-dark dark:text-ternary-light selection:bg-ternary-dark">
+          Skills
+        </p>
+      </div>
       <div className="container mx-auto">
         <ul className="grid grid-cols-2 gap-5 mt-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 sm:gap-10">
-          {logos.map((logo, index) => (
-            <>
-            <li key={index} className="flex
-            flex-col items-center
-            justify-center border border-2 border-orange-600 rounded-lg shadow-lg hover:border-40 dark:border-white bg-primary-light dark:bg-ternary-dark shadow-black hover:bg-secondary-dark">
-              <div className="flex items-center justify-center p-4 text-sm text-gray-500 bg-indigo-200 rounded-lg">
-                <img src={logo.image} alt="logo" className="h-20" data-tip={logo.name} />
+          {logos.map((logo) => (
+            <li key={logo} className="flex justify-center border border-2 border-orange-600 rounded-lg shadow-lg hover:border-40 dark:border-white bg-primary-light dark:bg-ternary-dark shadow-black hover:bg-secondary-dark">
+              <div className="flex items-center justify-center p-4 text-sm text-gray-500 bg-indigo-200 rounded-lg ">
+                <img src={logo} alt="logo" className="h-20 "/>
               </div>
-              <p className="text-xs text-center `{logo.color}`">{logo.name}</p>
-
-
-            <p className="text-xs text-center text-gray-600">{logo.category}</p>
             </li>
-            </>
           ))}
         </ul>
       </div>
     </section>
   )
 }
+
+
+
+

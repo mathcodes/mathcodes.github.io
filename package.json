@@ -27,7 +27,6 @@
 		"styled-components": "^5.3.3",
 		"tailwind-styled-components": "^2.2.0",
 		"twitter-v2": "^1.1.0",
-		"vercel": "^29.3.4",
 		"web-vitals": "^1.0.1",
 		"xml2js": "^0.5.0"
 	},
@@ -35,7 +34,6 @@
 		"start": "react-scripts --openssl-legacy-provider start",
 		"build": "yarn run react-scripts build",
 		"test": "react-scripts test",
-		"manual-tests": "node src/setupTests.js",
 		"eject": "react-scripts eject",
 		"build:css": "postcss src/css/tailwind.css -o src/css/main.css"
 	},

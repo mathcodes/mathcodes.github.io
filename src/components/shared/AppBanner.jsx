@@ -5,7 +5,7 @@ import developerDark from '../../images/developer-dark.svg';
 import { motion } from 'framer-motion';
 
 const AppBanner = () => {
-	const [activeTheme] = useThemeSwitcher(); 
+	const [activeTheme] = useThemeSwitcher();
 
 	return (
 		<motion.section
@@ -86,4 +86,3 @@ const AppBanner = () => {
 };
 
 export default AppBanner;
-

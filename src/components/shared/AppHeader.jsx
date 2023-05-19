@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FiMenu, FiMoon, FiSun, FiX } from 'react-icons/fi';
+import { FiMenu, FiMoon, FiSun, FiX, FiHome } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 // import HireMeModal from '../HireMeModal';
@@ -23,27 +23,6 @@ const AppHeader = () => {
 		}
 	}
 
-	const logoSize = () => {
-		if (window.innerWidth < 768) {
-			return logoDarkSm;
-		} else {
-			return activeTheme === 'dark' ? logoDark : logoLight;
-		}
-	};
-
-	// function showHireMeModal() {
-	// 	if (!showModal) {
-	// 		document
-	// 			.getElementsByTagName('html')[0]
-	// 			.classList.add('overflow-y-hidden');
-	// 		setShowModal(true);
-	// 	} else {
-	// 		document
-	// 			.getElementsByTagName('html')[0]
-	// 			.classList.remove('overflow-y-hidden');
-	// 		setShowModal(false);
-	// 	}
-	// }
 
 	return (
 		<motion.nav
@@ -55,11 +34,13 @@ const AppHeader = () => {
 			<div className="z-10 block max-w-screen-lg py-6 xl:max-w-screen-xl sm:flex sm:justify-between sm:items-center">
 				{/* Header menu links and small screen hamburger menu */}
 				<div className="flex items-center justify-between px-4 ">
-				<div className="flex items-center justify-between px-4 ">
-			<div>
-
-			</div>
-		</div>
+					<div className="flex items-center justify-between px-4 ">
+						<div>
+							<Link to="/">
+								<FiHome color="white" width="20rem" />
+							</Link>
+						</div>
+					</div>
 
 					{/* Theme switcher small screen */}
 					<div
@@ -153,7 +134,6 @@ const AppHeader = () => {
 					>
 						About
 					</Link>
-
 					<Link
 						to="/services"
 						className="block p-2 mb-2 text-lg text-left rounded shadow-lg text-primary-dark dark:text-ternary-light hover:text-orange-600 sm:mx-4 sm:py-2"
@@ -169,20 +149,8 @@ const AppHeader = () => {
 						Contact
 					</Link>
 				</div>
-
 				{/* Header right section buttons */}
 				<div className="flex-col items-center justify-between hidden sm:flex md:flex-row">
-					{/* HIRE ME BUTTON - FUTURE DEVç */}
-					{/* <div className="hidden md:flex">
-		<span
-			onClick={showHireMeModal}
-			className="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
-			aria-label="Hire Me Button"
-		>
-			<Button title="Hire Me" />
-		</span>
-	</div> */}
-
 					{/* Theme switcher large screen */}
 					<div
 						onClick={() => setTheme(activeTheme)}
@@ -195,23 +163,8 @@ const AppHeader = () => {
 							<FiSun className="text-xl text-gray-200 hover:text-gray-50" />
 						)}
 					</div>
-
-					<button className="px-4 py-2 font-bold text-white rounded bg-gradient-to-r from-blue-500 to-green-500 hover:from-green-500 hover:to-blue-500">
-  Click me!
-</button>
 				</div>
-
 			</div>
-			{/* Hire me modal */}
-			{/* <div>
-{showModal ? (
-	<HireMeModal
-		onClose={showHireMeModal}
-		onRequest={showHireMeModal}
-	/>
-) : null}
-{showModal ? showHireMeModal : null}
- 			</div> */}
 		</motion.nav>
 	);
 };

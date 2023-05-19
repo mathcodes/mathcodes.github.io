@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1684500043734" clover="3.2.0">
+  <project timestamp="1684500043734" name="All files">
+    <metrics statements="261" coveredstatements="17" conditionals="50" coveredconditionals="2" methods="100" coveredmethods="6" elements="411" coveredelements="25" complexity="0" loc="261" ncloc="261" packages="19" files="73" classes="73"/>
+    <package name="src">
+      <metrics statements="20" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="10" coveredmethods="0"/>
+      <file name="App.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/App.js">
+        <metrics statements="8" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="0"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+      </file>
+      <file name="index.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/index.js">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+      </file>
+      <file name="reportWebVitals.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/reportWebVitals.js">
+        <metrics statements="8" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components">
+      <metrics statements="14" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="2"/>
+      <file name="BackToTop.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/BackToTop.jsx">
+        <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+      </file>
+      <file name="HireMeModal.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/HireMeModal.jsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="78" count="6" type="stmt"/>
+      </file>
+      <file name="ScrollToTop.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/ScrollToTop.jsx">
+        <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Hashnode">
+      <metrics statements="15" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="0"/>
+      <file name="Hashnode.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/Hashnode/Hashnode.jsx">
+        <metrics statements="15" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.about">
+      <metrics statements="20" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="0"/>
+      <file name="AboutClientSingle.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/about/AboutClientSingle.jsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+      </file>
+      <file name="AboutClients.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/about/AboutClients.jsx">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+      </file>
+      <file name="AboutCounter.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/about/AboutCounter.jsx">
+        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+      </file>
+      <file name="AboutMe.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/about/AboutMe.jsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+      <file name="AboutMeBio.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/about/AboutMeBio.jsx">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+      </file>
+      <file name="CounterItem.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/about/CounterItem.jsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.cards">
+      <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="CardGallery.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/cards/CardGallery.js">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.contact">
+      <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="ContactDetails.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/contact/ContactDetails.jsx">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+      </file>
+      <file name="ContactForm.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/contact/ContactForm.jsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.methods">
+      <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="Methods.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/methods/Methods.jsx">
+        <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.pricing">
+      <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="Pricing.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/pricing/Pricing.jsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+      </file>
+      <file name="ServicesComponent.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/pricing/ServicesComponent.jsx">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.projects">
+      <metrics statements="32" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="19" coveredmethods="0"/>
+      <file name="ProjectGallery.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/projects/ProjectGallery.jsx">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+      </file>
+      <file name="ProjectHeader.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/projects/ProjectHeader.jsx">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+      <file name="ProjectInfo.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/projects/ProjectInfo.jsx">
+        <metrics statements="6" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="98" count="0" type="stmt"/>
+      </file>
+      <file name="ProjectRelatedProjects.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/projects/ProjectRelatedProjects.jsx">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+      </file>
+      <file name="ProjectSingle.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/projects/ProjectSingle.jsx">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+      </file>
+      <file name="ProjectsFilter.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/projects/ProjectsFilter.jsx">
+        <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+      </file>
+      <file name="ProjectsGrid.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/projects/ProjectsGrid.jsx">
+        <metrics statements="7" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="71" count="0" type="stmt"/>
+        <line num="83" count="0" type="stmt"/>
+        <line num="94" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.reusable">
+      <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
+      <file name="Button.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/reusable/Button.jsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+      </file>
+      <file name="FormInput.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/reusable/FormInput.jsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.services">
+      <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="Services.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/services/Services.jsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+      </file>
+      <file name="ServicesGallery.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/services/ServicesGallery.jsx">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.shared">
+      <metrics statements="21" coveredstatements="3" conditionals="16" coveredconditionals="1" methods="9" coveredmethods="1"/>
+      <file name="AppBanner.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/shared/AppBanner.jsx">
+        <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+      </file>
+      <file name="AppFooter.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/shared/AppFooter.jsx">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+      </file>
+      <file name="AppFooterCopyright.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/shared/AppFooterCopyright.jsx">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="2" count="0" type="stmt"/>
+      </file>
+      <file name="AppHeader.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/shared/AppHeader.jsx">
+        <metrics statements="13" coveredstatements="0" conditionals="14" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="19" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="30" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="188" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.sitemap">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="SiteMap.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/sitemap/SiteMap.jsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.skills">
+      <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="Skills.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/skills/Skills.jsx">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.tweets">
+      <metrics statements="4" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="Tweets.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/components/tweets/Tweets.jsx">
+        <metrics statements="4" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.context">
+      <metrics statements="28" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="6" coveredmethods="0"/>
+      <file name="AboutMeContext.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/context/AboutMeContext.jsx">
+        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+      </file>
+      <file name="ProjectsContext.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/context/ProjectsContext.jsx">
+        <metrics statements="12" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="15" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+      </file>
+      <file name="ServicesContext.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/context/ServicesContext.jsx">
+        <metrics statements="6" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+      </file>
+      <file name="SingleProjectContext.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/context/SingleProjectContext.jsx">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.data">
+      <metrics statements="32" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="SERVprojectsData.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/data/SERVprojectsData.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+      <file name="aboutData.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/data/aboutData.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+      <file name="clientsData.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/data/clientsData.js">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+      </file>
+      <file name="contactsData.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/data/contactsData.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+      <file name="data.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/data/data.js">
+        <metrics statements="10" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="148" count="0" type="stmt"/>
+        <line num="159" count="0" type="stmt"/>
+        <line num="193" count="0" type="stmt"/>
+        <line num="211" count="0" type="stmt"/>
+      </file>
+      <file name="downloadableData.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/data/downloadableData.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+      <file name="experienceData.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/data/experienceData.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+      <file name="headerData.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/data/headerData.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+      <file name="learningData.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/data/learningData.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+      <file name="methodsData copy.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/data/methodsData copy.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+      <file name="methodsData.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/data/methodsData.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+      <file name="offersData.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/data/offersData.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+      <file name="projects.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/data/projects.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+      <file name="projects2.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/data/projects2.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="9" count="0" type="stmt"/>
+      </file>
+      <file name="responseData.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/data/responseData.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+      <file name="services.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/data/services.js">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+      </file>
+      <file name="singleProjectData.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/data/singleProjectData.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="17" count="0" type="stmt"/>
+      </file>
+      <file name="skillsData.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/data/skillsData.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+      <file name="socialsData.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/data/socialsData.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="0" type="stmt"/>
+      </file>
+      <file name="testimonialsData.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/data/testimonialsData.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+      <file name="themeData.js" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/data/themeData.js">
+        <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.hooks">
+      <metrics statements="24" coveredstatements="9" conditionals="12" coveredconditionals="1" methods="7" coveredmethods="2"/>
+      <file name="useScrollToTop.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/hooks/useScrollToTop.jsx">
+        <metrics statements="15" coveredstatements="0" conditionals="10" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+      </file>
+      <file name="useThemeSwitcher.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/hooks/useThemeSwitcher.jsx">
+        <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="2"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.pages">
+      <metrics statements="19" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="0"/>
+      <file name="AboutMe.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/pages/AboutMe.jsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+      <file name="Blogs.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/pages/Blogs.jsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+      <file name="Contact copy.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/pages/Contact copy.jsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+      <file name="Contact.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/pages/Contact.jsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+      </file>
+      <file name="Home.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/pages/Home.jsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+      </file>
+      <file name="ProjectSingle.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/pages/ProjectSingle.jsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+      </file>
+      <file name="Projects.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/pages/Projects.jsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+      </file>
+      <file name="Resources.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/pages/Resources.jsx">
+        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+      </file>
+      <file name="Services.jsx" path="/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/src/pages/Services.jsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
