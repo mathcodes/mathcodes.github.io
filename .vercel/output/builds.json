@@ -3,34 +3,20 @@
   "target": "preview",
   "argv": [
     "/Users/jonchristie/.volta/tools/image/node/18.12.1/bin/node",
-    "/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/node_modules/.bin/vercel",
+    "/Users/jonchristie/.volta/tools/image/packages/vercel/bin/vercel",
     "build"
   ],
   "builds": [
     {
       "require": "@vercel/static-build",
-      "requirePath": "/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/node_modules/@vercel/static-build/dist/index",
+      "requirePath": "/Users/jonchristie/.volta/tools/image/packages/vercel/lib/node_modules/vercel/node_modules/@vercel/static-build/dist/index",
       "apiVersion": 2,
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
         "zeroConfig": true,
         "framework": "create-react-app"
-      },
-      "error": {
-        "name": "Error",
-        "stack": "Error: Command \"npm run build\" exited with 1\n    at ChildProcess.<anonymous> (/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/node_modules/@vercel/build-utils/dist/index.js:32113:20)\n    at ChildProcess.emit (node:events:513:28)\n    at ChildProcess.emit (node:domain:489:12)\n    at maybeClose (node:internal/child_process:1091:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5)",
-        "message": "Command \"npm run build\" exited with 1",
-        "hideStackTrace": true,
-        "code": "BUILD_UTILS_SPAWN_1"
       }
     }
-  ],
-  "error": {
-    "name": "Error",
-    "stack": "Error: Command \"npm run build\" exited with 1\n    at ChildProcess.<anonymous> (/Users/jonchristie/Desktop/WEB_DEV_DOCS/mathcodes.github.io/node_modules/@vercel/build-utils/dist/index.js:32113:20)\n    at ChildProcess.emit (node:events:513:28)\n    at ChildProcess.emit (node:domain:489:12)\n    at maybeClose (node:internal/child_process:1091:16)\n    at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5)",
-    "message": "Command \"npm run build\" exited with 1",
-    "hideStackTrace": true,
-    "code": "BUILD_UTILS_SPAWN_1"
-  }
+  ]
 }

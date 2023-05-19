@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import AppBanner from '../components/shared/AppBanner';
-import Tweets from '../components/tweets/Tweets';
 import Button from '../components/reusable/Button';
 // import { AboutMeProvider } from '../context/AboutMeContext';
 // import AboutMe from '../components/about/AboutMe';
@@ -13,7 +12,6 @@ const Home = () => {
 			{/* <AboutMeProvider>
 				<AboutMe/>
 			</AboutMeProvider> */}
-			<Tweets/>
 			<Skills />
 
 
