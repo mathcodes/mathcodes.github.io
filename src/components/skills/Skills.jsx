@@ -25,7 +25,6 @@ import bulma from '../../images/skills/bulma.svg';
 import django from '../../images/skills/django.svg';
 import flask from '../../images/skills/flask.svg';
 import python from '../../images/skills/python.svg';
-import ReactTooltip from "react-tooltip-lite";
 
 
 export const logos = [
@@ -81,7 +80,6 @@ export default function Skills() {
             </li>
             </>
           ))}
-          <ReactTooltip place="top" type="dark" effect="float"/>
         </ul>
       </div>
     </section>
