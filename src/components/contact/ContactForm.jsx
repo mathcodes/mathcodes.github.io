@@ -5,7 +5,9 @@ const ContactForm = () => {
 	return (
 
 		<div className="w-full lg:w-1/2">
-			<div className="leading-loose">
+			<div className="leading-loose
+			bg-gradient-to-r from-white to-black
+			">
 				<form action="https://formspree.io/f/xaykzqea"
 					method="post"
 					className="max-w-xl p-6 m-4 text-left shadow-xl sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl"

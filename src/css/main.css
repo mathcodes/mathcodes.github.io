@@ -1313,6 +1313,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .leading-loose {
   line-height: 2;
+  background:rgb(13 36 56 / var(--tw-bg-opacity));
 }
 .leading-none {
   line-height: 1;
@@ -2697,4 +2698,29 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(49 50 51 /var(--tw-text-opacity));
+}
+
+.slate-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.slate-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.slate-700 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.slate-900 {
+  --tw-text-opacity: 1;
+  color: rgb(37 44 55 / var(--tw-text-opacity));
+}
+
+.cardStyle {
+  background-image: linear-gradient(to right, rgb(219 39 119), rgba(0,0,0,1));
+  border-radius: 10px;
 }

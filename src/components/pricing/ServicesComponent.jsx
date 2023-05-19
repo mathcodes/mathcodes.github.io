@@ -47,16 +47,17 @@ function ServicesComponent() {
 				</p>
 			</div>
 
-      <Container className="grid justify-center object-center grid-cols-1 p-12 mx-auto text-center bg-ternary-dark md:grid-cols-2 border-1 d-flex">
+      <Container className="grid justify-center object-center grid-cols-1 p-12 mx-auto text-center md:grid-cols-2 border-1 d-flex">
         {servicesArray.map(s => {
 
           return (
 
-            <Tilt className="grid m-6 my-2 mb-10 text-center Tilt " tiltMaxAngleX={2} tiltMaxAngleY={2} perspective={2000} scale={.99} transitionSpeed={3000} gyroscope={true} glareEnable={true} glareMaxOpacity={0.5} glareColor="#777" glarePosition="all" glareBorderRadius="6px" >
-              <Card className="w-1/3 p-6 m-10 shadow-lg border-1 border-ternary-dark dark:border-ternary-light">
+            <Tilt className="grid m-2 text-center Tilt " tiltMaxAngleX={2} tiltMaxAngleY={2} perspective={2000} scale={.99} transitionSpeed={3000} gyroscope={true} glareEnable={true} glareMaxOpacity={0.5} glareColor="#777" glarePosition="all" glareBorderRadius="6px" >
+              <Card className="cardStyle bg-gradient-to-r from-slate-500 to-slate-900 text-lg w-1/3 p-2 m-10 shadow-lg border-1 border-ternary-dark dark:border-ternary-light">
 
                 <Card.Body
-                  className="flex flex-col justify-between text-xl rounded-xl text-ternary-dark hover:text-zinc-900 dark:text-ternary-light dark:hover:text-primary-light"
+                  className="
+                  flex flex-col justify-between text-xl rounded-xl text-ternary-dark hover:text-zinc-900 dark:text-ternary-light dark:hover:text-primary-light"
                 >
                   <Card.Title
                     className="h-16 p-1 mb-2 text-2xl align-middle scale-100 font-general-medium text-ternary-dark hover:text-zinc-900 hover:scale-125 dark:text-ternary-light dark:hover:text-primary-light"
@@ -64,7 +65,7 @@ function ServicesComponent() {
                   <hr/>
 
                   <Card.Text
-                    className="text-sm text-left lg:text-lg text-ternary-dark dark:text-ternary-light"
+                    className="text-sm sm:text-md text-left lg:text-lg text-ternary-dark dark:text-ternary-light"
                   >
                     <p className="mt-2">• {s.description}</p>
                     <p className="mt-2">• {s.description2}</p>

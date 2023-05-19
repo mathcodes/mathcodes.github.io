@@ -1,7 +1,7 @@
 
 import gncoLogo from '../images/brands/gncoLogo.png';
 import scb from '../images/brands/scb.png';
-import te21 from '../images/brands/te21.png';
+import te21 from '../images/brands/te21.jpg';
 import pivotous from '../images/brands/pivotous.png';
 
 export const clientsHeading = 'Some of the brands that trust me';
