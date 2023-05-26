@@ -1,0 +1,90 @@
+.formPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+.formPage-header {
+  height: 15vh;
+  background: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.formPage-header>h1 {
+  font-size: 2rem;
+  font-family: roboto sans-serif;
+}
+
+.formPage-container {
+  /* padding: 3rem 2rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.formPage-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  /* margin-top: 5rem; */
+  background-color: none;
+}
+
+.form-grid {
+  display: flex;
+  gap: 4rem;
+}
+
+/*  ------------------------------------ MEDIA QUERIES ------------------------------------ */
+@media screen and (max-width: 992px) {
+  .formPage-header {
+    /* height: 25vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-grid {
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 702px) {
+  .form-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .formPage-header h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .formPage-header {
+    height: 20vh;
+  }
+
+  .formPage-header h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.projectPage-search{
+  background: none !important;
+}
+

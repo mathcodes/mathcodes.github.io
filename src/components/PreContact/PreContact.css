@@ -1,0 +1,388 @@
+.submitBtn
+{
+  background:  #232526;
+}
+
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate
+{
+  color: #eaeaea;
+}
+
+.contactsHead
+{
+  background: linear-gradient(#222 0%,  #eaeaea 100%)
+}
+
+.contactHeader
+{
+  color: #232526;
+  font-size: 48px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  line-height: 6rem;
+}
+
+.contactHeader
+{
+  color: #232526;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+
+ul
+{
+
+  text-align: justify;
+}
+
+ul:after
+{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+ul:before
+{
+  content: '';
+  display: block;
+}
+
+li
+{
+  color: #fff;
+  display: inline-block;
+  font: 1em/1.5 sans-serif;
+  /* position: relative; */
+
+}
+
+.socialmedia-icons
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1rem;
+  /* color: #eaeaea; */
+}
+
+
+
+.contacts
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.personal-details
+{
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 2.5rem;
+  color: #232526;
+  text-decoration: wavy;
+  font-weight: 400;
+  background-color: #d3540000;
+  border-radius: 10px;
+  padding: 5px;
+  transition: all .5s;
+}
+
+.contacts--img
+{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 280px;
+  pointer-events: none;
+}
+
+.contacts-body
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+
+
+a:-webkit-any-link
+{
+  color: #555;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0s;
+  text-shadow: none;
+}
+
+a:-webkit-any-link:hover
+{
+  text-shadow:#fff 2px solid;
+  color: #a92ca2;
+  
+}
+
+.makeStyles-socialIcon-31
+{
+  /* color:  #232526; */
+  width: 45px;
+  height: 45px;
+  display: flex;
+  font-size: 21px;
+  transition: 250ms ease-in-out;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: none;
+}
+
+.contacts-details
+{
+  display: flex; 
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex: none;
+  box-sizing: border-box;
+  margin-top: 1.2rem;
+
+}
+
+.personal-details p
+{
+  margin-left: 1.5rem;
+  font-size: 18px;
+  line-height: 110%;
+  font-weight: 500;
+  font-family: var(--primaryFont);
+  white-space: nowrap;
+  overflow: visible;
+  display: flex;
+  justify-content: space-between;
+}
+
+.personal-details
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 2.5rem;
+  color: #eaeaea;
+    text-decoration: wavy;
+  font-weight: 400;
+  background-color: #d3540000;
+  border-radius: 10px;
+  padding: 5px;
+  transition: all .5s;
+}
+
+.personal-details:hover
+{
+  text-decoration: wavy;
+  background-color: #232526;
+  color: #eaeaea;
+  font-weight: 800;
+}
+
+
+
+
+@media (min-width: 992px)
+{
+detailsIcon
+{
+  background-color: '#667';
+  color: '#232526';
+  border-radius: '50%'; 
+  margin-bottom: 0.3rem;
+  width: '45px';
+  height: '45px';
+  display: 'flex';
+  align-items: 'center';
+  justify-content: 'center';
+  font-size: '23px';
+  transition: '250ms ease-in-out';
+  flex-shrink: 0;
+}
+
+detailsIcon:hover
+{
+  transform: 'scale(1.1)';
+  color: '#eaeaea';
+  background-color: '#232526';
+}
+
+.contacts--img
+{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /* width: 240px; */
+}
+
+.makeStyles-detailsIcon-35
+{
+  height: 0.5rem;
+}
+
+
+ul,
+.socialMedia-icons
+{
+  flex-direction: row;
+}
+
+}
+
+@media screen and (max-width: 992px)
+{
+  .contacts--img
+  {
+    display: none;
+  }
+
+ 
+
+
+  .personal-details p
+  {
+    margin-left: 1rem;
+
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 800px)
+{
+  
+  .personal-details
+  {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 2.5rem;
+    color: #232526;
+    text-decoration: wavy;
+    font-weight: 400;
+    background-color: #d3540000;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all .5s;
+  }
+
+  .contacts-icons
+  {
+    font-size: .5rem;
+  }
+
+  .socialMedia-icons
+  {
+    flex-direction: row;
+  }
+
+  .contacts-form
+  {
+    display: flex;
+    flex: 1;
+  }
+
+  .form-input
+  {
+    margin-bottom: 0.45rem;
+  }
+
+  .contacts-form form
+  {
+    align-items: flex-end;
+  }
+
+  .contacts-details
+  {
+    padding-left: 0rem;
+    padding: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+    /* flex-direction: column; */
+  }
+  .personal-details
+  {
+    margin-bottom: 1.8rem;
+  }
+
+  .personal-details p
+  {
+    margin-left: 1.2rem;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 600px)
+{
+  .personal-details
+  {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 2.5rem;
+    color: #232526;
+    text-decoration: wavy;
+    font-weight: 400;
+    background-color: #d3540000;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all .5s;
+  }
+  .contacts-form
+  {
+    display: flex;
+    flex: 1;
+  }
+}
+
+/* 
+.localIcon
+{
+  font-size: 2rem;
+} */
+ 
+.contactHeader2{
+  padding: 3rem 0 1rem 0;
+}
+ 
+.css-pjjdvz {
+  margin-left: 8px;
+  margin-right: 8px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: inherit;
+  -webkit-box-align: inherit;
+  -ms-flex-align: inherit;
+  align-items: center;
+
+}
