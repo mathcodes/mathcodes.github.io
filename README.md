@@ -2,7 +2,7 @@
 
 Revised portfolio for 2023. Built with React, Tailwind CSS, and Framer Motion.
 
-# Table of Contents
+# Table of Contents 
 
 - [Demo](#demo)
 - [Features](#features)
