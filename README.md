@@ -1,6 +1,6 @@
 # Jon Christie Portfolio 2023
 
-Revised portfolio for 2023. Built with React, Tailwind CSS, and Framer Motion.
+Revised portfolio for 2023. Built with React, Tailwind CSS, and Framer Motion. 
 
 # Table of Contents
 
